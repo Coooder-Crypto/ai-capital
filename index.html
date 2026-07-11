@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Capital Map</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-mark">AI</div>
+          <div>
+            <h1>AI Capital Map</h1>
+            <p>免费公开数据驱动的 AI 全产业链依赖与估值图谱</p>
+          </div>
+        </div>
+        <nav class="top-actions" aria-label="Primary">
+          <a href="#map">图谱</a>
+          <a href="#layers">产业链</a>
+          <a href="#sources">数据源</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="overview-band" aria-labelledby="overview-title">
+          <div class="overview-copy">
+            <p class="eyebrow">MVP / Public Data First</p>
+            <h2 id="overview-title">从芯片、云算力、基础模型到应用公司，按证据追踪依赖关系。</h2>
+            <p>
+              第一版用 SEC、GitHub、Hugging Face、OpenAlex、公司公告和人工审核 seed 数据建立可追溯图谱。
+              私营估值只展示公开披露或标记为未知，避免把猜测当事实。
+            </p>
+          </div>
+          <div class="stats-grid" aria-label="Dataset summary">
+            <div>
+              <strong id="stat-entities">0</strong>
+              <span>核心实体</span>
+            </div>
+            <div>
+              <strong id="stat-relations">0</strong>
+              <span>依赖关系</span>
+            </div>
+            <div>
+              <strong id="stat-sources">0</strong>
+              <span>证据来源</span>
+            </div>
+            <div>
+              <strong>0.6+</strong>
+              <span>默认置信度</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="workspace" id="map">
+          <aside class="control-panel" aria-label="Controls">
+            <label class="field-label" for="search-input">搜索公司 / 模型 / 项目</label>
+            <div class="search-row">
+              <input id="search-input" type="search" placeholder="OpenAI, NVIDIA, Hugging Face..." autocomplete="off" />
+              <button id="clear-search" type="button" aria-label="清空搜索">x</button>
+            </div>
+
+            <div class="control-group">
+              <div class="group-title">图谱深度</div>
+              <div class="segmented" role="group" aria-label="Graph depth">
+                <button type="button" class="active" data-depth="1">1 层</button>
+                <button type="button" data-depth="2">2 层</button>
+                <button type="button" data-depth="all">全部</button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <div class="group-title">最低置信度 <span id="confidence-label">0.6</span></div>
+              <input id="confidence-range" type="range" min="0.3" max="1" value="0.6" step="0.05" />
+            </div>
+
+            <div class="control-group">
+              <div class="group-title">关系类型</div>
+              <select id="relation-filter">
+                <option value="all">全部关系</option>
+                <option value="supplies_to">供应</option>
+                <option value="runs_on">运行于</option>
+                <option value="invested_in">投资</option>
+                <option value="integrates_with">集成</option>
+                <option value="released_by">发布</option>
+                <option value="competes_with">竞争</option>
+                <option value="partners_with">合作</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <div class="group-title">实体列表</div>
+              <div id="entity-list" class="entity-list" role="list"></div>
+            </div>
+          </aside>
+
+          <section class="graph-panel" aria-labelledby="graph-title">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Interactive Graph</p>
+                <h2 id="graph-title">产业链依赖图谱</h2>
+              </div>
+              <button id="reset-view" type="button">重置</button>
+            </div>
+            <div class="legend" id="legend"></div>
+            <div class="graph-stage">
+              <svg id="graph-svg" viewBox="0 0 1120 620" role="img" aria-label="AI industry dependency graph"></svg>
+            </div>
+          </section>
+
+          <aside class="detail-panel" aria-label="Entity details">
+            <div id="detail-content"></div>
+          </aside>
+        </section>
+
+        <section class="layers-band" id="layers" aria-labelledby="layers-title">
+          <div class="section-header">
+            <p class="eyebrow">AI Stack</p>
+            <h2 id="layers-title">产业链层级</h2>
+          </div>
+          <div id="layer-grid" class="layer-grid"></div>
+        </section>
+
+        <section class="sources-band" id="sources" aria-labelledby="sources-title">
+          <div class="section-header">
+            <p class="eyebrow">Data Policy</p>
+            <h2 id="sources-title">免费数据源与口径</h2>
+          </div>
+          <div class="source-layout">
+            <article>
+              <h3>当前 MVP 数据</h3>
+              <p>
+                页面内置的是人工整理的 seed 数据，用来验证产品交互、关系结构和证据展示。
+                正式接入后，指标会由 worker 定时从公开 API 更新。
+              </p>
+              <ul>
+                <li>上市公司财务：SEC EDGAR company facts、10-K、10-Q。</li>
+                <li>开源热度：GitHub REST API。</li>
+                <li>模型生态：Hugging Face Hub API。</li>
+                <li>论文影响力：OpenAlex / arXiv。</li>
+                <li>关系证据：公司公告、财报、案例页、公开新闻与人工审核。</li>
+              </ul>
+            </article>
+            <article>
+              <h3>估值展示规则</h3>
+              <p>
+                上市公司展示市值或企业价值；私营公司只展示公开披露的最近估值。
+                没有可靠来源时显示 Unknown。所有指标都需要保留来源、日期和置信度。
+              </p>
+              <ul>
+                <li>Market cap：公开行情和股本数据计算。</li>
+                <li>Reported valuation：公司、投资人或可信媒体披露。</li>
+                <li>Estimated valuation：必须明确标注为估算。</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="modal-backdrop" id="source-modal" hidden>
+      <section class="source-modal" role="dialog" aria-modal="true" aria-labelledby="source-modal-title">
+        <div class="modal-header">
+          <div>
+            <p class="eyebrow">Evidence Source</p>
+            <h2 id="source-modal-title">来源详情</h2>
+          </div>
+          <button id="source-modal-close" type="button" aria-label="关闭来源详情">x</button>
+        </div>
+        <div id="source-modal-body"></div>
+      </section>
+    </div>
+
+    <script>
+      window.AI_CAPITAL_BOOT = {};
+      window.addEventListener("error", function (event) {
+        window.AI_CAPITAL_BOOT.error = event.message;
+        document.documentElement.dataset.scriptError = event.message;
+      });
+    </script>
+    <script src="data/seed.js?v=20260702b"></script>
+    <script src="data/p1-extension.js?v=20260702"></script>
+    <script src="data/metrics.js?v=20260702"></script>
+    <script src="app.js?v=20260702c"></script>
+  </body>
+</html>
