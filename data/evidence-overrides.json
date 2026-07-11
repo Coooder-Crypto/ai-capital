@@ -1,0 +1,185 @@
+{
+  "generatedAt": "2026-07-04T00:00:00.000Z",
+  "overrides": [
+    {
+      "relationshipId": "rel_4",
+      "evidenceTitle": "NVIDIA and CoreWeave cloud infrastructure references",
+      "evidenceUrl": "https://www.nvidia.com/en-us/data-center/cloud-gaming/coreweave/",
+      "evidencePublisher": "NVIDIA",
+      "evidenceDate": "Public web",
+      "evidenceStrength": "official_docs",
+      "note": "Official NVIDIA product page used as direct evidence for NVIDIA infrastructure referenced with CoreWeave."
+    },
+    {
+      "relationshipId": "rel_11",
+      "evidenceTitle": "Microsoft and OpenAI partnership overview",
+      "evidenceUrl": "https://news.microsoft.com/source/features/ai/microsoft-openai-partnership/",
+      "evidencePublisher": "Microsoft",
+      "evidenceDate": "Public web",
+      "evidenceStrength": "official_docs",
+      "note": "Official Microsoft page used as direct evidence for Azure and OpenAI partnership / cloud relationship."
+    },
+    {
+      "relationshipId": "rel_29",
+      "evidenceTitle": "Microsoft and OpenAI partnership overview",
+      "evidenceUrl": "https://news.microsoft.com/source/features/ai/microsoft-openai-partnership/",
+      "evidencePublisher": "Microsoft",
+      "evidenceDate": "Public web",
+      "evidenceStrength": "official_docs",
+      "note": "Official Microsoft page used as direct evidence for Microsoft/OpenAI strategic investment and commercial partnership context."
+    },
+    {
+      "relationshipId": "rel_16",
+      "evidenceTitle": "Hugging Face documentation",
+      "evidenceUrl": "https://huggingface.co/docs",
+      "evidencePublisher": "Hugging Face",
+      "evidenceDate": "Public web",
+      "evidenceStrength": "official_docs",
+      "note": "Official Hugging Face documentation used as direct evidence for Hugging Face ecosystem integration review."
+    },
+    {
+      "relationshipId": "rel_17",
+      "evidenceTitle": "GitHub REST API",
+      "evidenceUrl": "https://docs.github.com/en/rest",
+      "evidencePublisher": "GitHub",
+      "evidenceDate": "Live public data",
+      "evidenceStrength": "official_api",
+      "note": "GitHub API metadata is the direct evidence source for open-source integration and repository activity checks."
+    },
+    {
+      "relationshipId": "rel_18",
+      "evidenceTitle": "Databricks external models in Model Serving",
+      "evidenceUrl": "https://docs.databricks.com/aws/en/machine-learning/foundation-models/external-models/",
+      "evidencePublisher": "Databricks",
+      "evidenceDate": "2026-06-30",
+      "evidenceStrength": "official_docs",
+      "note": "Official Databricks documentation lists OpenAI as a supported external model provider for Model Serving, supporting the Databricks/OpenAI integration relationship."
+    },
+    {
+      "relationshipId": "rel_23",
+      "evidenceTitle": "OpenAI text-to-speech documentation",
+      "evidenceUrl": "https://platform.openai.com/docs/guides/text-to-speech",
+      "evidencePublisher": "OpenAI",
+      "evidenceDate": "Public web",
+      "evidenceStrength": "official_product_overlap",
+      "note": "Official OpenAI documentation shows OpenAI has text-to-speech capabilities, supporting product-category overlap with ElevenLabs. This is overlap evidence, not proof of a direct commercial relationship."
+    },
+    {
+      "relationshipId": "rel_24",
+      "evidenceTitle": "OpenAI image generation documentation",
+      "evidenceUrl": "https://platform.openai.com/docs/guides/image-generation",
+      "evidencePublisher": "OpenAI",
+      "evidenceDate": "Public web",
+      "evidenceStrength": "official_product_overlap",
+      "note": "Official OpenAI documentation shows image generation capabilities, supporting product-category overlap with Midjourney. This is overlap evidence, not proof of a direct commercial relationship."
+    },
+    {
+      "relationshipId": "p1_rel_737",
+      "evidenceTitle": "Snowflake Cortex AI product page",
+      "evidenceUrl": "https://www.snowflake.com/en/data-cloud/cortex/",
+      "evidencePublisher": "Snowflake",
+      "evidenceDate": "Public web",
+      "evidenceStrength": "official_product_overlap",
+      "note": "Official Snowflake Cortex AI product page supports product-category overlap with Databricks in data/AI platform capabilities. This is overlap evidence, not proof of a direct commercial relationship."
+    },
+    {
+      "relationshipId": "p1_rel_740",
+      "evidenceTitle": "Glean enterprise search product page",
+      "evidenceUrl": "https://www.glean.com/enterprise-search",
+      "evidencePublisher": "Glean",
+      "evidenceDate": "Public web",
+      "evidenceStrength": "official_product_overlap",
+      "note": "Official Glean product page describes AI workplace search capabilities, supporting product-category overlap with Perplexity search. This is overlap evidence, not proof of a direct commercial relationship."
+    },
+    {
+      "relationshipId": "p1_rel_746",
+      "evidenceTitle": "Stability AI Stable Video product page",
+      "evidenceUrl": "https://stability.ai/stable-video",
+      "evidencePublisher": "Stability AI",
+      "evidenceDate": "Public web",
+      "evidenceStrength": "official_product_overlap",
+      "note": "Official Stability AI product page describes generative video capabilities, supporting product-category overlap with Runway. This is overlap evidence, not proof of a direct commercial relationship."
+    },
+    {
+      "relationshipId": "p1_rel_739",
+      "evidenceTitle": "Adobe Firefly product page",
+      "evidenceUrl": "https://www.adobe.com/products/firefly.html",
+      "evidencePublisher": "Adobe",
+      "evidenceDate": "Public web",
+      "evidenceStrength": "official_product_overlap",
+      "note": "Official Adobe Firefly product page describes generative image/video AI capabilities, supporting product-category overlap with Runway. This is overlap evidence, not proof of a direct commercial relationship."
+    },
+    {
+      "relationshipId": "p1_rel_747",
+      "evidenceTitle": "OpenAI names Scale AI preferred partner to fine-tune GPT-3.5",
+      "evidenceUrl": "https://venturebeat.com/ai/openai-names-scale-ai-preferred-partner-to-fine-tune-gpt-3-5/",
+      "evidencePublisher": "VentureBeat",
+      "evidenceDate": "2023-08-24",
+      "evidenceStrength": "credible_report",
+      "note": "Credible industry report says OpenAI named Scale AI a preferred partner for fine-tuning GPT-3.5, supporting the Scale AI/OpenAI data and model development services relationship."
+    },
+    {
+      "relationshipId": "rel_13",
+      "evidenceTitle": "CoreWeave CEO on AI infrastructure customers",
+      "evidenceUrl": "https://time.com/7012714/coreweave-ceo-michael-intrator-interview/",
+      "evidencePublisher": "TIME",
+      "evidenceDate": "2024-08-28",
+      "evidenceStrength": "credible_report",
+      "note": "TIME interview/reporting discusses CoreWeave providing AI infrastructure to model companies including Mistral AI, supporting the CoreWeave/Mistral runs_on relationship as credible-report evidence."
+    },
+    {
+      "relationshipId": "rel_8",
+      "evidenceTitle": "OpenAI partners with Broadcom to design its own AI chips",
+      "evidenceUrl": "https://apnews.com/article/1bef0e0216d3878feefcb003e89b08e4",
+      "evidencePublisher": "Associated Press",
+      "evidenceDate": "2025-10-13",
+      "evidenceStrength": "credible_report",
+      "note": "Associated Press reporting notes Broadcom works with leading AI developers including Amazon and Google. This supports a Broadcom/AWS custom silicon relationship at credible-report strength, not a direct AWS contract document."
+    },
+    {
+      "relationshipId": "rel_9",
+      "evidenceTitle": "Super Micro customer erosion with CoreWeave cited by analyst checks",
+      "evidenceUrl": "https://www.marketwatch.com/story/super-micros-stock-just-got-downgraded-for-these-four-reasons-0967adf2",
+      "evidencePublisher": "MarketWatch",
+      "evidenceDate": "2024-09-04",
+      "evidenceStrength": "credible_report",
+      "note": "MarketWatch reports Barclays analyst checks indicating Supermicro market-share decline with privately held CoreWeave, described as one of Supermicro's top customers. This supports the Supermicro/CoreWeave supplier relationship as credible-report evidence."
+    },
+    {
+      "relationshipId": "rel_21",
+      "evidenceTitle": "Perplexity AI product index references backend model choices",
+      "evidenceUrl": "https://en.wikipedia.org/wiki/Perplexity_AI",
+      "evidencePublisher": "Wikipedia",
+      "evidenceDate": "Public web",
+      "evidenceStrength": "third_party_index",
+      "note": "Third-party index describes Perplexity Pro model selection including OpenAI GPT-family models and references Perplexity Help Center material. This supports model-dependency context, not a direct commercial contract."
+    },
+    {
+      "relationshipId": "rel_22",
+      "evidenceTitle": "Perplexity AI product index references Claude model choices",
+      "evidenceUrl": "https://en.wikipedia.org/wiki/Perplexity_AI",
+      "evidencePublisher": "Wikipedia",
+      "evidenceDate": "Public web",
+      "evidenceStrength": "third_party_index",
+      "note": "Third-party index describes Perplexity Pro model selection including Anthropic Claude-family models and references Perplexity Help Center material. This supports model-dependency context, not a direct commercial contract."
+    },
+    {
+      "relationshipId": "rel_25",
+      "evidenceTitle": "Hugging Face company page",
+      "evidenceUrl": "https://sequoiacap.com/companies/hugging-face/",
+      "evidencePublisher": "Sequoia Capital",
+      "evidenceDate": "Public web",
+      "evidenceStrength": "official_docs",
+      "note": "Official Sequoia company page for Hugging Face supports the Sequoia/Hugging Face investment or portfolio relationship."
+    },
+    {
+      "relationshipId": "rel_28",
+      "evidenceTitle": "Amazon and Anthropic deepen strategic collaboration",
+      "evidenceUrl": "https://www.aboutamazon.com/news/company-news/amazon-aws-anthropic-ai",
+      "evidencePublisher": "Amazon",
+      "evidenceDate": "2024-03-27",
+      "evidenceStrength": "official_docs",
+      "note": "Official Amazon announcement supports the AWS/Amazon and Anthropic strategic collaboration and investment relationship."
+    }
+  ]
+}

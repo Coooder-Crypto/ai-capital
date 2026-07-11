@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-07-04T08:19:49Z",
+  "overrides": [
+    {
+      "entityId": "meta_ai",
+      "source": "huggingFace",
+      "sourceRef": "facebook/bart-large-cnn",
+      "asOf": "2026-07-04T08:19:49Z",
+      "metrics": {
+        "downloads": 1524179,
+        "likes": 1600,
+        "pipelineTag": "summarization"
+      },
+      "evidenceUrl": "https://huggingface.co/facebook/bart-large-cnn",
+      "evidenceStrength": "official_model_page",
+      "reviewNote": "Manually reviewed on the official Hugging Face model page because direct API requests from the local environment timed out."
+    },
+    {
+      "entityId": "mistral",
+      "source": "huggingFace",
+      "sourceRef": "mistralai/Mistral-7B-Instruct-v0.2",
+      "asOf": "2026-07-04T08:19:49Z",
+      "metrics": {
+        "downloads": 987873,
+        "likes": 3180,
+        "pipelineTag": "text-generation"
+      },
+      "evidenceUrl": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2",
+      "evidenceStrength": "official_model_page",
+      "reviewNote": "Manually reviewed on the official Hugging Face model page because direct API requests from the local environment timed out."
+    }
+  ]
+}
