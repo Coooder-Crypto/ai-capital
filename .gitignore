@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+.env
+.env.*
+!.env.example
+.local/
+data/research/p0-p3-production-readiness-report.json
+data/research/p0-p3-production-readiness-report-artifact/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
