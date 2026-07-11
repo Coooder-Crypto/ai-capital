@@ -1,0 +1,131 @@
+{
+  "generatedAt": "2026-07-04T09:10:00.789Z",
+  "source": "wikidata",
+  "plannedRequestCount": 5,
+  "results": [
+    {
+      "id": "wikidata_profile_amd_q128896",
+      "entityId": "amd",
+      "entityName": "AMD",
+      "qid": "Q128896",
+      "label": "AMD",
+      "description": "American multinational semiconductor company",
+      "aliases": [
+        "AMD",
+        "Advanced Micro Devices"
+      ],
+      "officialWebsite": "https://www.amd.com/",
+      "country": "United States",
+      "inceptionYear": "1969",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q128896",
+      "search": "Advanced Micro Devices",
+      "confidence": 0.84,
+      "sourceId": "src_wikidata",
+      "asOf": "2026-07-04",
+      "fetchedAt": "2026-07-04T09:10:00.789Z"
+    },
+    {
+      "id": "wikidata_profile_azure_q725967",
+      "entityId": "azure",
+      "entityName": "Microsoft Azure",
+      "qid": "Q725967",
+      "label": "Azure",
+      "description": "cloud computing platform operated by Microsoft",
+      "aliases": [
+        "Azure",
+        "Microsoft Azure",
+        "Windows Azure",
+        "Azure Services Plattform",
+        "Windows Azure Platform",
+        "Azul",
+        "Microsoft Cloud",
+        "MSFT Azure"
+      ],
+      "officialWebsite": "https://azure.microsoft.com/",
+      "country": "United States",
+      "inceptionYear": "2010",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q725967",
+      "search": "Microsoft Azure",
+      "confidence": 0.84,
+      "sourceId": "src_wikidata",
+      "asOf": "2026-07-04",
+      "fetchedAt": "2026-07-04T09:10:00.789Z"
+    },
+    {
+      "id": "wikidata_profile_huggingface_q108943604",
+      "entityId": "huggingface",
+      "entityName": "Hugging Face",
+      "qid": "Q108943604",
+      "label": "Hugging Face",
+      "description": "American company",
+      "aliases": [
+        "Hugging Face",
+        "Hugging Face, Inc.",
+        "Hugging Face Inc.",
+        "🤗",
+        "HF"
+      ],
+      "officialWebsite": "https://huggingface.co/",
+      "country": "United States",
+      "inceptionYear": "2016",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108943604",
+      "search": "Hugging Face",
+      "confidence": 0.84,
+      "sourceId": "src_wikidata",
+      "asOf": "2026-07-04",
+      "fetchedAt": "2026-07-04T09:10:00.789Z"
+    },
+    {
+      "id": "wikidata_profile_nvidia_q182477",
+      "entityId": "nvidia",
+      "entityName": "NVIDIA",
+      "qid": "Q182477",
+      "label": "Nvidia",
+      "description": "American multinational technology company",
+      "aliases": [
+        "Nvidia",
+        "Nvidia Corporation",
+        "NVDA",
+        "英伟达"
+      ],
+      "officialWebsite": "https://www.nvidia.com/",
+      "country": "United States",
+      "inceptionYear": "1993",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q182477",
+      "search": "NVIDIA",
+      "confidence": 0.84,
+      "sourceId": "src_wikidata",
+      "asOf": "2026-07-04",
+      "fetchedAt": "2026-07-04T09:10:00.789Z"
+    },
+    {
+      "id": "wikidata_profile_openai_q21708200",
+      "entityId": "openai",
+      "entityName": "OpenAI",
+      "qid": "Q21708200",
+      "label": "OpenAI",
+      "description": "American artificial intelligence research organization",
+      "aliases": [
+        "OpenAI",
+        "openai.com",
+        "OpenAI Global",
+        "ChatGPT"
+      ],
+      "officialWebsite": "https://openai.com/",
+      "country": "United States",
+      "inceptionYear": "2015",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q21708200",
+      "search": "OpenAI",
+      "confidence": 0.84,
+      "sourceId": "src_wikidata",
+      "asOf": "2026-07-04",
+      "fetchedAt": "2026-07-04T09:10:00.789Z"
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "planned": 5,
+    "results": 5,
+    "errors": 0
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "generatedAt": "2026-07-05T13:02:55.468Z",
+  "counts": {
+    "layers": 8,
+    "entities": 112,
+    "relationships": 777,
+    "sources": 11,
+    "approvedMetricGroups": 13,
+    "metricFailures": 0,
+    "candidateRelationships": 401,
+    "candidateEntities": 398,
+    "candidateMetrics": 5,
+    "retryBacklog": 0,
+    "candidateSnapshotArchives": 19,
+    "evidenceBacklog": 50,
+    "connectorRuns": 4,
+    "rawDocuments": 9,
+    "parsedDocuments": 9,
+    "structuredParsedDocuments": 6,
+    "parsedFacts": 64,
+    "extractionRecords": 9,
+    "extractedDocuments": 6,
+    "llmExtractionRecords": 9,
+    "llmCompletedRecords": 6,
+    "wikidataProfiles": 5,
+    "openAlexWorkSets": 3,
+    "openAlexWorks": 15,
+    "arxivPaperSets": 3,
+    "arxivPapers": 15
+  },
+  "layerCounts": [
+    {
+      "layerId": "equipment",
+      "layerName": "设备",
+      "entities": 7,
+      "relationshipsOut": 35,
+      "relationshipsIn": 0
+    },
+    {
+      "layerId": "chip_design",
+      "layerName": "芯片 / EDA",
+      "entities": 13,
+      "relationshipsOut": 90,
+      "relationshipsIn": 58
+    },
+    {
+      "layerId": "foundry_memory",
+      "layerName": "代工 / 存储",
+      "entities": 8,
+      "relationshipsOut": 56,
+      "relationshipsIn": 35
+    },
+    {
+      "layerId": "datacenter",
+      "layerName": "服务器 / 数据中心",
+      "entities": 13,
+      "relationshipsOut": 78,
+      "relationshipsIn": 78
+    },
+    {
+      "layerId": "cloud_compute",
+      "layerName": "云 / 算力",
+      "entities": 11,
+      "relationshipsOut": 79,
+      "relationshipsIn": 91
+    },
+    {
+      "layerId": "foundation_model",
+      "layerName": "基础模型",
+      "entities": 16,
+      "relationshipsOut": 234,
+      "relationshipsIn": 163
+    },
+    {
+      "layerId": "ai_infra",
+      "layerName": "AI Infra 软件",
+      "entities": 18,
+      "relationshipsOut": 119,
+      "relationshipsIn": 124
+    },
+    {
+      "layerId": "application",
+      "layerName": "AI 应用",
+      "entities": 26,
+      "relationshipsOut": 86,
+      "relationshipsIn": 228
+    }
+  ],
+  "relationshipTypeCounts": [
+    {
+      "type": "supplies_to",
+      "label": "供应",
+      "count": 483
+    },
+    {
+      "type": "integrates_with",
+      "label": "集成",
+      "count": 121
+    },
+    {
+      "type": "invested_in",
+      "label": "投资",
+      "count": 84
+    },
+    {
+      "type": "runs_on",
+      "label": "运行于",
+      "count": 77
+    },
+    {
+      "type": "competes_with",
+      "label": "竞争",
+      "count": 7
+    },
+    {
+      "type": "released_by",
+      "label": "发布到",
+      "count": 5
+    }
+  ],
+  "confidenceBuckets": [
+    {
+      "id": "high",
+      "label": ">= 0.8",
+      "count": 13
+    },
+    {
+      "id": "medium",
+      "label": "0.6 - 0.79",
+      "count": 603
+    },
+    {
+      "id": "low",
+      "label": "< 0.6",
+      "count": 161
+    }
+  ],
+  "topEntitiesByDegree": [
+    {
+      "entityId": "openai",
+      "name": "OpenAI",
+      "type": "company",
+      "layer": "foundation_model",
+      "inDegree": 23,
+      "outDegree": 17,
+      "totalDegree": 40
+    },
+    {
+      "entityId": "cursor",
+      "name": "Cursor",
+      "type": "company",
+      "layer": "application",
+      "inDegree": 35,
+      "outDegree": 1,
+      "totalDegree": 36
+    },
+    {
+      "entityId": "elevenlabs",
+      "name": "ElevenLabs",
+      "type": "company",
+      "layer": "application",
+      "inDegree": 35,
+      "outDegree": 0,
+      "totalDegree": 35
+    },
+    {
+      "entityId": "glean",
+      "name": "Glean",
+      "type": "company",
+      "layer": "application",
+      "inDegree": 34,
+      "outDegree": 1,
+      "totalDegree": 35
+    },
+    {
+      "entityId": "midjourney",
+      "name": "Midjourney",
+      "type": "company",
+      "layer": "application",
+      "inDegree": 34,
+      "outDegree": 1,
+      "totalDegree": 35
+    },
+    {
+      "entityId": "mistral",
+      "name": "Mistral AI",
+      "type": "company",
+      "layer": "foundation_model",
+      "inDegree": 19,
+      "outDegree": 16,
+      "totalDegree": 35
+    },
+    {
+      "entityId": "perplexity",
+      "name": "Perplexity",
+      "type": "company",
+      "layer": "application",
+      "inDegree": 35,
+      "outDegree": 0,
+      "totalDegree": 35
+    },
+    {
+      "entityId": "anthropic",
+      "name": "Anthropic",
+      "type": "company",
+      "layer": "foundation_model",
+      "inDegree": 20,
+      "outDegree": 14,
+      "totalDegree": 34
+    },
+    {
+      "entityId": "cohere",
+      "name": "Cohere",
+      "type": "company",
+      "layer": "foundation_model",
+      "inDegree": 20,
+      "outDegree": 14,
+      "totalDegree": 34
+    },
+    {
+      "entityId": "deepmind",
+      "name": "Google DeepMind",
+      "type": "company",
+      "layer": "foundation_model",
+      "inDegree": 19,
+      "outDegree": 15,
+      "totalDegree": 34
+    },
+    {
+      "entityId": "harvey",
+      "name": "Harvey",
+      "type": "company",
+      "layer": "application",
+      "inDegree": 34,
+      "outDegree": 0,
+      "totalDegree": 34
+    },
+    {
+      "entityId": "meta_ai",
+      "name": "Meta AI",
+      "type": "company",
+      "layer": "foundation_model",
+      "inDegree": 19,
+      "outDegree": 15,
+      "totalDegree": 34
+    },
+    {
+      "entityId": "xai",
+      "name": "xAI",
+      "type": "company",
+      "layer": "foundation_model",
+      "inDegree": 19,
+      "outDegree": 14,
+      "totalDegree": 33
+    },
+    {
+      "entityId": "huggingface",
+      "name": "Hugging Face",
+      "type": "company",
+      "layer": "ai_infra",
+      "inDegree": 21,
+      "outDegree": 8,
+      "totalDegree": 29
+    },
+    {
+      "entityId": "langchain",
+      "name": "LangChain",
+      "type": "company",
+      "layer": "ai_infra",
+      "inDegree": 18,
+      "outDegree": 8,
+      "totalDegree": 26
+    },
+    {
+      "entityId": "aws",
+      "name": "AWS",
+      "type": "cloud",
+      "layer": "cloud_compute",
+      "inDegree": 17,
+      "outDegree": 8,
+      "totalDegree": 25
+    },
+    {
+      "entityId": "databricks",
+      "name": "Databricks",
+      "type": "company",
+      "layer": "ai_infra",
+      "inDegree": 17,
+      "outDegree": 7,
+      "totalDegree": 24
+    },
+    {
+      "entityId": "llamaindex",
+      "name": "LlamaIndex",
+      "type": "company",
+      "layer": "ai_infra",
+      "inDegree": 16,
+      "outDegree": 8,
+      "totalDegree": 24
+    },
+    {
+      "entityId": "pinecone",
+      "name": "Pinecone",
+      "type": "company",
+      "layer": "ai_infra",
+      "inDegree": 17,
+      "outDegree": 7,
+      "totalDegree": 24
+    },
+    {
+      "entityId": "azure",
+      "name": "Microsoft Azure",
+      "type": "cloud",
+      "layer": "cloud_compute",
+      "inDegree": 15,
+      "outDegree": 8,
+      "totalDegree": 23
+    }
+  ]
+}

@@ -1,0 +1,567 @@
+{
+  "generatedAt": "2026-07-05T07:10:39.616Z",
+  "sourceExtractionGeneratedAt": "2026-07-05T07:10:31.392Z",
+  "provider": "fixture",
+  "records": [
+    {
+      "id": "llm_extract_raw_watch_microsoft_openai_partnership",
+      "extractionRecordId": "extract_raw_watch_microsoft_openai_partnership",
+      "rawDocumentId": "raw_watch_microsoft_openai_partnership",
+      "parsedDocumentId": "parsed_raw_watch_microsoft_openai_partnership",
+      "watchlistId": "watch_microsoft_openai_partnership",
+      "entityId": "azure",
+      "provider": "fixture",
+      "model": "skipped",
+      "status": "skipped",
+      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "evidenceUrl": "https://news.microsoft.com/source/features/ai/microsoft-openai-partnership/",
+      "promptHash": "prompt_extract_raw_watch_microsoft_openai_partnership_4767a20f25e6e13358cbd8a260badad3df3d17b99fb7b54ca7633915fab14918",
+      "relationships": [],
+      "metrics": [],
+      "entities": [],
+      "rawResponse": {
+        "skippedReason": "skipped"
+      },
+      "quality": {
+        "relationshipCount": 0,
+        "metricCount": 0,
+        "entityCount": 0,
+        "requiresHumanReview": false
+      }
+    },
+    {
+      "id": "llm_extract_raw_watch_nvidia_coreweave_cloud",
+      "extractionRecordId": "extract_raw_watch_nvidia_coreweave_cloud",
+      "rawDocumentId": "raw_watch_nvidia_coreweave_cloud",
+      "parsedDocumentId": "parsed_raw_watch_nvidia_coreweave_cloud",
+      "watchlistId": "watch_nvidia_coreweave_cloud",
+      "entityId": "nvidia",
+      "provider": "fixture",
+      "model": "skipped",
+      "status": "skipped",
+      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "evidenceUrl": "https://www.nvidia.com/en-us/data-center/cloud-gaming/coreweave/",
+      "promptHash": "prompt_extract_raw_watch_nvidia_coreweave_cloud_42aa0895b0c225242eec6a111c455c4ce63cb013c506a25536b372245b6462fa",
+      "relationships": [],
+      "metrics": [],
+      "entities": [],
+      "rawResponse": {
+        "skippedReason": "skipped"
+      },
+      "quality": {
+        "relationshipCount": 0,
+        "metricCount": 0,
+        "entityCount": 0,
+        "requiresHumanReview": false
+      }
+    },
+    {
+      "id": "llm_extract_raw_watch_huggingface_langchain_docs",
+      "extractionRecordId": "extract_raw_watch_huggingface_langchain_docs",
+      "rawDocumentId": "raw_watch_huggingface_langchain_docs",
+      "parsedDocumentId": "parsed_raw_watch_huggingface_langchain_docs",
+      "watchlistId": "watch_huggingface_langchain_docs",
+      "entityId": "huggingface",
+      "provider": "fixture",
+      "model": "skipped",
+      "status": "skipped",
+      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "evidenceUrl": "https://huggingface.co/docs",
+      "promptHash": "prompt_extract_raw_watch_huggingface_langchain_docs_0320f78e48f13107ef836a56100d8ca32f62492c71ddaaf87cd42492fe6453a4",
+      "relationships": [],
+      "metrics": [],
+      "entities": [],
+      "rawResponse": {
+        "skippedReason": "skipped"
+      },
+      "quality": {
+        "relationshipCount": 0,
+        "metricCount": 0,
+        "entityCount": 0,
+        "requiresHumanReview": false
+      }
+    },
+    {
+      "id": "llm_extract_raw_watch_openalex_openai_research",
+      "extractionRecordId": "extract_raw_watch_openalex_openai_research",
+      "rawDocumentId": "raw_watch_openalex_openai_research",
+      "parsedDocumentId": "parsed_raw_watch_openalex_openai_research",
+      "watchlistId": "watch_openalex_openai_research",
+      "entityId": "openai",
+      "provider": "fixture",
+      "model": "local-schema-fixture",
+      "status": "completed",
+      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "evidenceUrl": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
+      "promptHash": "prompt_extract_raw_watch_openalex_openai_research_bb9232b95066b450de8f2b4eed579692fcac8386cac11d5f40e7d0338d077172",
+      "relationships": [],
+      "metrics": [
+        {
+          "entityId": "openai",
+          "metricType": "researchWorksMentioningEntity",
+          "valueNumber": 0,
+          "valueText": "review_required",
+          "asOfDate": "2026-07-05",
+          "sourceId": "src_openalex",
+          "sourceRef": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
+          "confidence": 0.6,
+          "evidenceUrl": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
+          "note": "OpenAlex response should be reviewed before turning work counts or top cited works into metrics."
+        }
+      ],
+      "entities": [],
+      "rawResponse": {
+        "provider": "fixture",
+        "model": "local-schema-fixture",
+        "relationships": [],
+        "metrics": [
+          {
+            "entityId": "openai",
+            "metricType": "researchWorksMentioningEntity",
+            "valueNumber": null,
+            "valueText": "review_required",
+            "asOfDate": "2026-07-05",
+            "sourceId": "src_openalex",
+            "sourceRef": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
+            "confidence": 0.6,
+            "evidenceUrl": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
+            "note": "OpenAlex response should be reviewed before turning work counts or top cited works into metrics."
+          }
+        ],
+        "entities": []
+      },
+      "quality": {
+        "relationshipCount": 0,
+        "metricCount": 1,
+        "entityCount": 0,
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "llm_extract_raw_watch_anthropic_news",
+      "extractionRecordId": "extract_raw_watch_anthropic_news",
+      "rawDocumentId": "raw_watch_anthropic_news",
+      "parsedDocumentId": "parsed_raw_watch_anthropic_news",
+      "watchlistId": "watch_anthropic_news",
+      "entityId": "anthropic",
+      "provider": "fixture",
+      "model": "local-schema-fixture",
+      "status": "completed",
+      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "evidenceUrl": "https://www.anthropic.com/news",
+      "promptHash": "prompt_extract_raw_watch_anthropic_news_7b9983b183c8b425d2294b6e989259b2682938a02cbad60fc51f2299d59aa621",
+      "relationships": [
+        {
+          "sourceEntityId": "anthropic",
+          "targetEntityId": "aws",
+          "relationType": "partners_with",
+          "confidence": 0.62,
+          "evidenceUrl": "https://www.anthropic.com/news",
+          "note": "Company news should be reviewed for cloud, model availability and strategic partnership evidence."
+        }
+      ],
+      "metrics": [],
+      "entities": [],
+      "rawResponse": {
+        "provider": "fixture",
+        "model": "local-schema-fixture",
+        "relationships": [
+          {
+            "sourceEntityId": "anthropic",
+            "targetEntityId": "aws",
+            "relationType": "partners_with",
+            "confidence": 0.62,
+            "evidenceUrl": "https://www.anthropic.com/news",
+            "note": "Company news should be reviewed for cloud, model availability and strategic partnership evidence."
+          }
+        ],
+        "metrics": [],
+        "entities": []
+      },
+      "quality": {
+        "relationshipCount": 1,
+        "metricCount": 0,
+        "entityCount": 0,
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "llm_extract_raw_watch_openai_news_rss",
+      "extractionRecordId": "extract_raw_watch_openai_news_rss",
+      "rawDocumentId": "raw_watch_openai_news_rss",
+      "parsedDocumentId": "parsed_raw_watch_openai_news_rss",
+      "watchlistId": "watch_openai_news_rss",
+      "entityId": "openai",
+      "provider": "fixture",
+      "model": "local-schema-fixture",
+      "status": "completed",
+      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "evidenceUrl": "https://openai.com/news/rss.xml",
+      "promptHash": "prompt_extract_raw_watch_openai_news_rss_5e649979e1ae5de8dca0610ada16339649308fc39bed51f7460c31350ae2b93f",
+      "relationships": [],
+      "metrics": [
+        {
+          "entityId": "openai",
+          "metricType": "rssNewsItemsForReview",
+          "valueNumber": 0,
+          "valueText": "review_required",
+          "asOfDate": "2026-07-05",
+          "sourceId": "src_manual",
+          "sourceRef": "https://openai.com/news/rss.xml",
+          "confidence": 0.62,
+          "evidenceUrl": "https://openai.com/news/rss.xml",
+          "note": "Official RSS feed should be parsed into news items for review before deriving partnerships, releases, product launches or valuation events."
+        }
+      ],
+      "entities": [],
+      "rawResponse": {
+        "provider": "fixture",
+        "model": "local-schema-fixture",
+        "relationships": [],
+        "metrics": [
+          {
+            "entityId": "openai",
+            "metricType": "rssNewsItemsForReview",
+            "valueNumber": null,
+            "valueText": "review_required",
+            "asOfDate": "2026-07-05",
+            "sourceId": "src_manual",
+            "sourceRef": "https://openai.com/news/rss.xml",
+            "confidence": 0.62,
+            "evidenceUrl": "https://openai.com/news/rss.xml",
+            "note": "Official RSS feed should be parsed into news items for review before deriving partnerships, releases, product launches or valuation events."
+          }
+        ],
+        "entities": []
+      },
+      "quality": {
+        "relationshipCount": 0,
+        "metricCount": 1,
+        "entityCount": 0,
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "llm_extract_raw_watch_nvidia_blog_rss",
+      "extractionRecordId": "extract_raw_watch_nvidia_blog_rss",
+      "rawDocumentId": "raw_watch_nvidia_blog_rss",
+      "parsedDocumentId": "parsed_raw_watch_nvidia_blog_rss",
+      "watchlistId": "watch_nvidia_blog_rss",
+      "entityId": "nvidia",
+      "provider": "fixture",
+      "model": "local-schema-fixture",
+      "status": "completed",
+      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "evidenceUrl": "https://blogs.nvidia.com/feed/",
+      "promptHash": "prompt_extract_raw_watch_nvidia_blog_rss_d07079d85cf38529f0908294d6b1ae76c44ae2874d805f320ae1fa013042b27b",
+      "relationships": [],
+      "metrics": [
+        {
+          "entityId": "nvidia",
+          "metricType": "rssNewsItemsForReview",
+          "valueNumber": 0,
+          "valueText": "review_required",
+          "asOfDate": "2026-07-05",
+          "sourceId": "src_manual",
+          "sourceRef": "https://blogs.nvidia.com/feed/",
+          "confidence": 0.6,
+          "evidenceUrl": "https://blogs.nvidia.com/feed/",
+          "note": "Official RSS feed should be parsed into news items for review before deriving product, customer, infrastructure or ecosystem relationships."
+        }
+      ],
+      "entities": [],
+      "rawResponse": {
+        "provider": "fixture",
+        "model": "local-schema-fixture",
+        "relationships": [],
+        "metrics": [
+          {
+            "entityId": "nvidia",
+            "metricType": "rssNewsItemsForReview",
+            "valueNumber": null,
+            "valueText": "review_required",
+            "asOfDate": "2026-07-05",
+            "sourceId": "src_manual",
+            "sourceRef": "https://blogs.nvidia.com/feed/",
+            "confidence": 0.6,
+            "evidenceUrl": "https://blogs.nvidia.com/feed/",
+            "note": "Official RSS feed should be parsed into news items for review before deriving product, customer, infrastructure or ecosystem relationships."
+          }
+        ],
+        "entities": []
+      },
+      "quality": {
+        "relationshipCount": 0,
+        "metricCount": 1,
+        "entityCount": 0,
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "llm_extract_raw_watch_aws_ml_blog_rss",
+      "extractionRecordId": "extract_raw_watch_aws_ml_blog_rss",
+      "rawDocumentId": "raw_watch_aws_ml_blog_rss",
+      "parsedDocumentId": "parsed_raw_watch_aws_ml_blog_rss",
+      "watchlistId": "watch_aws_ml_blog_rss",
+      "entityId": "aws",
+      "provider": "fixture",
+      "model": "local-schema-fixture",
+      "status": "completed",
+      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "evidenceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "promptHash": "prompt_extract_raw_watch_aws_ml_blog_rss_e87fcacf454c77a6298f0e8db27c0621db0b4501e7537aba054316ebcbdaf7d1",
+      "relationships": [],
+      "metrics": [
+        {
+          "entityId": "aws",
+          "metricType": "rssNewsItemsForReview",
+          "valueNumber": 0,
+          "valueText": "review_required",
+          "asOfDate": "2026-07-05",
+          "sourceId": "src_manual",
+          "sourceRef": "https://aws.amazon.com/blogs/machine-learning/feed/",
+          "confidence": 0.59,
+          "evidenceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+          "note": "Official AWS Machine Learning blog feed should be parsed into news items for review before deriving cloud, model hosting, customer or infrastructure relationships."
+        }
+      ],
+      "entities": [],
+      "rawResponse": {
+        "provider": "fixture",
+        "model": "local-schema-fixture",
+        "relationships": [],
+        "metrics": [
+          {
+            "entityId": "aws",
+            "metricType": "rssNewsItemsForReview",
+            "valueNumber": null,
+            "valueText": "review_required",
+            "asOfDate": "2026-07-05",
+            "sourceId": "src_manual",
+            "sourceRef": "https://aws.amazon.com/blogs/machine-learning/feed/",
+            "confidence": 0.59,
+            "evidenceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+            "note": "Official AWS Machine Learning blog feed should be parsed into news items for review before deriving cloud, model hosting, customer or infrastructure relationships."
+          }
+        ],
+        "entities": []
+      },
+      "quality": {
+        "relationshipCount": 0,
+        "metricCount": 1,
+        "entityCount": 0,
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "llm_extract_raw_watch_meta_engineering_rss",
+      "extractionRecordId": "extract_raw_watch_meta_engineering_rss",
+      "rawDocumentId": "raw_watch_meta_engineering_rss",
+      "parsedDocumentId": "parsed_raw_watch_meta_engineering_rss",
+      "watchlistId": "watch_meta_engineering_rss",
+      "entityId": "meta_ai",
+      "provider": "fixture",
+      "model": "local-schema-fixture",
+      "status": "completed",
+      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "evidenceUrl": "https://engineering.fb.com/feed/",
+      "promptHash": "prompt_extract_raw_watch_meta_engineering_rss_1eda7377294c4fe2cb348cd8187d73d821f4849247326fe06944ee7f3f067ffb",
+      "relationships": [],
+      "metrics": [
+        {
+          "entityId": "meta_ai",
+          "metricType": "rssNewsItemsForReview",
+          "valueNumber": 0,
+          "valueText": "review_required",
+          "asOfDate": "2026-07-05",
+          "sourceId": "src_manual",
+          "sourceRef": "https://engineering.fb.com/feed/",
+          "confidence": 0.57,
+          "evidenceUrl": "https://engineering.fb.com/feed/",
+          "note": "Official Meta Engineering feed should be parsed into news items for review before deriving AI infrastructure, open model, research or product relationships."
+        }
+      ],
+      "entities": [],
+      "rawResponse": {
+        "provider": "fixture",
+        "model": "local-schema-fixture",
+        "relationships": [],
+        "metrics": [
+          {
+            "entityId": "meta_ai",
+            "metricType": "rssNewsItemsForReview",
+            "valueNumber": null,
+            "valueText": "review_required",
+            "asOfDate": "2026-07-05",
+            "sourceId": "src_manual",
+            "sourceRef": "https://engineering.fb.com/feed/",
+            "confidence": 0.57,
+            "evidenceUrl": "https://engineering.fb.com/feed/",
+            "note": "Official Meta Engineering feed should be parsed into news items for review before deriving AI infrastructure, open model, research or product relationships."
+          }
+        ],
+        "entities": []
+      },
+      "quality": {
+        "relationshipCount": 0,
+        "metricCount": 1,
+        "entityCount": 0,
+        "requiresHumanReview": true
+      }
+    }
+  ],
+  "candidateRelationships": [
+    {
+      "id": "worker_candidate_watch_anthropic_news_anthropic_aws_partners_with",
+      "sourceEntityId": "anthropic",
+      "targetEntityId": "aws",
+      "relationType": "partners_with",
+      "confidence": 0.62,
+      "evidenceUrl": "https://www.anthropic.com/news",
+      "extractionMethod": "llm_fixture",
+      "status": "candidate",
+      "payload": {
+        "note": "Company news should be reviewed for cloud, model availability and strategic partnership evidence.",
+        "watchlistId": "watch_anthropic_news",
+        "rawDocumentId": "raw_watch_anthropic_news",
+        "parsedDocumentId": "parsed_raw_watch_anthropic_news",
+        "extractionRecordId": "extract_raw_watch_anthropic_news",
+        "llmExtractionRecordId": "llm_extract_raw_watch_anthropic_news",
+        "model": "local-schema-fixture"
+      },
+      "createdAt": "2026-07-05T07:10:39.616Z"
+    }
+  ],
+  "candidateEntities": [],
+  "candidateMetrics": [
+    {
+      "id": "worker_metric_watch_openalex_openai_research_openai_researchworksmentioningentity",
+      "entityId": "openai",
+      "metricType": "researchWorksMentioningEntity",
+      "valueNumber": 0,
+      "valueText": "review_required",
+      "asOfDate": "2026-07-05",
+      "sourceId": "src_openalex",
+      "sourceRef": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
+      "confidence": 0.6,
+      "evidenceUrl": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
+      "extractionMethod": "llm_fixture",
+      "status": "candidate",
+      "payload": {
+        "note": "OpenAlex response should be reviewed before turning work counts or top cited works into metrics.",
+        "watchlistId": "watch_openalex_openai_research",
+        "rawDocumentId": "raw_watch_openalex_openai_research",
+        "parsedDocumentId": "parsed_raw_watch_openalex_openai_research",
+        "extractionRecordId": "extract_raw_watch_openalex_openai_research",
+        "llmExtractionRecordId": "llm_extract_raw_watch_openalex_openai_research",
+        "model": "local-schema-fixture"
+      },
+      "createdAt": "2026-07-05T07:10:39.616Z"
+    },
+    {
+      "id": "worker_metric_watch_openai_news_rss_openai_rssnewsitemsforreview",
+      "entityId": "openai",
+      "metricType": "rssNewsItemsForReview",
+      "valueNumber": 0,
+      "valueText": "review_required",
+      "asOfDate": "2026-07-05",
+      "sourceId": "src_manual",
+      "sourceRef": "https://openai.com/news/rss.xml",
+      "confidence": 0.62,
+      "evidenceUrl": "https://openai.com/news/rss.xml",
+      "extractionMethod": "llm_fixture",
+      "status": "candidate",
+      "payload": {
+        "note": "Official RSS feed should be parsed into news items for review before deriving partnerships, releases, product launches or valuation events.",
+        "watchlistId": "watch_openai_news_rss",
+        "rawDocumentId": "raw_watch_openai_news_rss",
+        "parsedDocumentId": "parsed_raw_watch_openai_news_rss",
+        "extractionRecordId": "extract_raw_watch_openai_news_rss",
+        "llmExtractionRecordId": "llm_extract_raw_watch_openai_news_rss",
+        "model": "local-schema-fixture"
+      },
+      "createdAt": "2026-07-05T07:10:39.616Z"
+    },
+    {
+      "id": "worker_metric_watch_nvidia_blog_rss_nvidia_rssnewsitemsforreview",
+      "entityId": "nvidia",
+      "metricType": "rssNewsItemsForReview",
+      "valueNumber": 0,
+      "valueText": "review_required",
+      "asOfDate": "2026-07-05",
+      "sourceId": "src_manual",
+      "sourceRef": "https://blogs.nvidia.com/feed/",
+      "confidence": 0.6,
+      "evidenceUrl": "https://blogs.nvidia.com/feed/",
+      "extractionMethod": "llm_fixture",
+      "status": "candidate",
+      "payload": {
+        "note": "Official RSS feed should be parsed into news items for review before deriving product, customer, infrastructure or ecosystem relationships.",
+        "watchlistId": "watch_nvidia_blog_rss",
+        "rawDocumentId": "raw_watch_nvidia_blog_rss",
+        "parsedDocumentId": "parsed_raw_watch_nvidia_blog_rss",
+        "extractionRecordId": "extract_raw_watch_nvidia_blog_rss",
+        "llmExtractionRecordId": "llm_extract_raw_watch_nvidia_blog_rss",
+        "model": "local-schema-fixture"
+      },
+      "createdAt": "2026-07-05T07:10:39.616Z"
+    },
+    {
+      "id": "worker_metric_watch_aws_ml_blog_rss_aws_rssnewsitemsforreview",
+      "entityId": "aws",
+      "metricType": "rssNewsItemsForReview",
+      "valueNumber": 0,
+      "valueText": "review_required",
+      "asOfDate": "2026-07-05",
+      "sourceId": "src_manual",
+      "sourceRef": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "confidence": 0.59,
+      "evidenceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "extractionMethod": "llm_fixture",
+      "status": "candidate",
+      "payload": {
+        "note": "Official AWS Machine Learning blog feed should be parsed into news items for review before deriving cloud, model hosting, customer or infrastructure relationships.",
+        "watchlistId": "watch_aws_ml_blog_rss",
+        "rawDocumentId": "raw_watch_aws_ml_blog_rss",
+        "parsedDocumentId": "parsed_raw_watch_aws_ml_blog_rss",
+        "extractionRecordId": "extract_raw_watch_aws_ml_blog_rss",
+        "llmExtractionRecordId": "llm_extract_raw_watch_aws_ml_blog_rss",
+        "model": "local-schema-fixture"
+      },
+      "createdAt": "2026-07-05T07:10:39.616Z"
+    },
+    {
+      "id": "worker_metric_watch_meta_engineering_rss_meta_ai_rssnewsitemsforreview",
+      "entityId": "meta_ai",
+      "metricType": "rssNewsItemsForReview",
+      "valueNumber": 0,
+      "valueText": "review_required",
+      "asOfDate": "2026-07-05",
+      "sourceId": "src_manual",
+      "sourceRef": "https://engineering.fb.com/feed/",
+      "confidence": 0.57,
+      "evidenceUrl": "https://engineering.fb.com/feed/",
+      "extractionMethod": "llm_fixture",
+      "status": "candidate",
+      "payload": {
+        "note": "Official Meta Engineering feed should be parsed into news items for review before deriving AI infrastructure, open model, research or product relationships.",
+        "watchlistId": "watch_meta_engineering_rss",
+        "rawDocumentId": "raw_watch_meta_engineering_rss",
+        "parsedDocumentId": "parsed_raw_watch_meta_engineering_rss",
+        "extractionRecordId": "extract_raw_watch_meta_engineering_rss",
+        "llmExtractionRecordId": "llm_extract_raw_watch_meta_engineering_rss",
+        "model": "local-schema-fixture"
+      },
+      "createdAt": "2026-07-05T07:10:39.616Z"
+    }
+  ],
+  "summary": {
+    "sourceExtractionRecords": 9,
+    "llmExtractionRecords": 9,
+    "completedRecords": 6,
+    "skippedRecords": 3,
+    "candidateRelationships": 1,
+    "candidateEntities": 0,
+    "candidateMetrics": 5
+  }
+}
