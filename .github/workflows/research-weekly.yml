@@ -1,0 +1,95 @@
+name: Weekly research refresh
+
+on:
+  workflow_dispatch:
+    inputs:
+      fetch:
+        description: "Fetch live free data sources"
+        required: true
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
+      llm_provider:
+        description: "LLM extraction provider"
+        required: true
+        default: "fixture"
+        type: choice
+        options:
+          - fixture
+          - http
+  schedule:
+    - cron: "17 3 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      LLM_EXTRACT_URL: ${{ secrets.LLM_EXTRACT_URL }}
+      LLM_EXTRACT_API_KEY: ${{ secrets.LLM_EXTRACT_API_KEY }}
+      LLM_EXTRACT_MODEL: ${{ vars.LLM_EXTRACT_MODEL }}
+      LLM_EXTRACT_RPM: ${{ vars.LLM_EXTRACT_RPM || '30' }}
+      LLM_EXTRACT_MAX_RETRIES: ${{ vars.LLM_EXTRACT_MAX_RETRIES || '2' }}
+      LLM_EXTRACT_RETRY_BASE_MS: ${{ vars.LLM_EXTRACT_RETRY_BASE_MS || '1000' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run weekly research cycle
+        run: |
+          set -euo pipefail
+          FETCH="${{ github.event.inputs.fetch || 'true' }}"
+          LLM_PROVIDER="${{ github.event.inputs.llm_provider || 'fixture' }}"
+          if [ "$FETCH" = "true" ]; then
+            npm run research:weekly -- --fetch --skip-db --llm-provider="$LLM_PROVIDER" --timeout-ms=15000
+          else
+            npm run research:weekly -- --skip-db --skip-build --llm-provider="$LLM_PROVIDER" --timeout-ms=15000
+          fi
+
+      - name: Audit P0-P3 readiness
+        run: |
+          set -euo pipefail
+          LLM_PROVIDER="${{ github.event.inputs.llm_provider || 'fixture' }}"
+          if [ "$LLM_PROVIDER" = "fixture" ]; then
+            npm run audit:p0-p3
+          else
+            npm run audit:p0-p3 -- --require-production-llm
+          fi
+
+      - name: Open refresh pull request
+        if: ${{ github.event.inputs.fetch != 'false' }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then
+            echo "No research artifact changes detected."
+            exit 0
+          fi
+          BRANCH="automation/weekly-research-refresh"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add data src/generated
+          git commit -m "Refresh weekly research candidates"
+          git push --force-with-lease origin "$BRANCH"
+          gh pr create \
+            --base "${{ github.event.repository.default_branch }}" \
+            --head "$BRANCH" \
+            --title "Refresh weekly research candidates" \
+            --body "Automated weekly refresh of free-source research candidates, snapshots, timeline, exports, and generated data." \
+            || gh pr edit "$BRANCH" \
+              --title "Refresh weekly research candidates" \
+              --body "Automated weekly refresh of free-source research candidates, snapshots, timeline, exports, and generated data."

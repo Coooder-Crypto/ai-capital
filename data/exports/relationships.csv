@@ -1,0 +1,778 @@
+id,source,source_name,target,target_name,type,confidence,source_id,evidence_title,evidence_url,evidence_strength,review_status,review_note,note
+rel_1,asml,ASML,tsmc,TSMC,supplies_to,0.9,src_manual,,,,,,EUV 设备支撑先进制程制造。
+rel_2,tsmc,TSMC,nvidia,NVIDIA,supplies_to,0.9,src_manual,,,,,,TSMC 为高端 GPU 和 AI 芯片提供代工与封装能力。
+rel_3,sk_hynix,SK Hynix,nvidia,NVIDIA,supplies_to,0.85,src_manual,,,,,,HBM 是 AI 加速卡关键组件。
+rel_4,nvidia,NVIDIA,coreweave,CoreWeave,supplies_to,0.85,src_manual,NVIDIA and CoreWeave cloud infrastructure references,https://www.nvidia.com/en-us/data-center/cloud-gaming/coreweave/,official_docs,reviewed_evidence_backed,,GPU 云平台依赖 NVIDIA GPU 供给。
+rel_5,nvidia,NVIDIA,azure,Microsoft Azure,supplies_to,0.8,src_manual,,,,,,Azure AI 集群大量使用 NVIDIA GPU。
+rel_6,nvidia,NVIDIA,aws,AWS,supplies_to,0.75,src_manual,,,,,,AWS 提供 NVIDIA GPU 实例。
+rel_7,amd,AMD,azure,Microsoft Azure,supplies_to,0.7,src_manual,,,,,,云厂商提供 AMD 加速器实例。
+rel_8,broadcom,Broadcom,aws,AWS,supplies_to,0.65,src_manual,OpenAI partners with Broadcom to design its own AI chips,https://apnews.com/article/1bef0e0216d3878feefcb003e89b08e4,credible_report,reviewed_evidence_backed,,定制芯片和网络芯片服务云数据中心。
+rel_9,supermicro,Supermicro,coreweave,CoreWeave,supplies_to,0.65,src_manual,Super Micro customer erosion with CoreWeave cited by analyst checks,https://www.marketwatch.com/story/super-micros-stock-just-got-downgraded-for-these-four-reasons-0967adf2,credible_report,reviewed_evidence_backed,,AI 服务器供应链服务 GPU 云建设。
+rel_10,arista,Arista Networks,coreweave,CoreWeave,supplies_to,0.48,src_manual,,,,inferred_ecosystem_mapping,"Classified as inferred ecosystem mapping after direct public evidence search found no Arista/CoreWeave customer case, announcement or credible report.",Arista 与 CoreWeave 的直接供应关系尚未找到公开证据；仅按 AI 数据中心高速网络需求与供应商生态推断保留，不作为已验证供应关系。
+rel_11,azure,Microsoft Azure,openai,OpenAI,runs_on,0.92,src_manual,Microsoft and OpenAI partnership overview,https://news.microsoft.com/source/features/ai/microsoft-openai-partnership/,official_docs,reviewed_evidence_backed,,OpenAI 与 Microsoft Azure 有公开云合作关系。
+rel_12,aws,AWS,anthropic,Anthropic,runs_on,0.85,src_manual,,,,,,Anthropic 与 AWS 有公开云和投资合作关系。
+rel_13,coreweave,CoreWeave,mistral,Mistral AI,runs_on,0.55,src_manual,CoreWeave CEO on AI infrastructure customers,https://time.com/7012714/coreweave-ceo-michael-intrator-interview/,credible_report,reviewed_evidence_backed,,GPU 云与模型公司存在行业相关性，需进一步证据。
+rel_14,meta_ai,Meta AI,huggingface,Hugging Face,released_by,0.82,src_hf,,,,,,Llama 等模型在 Hugging Face 生态分发。
+rel_15,mistral,Mistral AI,huggingface,Hugging Face,released_by,0.82,src_hf,,,,,,Mistral 模型在 Hugging Face 生态分发。
+rel_16,huggingface,Hugging Face,langchain,LangChain,integrates_with,0.7,src_github,Hugging Face documentation,https://huggingface.co/docs,official_docs,reviewed_evidence_backed,,开发者常将模型 hub 与 LLM 应用框架集成。
+rel_17,pinecone,Pinecone,langchain,LangChain,integrates_with,0.72,src_github,GitHub REST API,https://docs.github.com/en/rest,official_api,reviewed_evidence_backed,,向量数据库常作为 RAG 链路中的检索层。
+rel_18,databricks,Databricks,openai,OpenAI,integrates_with,0.62,src_manual,Databricks external models in Model Serving,https://docs.databricks.com/aws/en/machine-learning/foundation-models/external-models/,official_docs,reviewed_evidence_backed,,企业数据平台通常集成外部模型 API。
+rel_19,openai,OpenAI,cursor,Cursor,supplies_to,0.75,src_manual,,,,,,AI 编程工具依赖基础模型 API。
+rel_20,anthropic,Anthropic,cursor,Cursor,supplies_to,0.75,src_manual,,,,,,AI 编程工具可接入 Claude 等模型。
+rel_21,openai,OpenAI,perplexity,Perplexity,supplies_to,0.65,src_manual,Perplexity AI product index references backend model choices,https://en.wikipedia.org/wiki/Perplexity_AI,third_party_index,reviewed_evidence_backed,,AI 搜索应用依赖基础模型能力。
+rel_22,anthropic,Anthropic,perplexity,Perplexity,supplies_to,0.65,src_manual,Perplexity AI product index references Claude model choices,https://en.wikipedia.org/wiki/Perplexity_AI,third_party_index,reviewed_evidence_backed,,AI 搜索应用可接入多家模型。
+rel_23,openai,OpenAI,elevenlabs,ElevenLabs,competes_with,0.45,src_manual,OpenAI text-to-speech documentation,https://platform.openai.com/docs/guides/text-to-speech,official_product_overlap,reviewed_evidence_backed,,多模态语音能力存在部分竞争，需要细分产品验证。
+rel_24,midjourney,Midjourney,openai,OpenAI,competes_with,0.55,src_manual,OpenAI image generation documentation,https://platform.openai.com/docs/guides/image-generation,official_product_overlap,reviewed_evidence_backed,,图像生成产品与多模态模型存在应用层竞争。
+rel_25,sequoia,Sequoia Capital,huggingface,Hugging Face,invested_in,0.7,src_manual,Hugging Face company page,https://sequoiacap.com/companies/hugging-face/,official_docs,reviewed_evidence_backed,,公开 portfolio 和融资信息需后续 worker 校验。
+rel_26,a16z,a16z,cursor,Cursor,invested_in,0.7,src_manual,,,,,,公开融资信息需后续 worker 校验。
+rel_27,a16z,a16z,mistral,Mistral AI,invested_in,0.7,src_manual,,,,,,公开融资信息需后续 worker 校验。
+rel_28,aws,AWS,anthropic,Anthropic,invested_in,0.8,src_manual,Amazon and Anthropic deepen strategic collaboration,https://www.aboutamazon.com/news/company-news/amazon-aws-anthropic-ai,official_docs,reviewed_evidence_backed,,AWS/Anthropic 公开战略合作和投资关系。
+rel_29,azure,Microsoft Azure,openai,OpenAI,invested_in,0.85,src_manual,Microsoft and OpenAI partnership overview,https://news.microsoft.com/source/features/ai/microsoft-openai-partnership/,official_docs,reviewed_evidence_backed,,Microsoft/OpenAI 公开投资和商业合作关系。
+p1_rel_1,asml,ASML,sk_hynix,SK Hynix,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_2,asml,ASML,samsung,Samsung Electronics,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_3,asml,ASML,micron,Micron,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_4,asml,ASML,ase,ASE Technology,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_5,applied_materials,Applied Materials,tsmc,TSMC,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_6,applied_materials,Applied Materials,sk_hynix,SK Hynix,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_7,applied_materials,Applied Materials,samsung,Samsung Electronics,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_8,applied_materials,Applied Materials,micron,Micron,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_9,applied_materials,Applied Materials,ase,ASE Technology,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_10,lam_research,Lam Research,tsmc,TSMC,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_11,lam_research,Lam Research,sk_hynix,SK Hynix,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_12,lam_research,Lam Research,samsung,Samsung Electronics,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_13,lam_research,Lam Research,micron,Micron,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_14,lam_research,Lam Research,ase,ASE Technology,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_15,kla,KLA,tsmc,TSMC,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_16,kla,KLA,sk_hynix,SK Hynix,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_17,kla,KLA,samsung,Samsung Electronics,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_18,kla,KLA,micron,Micron,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_19,kla,KLA,ase,ASE Technology,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_20,tokyo_electron,Tokyo Electron,tsmc,TSMC,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_21,tokyo_electron,Tokyo Electron,sk_hynix,SK Hynix,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_22,tokyo_electron,Tokyo Electron,samsung,Samsung Electronics,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_23,tokyo_electron,Tokyo Electron,micron,Micron,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_24,tokyo_electron,Tokyo Electron,ase,ASE Technology,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_25,screen_semiconductor,SCREEN Semiconductor Solutions,tsmc,TSMC,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_26,screen_semiconductor,SCREEN Semiconductor Solutions,sk_hynix,SK Hynix,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_27,screen_semiconductor,SCREEN Semiconductor Solutions,samsung,Samsung Electronics,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_28,screen_semiconductor,SCREEN Semiconductor Solutions,micron,Micron,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_29,screen_semiconductor,SCREEN Semiconductor Solutions,ase,ASE Technology,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_30,asm_international,ASM International,tsmc,TSMC,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_31,asm_international,ASM International,sk_hynix,SK Hynix,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_32,asm_international,ASM International,samsung,Samsung Electronics,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_33,asm_international,ASM International,micron,Micron,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_34,asm_international,ASM International,ase,ASE Technology,supplies_to,0.78,src_ecosystem_mapping,,,,,,半导体制造设备供应晶圆制造、封装和存储生产链条。
+p1_rel_35,tsmc,TSMC,amd,AMD,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_36,tsmc,TSMC,broadcom,Broadcom,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_37,tsmc,TSMC,synopsys,Synopsys,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_38,tsmc,TSMC,cadence,Cadence,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_39,tsmc,TSMC,arm,Arm,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_40,tsmc,TSMC,marvell,Marvell,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_41,sk_hynix,SK Hynix,amd,AMD,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_42,sk_hynix,SK Hynix,broadcom,Broadcom,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_43,sk_hynix,SK Hynix,synopsys,Synopsys,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_44,sk_hynix,SK Hynix,cadence,Cadence,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_45,sk_hynix,SK Hynix,arm,Arm,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_46,sk_hynix,SK Hynix,marvell,Marvell,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_47,samsung,Samsung Electronics,nvidia,NVIDIA,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_48,samsung,Samsung Electronics,amd,AMD,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_49,samsung,Samsung Electronics,broadcom,Broadcom,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_50,samsung,Samsung Electronics,synopsys,Synopsys,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_51,samsung,Samsung Electronics,cadence,Cadence,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_52,samsung,Samsung Electronics,arm,Arm,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_53,samsung,Samsung Electronics,marvell,Marvell,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_54,micron,Micron,nvidia,NVIDIA,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_55,micron,Micron,amd,AMD,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_56,micron,Micron,broadcom,Broadcom,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_57,micron,Micron,synopsys,Synopsys,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_58,micron,Micron,cadence,Cadence,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_59,micron,Micron,arm,Arm,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_60,micron,Micron,marvell,Marvell,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_61,ase,ASE Technology,nvidia,NVIDIA,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_62,ase,ASE Technology,amd,AMD,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_63,ase,ASE Technology,broadcom,Broadcom,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_64,ase,ASE Technology,synopsys,Synopsys,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_65,ase,ASE Technology,cadence,Cadence,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_66,ase,ASE Technology,arm,Arm,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_67,ase,ASE Technology,marvell,Marvell,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_68,globalfoundries,GlobalFoundries,nvidia,NVIDIA,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_69,globalfoundries,GlobalFoundries,amd,AMD,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_70,globalfoundries,GlobalFoundries,broadcom,Broadcom,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_71,globalfoundries,GlobalFoundries,synopsys,Synopsys,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_72,globalfoundries,GlobalFoundries,cadence,Cadence,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_73,globalfoundries,GlobalFoundries,arm,Arm,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_74,globalfoundries,GlobalFoundries,marvell,Marvell,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_75,umc,UMC,nvidia,NVIDIA,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_76,umc,UMC,amd,AMD,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_77,umc,UMC,broadcom,Broadcom,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_78,umc,UMC,synopsys,Synopsys,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_79,umc,UMC,cadence,Cadence,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_80,umc,UMC,arm,Arm,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_81,umc,UMC,marvell,Marvell,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_82,winbond,Winbond,nvidia,NVIDIA,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_83,winbond,Winbond,amd,AMD,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_84,winbond,Winbond,broadcom,Broadcom,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_85,winbond,Winbond,synopsys,Synopsys,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_86,winbond,Winbond,cadence,Cadence,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_87,winbond,Winbond,arm,Arm,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_88,winbond,Winbond,marvell,Marvell,supplies_to,0.76,src_ecosystem_mapping,,,,,,代工、封装和存储供应高性能 AI 芯片和加速器。
+p1_rel_89,nvidia,NVIDIA,supermicro,Supermicro,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_90,nvidia,NVIDIA,arista,Arista Networks,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_91,nvidia,NVIDIA,dell,Dell Technologies,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_92,nvidia,NVIDIA,hpe,HPE,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_93,nvidia,NVIDIA,lenovo,Lenovo,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_94,nvidia,NVIDIA,quanta,Quanta Computer,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_95,amd,AMD,supermicro,Supermicro,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_96,amd,AMD,arista,Arista Networks,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_97,amd,AMD,dell,Dell Technologies,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_98,amd,AMD,hpe,HPE,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_99,amd,AMD,lenovo,Lenovo,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_100,amd,AMD,quanta,Quanta Computer,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_101,broadcom,Broadcom,supermicro,Supermicro,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_102,broadcom,Broadcom,arista,Arista Networks,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_103,broadcom,Broadcom,dell,Dell Technologies,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_104,broadcom,Broadcom,hpe,HPE,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_105,broadcom,Broadcom,lenovo,Lenovo,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_106,broadcom,Broadcom,quanta,Quanta Computer,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_107,synopsys,Synopsys,supermicro,Supermicro,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_108,synopsys,Synopsys,arista,Arista Networks,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_109,synopsys,Synopsys,dell,Dell Technologies,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_110,synopsys,Synopsys,hpe,HPE,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_111,synopsys,Synopsys,lenovo,Lenovo,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_112,synopsys,Synopsys,quanta,Quanta Computer,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_113,cadence,Cadence,supermicro,Supermicro,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_114,cadence,Cadence,arista,Arista Networks,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_115,cadence,Cadence,dell,Dell Technologies,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_116,cadence,Cadence,hpe,HPE,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_117,cadence,Cadence,lenovo,Lenovo,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_118,cadence,Cadence,quanta,Quanta Computer,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_119,arm,Arm,supermicro,Supermicro,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_120,arm,Arm,arista,Arista Networks,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_121,arm,Arm,dell,Dell Technologies,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_122,arm,Arm,hpe,HPE,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_123,arm,Arm,lenovo,Lenovo,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_124,arm,Arm,quanta,Quanta Computer,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_125,marvell,Marvell,supermicro,Supermicro,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_126,marvell,Marvell,arista,Arista Networks,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_127,marvell,Marvell,dell,Dell Technologies,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_128,marvell,Marvell,hpe,HPE,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_129,marvell,Marvell,lenovo,Lenovo,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_130,marvell,Marvell,quanta,Quanta Computer,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_131,qualcomm,Qualcomm,supermicro,Supermicro,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_132,qualcomm,Qualcomm,arista,Arista Networks,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_133,qualcomm,Qualcomm,dell,Dell Technologies,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_134,qualcomm,Qualcomm,hpe,HPE,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_135,qualcomm,Qualcomm,lenovo,Lenovo,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_136,qualcomm,Qualcomm,quanta,Quanta Computer,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_137,intel,Intel,supermicro,Supermicro,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_138,intel,Intel,arista,Arista Networks,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_139,intel,Intel,dell,Dell Technologies,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_140,intel,Intel,hpe,HPE,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_141,intel,Intel,lenovo,Lenovo,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_142,intel,Intel,quanta,Quanta Computer,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_143,cerebras,Cerebras,supermicro,Supermicro,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_144,cerebras,Cerebras,arista,Arista Networks,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_145,cerebras,Cerebras,dell,Dell Technologies,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_146,cerebras,Cerebras,hpe,HPE,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_147,cerebras,Cerebras,lenovo,Lenovo,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_148,cerebras,Cerebras,quanta,Quanta Computer,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_149,sambanova,SambaNova Systems,supermicro,Supermicro,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_150,sambanova,SambaNova Systems,arista,Arista Networks,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_151,sambanova,SambaNova Systems,dell,Dell Technologies,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_152,sambanova,SambaNova Systems,hpe,HPE,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_153,sambanova,SambaNova Systems,lenovo,Lenovo,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_154,sambanova,SambaNova Systems,quanta,Quanta Computer,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_155,groq,Groq,supermicro,Supermicro,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_156,groq,Groq,arista,Arista Networks,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_157,groq,Groq,dell,Dell Technologies,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_158,groq,Groq,hpe,HPE,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_159,groq,Groq,lenovo,Lenovo,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_160,groq,Groq,quanta,Quanta Computer,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_161,tenstorrent,Tenstorrent,supermicro,Supermicro,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_162,tenstorrent,Tenstorrent,arista,Arista Networks,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_163,tenstorrent,Tenstorrent,dell,Dell Technologies,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_164,tenstorrent,Tenstorrent,hpe,HPE,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_165,tenstorrent,Tenstorrent,lenovo,Lenovo,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_166,tenstorrent,Tenstorrent,quanta,Quanta Computer,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 芯片、网络芯片和 IP 服务服务器和数据中心基础设施。
+p1_rel_167,supermicro,Supermicro,azure,Microsoft Azure,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_168,supermicro,Supermicro,aws,AWS,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_169,supermicro,Supermicro,google_cloud,Google Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_170,supermicro,Supermicro,oracle_cloud,Oracle Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_171,supermicro,Supermicro,lambda_labs,Lambda,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_172,arista,Arista Networks,azure,Microsoft Azure,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_173,arista,Arista Networks,aws,AWS,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_174,arista,Arista Networks,google_cloud,Google Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_175,arista,Arista Networks,oracle_cloud,Oracle Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_176,arista,Arista Networks,lambda_labs,Lambda,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_177,dell,Dell Technologies,azure,Microsoft Azure,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_178,dell,Dell Technologies,aws,AWS,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_179,dell,Dell Technologies,coreweave,CoreWeave,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_180,dell,Dell Technologies,google_cloud,Google Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_181,dell,Dell Technologies,oracle_cloud,Oracle Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_182,dell,Dell Technologies,lambda_labs,Lambda,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_183,hpe,HPE,azure,Microsoft Azure,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_184,hpe,HPE,aws,AWS,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_185,hpe,HPE,coreweave,CoreWeave,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_186,hpe,HPE,google_cloud,Google Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_187,hpe,HPE,oracle_cloud,Oracle Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_188,hpe,HPE,lambda_labs,Lambda,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_189,lenovo,Lenovo,azure,Microsoft Azure,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_190,lenovo,Lenovo,aws,AWS,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_191,lenovo,Lenovo,coreweave,CoreWeave,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_192,lenovo,Lenovo,google_cloud,Google Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_193,lenovo,Lenovo,oracle_cloud,Oracle Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_194,lenovo,Lenovo,lambda_labs,Lambda,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_195,quanta,Quanta Computer,azure,Microsoft Azure,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_196,quanta,Quanta Computer,aws,AWS,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_197,quanta,Quanta Computer,coreweave,CoreWeave,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_198,quanta,Quanta Computer,google_cloud,Google Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_199,quanta,Quanta Computer,oracle_cloud,Oracle Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_200,quanta,Quanta Computer,lambda_labs,Lambda,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_201,wistron,Wistron,azure,Microsoft Azure,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_202,wistron,Wistron,aws,AWS,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_203,wistron,Wistron,coreweave,CoreWeave,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_204,wistron,Wistron,google_cloud,Google Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_205,wistron,Wistron,oracle_cloud,Oracle Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_206,wistron,Wistron,lambda_labs,Lambda,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_207,wiwynn,Wiwynn,azure,Microsoft Azure,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_208,wiwynn,Wiwynn,aws,AWS,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_209,wiwynn,Wiwynn,coreweave,CoreWeave,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_210,wiwynn,Wiwynn,google_cloud,Google Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_211,wiwynn,Wiwynn,oracle_cloud,Oracle Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_212,wiwynn,Wiwynn,lambda_labs,Lambda,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_213,vertiv,Vertiv,azure,Microsoft Azure,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_214,vertiv,Vertiv,aws,AWS,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_215,vertiv,Vertiv,coreweave,CoreWeave,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_216,vertiv,Vertiv,google_cloud,Google Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_217,vertiv,Vertiv,oracle_cloud,Oracle Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_218,vertiv,Vertiv,lambda_labs,Lambda,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_219,eaton,Eaton,azure,Microsoft Azure,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_220,eaton,Eaton,aws,AWS,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_221,eaton,Eaton,coreweave,CoreWeave,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_222,eaton,Eaton,google_cloud,Google Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_223,eaton,Eaton,oracle_cloud,Oracle Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_224,eaton,Eaton,lambda_labs,Lambda,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_225,schneider,Schneider Electric,azure,Microsoft Azure,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_226,schneider,Schneider Electric,aws,AWS,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_227,schneider,Schneider Electric,coreweave,CoreWeave,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_228,schneider,Schneider Electric,google_cloud,Google Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_229,schneider,Schneider Electric,oracle_cloud,Oracle Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_230,schneider,Schneider Electric,lambda_labs,Lambda,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_231,digital_realty,Digital Realty,azure,Microsoft Azure,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_232,digital_realty,Digital Realty,aws,AWS,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_233,digital_realty,Digital Realty,coreweave,CoreWeave,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_234,digital_realty,Digital Realty,google_cloud,Google Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_235,digital_realty,Digital Realty,oracle_cloud,Oracle Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_236,digital_realty,Digital Realty,lambda_labs,Lambda,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_237,equinix,Equinix,azure,Microsoft Azure,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_238,equinix,Equinix,aws,AWS,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_239,equinix,Equinix,coreweave,CoreWeave,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_240,equinix,Equinix,google_cloud,Google Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_241,equinix,Equinix,oracle_cloud,Oracle Cloud,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_242,equinix,Equinix,lambda_labs,Lambda,supplies_to,0.7,src_ecosystem_mapping,,,,,,服务器、网络、电力和机房供应云和 GPU 云平台扩张。
+p1_rel_243,azure,Microsoft Azure,anthropic,Anthropic,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_244,azure,Microsoft Azure,mistral,Mistral AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_245,azure,Microsoft Azure,meta_ai,Meta AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_246,azure,Microsoft Azure,deepmind,Google DeepMind,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_247,azure,Microsoft Azure,cohere,Cohere,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_248,azure,Microsoft Azure,xai,xAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_249,aws,AWS,openai,OpenAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_250,aws,AWS,mistral,Mistral AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_251,aws,AWS,meta_ai,Meta AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_252,aws,AWS,deepmind,Google DeepMind,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_253,aws,AWS,cohere,Cohere,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_254,aws,AWS,xai,xAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_255,coreweave,CoreWeave,openai,OpenAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_256,coreweave,CoreWeave,anthropic,Anthropic,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_257,coreweave,CoreWeave,meta_ai,Meta AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_258,coreweave,CoreWeave,deepmind,Google DeepMind,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_259,coreweave,CoreWeave,cohere,Cohere,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_260,coreweave,CoreWeave,xai,xAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_261,google_cloud,Google Cloud,openai,OpenAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_262,google_cloud,Google Cloud,anthropic,Anthropic,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_263,google_cloud,Google Cloud,mistral,Mistral AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_264,google_cloud,Google Cloud,meta_ai,Meta AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_265,google_cloud,Google Cloud,deepmind,Google DeepMind,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_266,google_cloud,Google Cloud,cohere,Cohere,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_267,google_cloud,Google Cloud,xai,xAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_268,oracle_cloud,Oracle Cloud,openai,OpenAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_269,oracle_cloud,Oracle Cloud,anthropic,Anthropic,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_270,oracle_cloud,Oracle Cloud,mistral,Mistral AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_271,oracle_cloud,Oracle Cloud,meta_ai,Meta AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_272,oracle_cloud,Oracle Cloud,deepmind,Google DeepMind,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_273,oracle_cloud,Oracle Cloud,cohere,Cohere,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_274,oracle_cloud,Oracle Cloud,xai,xAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_275,lambda_labs,Lambda,openai,OpenAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_276,lambda_labs,Lambda,anthropic,Anthropic,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_277,lambda_labs,Lambda,mistral,Mistral AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_278,lambda_labs,Lambda,meta_ai,Meta AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_279,lambda_labs,Lambda,deepmind,Google DeepMind,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_280,lambda_labs,Lambda,cohere,Cohere,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_281,lambda_labs,Lambda,xai,xAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_282,crusoe,Crusoe,openai,OpenAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_283,crusoe,Crusoe,anthropic,Anthropic,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_284,crusoe,Crusoe,mistral,Mistral AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_285,crusoe,Crusoe,meta_ai,Meta AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_286,crusoe,Crusoe,deepmind,Google DeepMind,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_287,crusoe,Crusoe,cohere,Cohere,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_288,crusoe,Crusoe,xai,xAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_289,nebius,Nebius,openai,OpenAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_290,nebius,Nebius,anthropic,Anthropic,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_291,nebius,Nebius,mistral,Mistral AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_292,nebius,Nebius,meta_ai,Meta AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_293,nebius,Nebius,deepmind,Google DeepMind,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_294,nebius,Nebius,cohere,Cohere,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_295,nebius,Nebius,xai,xAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_296,together_ai,Together AI,openai,OpenAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_297,together_ai,Together AI,anthropic,Anthropic,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_298,together_ai,Together AI,mistral,Mistral AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_299,together_ai,Together AI,meta_ai,Meta AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_300,together_ai,Together AI,deepmind,Google DeepMind,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_301,together_ai,Together AI,cohere,Cohere,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_302,together_ai,Together AI,xai,xAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_303,replicate,Replicate,openai,OpenAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_304,replicate,Replicate,anthropic,Anthropic,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_305,replicate,Replicate,mistral,Mistral AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_306,replicate,Replicate,meta_ai,Meta AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_307,replicate,Replicate,deepmind,Google DeepMind,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_308,replicate,Replicate,cohere,Cohere,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_309,replicate,Replicate,xai,xAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_310,modal,Modal,openai,OpenAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_311,modal,Modal,anthropic,Anthropic,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_312,modal,Modal,mistral,Mistral AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_313,modal,Modal,meta_ai,Meta AI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_314,modal,Modal,deepmind,Google DeepMind,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_315,modal,Modal,cohere,Cohere,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_316,modal,Modal,xai,xAI,runs_on,0.72,src_ecosystem_mapping,,,,,,基础模型训练和推理依赖云、GPU 云和专用计算平台。
+p1_rel_317,openai,OpenAI,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_318,openai,OpenAI,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_319,openai,OpenAI,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_320,openai,OpenAI,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_321,openai,OpenAI,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_322,openai,OpenAI,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_323,openai,OpenAI,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_324,anthropic,Anthropic,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_325,anthropic,Anthropic,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_326,anthropic,Anthropic,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_327,anthropic,Anthropic,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_328,anthropic,Anthropic,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_329,anthropic,Anthropic,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_330,anthropic,Anthropic,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_331,mistral,Mistral AI,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_332,mistral,Mistral AI,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_333,mistral,Mistral AI,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_334,mistral,Mistral AI,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_335,mistral,Mistral AI,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_336,mistral,Mistral AI,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_337,mistral,Mistral AI,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_338,meta_ai,Meta AI,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_339,meta_ai,Meta AI,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_340,meta_ai,Meta AI,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_341,meta_ai,Meta AI,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_342,meta_ai,Meta AI,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_343,meta_ai,Meta AI,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_344,meta_ai,Meta AI,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_345,deepmind,Google DeepMind,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_346,deepmind,Google DeepMind,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_347,deepmind,Google DeepMind,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_348,deepmind,Google DeepMind,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_349,deepmind,Google DeepMind,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_350,deepmind,Google DeepMind,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_351,deepmind,Google DeepMind,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_352,cohere,Cohere,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_353,cohere,Cohere,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_354,cohere,Cohere,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_355,cohere,Cohere,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_356,cohere,Cohere,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_357,cohere,Cohere,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_358,cohere,Cohere,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_359,xai,xAI,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_360,xai,xAI,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_361,xai,xAI,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_362,xai,xAI,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_363,xai,xAI,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_364,xai,xAI,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_365,xai,xAI,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_366,stability_ai,Stability AI,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_367,stability_ai,Stability AI,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_368,stability_ai,Stability AI,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_369,stability_ai,Stability AI,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_370,stability_ai,Stability AI,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_371,stability_ai,Stability AI,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_372,stability_ai,Stability AI,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_373,ai21,AI21 Labs,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_374,ai21,AI21 Labs,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_375,ai21,AI21 Labs,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_376,ai21,AI21 Labs,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_377,ai21,AI21 Labs,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_378,ai21,AI21 Labs,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_379,ai21,AI21 Labs,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_380,adept,Adept,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_381,adept,Adept,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_382,adept,Adept,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_383,adept,Adept,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_384,adept,Adept,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_385,adept,Adept,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_386,adept,Adept,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_387,inflection,Inflection AI,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_388,inflection,Inflection AI,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_389,inflection,Inflection AI,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_390,inflection,Inflection AI,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_391,inflection,Inflection AI,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_392,inflection,Inflection AI,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_393,inflection,Inflection AI,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_394,deepseek,DeepSeek,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_395,deepseek,DeepSeek,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_396,deepseek,DeepSeek,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_397,deepseek,DeepSeek,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_398,deepseek,DeepSeek,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_399,deepseek,DeepSeek,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_400,deepseek,DeepSeek,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_401,moonshot,Moonshot AI,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_402,moonshot,Moonshot AI,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_403,moonshot,Moonshot AI,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_404,moonshot,Moonshot AI,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_405,moonshot,Moonshot AI,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_406,moonshot,Moonshot AI,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_407,moonshot,Moonshot AI,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_408,baidu_ai,Baidu AI Cloud / ERNIE,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_409,baidu_ai,Baidu AI Cloud / ERNIE,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_410,baidu_ai,Baidu AI Cloud / ERNIE,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_411,baidu_ai,Baidu AI Cloud / ERNIE,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_412,baidu_ai,Baidu AI Cloud / ERNIE,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_413,baidu_ai,Baidu AI Cloud / ERNIE,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_414,baidu_ai,Baidu AI Cloud / ERNIE,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_415,alibaba_qwen,Alibaba Cloud / Qwen,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_416,alibaba_qwen,Alibaba Cloud / Qwen,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_417,alibaba_qwen,Alibaba Cloud / Qwen,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_418,alibaba_qwen,Alibaba Cloud / Qwen,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_419,alibaba_qwen,Alibaba Cloud / Qwen,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_420,alibaba_qwen,Alibaba Cloud / Qwen,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_421,alibaba_qwen,Alibaba Cloud / Qwen,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_422,tencent_hunyuan,Tencent Hunyuan,huggingface,Hugging Face,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_423,tencent_hunyuan,Tencent Hunyuan,langchain,LangChain,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_424,tencent_hunyuan,Tencent Hunyuan,databricks,Databricks,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_425,tencent_hunyuan,Tencent Hunyuan,pinecone,Pinecone,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_426,tencent_hunyuan,Tencent Hunyuan,llamaindex,LlamaIndex,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_427,tencent_hunyuan,Tencent Hunyuan,wandb,Weights & Biases,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_428,tencent_hunyuan,Tencent Hunyuan,snowflake,Snowflake,integrates_with,0.68,src_ecosystem_mapping,,,,,,AI Infra 通常集成基础模型 API、开源权重或推理端点。
+p1_rel_429,huggingface,Hugging Face,cursor,Cursor,supplies_to,0.44,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence.,Hugging Face 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为模型分发/开发生态可能依赖的推断边。
+p1_rel_430,huggingface,Hugging Face,perplexity,Perplexity,supplies_to,0.44,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence.,Hugging Face 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为模型分发/开发生态可能依赖的推断边。
+p1_rel_431,huggingface,Hugging Face,midjourney,Midjourney,supplies_to,0.44,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence.,Hugging Face 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为模型分发/开发生态可能依赖的推断边。
+p1_rel_432,huggingface,Hugging Face,elevenlabs,ElevenLabs,supplies_to,0.44,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence.,Hugging Face 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为模型分发/开发生态可能依赖的推断边。
+p1_rel_433,huggingface,Hugging Face,harvey,Harvey,supplies_to,0.44,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence.,Hugging Face 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为模型分发/开发生态可能依赖的推断边。
+p1_rel_434,huggingface,Hugging Face,glean,Glean,supplies_to,0.44,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence.,Hugging Face 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为模型分发/开发生态可能依赖的推断边。
+p1_rel_435,langchain,LangChain,cursor,Cursor,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence.,LangChain 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为应用开发生态可能依赖的推断边。
+p1_rel_436,langchain,LangChain,perplexity,Perplexity,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence.,LangChain 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为应用开发生态可能依赖的推断边。
+p1_rel_437,langchain,LangChain,midjourney,Midjourney,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence.,LangChain 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为应用开发生态可能依赖的推断边。
+p1_rel_438,langchain,LangChain,elevenlabs,ElevenLabs,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence.,LangChain 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为应用开发生态可能依赖的推断边。
+p1_rel_439,langchain,LangChain,harvey,Harvey,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence.,LangChain 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为应用开发生态可能依赖的推断边。
+p1_rel_440,langchain,LangChain,glean,Glean,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence.,LangChain 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为应用开发生态可能依赖的推断边。
+p1_rel_441,databricks,Databricks,cursor,Cursor,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic data platform to application supplier edge pending direct product documentation or customer evidence.,Databricks 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为数据/模型服务生态可能依赖的推断边。
+p1_rel_442,databricks,Databricks,perplexity,Perplexity,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic data platform to application supplier edge pending direct product documentation or customer evidence.,Databricks 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为数据/模型服务生态可能依赖的推断边。
+p1_rel_443,databricks,Databricks,midjourney,Midjourney,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic data platform to application supplier edge pending direct product documentation or customer evidence.,Databricks 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为数据/模型服务生态可能依赖的推断边。
+p1_rel_444,databricks,Databricks,elevenlabs,ElevenLabs,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic data platform to application supplier edge pending direct product documentation or customer evidence.,Databricks 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为数据/模型服务生态可能依赖的推断边。
+p1_rel_445,databricks,Databricks,harvey,Harvey,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic data platform to application supplier edge pending direct product documentation or customer evidence.,Databricks 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为数据/模型服务生态可能依赖的推断边。
+p1_rel_446,databricks,Databricks,glean,Glean,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic data platform to application supplier edge pending direct product documentation or customer evidence.,Databricks 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为数据/模型服务生态可能依赖的推断边。
+p1_rel_447,pinecone,Pinecone,cursor,Cursor,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Pinecone 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_448,pinecone,Pinecone,perplexity,Perplexity,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Pinecone 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_449,pinecone,Pinecone,midjourney,Midjourney,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Pinecone 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_450,pinecone,Pinecone,elevenlabs,ElevenLabs,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Pinecone 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_451,pinecone,Pinecone,harvey,Harvey,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Pinecone 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_452,pinecone,Pinecone,glean,Glean,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Pinecone 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_453,llamaindex,LlamaIndex,cursor,Cursor,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic RAG framework to application supplier edge pending direct product documentation or customer evidence.,LlamaIndex 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为检索增强/Agent 生态可能依赖的推断边。
+p1_rel_454,llamaindex,LlamaIndex,perplexity,Perplexity,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic RAG framework to application supplier edge pending direct product documentation or customer evidence.,LlamaIndex 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为检索增强/Agent 生态可能依赖的推断边。
+p1_rel_455,llamaindex,LlamaIndex,midjourney,Midjourney,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic RAG framework to application supplier edge pending direct product documentation or customer evidence.,LlamaIndex 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为检索增强/Agent 生态可能依赖的推断边。
+p1_rel_456,llamaindex,LlamaIndex,elevenlabs,ElevenLabs,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic RAG framework to application supplier edge pending direct product documentation or customer evidence.,LlamaIndex 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为检索增强/Agent 生态可能依赖的推断边。
+p1_rel_457,llamaindex,LlamaIndex,harvey,Harvey,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic RAG framework to application supplier edge pending direct product documentation or customer evidence.,LlamaIndex 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为检索增强/Agent 生态可能依赖的推断边。
+p1_rel_458,llamaindex,LlamaIndex,glean,Glean,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic RAG framework to application supplier edge pending direct product documentation or customer evidence.,LlamaIndex 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为检索增强/Agent 生态可能依赖的推断边。
+p1_rel_459,wandb,Weights & Biases,cursor,Cursor,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic MLOps supplier edge pending direct product documentation or customer evidence.,Weights & Biases 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为模型评测/MLOps 生态可能依赖的推断边。
+p1_rel_460,wandb,Weights & Biases,perplexity,Perplexity,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic MLOps supplier edge pending direct product documentation or customer evidence.,Weights & Biases 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为模型评测/MLOps 生态可能依赖的推断边。
+p1_rel_461,wandb,Weights & Biases,midjourney,Midjourney,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic MLOps supplier edge pending direct product documentation or customer evidence.,Weights & Biases 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为模型评测/MLOps 生态可能依赖的推断边。
+p1_rel_462,wandb,Weights & Biases,elevenlabs,ElevenLabs,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic MLOps supplier edge pending direct product documentation or customer evidence.,Weights & Biases 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为模型评测/MLOps 生态可能依赖的推断边。
+p1_rel_463,wandb,Weights & Biases,harvey,Harvey,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic MLOps supplier edge pending direct product documentation or customer evidence.,Weights & Biases 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为模型评测/MLOps 生态可能依赖的推断边。
+p1_rel_464,wandb,Weights & Biases,glean,Glean,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic MLOps supplier edge pending direct product documentation or customer evidence.,Weights & Biases 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为模型评测/MLOps 生态可能依赖的推断边。
+p1_rel_465,snowflake,Snowflake,cursor,Cursor,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic data cloud supplier edge pending direct product documentation or customer evidence.,Snowflake 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为数据云/AI 平台生态可能依赖的推断边。
+p1_rel_466,snowflake,Snowflake,perplexity,Perplexity,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic data cloud supplier edge pending direct product documentation or customer evidence.,Snowflake 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为数据云/AI 平台生态可能依赖的推断边。
+p1_rel_467,snowflake,Snowflake,midjourney,Midjourney,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic data cloud supplier edge pending direct product documentation or customer evidence.,Snowflake 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为数据云/AI 平台生态可能依赖的推断边。
+p1_rel_468,snowflake,Snowflake,elevenlabs,ElevenLabs,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic data cloud supplier edge pending direct product documentation or customer evidence.,Snowflake 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为数据云/AI 平台生态可能依赖的推断边。
+p1_rel_469,snowflake,Snowflake,harvey,Harvey,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic data cloud supplier edge pending direct product documentation or customer evidence.,Snowflake 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为数据云/AI 平台生态可能依赖的推断边。
+p1_rel_470,snowflake,Snowflake,glean,Glean,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic data cloud supplier edge pending direct product documentation or customer evidence.,Snowflake 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为数据云/AI 平台生态可能依赖的推断边。
+p1_rel_471,weaviate,Weaviate,cursor,Cursor,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Weaviate 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_472,weaviate,Weaviate,perplexity,Perplexity,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Weaviate 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_473,weaviate,Weaviate,midjourney,Midjourney,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Weaviate 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_474,weaviate,Weaviate,elevenlabs,ElevenLabs,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Weaviate 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_475,weaviate,Weaviate,harvey,Harvey,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Weaviate 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_476,weaviate,Weaviate,glean,Glean,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Weaviate 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_477,chroma,Chroma,cursor,Cursor,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Chroma 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_478,chroma,Chroma,perplexity,Perplexity,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Chroma 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_479,chroma,Chroma,midjourney,Midjourney,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Chroma 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_480,chroma,Chroma,elevenlabs,ElevenLabs,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Chroma 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_481,chroma,Chroma,harvey,Harvey,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Chroma 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_482,chroma,Chroma,glean,Glean,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Chroma 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_483,mongodb,MongoDB,cursor,Cursor,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic database/platform supplier edge pending direct product documentation or customer evidence.,MongoDB 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为应用数据平台生态可能依赖的推断边。
+p1_rel_484,mongodb,MongoDB,perplexity,Perplexity,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic database/platform supplier edge pending direct product documentation or customer evidence.,MongoDB 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为应用数据平台生态可能依赖的推断边。
+p1_rel_485,mongodb,MongoDB,midjourney,Midjourney,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic database/platform supplier edge pending direct product documentation or customer evidence.,MongoDB 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为应用数据平台生态可能依赖的推断边。
+p1_rel_486,mongodb,MongoDB,elevenlabs,ElevenLabs,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic database/platform supplier edge pending direct product documentation or customer evidence.,MongoDB 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为应用数据平台生态可能依赖的推断边。
+p1_rel_487,mongodb,MongoDB,harvey,Harvey,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic database/platform supplier edge pending direct product documentation or customer evidence.,MongoDB 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为应用数据平台生态可能依赖的推断边。
+p1_rel_488,mongodb,MongoDB,glean,Glean,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic database/platform supplier edge pending direct product documentation or customer evidence.,MongoDB 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为应用数据平台生态可能依赖的推断边。
+p1_rel_489,elastic,Elastic,cursor,Cursor,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic search/database supplier edge pending direct product documentation or customer evidence.,Elastic 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为搜索/检索生态可能依赖的推断边。
+p1_rel_490,elastic,Elastic,perplexity,Perplexity,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic search/database supplier edge pending direct product documentation or customer evidence.,Elastic 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为搜索/检索生态可能依赖的推断边。
+p1_rel_491,elastic,Elastic,midjourney,Midjourney,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic search/database supplier edge pending direct product documentation or customer evidence.,Elastic 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为搜索/检索生态可能依赖的推断边。
+p1_rel_492,elastic,Elastic,elevenlabs,ElevenLabs,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic search/database supplier edge pending direct product documentation or customer evidence.,Elastic 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为搜索/检索生态可能依赖的推断边。
+p1_rel_493,elastic,Elastic,harvey,Harvey,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic search/database supplier edge pending direct product documentation or customer evidence.,Elastic 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为搜索/检索生态可能依赖的推断边。
+p1_rel_494,elastic,Elastic,glean,Glean,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic search/database supplier edge pending direct product documentation or customer evidence.,Elastic 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为搜索/检索生态可能依赖的推断边。
+p1_rel_495,redis,Redis,cursor,Cursor,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic cache/vector database supplier edge pending direct product documentation or customer evidence.,Redis 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为缓存/向量检索生态可能依赖的推断边。
+p1_rel_496,redis,Redis,perplexity,Perplexity,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic cache/vector database supplier edge pending direct product documentation or customer evidence.,Redis 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为缓存/向量检索生态可能依赖的推断边。
+p1_rel_497,redis,Redis,midjourney,Midjourney,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic cache/vector database supplier edge pending direct product documentation or customer evidence.,Redis 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为缓存/向量检索生态可能依赖的推断边。
+p1_rel_498,redis,Redis,elevenlabs,ElevenLabs,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic cache/vector database supplier edge pending direct product documentation or customer evidence.,Redis 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为缓存/向量检索生态可能依赖的推断边。
+p1_rel_499,redis,Redis,harvey,Harvey,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic cache/vector database supplier edge pending direct product documentation or customer evidence.,Redis 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为缓存/向量检索生态可能依赖的推断边。
+p1_rel_500,redis,Redis,glean,Glean,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic cache/vector database supplier edge pending direct product documentation or customer evidence.,Redis 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为缓存/向量检索生态可能依赖的推断边。
+p1_rel_501,milvus_zilliz,Zilliz / Milvus,cursor,Cursor,supplies_to,0.46,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence.,Milvus/Zilliz 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。
+p1_rel_502,milvus_zilliz,Zilliz / Milvus,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_503,milvus_zilliz,Zilliz / Milvus,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_504,milvus_zilliz,Zilliz / Milvus,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_505,milvus_zilliz,Zilliz / Milvus,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_506,milvus_zilliz,Zilliz / Milvus,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_507,qdrant,Qdrant,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_508,qdrant,Qdrant,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_509,qdrant,Qdrant,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_510,qdrant,Qdrant,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_511,qdrant,Qdrant,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_512,qdrant,Qdrant,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_513,scale_ai,Scale AI,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_514,scale_ai,Scale AI,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_515,scale_ai,Scale AI,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_516,scale_ai,Scale AI,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_517,scale_ai,Scale AI,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_518,scale_ai,Scale AI,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_519,labelbox,Labelbox,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_520,labelbox,Labelbox,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_521,labelbox,Labelbox,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_522,labelbox,Labelbox,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_523,labelbox,Labelbox,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_524,labelbox,Labelbox,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_525,baseten,Baseten,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_526,baseten,Baseten,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_527,baseten,Baseten,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_528,baseten,Baseten,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_529,baseten,Baseten,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_530,baseten,Baseten,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_531,modal_infra,Modal Labs,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_532,modal_infra,Modal Labs,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_533,modal_infra,Modal Labs,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_534,modal_infra,Modal Labs,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_535,modal_infra,Modal Labs,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_536,modal_infra,Modal Labs,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用依赖模型托管、数据平台、向量库、Agent 框架和评测工具。
+p1_rel_537,openai,OpenAI,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_538,openai,OpenAI,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_539,openai,OpenAI,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_540,openai,OpenAI,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_541,openai,OpenAI,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_542,anthropic,Anthropic,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_543,anthropic,Anthropic,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_544,anthropic,Anthropic,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_545,anthropic,Anthropic,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_546,anthropic,Anthropic,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_547,mistral,Mistral AI,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_548,mistral,Mistral AI,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_549,mistral,Mistral AI,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_550,mistral,Mistral AI,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_551,mistral,Mistral AI,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_552,mistral,Mistral AI,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_553,mistral,Mistral AI,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_554,meta_ai,Meta AI,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_555,meta_ai,Meta AI,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_556,meta_ai,Meta AI,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_557,meta_ai,Meta AI,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_558,meta_ai,Meta AI,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_559,meta_ai,Meta AI,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_560,meta_ai,Meta AI,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_561,deepmind,Google DeepMind,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_562,deepmind,Google DeepMind,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_563,deepmind,Google DeepMind,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_564,deepmind,Google DeepMind,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_565,deepmind,Google DeepMind,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_566,deepmind,Google DeepMind,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_567,deepmind,Google DeepMind,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_568,cohere,Cohere,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_569,cohere,Cohere,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_570,cohere,Cohere,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_571,cohere,Cohere,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_572,cohere,Cohere,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_573,cohere,Cohere,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_574,cohere,Cohere,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_575,xai,xAI,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_576,xai,xAI,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_577,xai,xAI,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_578,xai,xAI,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_579,xai,xAI,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_580,xai,xAI,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_581,xai,xAI,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_582,stability_ai,Stability AI,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_583,stability_ai,Stability AI,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_584,stability_ai,Stability AI,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_585,stability_ai,Stability AI,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_586,stability_ai,Stability AI,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_587,stability_ai,Stability AI,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_588,stability_ai,Stability AI,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_589,ai21,AI21 Labs,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_590,ai21,AI21 Labs,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_591,ai21,AI21 Labs,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_592,ai21,AI21 Labs,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_593,ai21,AI21 Labs,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_594,ai21,AI21 Labs,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_595,ai21,AI21 Labs,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_596,adept,Adept,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_597,adept,Adept,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_598,adept,Adept,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_599,adept,Adept,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_600,adept,Adept,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_601,adept,Adept,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_602,adept,Adept,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_603,inflection,Inflection AI,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_604,inflection,Inflection AI,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_605,inflection,Inflection AI,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_606,inflection,Inflection AI,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_607,inflection,Inflection AI,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_608,inflection,Inflection AI,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_609,inflection,Inflection AI,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_610,deepseek,DeepSeek,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_611,deepseek,DeepSeek,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_612,deepseek,DeepSeek,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_613,deepseek,DeepSeek,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_614,deepseek,DeepSeek,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_615,deepseek,DeepSeek,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_616,deepseek,DeepSeek,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_617,moonshot,Moonshot AI,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_618,moonshot,Moonshot AI,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_619,moonshot,Moonshot AI,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_620,moonshot,Moonshot AI,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_621,moonshot,Moonshot AI,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_622,moonshot,Moonshot AI,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_623,moonshot,Moonshot AI,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_624,baidu_ai,Baidu AI Cloud / ERNIE,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_625,baidu_ai,Baidu AI Cloud / ERNIE,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_626,baidu_ai,Baidu AI Cloud / ERNIE,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_627,baidu_ai,Baidu AI Cloud / ERNIE,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_628,baidu_ai,Baidu AI Cloud / ERNIE,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_629,baidu_ai,Baidu AI Cloud / ERNIE,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_630,baidu_ai,Baidu AI Cloud / ERNIE,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_631,alibaba_qwen,Alibaba Cloud / Qwen,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_632,alibaba_qwen,Alibaba Cloud / Qwen,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_633,alibaba_qwen,Alibaba Cloud / Qwen,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_634,alibaba_qwen,Alibaba Cloud / Qwen,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_635,alibaba_qwen,Alibaba Cloud / Qwen,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_636,alibaba_qwen,Alibaba Cloud / Qwen,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_637,alibaba_qwen,Alibaba Cloud / Qwen,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_638,tencent_hunyuan,Tencent Hunyuan,cursor,Cursor,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_639,tencent_hunyuan,Tencent Hunyuan,perplexity,Perplexity,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_640,tencent_hunyuan,Tencent Hunyuan,midjourney,Midjourney,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_641,tencent_hunyuan,Tencent Hunyuan,elevenlabs,ElevenLabs,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_642,tencent_hunyuan,Tencent Hunyuan,harvey,Harvey,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_643,tencent_hunyuan,Tencent Hunyuan,glean,Glean,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_644,tencent_hunyuan,Tencent Hunyuan,runway,Runway,supplies_to,0.66,src_ecosystem_mapping,,,,,,AI 应用直接或间接依赖基础模型能力。
+p1_rel_645,sequoia,Sequoia Capital,openai,OpenAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_646,sequoia,Sequoia Capital,anthropic,Anthropic,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_647,sequoia,Sequoia Capital,mistral,Mistral AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_648,sequoia,Sequoia Capital,meta_ai,Meta AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_649,sequoia,Sequoia Capital,deepmind,Google DeepMind,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_650,sequoia,Sequoia Capital,cohere,Cohere,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_651,sequoia,Sequoia Capital,xai,xAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_652,sequoia,Sequoia Capital,stability_ai,Stability AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_653,sequoia,Sequoia Capital,ai21,AI21 Labs,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_654,sequoia,Sequoia Capital,adept,Adept,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_655,a16z,a16z,openai,OpenAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_656,a16z,a16z,anthropic,Anthropic,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_657,a16z,a16z,meta_ai,Meta AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_658,a16z,a16z,deepmind,Google DeepMind,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_659,a16z,a16z,cohere,Cohere,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_660,a16z,a16z,xai,xAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_661,a16z,a16z,stability_ai,Stability AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_662,a16z,a16z,ai21,AI21 Labs,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_663,a16z,a16z,adept,Adept,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_664,founders_fund,Founders Fund,openai,OpenAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_665,founders_fund,Founders Fund,anthropic,Anthropic,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_666,founders_fund,Founders Fund,mistral,Mistral AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_667,founders_fund,Founders Fund,meta_ai,Meta AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_668,founders_fund,Founders Fund,deepmind,Google DeepMind,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_669,founders_fund,Founders Fund,cohere,Cohere,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_670,founders_fund,Founders Fund,xai,xAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_671,founders_fund,Founders Fund,stability_ai,Stability AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_672,founders_fund,Founders Fund,ai21,AI21 Labs,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_673,founders_fund,Founders Fund,adept,Adept,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_674,lightspeed,Lightspeed Venture Partners,openai,OpenAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_675,lightspeed,Lightspeed Venture Partners,anthropic,Anthropic,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_676,lightspeed,Lightspeed Venture Partners,mistral,Mistral AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_677,lightspeed,Lightspeed Venture Partners,meta_ai,Meta AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_678,lightspeed,Lightspeed Venture Partners,deepmind,Google DeepMind,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_679,lightspeed,Lightspeed Venture Partners,cohere,Cohere,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_680,lightspeed,Lightspeed Venture Partners,xai,xAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_681,lightspeed,Lightspeed Venture Partners,stability_ai,Stability AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_682,lightspeed,Lightspeed Venture Partners,ai21,AI21 Labs,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_683,lightspeed,Lightspeed Venture Partners,adept,Adept,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_684,thrive,Thrive Capital,openai,OpenAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_685,thrive,Thrive Capital,anthropic,Anthropic,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_686,thrive,Thrive Capital,mistral,Mistral AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_687,thrive,Thrive Capital,meta_ai,Meta AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_688,thrive,Thrive Capital,deepmind,Google DeepMind,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_689,thrive,Thrive Capital,cohere,Cohere,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_690,thrive,Thrive Capital,xai,xAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_691,thrive,Thrive Capital,stability_ai,Stability AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_692,thrive,Thrive Capital,ai21,AI21 Labs,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_693,thrive,Thrive Capital,adept,Adept,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_694,khosla,Khosla Ventures,openai,OpenAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_695,khosla,Khosla Ventures,anthropic,Anthropic,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_696,khosla,Khosla Ventures,mistral,Mistral AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_697,khosla,Khosla Ventures,meta_ai,Meta AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_698,khosla,Khosla Ventures,deepmind,Google DeepMind,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_699,khosla,Khosla Ventures,cohere,Cohere,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_700,khosla,Khosla Ventures,xai,xAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_701,khosla,Khosla Ventures,stability_ai,Stability AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_702,khosla,Khosla Ventures,ai21,AI21 Labs,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_703,khosla,Khosla Ventures,adept,Adept,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_704,accel,Accel,openai,OpenAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_705,accel,Accel,anthropic,Anthropic,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_706,accel,Accel,mistral,Mistral AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_707,accel,Accel,meta_ai,Meta AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_708,accel,Accel,deepmind,Google DeepMind,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_709,accel,Accel,cohere,Cohere,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_710,accel,Accel,xai,xAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_711,accel,Accel,stability_ai,Stability AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_712,accel,Accel,ai21,AI21 Labs,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_713,accel,Accel,adept,Adept,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_714,benchmark,Benchmark,openai,OpenAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_715,benchmark,Benchmark,anthropic,Anthropic,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_716,benchmark,Benchmark,mistral,Mistral AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_717,benchmark,Benchmark,meta_ai,Meta AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_718,benchmark,Benchmark,deepmind,Google DeepMind,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_719,benchmark,Benchmark,cohere,Cohere,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_720,benchmark,Benchmark,xai,xAI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_721,benchmark,Benchmark,stability_ai,Stability AI,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_722,benchmark,Benchmark,ai21,AI21 Labs,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_723,benchmark,Benchmark,adept,Adept,invested_in,0.58,src_public_portfolio,,,,,,公开投资组合和融资披露的候选投资关系，需后续逐条证据化。
+p1_rel_724,synopsys,Synopsys,nvidia,NVIDIA,supplies_to,0.72,src_company_sites,,,,,,EDA 和 IP 工具支撑复杂芯片设计流程。
+p1_rel_725,cadence,Cadence,amd,AMD,supplies_to,0.72,src_company_sites,,,,,,EDA 工具支撑复杂芯片设计流程。
+p1_rel_726,arm,Arm,aws,AWS,supplies_to,0.62,src_company_sites,,,,,,Arm IP 生态影响云自研芯片和边缘 AI 设备。
+p1_rel_727,marvell,Marvell,aws,AWS,supplies_to,0.66,src_public_filings,,,,,,网络和定制硅供应云数据中心。
+p1_rel_728,nvidia,NVIDIA,lambda_labs,Lambda,supplies_to,0.78,src_company_sites,,,,,,GPU 云平台依赖 NVIDIA GPU 供给。
+p1_rel_729,nvidia,NVIDIA,oracle_cloud,Oracle Cloud,supplies_to,0.75,src_company_sites,,,,,,云平台提供 NVIDIA GPU 实例和 AI 计算集群。
+p1_rel_730,nvidia,NVIDIA,google_cloud,Google Cloud,supplies_to,0.75,src_company_sites,,,,,,云平台提供 NVIDIA GPU 实例和 AI 计算集群。
+p1_rel_731,huggingface,Hugging Face,replicate,Replicate,integrates_with,0.7,src_hf,,,,,,模型分发生态和推理平台常连接开源模型。
+p1_rel_732,mistral,Mistral AI,replicate,Replicate,released_by,0.68,src_hf,,,,,,开源模型可通过推理平台分发和部署。
+p1_rel_733,llamaindex,LlamaIndex,pinecone,Pinecone,integrates_with,0.72,src_github,,,,,,RAG 框架和向量数据库常集成。
+p1_rel_734,llamaindex,LlamaIndex,weaviate,Weaviate,integrates_with,0.72,src_github,,,,,,RAG 框架和向量数据库常集成。
+p1_rel_735,langchain,LangChain,qdrant,Qdrant,integrates_with,0.72,src_github,,,,,,Agent/RAG 框架和向量数据库常集成。
+p1_rel_736,langchain,LangChain,weaviate,Weaviate,integrates_with,0.72,src_github,,,,,,Agent/RAG 框架和向量数据库常集成。
+p1_rel_737,snowflake,Snowflake,databricks,Databricks,competes_with,0.55,src_ecosystem_mapping,Snowflake Cortex AI product page,https://www.snowflake.com/en/data-cloud/cortex/,official_product_overlap,reviewed_evidence_backed,,数据平台在企业 AI 数据层存在竞争。
+p1_rel_738,cursor,Cursor,github_copilot,GitHub Copilot,competes_with,0.7,src_ecosystem_mapping,,,,,,AI 编程助手和编辑器存在直接竞争。
+p1_rel_739,runway,Runway,adobe_firefly,Adobe Firefly,competes_with,0.62,src_ecosystem_mapping,Adobe Firefly product page,https://www.adobe.com/products/firefly.html,official_product_overlap,reviewed_evidence_backed,,创意生成工具在图像和视频工作流存在竞争。
+p1_rel_740,glean,Glean,perplexity,Perplexity,competes_with,0.52,src_ecosystem_mapping,Glean enterprise search product page,https://www.glean.com/enterprise-search,official_product_overlap,reviewed_evidence_backed,,企业搜索和 AI 搜索存在部分交集。
+p1_rel_741,openai,OpenAI,github_copilot,GitHub Copilot,supplies_to,0.72,src_ecosystem_mapping,,,,,,AI 编程产品依赖基础模型能力。
+p1_rel_742,openai,OpenAI,microsoft_copilot,Microsoft Copilot,supplies_to,0.8,src_company_sites,,,,,,Microsoft Copilot 生态与 OpenAI 模型合作关系相关。
+p1_rel_743,deepmind,Google DeepMind,google_cloud,Google Cloud,integrates_with,0.8,src_company_sites,,,,,,Google AI 模型和云平台集成。
+p1_rel_744,alibaba_qwen,Alibaba Cloud / Qwen,huggingface,Hugging Face,released_by,0.72,src_hf,,,,,,开源权重和模型卡可在 Hugging Face 等平台分发。
+p1_rel_745,deepseek,DeepSeek,huggingface,Hugging Face,released_by,0.72,src_hf,,,,,,开源权重和模型卡可在 Hugging Face 等平台分发。
+p1_rel_746,stability_ai,Stability AI,runway,Runway,competes_with,0.58,src_ecosystem_mapping,Stability AI Stable Video product page,https://stability.ai/stable-video,official_product_overlap,reviewed_evidence_backed,,生成式媒体模型和应用存在竞争交集。
+p1_rel_747,scale_ai,Scale AI,openai,OpenAI,supplies_to,0.55,src_ecosystem_mapping,OpenAI names Scale AI preferred partner to fine-tune GPT-3.5,https://venturebeat.com/ai/openai-names-scale-ai-preferred-partner-to-fine-tune-gpt-3-5/,credible_report,reviewed_evidence_backed,,数据和评测平台服务模型训练与部署链条。
+p1_rel_748,labelbox,Labelbox,cohere,Cohere,supplies_to,0.42,src_ecosystem_mapping,,,,inferred_ecosystem_mapping,"Classified as inferred ecosystem mapping after direct public evidence search found no Cohere/Labelbox customer case, announcement or credible report.",Labelbox 与 Cohere 的直接供应关系尚未找到公开证据；仅按数据标注/评测平台可能服务模型开发的生态推断保留，不作为已验证供应关系。

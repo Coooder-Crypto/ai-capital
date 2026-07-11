@@ -1,0 +1,280 @@
+{
+  "archivedAt": "2026-07-04T09:11:52.900Z",
+  "contentHash": "ab53fb09768cf23c67f7424632429545394836541050435d896f8c07b7b38c8e",
+  "snapshot": {
+    "generatedAt": "2026-07-04T09:10:10.713Z",
+    "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+    "plannedRequestCount": 13,
+    "candidateRelationships": [
+      {
+        "id": "worker_candidate_watch_anthropic_news_anthropic_aws_partners_with",
+        "sourceEntityId": "anthropic",
+        "targetEntityId": "aws",
+        "relationType": "partners_with",
+        "confidence": 0.62,
+        "evidenceUrl": "https://www.anthropic.com/news",
+        "extractionMethod": "llm_fixture",
+        "status": "candidate",
+        "payload": {
+          "note": "Company news should be reviewed for cloud, model availability and strategic partnership evidence.",
+          "watchlistId": "watch_anthropic_news",
+          "rawDocumentId": "raw_watch_anthropic_news",
+          "parsedDocumentId": "parsed_raw_watch_anthropic_news",
+          "extractionRecordId": "extract_raw_watch_anthropic_news",
+          "llmExtractionRecordId": "llm_extract_raw_watch_anthropic_news",
+          "model": "local-schema-fixture"
+        },
+        "createdAt": "2026-07-04T05:27:05.830Z"
+      },
+      {
+        "id": "worker_candidate_watch_huggingface_langchain_docs_huggingface_langchain_integrates_with",
+        "sourceEntityId": "huggingface",
+        "targetEntityId": "langchain",
+        "relationType": "integrates_with",
+        "confidence": 0.64,
+        "evidenceUrl": "https://huggingface.co/docs",
+        "extractionMethod": "llm_fixture",
+        "status": "candidate",
+        "payload": {
+          "note": "Documentation should be reviewed for Hugging Face integrations with LangChain ecosystem tools.",
+          "watchlistId": "watch_huggingface_langchain_docs",
+          "rawDocumentId": "raw_watch_huggingface_langchain_docs",
+          "parsedDocumentId": "parsed_raw_watch_huggingface_langchain_docs",
+          "extractionRecordId": "extract_raw_watch_huggingface_langchain_docs",
+          "llmExtractionRecordId": "llm_extract_raw_watch_huggingface_langchain_docs",
+          "model": "local-schema-fixture"
+        },
+        "createdAt": "2026-07-04T05:27:05.830Z"
+      },
+      {
+        "id": "worker_candidate_watch_microsoft_openai_partnership_azure_openai_partners_with",
+        "sourceEntityId": "azure",
+        "targetEntityId": "openai",
+        "relationType": "partners_with",
+        "confidence": 0.74,
+        "evidenceUrl": "https://news.microsoft.com/source/features/ai/microsoft-openai-partnership/",
+        "extractionMethod": "llm_fixture",
+        "status": "candidate",
+        "payload": {
+          "note": "Official company source should be reviewed for Microsoft Azure and OpenAI partnership evidence.",
+          "watchlistId": "watch_microsoft_openai_partnership",
+          "rawDocumentId": "raw_watch_microsoft_openai_partnership",
+          "parsedDocumentId": "parsed_raw_watch_microsoft_openai_partnership",
+          "extractionRecordId": "extract_raw_watch_microsoft_openai_partnership",
+          "llmExtractionRecordId": "llm_extract_raw_watch_microsoft_openai_partnership",
+          "model": "local-schema-fixture"
+        },
+        "createdAt": "2026-07-04T05:27:05.830Z"
+      },
+      {
+        "id": "worker_candidate_watch_nvidia_coreweave_cloud_nvidia_coreweave_supplies_to",
+        "sourceEntityId": "nvidia",
+        "targetEntityId": "coreweave",
+        "relationType": "supplies_to",
+        "confidence": 0.68,
+        "evidenceUrl": "https://www.nvidia.com/en-us/data-center/cloud-gaming/coreweave/",
+        "extractionMethod": "llm_fixture",
+        "status": "candidate",
+        "payload": {
+          "note": "Product or partner page should be reviewed for NVIDIA infrastructure supplied to CoreWeave.",
+          "watchlistId": "watch_nvidia_coreweave_cloud",
+          "rawDocumentId": "raw_watch_nvidia_coreweave_cloud",
+          "parsedDocumentId": "parsed_raw_watch_nvidia_coreweave_cloud",
+          "extractionRecordId": "extract_raw_watch_nvidia_coreweave_cloud",
+          "llmExtractionRecordId": "llm_extract_raw_watch_nvidia_coreweave_cloud",
+          "model": "local-schema-fixture"
+        },
+        "createdAt": "2026-07-04T05:27:05.830Z"
+      }
+    ],
+    "candidateEntities": [
+      {
+        "id": "candidate_entity_wikidata_amd",
+        "entityId": "amd",
+        "type": "company",
+        "name": "AMD",
+        "layer": "chip_design",
+        "description": "CPU 与 AI GPU 供应商，MI 系列加速器面向云和企业 AI 工作负载。",
+        "websiteUrl": "https://www.amd.com/",
+        "country": "United States",
+        "statusText": "public",
+        "valuation": "Market cap: public",
+        "aliases": [
+          "AMD",
+          "Advanced Micro Devices"
+        ],
+        "confidence": 0.84,
+        "evidenceUrl": "https://www.wikidata.org/wiki/Q128896",
+        "extractionMethod": "wikidata_profile_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "Wikidata profile enrichment candidate; review aliases, website, country and description before approving entity update.",
+          "qid": "Q128896",
+          "wikidataUrl": "https://www.wikidata.org/wiki/Q128896",
+          "sourceId": "src_wikidata",
+          "label": "AMD",
+          "description": "American multinational semiconductor company",
+          "inceptionYear": "1969",
+          "snapshotGeneratedAt": "2026-07-04T09:10:00.789Z"
+        },
+        "createdAt": "2026-07-04T09:10:10.704Z"
+      },
+      {
+        "id": "candidate_entity_wikidata_azure",
+        "entityId": "azure",
+        "type": "cloud",
+        "name": "Microsoft Azure",
+        "layer": "cloud_compute",
+        "description": "微软云计算平台，也是多个基础模型公司训练和推理算力的重要承载方。",
+        "websiteUrl": "https://azure.microsoft.com/",
+        "country": "United States",
+        "statusText": "public",
+        "valuation": "Part of Microsoft",
+        "aliases": [
+          "Azure",
+          "Microsoft Azure",
+          "Windows Azure",
+          "Azure Services Plattform",
+          "Windows Azure Platform",
+          "Azul",
+          "Microsoft Cloud",
+          "MSFT Azure"
+        ],
+        "confidence": 0.84,
+        "evidenceUrl": "https://www.wikidata.org/wiki/Q725967",
+        "extractionMethod": "wikidata_profile_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "Wikidata profile enrichment candidate; review aliases, website, country and description before approving entity update.",
+          "qid": "Q725967",
+          "wikidataUrl": "https://www.wikidata.org/wiki/Q725967",
+          "sourceId": "src_wikidata",
+          "label": "Azure",
+          "description": "cloud computing platform operated by Microsoft",
+          "inceptionYear": "2010",
+          "snapshotGeneratedAt": "2026-07-04T09:10:00.789Z"
+        },
+        "createdAt": "2026-07-04T09:10:10.704Z"
+      },
+      {
+        "id": "candidate_entity_wikidata_huggingface",
+        "entityId": "huggingface",
+        "type": "company",
+        "name": "Hugging Face",
+        "layer": "ai_infra",
+        "description": "模型、数据集和 Space 托管平台，是 AI 开源生态的重要分发层。",
+        "websiteUrl": "https://huggingface.co/",
+        "country": "United States",
+        "statusText": "private",
+        "valuation": "Reported valuation only",
+        "aliases": [
+          "Hugging Face",
+          "Hugging Face, Inc.",
+          "Hugging Face Inc.",
+          "🤗",
+          "HF"
+        ],
+        "confidence": 0.84,
+        "evidenceUrl": "https://www.wikidata.org/wiki/Q108943604",
+        "extractionMethod": "wikidata_profile_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "Wikidata profile enrichment candidate; review aliases, website, country and description before approving entity update.",
+          "qid": "Q108943604",
+          "wikidataUrl": "https://www.wikidata.org/wiki/Q108943604",
+          "sourceId": "src_wikidata",
+          "label": "Hugging Face",
+          "description": "American company",
+          "inceptionYear": "2016",
+          "snapshotGeneratedAt": "2026-07-04T09:10:00.789Z"
+        },
+        "createdAt": "2026-07-04T09:10:10.705Z"
+      },
+      {
+        "id": "candidate_entity_wikidata_nvidia",
+        "entityId": "nvidia",
+        "type": "company",
+        "name": "NVIDIA",
+        "layer": "chip_design",
+        "description": "AI 训练和推理 GPU、网络、CUDA 软件生态的核心公司。",
+        "websiteUrl": "https://www.nvidia.com/",
+        "country": "United States",
+        "statusText": "public",
+        "valuation": "Market cap: public",
+        "aliases": [
+          "Nvidia",
+          "Nvidia Corporation",
+          "NVDA",
+          "英伟达"
+        ],
+        "confidence": 0.84,
+        "evidenceUrl": "https://www.wikidata.org/wiki/Q182477",
+        "extractionMethod": "wikidata_profile_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "Wikidata profile enrichment candidate; review aliases, website, country and description before approving entity update.",
+          "qid": "Q182477",
+          "wikidataUrl": "https://www.wikidata.org/wiki/Q182477",
+          "sourceId": "src_wikidata",
+          "label": "Nvidia",
+          "description": "American multinational technology company",
+          "inceptionYear": "1993",
+          "snapshotGeneratedAt": "2026-07-04T09:10:00.789Z"
+        },
+        "createdAt": "2026-07-04T09:10:10.705Z"
+      },
+      {
+        "id": "candidate_entity_wikidata_openai",
+        "entityId": "openai",
+        "type": "company",
+        "name": "OpenAI",
+        "layer": "foundation_model",
+        "description": "ChatGPT 和 GPT 系列模型开发者，处于 AI 应用、模型 API 和企业 AI 平台的中心位置。",
+        "websiteUrl": "https://openai.com/",
+        "country": "United States",
+        "statusText": "private",
+        "valuation": "Reported valuation only",
+        "aliases": [
+          "OpenAI",
+          "openai.com",
+          "OpenAI Global",
+          "ChatGPT"
+        ],
+        "confidence": 0.84,
+        "evidenceUrl": "https://www.wikidata.org/wiki/Q21708200",
+        "extractionMethod": "wikidata_profile_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "Wikidata profile enrichment candidate; review aliases, website, country and description before approving entity update.",
+          "qid": "Q21708200",
+          "wikidataUrl": "https://www.wikidata.org/wiki/Q21708200",
+          "sourceId": "src_wikidata",
+          "label": "OpenAI",
+          "description": "American artificial intelligence research organization",
+          "inceptionYear": "2015",
+          "snapshotGeneratedAt": "2026-07-04T09:10:00.789Z"
+        },
+        "createdAt": "2026-07-04T09:10:10.705Z"
+      }
+    ],
+    "candidateMetrics": [],
+    "retryBacklog": [],
+    "summary": {
+      "candidateRelationships": 4,
+      "candidateEntities": 5,
+      "candidateMetrics": 0,
+      "retryBacklog": 0,
+      "evidenceBacklog": 50,
+      "workerRawDocuments": 5,
+      "workerConnectorRuns": 4,
+      "extractionRecords": 5,
+      "extractedDocuments": 5,
+      "llmExtractionRecords": 5,
+      "llmCompletedRecords": 5
+    },
+    "workerRunGeneratedAt": "2026-07-03T15:07:44.798Z",
+    "extractionGeneratedAt": "2026-07-04T05:26:57.296Z",
+    "llmExtractionGeneratedAt": "2026-07-04T05:27:05.830Z",
+    "wikidataSnapshotGeneratedAt": "2026-07-04T09:10:00.789Z"
+  }
+}

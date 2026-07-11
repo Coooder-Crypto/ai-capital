@@ -1,0 +1,1320 @@
+{
+  "generatedAt": "2026-07-05T06:54:06.070Z",
+  "sourceRawDocumentsGeneratedAt": "2026-07-05T06:53:31.413Z",
+  "parser": "built_in_structured_parser",
+  "documents": [
+    {
+      "id": "parsed_raw_watch_microsoft_openai_partnership",
+      "rawDocumentId": "raw_watch_microsoft_openai_partnership",
+      "watchlistId": "watch_microsoft_openai_partnership",
+      "entityId": "azure",
+      "connector": "company_ir",
+      "parser": "built_in_structured_parser",
+      "parserStatus": "skipped",
+      "parsedAt": "2026-07-05T06:54:06.070Z",
+      "format": "html",
+      "contentHash": "4767a20f25e6e13358cbd8a260badad3df3d17b99fb7b54ca7633915fab14918",
+      "title": "Microsoft and OpenAI partnership overview",
+      "canonicalUrl": "https://news.microsoft.com/source/features/ai/microsoft-openai-partnership/",
+      "publisher": "Microsoft",
+      "text": "Microsoft and OpenAI partnership overview Page not found - Source Skip to main content <a h partners_with openai Official company source should be reviewed for Microsoft Azure and OpenAI partnership evidence.",
+      "sections": [],
+      "links": [],
+      "facts": [],
+      "extractionHints": [],
+      "jsonSummary": null,
+      "quality": {
+        "sourceParsed": false,
+        "hasText": true,
+        "textLength": 208,
+        "sectionCount": 0,
+        "linkCount": 0,
+        "factCount": 0,
+        "financialFactCount": 0,
+        "hintCount": 0,
+        "rssItemCount": 0,
+        "tableRowCount": 0,
+        "requiresPdfParser": false,
+        "requiresHumanReview": false
+      }
+    },
+    {
+      "id": "parsed_raw_watch_nvidia_coreweave_cloud",
+      "rawDocumentId": "raw_watch_nvidia_coreweave_cloud",
+      "watchlistId": "watch_nvidia_coreweave_cloud",
+      "entityId": "nvidia",
+      "connector": "company_ir",
+      "parser": "built_in_structured_parser",
+      "parserStatus": "skipped",
+      "parsedAt": "2026-07-05T06:54:06.070Z",
+      "format": "html",
+      "contentHash": "42aa0895b0c225242eec6a111c455c4ce63cb013c506a25536b372245b6462fa",
+      "title": "NVIDIA and CoreWeave cloud infrastructure references",
+      "canonicalUrl": "https://www.nvidia.com/en-us/data-center/cloud-gaming/coreweave/",
+      "publisher": "NVIDIA",
+      "text": "NVIDIA and CoreWeave cloud infrastructure references (() => { let getViewportDimensions = () => { return { width: Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0), height: Math.max(document.documentElement.clientHeight || 0, window.clientHeight || 0) } } let getViewportType = () => { const viewport = getViewportDimensions(); if (viewport.width = 640 && viewport.width = 1024 && viewport.width = 1350) { return 'desktop'; } } let currentViewportType = getViewportType(); window.addEventListener(\"resize\", () => { const oldResolution = currentViewportType; currentViewportType = getViewportType(); if (oldResolution !== currentViewportType) { window.dispatchEvent(new CustomEvent(\"onNvBreakpointChange\", { detail: { breakpoint: currentViewportType, changedFrom: oldResolution, vw: getViewportDimensions().width, vh: getViewportDimensions().height } })); } }); // START: Header Height Calculation and Custom Event for Header Height Change let lastTotalHeight = 0; const headerSelectors = [ // Below are Common Selectors '.global-nav:not(.pull-up)>.geo-locator', // Geo - Locator '.global-nav:not(.pull-up)>.nav-header', // Main Nav - Desktop '.global-nav:not(.pull-up)>.mobile-nav', // Main Nav - Mobile '.global-nav>#unibrow-container', // Unibrow - Injected via Target '.global-nav>.sub-brand-nav', // Common Sub Brand Nav '.global-nav>.breadcrumb .subnav', // Page Sub Brand Nav '.global-nav>.in-page-nav-outer-container', // In-page Nav '.global-nav>.cmp-verticalnavigation__toc-mobile', // Vertical navigation ]; // Configuration for MutationObservers. // Add a `debugName` property to help identify which observer is firing. const mutationObserversConfig = [ { selector: 'nav.global-nav', debugName: 'Global Navigation Container', options: { attributes: true, attributeFilter: ['class', 'style'], childList: true } }, { selector: '.global-nav>.geo-locator', debugName: 'Geo Locator', options: { attributes: true, attributeFilter: ['class', 'style'], childList: true } }, { selector: '.global-nav>#unibrow-container', debugName: 'Unibrow Container', options: { attributes: true, attributeFilter: ['class', 'style'], childList: true } } ]; // Configuration for ResizeObservers. // Add new objects to this array to monitor additional elements for size changes. const resizeObserversConfig = [ { selector: '.global-nav>.geo-locator', debugName: 'Geo Locator (ResizeObserver)' } ]; // --------------------------------------------------------------------- // Utility Functions // --------------------------------------------------------------------- /** * Function to calculate the total height of the header elements. * This function loops through the provided header selectors, calculates their height, * and returns the total sum of these heights. * * @returns {Number} The total height of all header elements. */ const calculateTotalHeight = () => { let totalHeight = 0; headerSelectors.forEach((headerSelector) => { const headerHeight = document.querySelector(headerSelector)?.offsetHeight || 0; totalHeight += headerHeight; }); return totalHeight; } /** * Updates the header layout by recalculating the total header height, * updating CSS custom properties, and dispatching a custom event if a change occurred. */ const updateHeaderLayout = () => { const newTotalHeight = calculateTotalHeight(); if (newTotalHeight !== lastTotalHeight) { lastTotalHeight = newTotalHeight; window.dispatchEvent(new CustomEvent(\"onNvHeaderHeightChange\", { detail: newTotalHeight })); document.documentElement.style.setProperty('--nv-header-height', newTotalHeight + 'px'); // Calculate pull-up height using either the mobile navigation or desktop navigation // plus the geo-locator height. const mobileNavHeight = document.querySelector('.global-nav>.mobile-nav')?.offsetHeight || document.querySelector('.global-nav>.nav-header')?.offsetHeight || 0; const geoLocatorHeight = document.querySelector('.global-nav>.geo-locator')?.offsetHeight || 0; const pullUpHeight = mobileNavHeight + geoLocatorHeight; document.documentElement.style.setProperty('--nv-global-nav-pull-up', pullUpHeight + 'px'); } }; /** * Attaches a MutationObserver to the given element using the specified options. * * @param {HTMLElement} element - The DOM element to observe. * @param {Object} options - Options for the MutationObserver. * @param {String} debugName - A name to identify this observer in logs. */ const attachMutationObserver = (element, options, debugName = 'Unknown MutationObserver') => { if (!element) return; const observer = new MutationObserver((mutationsList) => { updateHeaderLayout(); }); observer.observe(element, options); }; /** * Attaches a ResizeObserver to the given element. * * @param {HTMLElement} element - The DOM element to observe for size changes. * @param {String} debugName - A name to identify this observer in logs. */ const attachResizeObserver = (element, debugName = 'Unknown ResizeObserver') => { if (!element || !window.ResizeObserver) return; const resizeObserver = new ResizeObserver((entries) => { updateHeaderLayout(); }); resizeObserver.observe(element); }; // --------------------------------------------------------------------- // Observer Initialization Functions // --------------------------------------------------------------------- /** * Initializes and attaches MutationObservers for all configured elements. */ const setMutationObservers = () => { mutationObserversConfig.forEach(config => { const element = document.querySelector(config.selector); attachMutationObserver(element, config.options, config.debugName); }); }; /** * Initializes and attaches ResizeObservers for all configured elements. */ const setResizeObservers = () => { resizeObserversConfig.forEach(config => { const element = document.querySelector(config.selector); attachResizeObserver(element, config.debugName); }); }; /** * Main function to set up all header observers—both MutationObservers and ResizeObservers. * Calling window.setHeaderObservers() will initialize and attach all observers. */ window.setHeaderObservers = () => { setMutationObservers(); setResizeObservers(); // Perform an initial update to ensure proper header layout on load. updateHeaderLayout(); }; /** * Function to get the current total height of all header elements. * This function returns the total header height by retrieving --nv-header-height value. * * @returns {Number} The current total height of all header elements. */ window.getHeaderHeight = () => { const rootStyles = getComputedStyle(document.documentElement); const headerHeight = rootStyles.getPropertyValue('--nv-header-height').trim(); return parseFloat(headerHeight); }; // END: Header Height Calculation and Custom Event for Header Height Change // START: setContainerHeight /* setContainerHeight sets the height of nv-container image or video. This is included in head section to improve the page performance */ const containerWithFitBgEnabled = []; window.setContainerHeight = (containerID) => { var element = document.getElementById(containerID); var disableMidgroundImgAutoHeight = null; var disableVideoAutoHeight = null; if (element.classList.contains('v1-1')) { disableMidgroundImgAutoHeight = 'true'; disableVideoAutoHeight = 'true'; } var vpWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0); var imageContainer = element.querySelector('.nv-img-as-bg'); var videoContainer = element.querySelector('.nv-video-as-bg'); var image = element.querySelector('#image-' + containerID); var video = element.querySelector('#video-' + containerID); disableMidgroundImgAutoHeight = disableMidgroundImgAutoHeight || element.getAttribute('data-cmp-disableMidgroundAutoHeight'); disableVideoAutoHeight = disableVideoAutoHeight || element.getAttribute('data-cmp-disableVideoAutoHeight'); if (!image && !video) { return; } if (!containerWithFitBgEnabled.includes(containerID) && (imageContainer?.classList.contains('t-img-fit') || imageContainer?.classList.contains('p-img-fit') || imageContainer?.classLis",
+      "sections": [],
+      "links": [],
+      "facts": [],
+      "extractionHints": [],
+      "jsonSummary": null,
+      "quality": {
+        "sourceParsed": false,
+        "hasText": true,
+        "textLength": 8000,
+        "sectionCount": 0,
+        "linkCount": 0,
+        "factCount": 0,
+        "financialFactCount": 0,
+        "hintCount": 0,
+        "rssItemCount": 0,
+        "tableRowCount": 0,
+        "requiresPdfParser": false,
+        "requiresHumanReview": false
+      }
+    },
+    {
+      "id": "parsed_raw_watch_huggingface_langchain_docs",
+      "rawDocumentId": "raw_watch_huggingface_langchain_docs",
+      "watchlistId": "watch_huggingface_langchain_docs",
+      "entityId": "huggingface",
+      "connector": "company_docs",
+      "parser": "built_in_structured_parser",
+      "parserStatus": "skipped",
+      "parsedAt": "2026-07-05T06:54:06.070Z",
+      "format": "html",
+      "contentHash": "0320f78e48f13107ef836a56100d8ca32f62492c71ddaaf87cd42492fe6453a4",
+      "title": "Hugging Face documentation",
+      "canonicalUrl": "https://huggingface.co/docs",
+      "publisher": "Hugging Face",
+      "text": "Hugging Face documentation {\"mode\":\"fetch_failed\",\"watchlistId\":\"watch_huggingface_langchain_docs\",\"url\":\"https://huggingface.co/docs\"} integrates_with langchain Documentation should be reviewed for Hugging Face integrations with LangChain ecosystem tools.",
+      "sections": [],
+      "links": [],
+      "facts": [],
+      "extractionHints": [],
+      "jsonSummary": null,
+      "quality": {
+        "sourceParsed": false,
+        "hasText": true,
+        "textLength": 256,
+        "sectionCount": 0,
+        "linkCount": 0,
+        "factCount": 0,
+        "financialFactCount": 0,
+        "hintCount": 0,
+        "rssItemCount": 0,
+        "tableRowCount": 0,
+        "requiresPdfParser": false,
+        "requiresHumanReview": false
+      }
+    },
+    {
+      "id": "parsed_raw_watch_openalex_openai_research",
+      "rawDocumentId": "raw_watch_openalex_openai_research",
+      "watchlistId": "watch_openalex_openai_research",
+      "entityId": "openai",
+      "connector": "openalex",
+      "parser": "built_in_structured_parser",
+      "parserStatus": "parsed",
+      "parsedAt": "2026-07-05T06:54:06.070Z",
+      "format": "json",
+      "contentHash": "bb9232b95066b450de8f2b4eed579692fcac8386cac11d5f40e7d0338d077172",
+      "title": "OpenAlex works search for OpenAI large language models",
+      "canonicalUrl": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
+      "publisher": "OpenAlex",
+      "text": "OpenAlex works search for OpenAI large language models {\"meta\": {\"count\": 124786, \"db_response_time_ms\": 241, \"page\": 1, \"per_page\": 5, \"groups_count\": null, \"x_query\": {\"oql\": \"works where full text has (OpenAI large language model)\", \"oqo\": {\"get_rows\": \"works\", \"filter_rows\": [{\"column_id\": \"fulltext.search\", \"value\": \"OpenAI large language model\", \"operator\": \"has\"}], \"per_page\": 5}, \"url\": \"/works?filter=fulltext.search:OpenAI large language model&per_page=5\"}, \"cost_usd\": 0.001}, \"results\": [{\"id\": \"https://openalex.org/W4226278401\", \"doi\": \"https://doi.org/10.48550/arxiv.2203.02155\", \"title\": \"Training language models to follow instructions with human feedback\", \"display_name\": \"Training language models to follow instructions with human feedback\", \"relevance_score\": 1364.3782, \"publication_year\": 2022, \"publication_date\": \"2022-03-04\", \"ids\": {\"openalex\": \"https://openalex.org/W4226278401\", \"doi\": \"https://doi.org/10.48550/arxiv.2203.02155\"}, \"language\": \"en\", \"primary_location\": {\"id\": \"pmh:oai:arXiv.org:2203.02155\", \"is_oa\": true, \"landing_page_url\": \"http://arxiv.org/abs/2203.02155\", \"pdf_url\": \"https://arxiv.org/pdf/2203.02155\", \"source\": {\"id\": \"https://openalex.org/S4306400194\", \"display_name\": \"arXiv (Cornell University)\", \"issn_l\": null, \"issn\": null, \"is_oa\": true, \"is_in_doaj\": false, \"is_core\": false, \"host_organization\": \"https://openalex.org/I205783295\", \"host_organization_name\": \"Cornell University\", \"host_organization_lineage\": [\"https://openalex.org/I205783295\"], \"host_organization_lineage_names\": [], \"type\": \"repository\"}, \"license\": null, \"license_id\": null, \"version\": \"submittedVersion\", \"is_accepted\": false, \"is_published\": false, \"raw_source_name\": \"\", \"raw_type\": \"text\"}, \"type\": \"preprint\", \"indexed_in\": [\"arxiv\", \"datacite\"], \"open_access\": {\"is_oa\": true, \"oa_status\": \"green\", \"oa_url\": \"https://arxiv.org/pdf/2203.02155\", \"any_repository_has_fulltext\": true}, \"authorships\": [{\"author_position\": \"first\", \"author\": {\"id\": \"https://openalex.org/A5068949174\", \"display_name\": \"Long Ouyang\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Ouyang, Long\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5007570707\", \"display_name\": \"Jeff Wu\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Wu, Jeff\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5103934038\", \"display_name\": \"Xu Jiang\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Jiang, Xu\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5104285560\", \"display_name\": \"Diogo Almeida\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Almeida, Diogo\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5022076965\", \"display_name\": \"Carroll L. Wainwright\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Wainwright, Carroll L.\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5028772381\", \"display_name\": \"Pamela Mishkin\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Mishkin, Pamela\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5100393899\", \"display_name\": \"Chong Zhang\", \"orcid\": \"https://orcid.org/0000-0002-2162-4344\"}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Zhang, Chong\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5057289323\", \"display_name\": \"Sandhini Agarwal\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Agarwal, Sandhini\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5022205442\", \"display_name\": \"Katarina Slama\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Slama, Katarina\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5065002167\", \"display_name\": \"Alex Ray\", \"orcid\": \"https://orcid.org/0000-0001-5760-7821\"}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Ray, Alex\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5102168278\", \"display_name\": \"John Schulman\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Schulman, John\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5007861777\", \"display_name\": \"Jacob Hilton\", \"orcid\": \"https://orcid.org/0000-0003-1931-9516\"}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Hilton, Jacob\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5011207305\", \"display_name\": \"Fraser Kelton\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Kelton, Fraser\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5037192369\", \"display_name\": \"Luke E. Miller\", \"orcid\": \"https://orcid.org/0000-0002-7865-881X\"}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Miller, Luke\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5011719782\", \"display_name\": \"Maddie Simens\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Simens, Maddie\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5030305998\", \"display_name\": \"Amanda Askell\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Askell, Amanda\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5010674841\", \"display_name\": \"Peter Welinder\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Welinder, Peter\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5109502066\", \"display_name\": \"Paul Christiano\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Christiano, Paul\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5090592321\", \"display_name\": \"Jan Leike\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Leike, Jan\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"last\", \"author\": {\"id\": \"https://openalex.org/A5038882588\", \"display_name\": \"Ryan Lowe\", \"orcid\": \"https://orcid.org/0000-0002-7080-8406\"}, \"in",
+      "sections": [
+        {
+          "heading": "OpenAlex works search for OpenAI large language models",
+          "text": "OpenAlex works search for OpenAI large language models {\"meta\": {\"count\": 124786, \"db_response_time_ms\": 241, \"page\": 1, \"per_page\": 5, \"groups_count\": null, \"x_query\": {\"oql\": \"works where full text has (OpenAI large language model)\", \"oqo\": {\"get_rows\": \"works\", \"filter_rows\": [{\"column_id\": \"fulltext.search\", \"value\": \"OpenAI large language model\", \"operator\": \"has\"}], \"per_page\": 5}, \"url\": \"/works?filter=fulltext.search:OpenAI large language model&per_page=5\"}, \"cost_usd\": 0.001}, \"results\": [{\"id\": \"https://openalex.org/W4226278401\", \"doi\": \"https://doi.org/10.48550/arxiv.2203.02155\", \"title\": \"Training language models to follow instructions with human feedback\", \"display_name\": \"Training language models to follow instructions with human feedback\", \"relevance_score\": 1364.3782, \"publication_year\": 2022, \"publication_date\": \"2022-03-04\", \"ids\": {\"openalex\": \"https://openalex.org/W4226278401\", \"doi\": \"https://doi.org/10.48550/arxiv.2203.02155\"}, \"language\": \"en\", \"primary_location\": {\"id\": \"pmh:oai:arXiv.org:2203.02155\", \"is_oa\": true, \"landing_page_url\": \"http://arxiv.org/abs/2203.02155\", \"pdf_url\": \"https://arxiv.org/pdf/2203.02155\", \"source\": {\"id\": \"https://openalex.org/S4306400194\", \"display_name\": \"arXiv (Cornell University)\", \"issn_l\": null, \"issn\": null, \"is_oa\": true, \"is_in_doaj\": false, \"is_core\": false, \"host_organization\": \"https://openalex.org/I205783295\", \"host_organization_name\": \"Cornell University\", \"host_organization_lineage\": [\"https://openalex.org/I205783295\"], \"host_organization_lineage_names\": [], \"type\": \"repository\"}, \"license\": null, \"license_id\": null, \"version\": \"submittedVersion\", \"is_accepted\": false, \"is_published\": false, \"raw_source_name\": \"\", \"raw_type\": \"text\"}, \"type\": \"preprint\", \"indexed_in\": [\"arxiv\", \"datacite\"], \"open_access\": {\"is_oa\": true, \"oa_status\": \"green\", \"oa_url\": \"https://arxiv.org/pdf/2203.02155\", \"any_repository_has_fulltext\": true}, \"authorships\": [{\"author_position\": \"first\", \"author\": {\"id\": \"https://openalex.org/A5068949174\", \"display_name\": \"Long Ouyang\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Ouyang, Long\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5007570707\", \"display_name\": \"Jeff Wu\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Wu, Jeff\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5103934038\", \"display_name\": \"Xu Jiang\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Jiang, Xu\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5104285560\", \"display_name\": \"Diogo Almeida\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Almeida, Diogo\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5022076965\", \"display_name\": \"Carroll L. Wainwright\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Wainwright, Carroll L.\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5028772381\", \"display_name\": \"Pamela Mishkin\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Mishkin, Pamela\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5100393899\", \"display_name\": \"Chong Zhang\", \"orcid\": \"https://orcid.org/0000-0002-2162-4344\"}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Zhang, Chong\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5057289323\", \"display_name\": \"Sandhini Agarwal\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Agarwal, Sandhini\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5022205442\", \"display_name\": \"Katarina Slama\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Slama, Katarina\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5065002167\", \"display_name\": \"Alex Ray\", \"orcid\": \"https://orcid.org/0000-0001-5760-7821\"}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Ray, Alex\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5102168278\", \"display_name\": \"John Schulman\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Schulman, John\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5007861777\", \"display_name\": \"Jacob Hilton\", \"orcid\": \"https://orcid.org/0000-0003-1931-9516\"}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Hilton, Jacob\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5011207305\", \"display_name\": \"Fraser Kelton\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Kelton, Fraser\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5037192369\", \"display_name\": \"Luke E. Miller\", \"orcid\": \"https://orcid.org/0000-0002-7865-881X\"}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Miller, Luke\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5011719782\", \"display_name\": \"Maddie Simens\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Simens, Maddie\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5030305998\", \"display_name\": \"Amanda Askell\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Askell, Amanda\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5010674841\", \"display_name\": \"Peter Welinder\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Welinder, Peter\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5109502066\", \"display_name\": \"Paul Christiano\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Christiano, Paul\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"middle\", \"author\": {\"id\": \"https://openalex.org/A5090592321\", \"display_name\": \"Jan Leike\", \"orcid\": null}, \"institutions\": [], \"countries\": [], \"is_corresponding\": false, \"raw_author_name\": \"Leike, Jan\", \"raw_affiliation_strings\": [], \"raw_orcid\": null, \"affiliations\": []}, {\"author_position\": \"last\", \"author\": {\"id\": \"https://openalex.org/A5038882588\", \"display_name\": \"Ryan Lowe\", \"orcid\": \"https://orcid.org/0000-0002-7080-8406\"}, \"in"
+        }
+      ],
+      "links": [],
+      "facts": [
+        {
+          "type": "date",
+          "value": "2022-03-04",
+          "context": ": 1364.3782, \"publication_year\": 2022, \"publication_date\": \"2022-03-04\", \"ids\": {\"openalex\": \"https://openalex.org/W4226278401\", \""
+        },
+        {
+          "type": "fetched_date",
+          "value": "2026-07-05",
+          "context": "raw_document.fetchedAt"
+        }
+      ],
+      "extractionHints": [
+        {
+          "metricType": "researchWorksMentioningEntity",
+          "confidence": 0.58,
+          "note": "OpenAlex response should be reviewed before turning work counts or top cited works into metrics."
+        }
+      ],
+      "jsonSummary": {
+        "resultCount": null,
+        "keys": []
+      },
+      "quality": {
+        "sourceParsed": true,
+        "hasText": true,
+        "textLength": 8000,
+        "sectionCount": 1,
+        "linkCount": 0,
+        "factCount": 2,
+        "financialFactCount": 0,
+        "hintCount": 1,
+        "rssItemCount": 0,
+        "tableRowCount": 0,
+        "requiresPdfParser": false,
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "parsed_raw_watch_anthropic_news",
+      "rawDocumentId": "raw_watch_anthropic_news",
+      "watchlistId": "watch_anthropic_news",
+      "entityId": "anthropic",
+      "connector": "news_rss",
+      "parser": "built_in_structured_parser",
+      "parserStatus": "parsed",
+      "parsedAt": "2026-07-05T06:54:06.070Z",
+      "format": "html",
+      "contentHash": "7b9983b183c8b425d2294b6e989259b2682938a02cbad60fc51f2299d59aa621",
+      "title": "Anthropic news feed",
+      "canonicalUrl": "https://www.anthropic.com/news",
+      "publisher": "Anthropic",
+      "text": "Anthropic news feed Newsroom \\ Anthropic Skip to main content Skip to footer Research Policy Commitments Learn News Try Claude Newsroom Press inquires press@anthropic.com Non-media inquiries How to get support Media assets Download press kit Redeploying Fable 5 Announcements Jun 30, 2026 Fable 5 returns globally July 1. We're also proposing an industry-wide framework for scoring jailbreak severity, together with Amazon, Microsoft, Google, and other Glasswing partners. Product Jun 30, 2026 Introducing Claude Sonnet 5 Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale. Announcements Jun 30, 2026 Claude Science, an AI workbench for scientists, is now available Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources. Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude. Policy Jun 10, 2026 Policy on the AI Exponential AI is advancing at exponential speed, and the policymaking process was built for a slower world. We’re sharing policy proposals to prepare our institutions for AI progress. News Search Date Category Title Jul 2, 2026 Announcements More details on Fable 5’s cyber safeguards and our jailbreak framework Jun 30, 2026 Product Introducing Claude Sonnet 5 Jun 30, 2026 Announcements Redeploying Fable 5 Jun 30, 2026 Announcements Claude Science, an AI workbench for scientists, is now available Jun 23, 2026 Product Introducing Claude Tag Jun 17, 2026 Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem Jun 12, 2026 Announcements Statement on the US government directive to suspend access to Fable 5 and Mythos 5 Jun 12, 2026 Announcements Results from the first Anthropic Public Record Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries Jun 11, 2026 Announcements DXC will integrate Claude into th partners_with aws Company news should be reviewed for cloud, model availability and strategic partnership evidence.",
+      "sections": [
+        {
+          "heading": "Newsroom",
+          "text": "Press inquires press@anthropic.com Non-media inquiries How to get support Media assets Download press kit"
+        },
+        {
+          "heading": "Redeploying Fable 5",
+          "text": "Announcements Jun 30, 2026 Fable 5 returns globally July 1. We're also proposing an industry-wide framework for scoring jailbreak severity, together with Amazon, Microsoft, Google, and other Glasswing partners. Product Jun 30, 2026 Introducing Claude Sonnet 5 Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale. Announcements Jun 30, 2026 Claude Science, an AI workbench for scientists, is now available Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides flexible access to computing resources. Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude. Policy Jun 10, 2026 Policy on the AI Exponential AI is advancing at exponential speed, and the policymaking process was built for a slower world. We’re sharing policy proposals to prepare our institutions for AI progress."
+        },
+        {
+          "heading": "News",
+          "text": "Search Date Category Title Jul 2, 2026 Announcements More details on Fable 5’s cyber safeguards and our jailbreak framework Jun 30, 2026 Product Introducing Claude Sonnet 5 Jun 30, 2026 Announcements Redeploying Fable 5 Jun 30, 2026 Announcements Claude Science, an AI workbench for scientists, is now available Jun 23, 2026 Product Introducing Claude Tag Jun 17, 2026 Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem Jun 12, 2026 Announcements Statement on the US government directive to suspend access to Fable 5 and Mythos 5 Jun 12, 2026 Announcements Results from the first Anthropic Public Record Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries Jun 11, 2026 Announcements DXC will integrate Claude into th"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://www.anthropic.com/news#main-content",
+          "text": "Skip to main content",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/news#footer",
+          "text": "Skip to footer",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/",
+          "text": "",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/research",
+          "text": "Research",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/policy",
+          "text": "Policy",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/news",
+          "text": "News",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://claude.ai/",
+          "text": "Try Claude",
+          "source": "html_anchor"
+        },
+        {
+          "url": "mailto:press@anthropic.com",
+          "text": "press@anthropic.com",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://support.claude.com/en/articles/9015913-how-to-get-support",
+          "text": "How to get support",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://anthropic.com/press-kit",
+          "text": "Download press kit",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/news/redeploying-fable-5",
+          "text": "Redeploying Fable 5 Announcements Jun 30, 2026 Fable 5 returns globally July 1. We're also proposing an industry-wide framework for scoring jailbreak severity, together with Amazon, Microsoft, Google, and other Glasswing partners.",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/news/claude-sonnet-5",
+          "text": "Product Jun 30, 2026 Introducing Claude Sonnet 5 Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale.",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+          "text": "Announcements Jun 30, 2026 Claude Science, an AI workbench for scientists, is now available Claude Science is a customizable app that integrates the tools and packages researchers most often use, produces auditable artifacts, and provides f",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/news/introducing-claude-tag",
+          "text": "Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/policy-on-the-ai-exponential",
+          "text": "Policy Jun 10, 2026 Policy on the AI Exponential AI is advancing at exponential speed, and the policymaking process was built for a slower world. We’re sharing policy proposals to prepare our institutions for AI progress.",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
+          "text": "Jul 2, 2026 Announcements More details on Fable 5’s cyber safeguards and our jailbreak framework",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+          "text": "Jun 17, 2026 Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/news/fable-mythos-access",
+          "text": "Jun 12, 2026 Announcements Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/news/anthropic-public-record",
+          "text": "Jun 12, 2026 Announcements Results from the first Anthropic Public Record",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+          "text": "Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/_next/static/chunks/0h8~h_w93qxyd.css",
+          "text": "feed link",
+          "source": "xml_link"
+        },
+        {
+          "url": "https://www.anthropic.com/_next/static/chunks/0kh_997_his9r.css",
+          "text": "feed link",
+          "source": "xml_link"
+        },
+        {
+          "url": "https://www.anthropic.com/_next/static/chunks/0unl02~7ub6_i.css",
+          "text": "feed link",
+          "source": "xml_link"
+        },
+        {
+          "url": "https://www.anthropic.com/_next/static/chunks/15cc.mrl-gu77.css",
+          "text": "feed link",
+          "source": "xml_link"
+        },
+        {
+          "url": "https://www.anthropic.com/_next/static/chunks/0khy9w-k3.nof.css",
+          "text": "feed link",
+          "source": "xml_link"
+        },
+        {
+          "url": "https://www.anthropic.com/_next/static/chunks/16bn4spqye_kr.js",
+          "text": "feed link",
+          "source": "xml_link"
+        },
+        {
+          "url": "https://www.anthropic.com/_next/static/chunks/0b87zl_ulx29q.css",
+          "text": "feed link",
+          "source": "xml_link"
+        },
+        {
+          "url": "https://www.anthropic.com/favicon.ico",
+          "text": "feed link",
+          "source": "xml_link"
+        },
+        {
+          "url": "https://www.anthropic.com/images/icons/favicon-32x32.png",
+          "text": "feed link",
+          "source": "xml_link"
+        },
+        {
+          "url": "https://www.anthropic.com/images/icons/apple-touch-icon.png",
+          "text": "feed link",
+          "source": "xml_link"
+        },
+        {
+          "url": "https://www.anthropic.com/images/icons/safari-pinned-tab.svg",
+          "text": "feed link",
+          "source": "xml_link"
+        }
+      ],
+      "facts": [
+        {
+          "type": "fetched_date",
+          "value": "2026-07-05",
+          "context": "raw_document.fetchedAt"
+        }
+      ],
+      "extractionHints": [
+        {
+          "targetEntityId": "aws",
+          "relationType": "partners_with",
+          "confidence": 0.6,
+          "note": "Company news should be reviewed for cloud, model availability and strategic partnership evidence."
+        }
+      ],
+      "jsonSummary": null,
+      "quality": {
+        "sourceParsed": true,
+        "hasText": true,
+        "textLength": 2148,
+        "sectionCount": 3,
+        "linkCount": 31,
+        "factCount": 1,
+        "financialFactCount": 0,
+        "hintCount": 1,
+        "rssItemCount": 0,
+        "tableRowCount": 0,
+        "requiresPdfParser": false,
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "parsed_raw_watch_openai_news_rss",
+      "rawDocumentId": "raw_watch_openai_news_rss",
+      "watchlistId": "watch_openai_news_rss",
+      "entityId": "openai",
+      "connector": "news_rss",
+      "parser": "built_in_structured_parser",
+      "parserStatus": "parsed",
+      "parsedAt": "2026-07-05T06:54:06.070Z",
+      "format": "rss",
+      "contentHash": "5e649979e1ae5de8dca0610ada16339649308fc39bed51f7460c31350ae2b93f",
+      "title": "OpenAI official news RSS",
+      "canonicalUrl": "https://openai.com/news/rss.xml",
+      "publisher": "OpenAI",
+      "text": "OpenAI official news RSS https://openai.com/news OpenAI Sun, 05 Jul 2026 06:53:51 GMT https://openai.com/index/how-chatgpt-adoption-has-expanded https://openai.com/index/how-chatgpt-adoption-has-expanded Tue, 30 Jun 2026 09:00:00 GMT https://openai.com/index/genebench-pro/case-studies https://openai.com/index/genebench-pro/case-studies Tue, 30 Jun 2026 00:00:00 GMT https://openai.com/index/introducing-genebench-pro https://openai.com/index/introducing-genebench-pro Tue, 30 Jun 2026 00:00:00 GMT https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug Tue, 30 Jun 2026 00:00:00 GMT https://openai.com/index/mapping-ai-jobs-transition-eu https://openai.com/index/mapping-ai-jobs-transition-eu Mon, 29 Jun 2026 07:00:00 GMT https://openai.com/index/hp-frontier-partnership https://openai.com/index/hp-frontier-partnership Sun, 28 Jun 2026 17:00:00 GMT https://openai.com/index/previewing-gpt-5-6-sol https://openai.com/index/previewing-gpt-5-6-sol Fri, 26 Jun 2026 10:00:00 GMT https://openai.com/index/how-agents-are-transforming-work https://openai.com/index/how-agents-are-transforming-work Thu, 25 Jun 2026 02:00:00 GMT https://openai.com/index/openai-broadcom-jalapeno-inference-chip https://openai.com/index/openai-broadcom-jalapeno-inference-chip Wed, 24 Jun 2026 06:00:00 GMT https://openai.com/index/helping-build-shared-standards-for-advanced-ai https://openai.com/index/helping-build-shared-standards-for-advanced-ai Tue, 23 Jun 2026 13:00:00 GMT https://openai.com/index/gpt-5-immunology-mystery https://openai.com/index/gpt-5-immunology-mystery Tue, 23 Jun 2026 17:00:00 GMT https://openai.com/index/omio https://openai.com/index/omio Tue, 23 Jun 2026 00:00:00 GMT https://openai.com/index/patch-the-planet https://openai.com/index/patch-the-planet Mon, 22 Jun 2026 10:00:00 GMT https://openai.com/index/daybreak-securing-the-world https://openai.com/index/daybreak-securing-the-world Mon, 22 Jun 2026 10:00:00 GMT https://openai.com/index/codex-maxxing-long-running-work https://openai.com/index/codex-maxxing-long-running-work Mon, 22 Jun 2026 00:00:00 GMT https://openai.com/index/samsung-electronics-chatgpt-codex-deployment https://openai.com/index/samsung-electronics-chatgpt-codex-deployment Sun, 21 Jun 2026 23:00:00 GMT https://openai.com/index/chatgpt-enterprise-spend-controls https://openai.com/index/chatgpt-enterprise-spend-controls Thu, 18 Jun 2026 17:00:00 GMT https://openai.com/index/improving-health-intelligence-in-chatgpt https://openai.com/index/improving-health-intelligence-in-chatgpt Thu, 18 Jun 2026 11:00:00 GMT https://openai.com/index/diagnose-rare-childhood-diseases https://openai.com/index/diagnose-rare-childhood-diseases Thu, 18 Jun 2026 08:00:00 GMT https://openai.com/index/ai-chemist-improves-reaction https://openai.com/index/ai-chemist-improves-reaction Wed, 17 Jun 2026 10:00:00 GMT https://openai.com/index/introducing-life-sci-bench https://openai.com/index/introducing-life-sci-bench Wed, 17 Jun 2026 00:00:00 GMT https://openai.com/index/deployment-simulation https://openai.com/index/deployment-simulation Tue, 16 Jun 2026 00:00:00 GMT https://openai.com/index/introducing-openai-partner-network https://openai.com/index/introducing-openai-partner-network Sun, 14 Jun 2026 17:00:00 GMT https://openai.com/index/academy-courses-applying-ai-at-work https://openai.com/index/academy-courses-applying-ai-at-work Fri, 12 Jun 2026 10:00:00 GMT https://openai.com/index/preply https://openai.com/index/preply Fri, 12 Jun 2026 00:00:00 GMT https://openai.com/index/using-codex-to-simulate-black-holes https://openai.com/index/using-codex-to-simulate-black-holes Thu, 11 Jun 2026 00:00:00 GMT https://openai.com/index/openai-to-acquire-ona https://openai.com/index/openai-to-acquire-ona Thu, 11 Jun 2026 00:00:00 GMT https://openai.com/index/bbva https://openai.com/index/bbva Thu, 11 Jun 2026 00:00:00 GMT https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem Thu, 11 Jun 2026 00:00:00 GMT https://openai.com/index/openai-on-oracle-cloud https://openai.com/index/openai-on-oracle-cloud Wed, 10 Jun 2026 20:00:00 GMT https://openai.com/index/prc-linked-influence-operations-ai-debates https://openai.com/index/prc-linked-influence-operations-ai-debates Wed, 10 Jun 2026 12:00:00 GMT https://openai.com/index/lseg https://openai.com/index/lseg Wed, 10 Jun 2026 00:00:00 GMT https://openai.com/index/nextdoor https://openai.com/index/nextdoor Tue, 09 Jun 2026 12:00:00 GMT https://openai.com/index/notion https://openai.com/index/notion Tue, 09 Jun 2026 10:00:00 GMT https://openai.com/index/industrial-policy-for-the-intelligence-age https://openai.com/index/industrial-policy-for-the-intelligence-age Tue, 09 Jun 2026 00:00:00 GMT https://openai.com/index/openai-submits-confidential-s-1 https://openai.com/index/openai-submits-confidential-s-1 Mon, 08 Jun 2026 14:00:00 GMT https://openai.com/index/built-to-benefit-everyone-our-plan https://openai.com/index/built-to-benefit-everyone-our-plan Mon, 08 Jun 2026 01:30:00 GMT https://openai.com/index/economic-research-exchange https://openai.com/index/economic-research-exchange Mon, 08 Jun 2026 00:00:00 GMT https://openai.com/index/endava-frontiers https://openai.com/index/endava-frontiers Thu, 04 Jun 2026 12:00:00 GMT https://openai.com/index/chatgpt-memory-dreaming https://openai.com/index/chatgpt-memory-dreaming Thu, 04 Jun 2026 09:00:00 GMT https://openai.com/index/biodefense-in-the-intelligence-age https://openai.com/index/biodefense-in-the-intelligence-age Thu, 04 Jun 2026 00:00:00 GMT https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind Wed, 03 Jun 2026 13:15:00 GMT https://openai.com/index/wasmer https://openai.com/index/wasmer Wed, 03 Jun 2026 12:00:00 GMT https://openai.com/index/public-policy-agenda https://openai.com/index/public-policy-agenda Wed, 03 Jun 2026 10:00:00 GMT https://openai.com/index/frontier-safety-blueprint https://openai.com/index/frontier-safety-blueprint Wed, 03 Jun 2026 10:00:00 GMT https://openai.com/index/travelers https://openai.com/index/travelers Tue, 02 Jun 2026 12:00:00 GMT https://openai.com/index/codex-for-every-role-tool-workflow https://openai.com/index/codex-for-every-role-tool-workflow Tue, 02 Jun 2026 09:00:00 GMT https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership Tue, 02 Jun 2026 07:00:00 GMT https://openai.com/index/codex-for-knowledge-work https://openai.com/index/codex-for-knowledge-work Tue, 02 Jun 2026 02:00:00 GMT <![CDATA[Our views on AI policy and political adv rssNewsItemsForReview Official RSS feed should be parsed into news items for review before deriving partnerships, releases, product launches or valuation events.",
+      "sections": [
+        {
+          "heading": "Feed item",
+          "text": "Tue, 30 Jun 2026 09:00:00 GMT / https://openai.com/index/how-chatgpt-adoption-has-expanded"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 30 Jun 2026 00:00:00 GMT / https://openai.com/index/genebench-pro/case-studies"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 30 Jun 2026 00:00:00 GMT / https://openai.com/index/introducing-genebench-pro"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 30 Jun 2026 00:00:00 GMT / https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Mon, 29 Jun 2026 07:00:00 GMT / https://openai.com/index/mapping-ai-jobs-transition-eu"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Sun, 28 Jun 2026 17:00:00 GMT / https://openai.com/index/hp-frontier-partnership"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Fri, 26 Jun 2026 10:00:00 GMT / https://openai.com/index/previewing-gpt-5-6-sol"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Thu, 25 Jun 2026 02:00:00 GMT / https://openai.com/index/how-agents-are-transforming-work"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Wed, 24 Jun 2026 06:00:00 GMT / https://openai.com/index/openai-broadcom-jalapeno-inference-chip"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 23 Jun 2026 13:00:00 GMT / https://openai.com/index/helping-build-shared-standards-for-advanced-ai"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 23 Jun 2026 17:00:00 GMT / https://openai.com/index/gpt-5-immunology-mystery"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 23 Jun 2026 00:00:00 GMT / https://openai.com/index/omio"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Mon, 22 Jun 2026 10:00:00 GMT / https://openai.com/index/patch-the-planet"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Mon, 22 Jun 2026 10:00:00 GMT / https://openai.com/index/daybreak-securing-the-world"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Mon, 22 Jun 2026 00:00:00 GMT / https://openai.com/index/codex-maxxing-long-running-work"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Sun, 21 Jun 2026 23:00:00 GMT / https://openai.com/index/samsung-electronics-chatgpt-codex-deployment"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Thu, 18 Jun 2026 17:00:00 GMT / https://openai.com/index/chatgpt-enterprise-spend-controls"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Thu, 18 Jun 2026 11:00:00 GMT / https://openai.com/index/improving-health-intelligence-in-chatgpt"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Thu, 18 Jun 2026 08:00:00 GMT / https://openai.com/index/diagnose-rare-childhood-diseases"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Wed, 17 Jun 2026 10:00:00 GMT / https://openai.com/index/ai-chemist-improves-reaction"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Wed, 17 Jun 2026 00:00:00 GMT / https://openai.com/index/introducing-life-sci-bench"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 16 Jun 2026 00:00:00 GMT / https://openai.com/index/deployment-simulation"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Sun, 14 Jun 2026 17:00:00 GMT / https://openai.com/index/introducing-openai-partner-network"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Fri, 12 Jun 2026 10:00:00 GMT / https://openai.com/index/academy-courses-applying-ai-at-work"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Fri, 12 Jun 2026 00:00:00 GMT / https://openai.com/index/preply"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Thu, 11 Jun 2026 00:00:00 GMT / https://openai.com/index/using-codex-to-simulate-black-holes"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Thu, 11 Jun 2026 00:00:00 GMT / https://openai.com/index/openai-to-acquire-ona"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Thu, 11 Jun 2026 00:00:00 GMT / https://openai.com/index/bbva"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Thu, 11 Jun 2026 00:00:00 GMT / https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Wed, 10 Jun 2026 20:00:00 GMT / https://openai.com/index/openai-on-oracle-cloud"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Wed, 10 Jun 2026 12:00:00 GMT / https://openai.com/index/prc-linked-influence-operations-ai-debates"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Wed, 10 Jun 2026 00:00:00 GMT / https://openai.com/index/lseg"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 09 Jun 2026 12:00:00 GMT / https://openai.com/index/nextdoor"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 09 Jun 2026 10:00:00 GMT / https://openai.com/index/notion"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 09 Jun 2026 00:00:00 GMT / https://openai.com/index/industrial-policy-for-the-intelligence-age"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Mon, 08 Jun 2026 14:00:00 GMT / https://openai.com/index/openai-submits-confidential-s-1"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Mon, 08 Jun 2026 01:30:00 GMT / https://openai.com/index/built-to-benefit-everyone-our-plan"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Mon, 08 Jun 2026 00:00:00 GMT / https://openai.com/index/economic-research-exchange"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Thu, 04 Jun 2026 12:00:00 GMT / https://openai.com/index/endava-frontiers"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Thu, 04 Jun 2026 09:00:00 GMT / https://openai.com/index/chatgpt-memory-dreaming"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Thu, 04 Jun 2026 00:00:00 GMT / https://openai.com/index/biodefense-in-the-intelligence-age"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Wed, 03 Jun 2026 13:15:00 GMT / https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Wed, 03 Jun 2026 12:00:00 GMT / https://openai.com/index/wasmer"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Wed, 03 Jun 2026 10:00:00 GMT / https://openai.com/index/public-policy-agenda"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Wed, 03 Jun 2026 10:00:00 GMT / https://openai.com/index/frontier-safety-blueprint"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 02 Jun 2026 12:00:00 GMT / https://openai.com/index/travelers"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 02 Jun 2026 09:00:00 GMT / https://openai.com/index/codex-for-every-role-tool-workflow"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 02 Jun 2026 07:00:00 GMT / https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership"
+        },
+        {
+          "heading": "Feed item",
+          "text": "Tue, 02 Jun 2026 02:00:00 GMT / https://openai.com/index/codex-for-knowledge-work"
+        }
+      ],
+      "links": [],
+      "facts": [
+        {
+          "type": "fetched_date",
+          "value": "2026-07-05",
+          "context": "raw_document.fetchedAt"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 30 Jun 2026 09:00:00 GMT / https://openai.com/index/how-chatgpt-adoption-has-expanded"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 30 Jun 2026 00:00:00 GMT / https://openai.com/index/genebench-pro/case-studies"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 30 Jun 2026 00:00:00 GMT / https://openai.com/index/introducing-genebench-pro"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 30 Jun 2026 00:00:00 GMT / https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Mon, 29 Jun 2026 07:00:00 GMT / https://openai.com/index/mapping-ai-jobs-transition-eu"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Sun, 28 Jun 2026 17:00:00 GMT / https://openai.com/index/hp-frontier-partnership"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Fri, 26 Jun 2026 10:00:00 GMT / https://openai.com/index/previewing-gpt-5-6-sol"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Thu, 25 Jun 2026 02:00:00 GMT / https://openai.com/index/how-agents-are-transforming-work"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Wed, 24 Jun 2026 06:00:00 GMT / https://openai.com/index/openai-broadcom-jalapeno-inference-chip"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 23 Jun 2026 13:00:00 GMT / https://openai.com/index/helping-build-shared-standards-for-advanced-ai"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 23 Jun 2026 17:00:00 GMT / https://openai.com/index/gpt-5-immunology-mystery"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 23 Jun 2026 00:00:00 GMT / https://openai.com/index/omio"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Mon, 22 Jun 2026 10:00:00 GMT / https://openai.com/index/patch-the-planet"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Mon, 22 Jun 2026 10:00:00 GMT / https://openai.com/index/daybreak-securing-the-world"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Mon, 22 Jun 2026 00:00:00 GMT / https://openai.com/index/codex-maxxing-long-running-work"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Sun, 21 Jun 2026 23:00:00 GMT / https://openai.com/index/samsung-electronics-chatgpt-codex-deployment"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Thu, 18 Jun 2026 17:00:00 GMT / https://openai.com/index/chatgpt-enterprise-spend-controls"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Thu, 18 Jun 2026 11:00:00 GMT / https://openai.com/index/improving-health-intelligence-in-chatgpt"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Thu, 18 Jun 2026 08:00:00 GMT / https://openai.com/index/diagnose-rare-childhood-diseases"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Wed, 17 Jun 2026 10:00:00 GMT / https://openai.com/index/ai-chemist-improves-reaction"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Wed, 17 Jun 2026 00:00:00 GMT / https://openai.com/index/introducing-life-sci-bench"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 16 Jun 2026 00:00:00 GMT / https://openai.com/index/deployment-simulation"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Sun, 14 Jun 2026 17:00:00 GMT / https://openai.com/index/introducing-openai-partner-network"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Fri, 12 Jun 2026 10:00:00 GMT / https://openai.com/index/academy-courses-applying-ai-at-work"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Fri, 12 Jun 2026 00:00:00 GMT / https://openai.com/index/preply"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Thu, 11 Jun 2026 00:00:00 GMT / https://openai.com/index/using-codex-to-simulate-black-holes"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Thu, 11 Jun 2026 00:00:00 GMT / https://openai.com/index/openai-to-acquire-ona"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Thu, 11 Jun 2026 00:00:00 GMT / https://openai.com/index/bbva"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Thu, 11 Jun 2026 00:00:00 GMT / https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Wed, 10 Jun 2026 20:00:00 GMT / https://openai.com/index/openai-on-oracle-cloud"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Wed, 10 Jun 2026 12:00:00 GMT / https://openai.com/index/prc-linked-influence-operations-ai-debates"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Wed, 10 Jun 2026 00:00:00 GMT / https://openai.com/index/lseg"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 09 Jun 2026 12:00:00 GMT / https://openai.com/index/nextdoor"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 09 Jun 2026 10:00:00 GMT / https://openai.com/index/notion"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 09 Jun 2026 00:00:00 GMT / https://openai.com/index/industrial-policy-for-the-intelligence-age"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Mon, 08 Jun 2026 14:00:00 GMT / https://openai.com/index/openai-submits-confidential-s-1"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Mon, 08 Jun 2026 01:30:00 GMT / https://openai.com/index/built-to-benefit-everyone-our-plan"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Mon, 08 Jun 2026 00:00:00 GMT / https://openai.com/index/economic-research-exchange"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Thu, 04 Jun 2026 12:00:00 GMT / https://openai.com/index/endava-frontiers"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Thu, 04 Jun 2026 09:00:00 GMT / https://openai.com/index/chatgpt-memory-dreaming"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Thu, 04 Jun 2026 00:00:00 GMT / https://openai.com/index/biodefense-in-the-intelligence-age"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Wed, 03 Jun 2026 13:15:00 GMT / https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Wed, 03 Jun 2026 12:00:00 GMT / https://openai.com/index/wasmer"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Wed, 03 Jun 2026 10:00:00 GMT / https://openai.com/index/public-policy-agenda"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Wed, 03 Jun 2026 10:00:00 GMT / https://openai.com/index/frontier-safety-blueprint"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 02 Jun 2026 12:00:00 GMT / https://openai.com/index/travelers"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 02 Jun 2026 09:00:00 GMT / https://openai.com/index/codex-for-every-role-tool-workflow"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 02 Jun 2026 07:00:00 GMT / https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership"
+        },
+        {
+          "type": "rss_item",
+          "value": "Feed item",
+          "context": "Tue, 02 Jun 2026 02:00:00 GMT / https://openai.com/index/codex-for-knowledge-work"
+        }
+      ],
+      "extractionHints": [
+        {
+          "metricType": "rssNewsItemsForReview",
+          "confidence": 0.6,
+          "note": "Official RSS feed should be parsed into news items for review before deriving partnerships, releases, product launches or valuation events."
+        }
+      ],
+      "jsonSummary": null,
+      "quality": {
+        "sourceParsed": true,
+        "hasText": true,
+        "textLength": 6983,
+        "sectionCount": 49,
+        "linkCount": 0,
+        "factCount": 50,
+        "financialFactCount": 0,
+        "hintCount": 1,
+        "rssItemCount": 49,
+        "tableRowCount": 0,
+        "requiresPdfParser": false,
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "parsed_raw_watch_nvidia_blog_rss",
+      "rawDocumentId": "raw_watch_nvidia_blog_rss",
+      "watchlistId": "watch_nvidia_blog_rss",
+      "entityId": "nvidia",
+      "connector": "news_rss",
+      "parser": "built_in_structured_parser",
+      "parserStatus": "parsed",
+      "parsedAt": "2026-07-05T06:54:06.070Z",
+      "format": "rss",
+      "contentHash": "d07079d85cf38529f0908294d6b1ae76c44ae2874d805f320ae1fa013042b27b",
+      "title": "NVIDIA official blog RSS",
+      "canonicalUrl": "https://blogs.nvidia.com/feed/",
+      "publisher": "NVIDIA",
+      "text": "NVIDIA official blog RSS NVIDIA Blog https://blogs.nvidia.com/ Thu, 02 Jul 2026 04:09:02 +0000 en-US hourly 1 https://wordpress.org/?v=7.0 Joyride Through July With 12 Games Coming to GeForce NOW https://blogs.nvidia.com/blog/geforce-now-thursday-july-2026-games-list/ Thu, 02 Jul 2026 13:00:23 +0000 https://blogs.nvidia.com/?p=95896 Summer is heating up — and GeForce NOW is taking players along for the ride. Start the month with Monopoly: Star Wars Heroes vs. Villains , bringing a galaxy far, far away to the iconic board-game franchise, alongside 12 new games joining the cloud this month. Plus, don’t let the sun set on the biggest GeForce NOW savings of the year. Level up for less before the deals disappear. Light Side, Dark Side, Cloud Side The Force is strong with this one. Rule the board, you must. Choose a side in Monopoly: Star Wars Heroes vs. Villains , the classic property-trading board game reimagined with legendary characters, locations and rivalries from across the Star Wars universe. Play as iconic heroes or infamous villains — each with unique abilities — to assemble a team and experience cinematic moments while competing with family and friends across locations from every era of the saga. Every roll of the dice brings new opportunities to build an empire and claim victory. GeForce NOW makes it easy to take the battle between the light and dark sides across nearly any device. Jump into a match on a low-powered PC, Mac, phone, TV, tablet or handheld device and keep the fun going across the galaxy. Check out what’s available this week: Monopoly: Star Wars Heroes vs. Villains (New release on Steam and Ubisoft , available June 30) Meccha Chameleon ( Steam ) And look forward to the games coming throughout the month: Assassin’s Creed Black Flag Resynced (New release on Steam and Ubisoft Connect , available July 9) Denshattack! (New release on Steam and Xbox , available on Game Pass July 15) The Mound: Omen of Cthulhu (New release on Steam , available July 15) Heave Ho 2 (New release on Steam , available July 16) Fogpiercer (New release on Steam and Xbox , available on Game Pass July 17) ZeroSpace (New release on Steam , available July 20) The Planet Crafter (New release on Xbox , Available on Game Pass July 21) Carnival Hunt (New release on Steam , available July 23) The Ranchers (New release on Steam , available July 30) Corsair Cove (New release on Steam and Xbox , available on Game Pass July 31) Juicy Extras From June In addition to the 18 games announced last month, 10 more came to the cloud. Deer & Boy ( Steam ) DOOM Eternal ( Epic Games Store ) Embers of the Uncrowned Demo (Steam) EMPULSE ( Steam ) The Elder Scrolls Online ( Xbox , available on Game Pass ) NBA THE RUN ( Steam ) SAND: Raiders of Sophie ( Steam ) Voidling Bound ( Steam ) Witchspire ( Steam ) World of Tanks: HEAT ( Wargaming ) Last Call for Cloud Summer Savings The clock is ticking. Get gaming at the best price of the year. The final days of the GeForce NOW Summer Sale are here. Before the savings disappear, gamers can save $35 on a 12-month Performance membership or $70 on a 12-month Ultimate membership — unlocking GeForce RTX-powered gaming in the cloud across devices they already own. The Performance membership delivers smooth, high-quality gaming with RTX-powered servers, making it easy to jump into favorite titles across PCs, Macs, phones, handhelds and TVs. The Ultimate membership takes cloud gaming to the max with RTX 4080‑ or 5080‑class performance. Experience cinematic visuals, ultralow latency and responsive gameplay powered by technologies like NVIDIA DLSS , ray tracing and NVIDIA Reflex — all without the cost of a new gaming rig. Hear directly from the GeForce NOW Community. One GeForce NOW member recently called the Summer Sale “ quite significant ” after realizing the savings were even larger than expected in their local currency. By locking in a year of Ultimate, they calculated their monthly cost dropped from roughly 29 CAD to 17 CAD – showcasing how GeForce NOW continues to help gamers around the world enjoy the games they love, wherever they choose to play. Plus, check out this spreadsheet , made by a community member, featuring discounted games streaming on GeForce NOW and build out a bigger library at the best bargains during the Steam Summer Sale . What are you planning to play this weekend? Let us know on X or in the comments below. ]]> NVIDIA Unlocks AI Compute at Scale, Inviting Partners to Power the AI Infrastructure Buildout https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/ Thu, 02 Jul 2026 03:34:48 +0000 https://blogs.nvidia.com/?p=95940 As AI moves from model development to production inference, compute demand is accelerating and shifting toward continuously operating AI factories that generate tokens at scale. This shift requires access to large‑scale, multi‑tenant accelerated computing that can come online quickly, stay highly utilized and support the economics of token‑scale AI services. Emerging AI companies historically have had limited access to capital-intensive infrastructure, with even long-term commitments insufficient to unlock financing for compute. To address this, NVIDIA is introducing a new business model that opens up compute access to the fast‑growing AI ecosystem of startups, model builders, enterprises, research organizations and regional AI players. This new model enables AI clouds to procure NVIDIA infrastructure for AI-native, enterprise and ISV customers through economic alignment with a revenue-sharing and credit-support model. Through the partnership, AI clouds will sell NVIDIA-powered cloud services, with NVIDIA earning both standard product revenue and a share of the cloud revenue on the supported capacity. This structure accelerates adoption of NVIDIA platforms among the high-growth, high-conviction AI native sector, and provides NVIDIA with a recurring, usage-linked earnings stream. For model builders, inference providers, agent platforms and enterprises scaling AI, it can mean faster access to full-stack accelerated computing without waiting through site selection, power procurement, construction and hardware bring-up. NVIDIA AI Factory Capacity Built Around Demand The initiative is already taking shape, with AI cloud companies building DSX AI factories designed to serve customers and workloads across regions. Sharon AI and Firmus are among the first companies to work with NVIDIA on this new business model. Sharon AI is deploying up to 40,000 NVIDIA Grace Blackwell GB300 GPUs. “This strategic collaboration with NVIDIA marks a pivotal moment in Sharon AI’s mission to deliver sovereign, large-scale AI compute infrastructure,” said James Manning, cofounder and CEO of Sharon AI. Firmus is building a DSX AI factory campus in Batam, Indonesia. The campus is expected to scale to 360 megawatts and up to 170,000 NVIDIA GPUs. “AI-native companies need access to scalable, energy- and cost-efficient compute infrastructure to compete globally,” said Tim Rosenfield, co-CEO of Firmus Technologies. “Firmus AI cloud is building a NVIDIA DSX-aligned AI factory, which will enable our cloud to help more customers access the compute they need to build and scale AI.” AI natives such as Baseten, Fireworks AI and Together AI show where compute demand is headed: they need immediate access to AI cloud capacity to run model training, post-training, fine-tuning and high-volume agentic inference for developers, digital natives and enterprises building with AI. Their customers need reliable access to large-scale NVIDIA accelerated computing as usage grows, but they also need commercial flexibility as products move from pilot to production. To secure compute capacity and build and deploy AI models, contact Sharon AI and Firmus. Learn more about NVIDIA Cloud Partners and AI factories . ]]> NVIDIA and Partners Build in America, for America https://blogs.nvidia.com/blog/nvidia-and-",
+      "sections": [
+        {
+          "heading": "Joyride Through July With 12 Games Coming to GeForce NOW",
+          "text": "Thu, 02 Jul 2026 13:00:23 +0000 / https://blogs.nvidia.com/blog/geforce-now-thursday-july-2026-games-list/"
+        },
+        {
+          "heading": "NVIDIA Unlocks AI Compute at Scale, Inviting Partners to Power the AI Infrastructure Buildout",
+          "text": "Thu, 02 Jul 2026 03:34:48 +0000 / https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/"
+        },
+        {
+          "heading": "NVIDIA and Partners Build in America, for America",
+          "text": "Wed, 01 Jul 2026 13:00:47 +0000 / https://blogs.nvidia.com/blog/nvidia-and-partners-build-in-america-for-america/"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://www.nvidia.com/en-us/geforce-now/",
+          "text": "GeForce NOW",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://blogs.nvidia.com/wp-content/uploads/2026/07/GFN_Thursday-Monopoly_Star_Wars_Heroes_VS_Villans.jpg",
+          "text": "",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/3936610/Monopoly_Star_Wars_Heroes_vs_Villains/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.ubisoft.com/en-us/games/monopoly-star-wars-heroes-vs-villains",
+          "text": "Ubisoft",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/3751950?utm_source=nvidia&utm_campaign=geforce_now",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.ubisoft.com/en-us/game/assassins-creed/black-flag-resynced",
+          "text": "Ubisoft Connect",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/2524850/Denshattack/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.xbox.com/games/store/denshattack/9n18l56xhk8z?utm_source=nvidia&utm_campaign=geforce_now",
+          "text": "Xbox",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/2569760/The_Mound_Omen_of_Cthulhu/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/2802740/Heave_Ho_2/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/3219010/Fogpiercer/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.xbox.com/games/store/fogpiercer/9p2pp895lsbj?utm_source=nvidia&utm_campaign=geforce_now",
+          "text": "Xbox",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/1605850/ZeroSpace/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.xbox.com/games/store/the-planet-crafter/9n072vv7mfk7?utm_source=nvidia&utm_campaign=geforce_now",
+          "text": "Xbox",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/1181550/Carnival_Hunt/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/1501310/The_Ranchers/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/1368140/Corsair_Cove/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.xbox.com/games/store/corsair-cove/9phs0189k408?utm_source=nvidia&utm_campaign=geforce_now",
+          "text": "Xbox",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/1803140/Deer__Boy/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.epicgames.com/p/doom-eternal?utm_source=nvidia&utm_campaign=geforce_now",
+          "text": "Epic Games Store",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/4323990/EMPULSE/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.xbox.com/en-US/games/store/the-elder-scrolls-online-standard-edition/brkx5crmrtc2?utm_source=nvidia&utm_campaign=geforce_now",
+          "text": "Xbox",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/2866670/NBA_THE_RUN/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/1431300/SAND_Raiders_of_Sophie/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/2004680/Voidling_Bound/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/app/2679100/Witchspire/",
+          "text": "Steam",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://wotheat.com/?utm_source=nvidia&utm_campaign=geforce_now",
+          "text": "Wargaming",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://blogs.nvidia.com/wp-content/uploads/2026/07/GFN_Thursday-Summer_Sale-scaled.png",
+          "text": "",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.nvidia.com/en-us/geforce/technologies/dlss/",
+          "text": "NVIDIA DLSS",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.nvidia.com/en-us/geforce/technologies/reflex/",
+          "text": "NVIDIA Reflex",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.reddit.com/r/GeForceNOW/comments/1u38rje/summer_sale_is_quite_significant_for_people/",
+          "text": "quite significant",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.reddit.com/r/GeForceNOW/comments/1ug4eoz/for_steams_summer_sale_i_collected_all_geforcenow/",
+          "text": "spreadsheet",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://store.steampowered.com/specials",
+          "text": "Steam Summer Sale",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.twitter.com/nvidiagfn",
+          "text": "X",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.nvidia.com/en-us/data-center/gpu-cloud-computing/partners/",
+          "text": "NVIDIA Cloud Partners",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.nvidia.com/en-us/glossary/ai-factory/",
+          "text": "AI factories",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+          "text": "Claude Science",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://nvidianews.nvidia.com/news/nvidia-launches-bionemo-agent-toolkit-giving-ai-agents-the-tools-to-accelerate-scientific-discovery",
+          "text": "NVIDIA BioNeMo Agent Toolkit",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://github.com/NVIDIA-BioNeMo",
+          "text": "NVIDIA BioNeMo",
+          "source": "html_anchor"
+        }
+      ],
+      "facts": [
+        {
+          "type": "money",
+          "value": "$35 ",
+          "context": "ale are here. Before the savings disappear, gamers can save $35 on a 12-month Performance membership or $70 on a 12-month Ul"
+        },
+        {
+          "type": "money",
+          "value": "$70 ",
+          "context": "gamers can save $35 on a 12-month Performance membership or $70 on a 12-month Ultimate membership — unlocking GeForce RTX-po"
+        },
+        {
+          "type": "fetched_date",
+          "value": "2026-07-05",
+          "context": "raw_document.fetchedAt"
+        },
+        {
+          "type": "rss_item",
+          "value": "Joyride Through July With 12 Games Coming to GeForce NOW",
+          "context": "Thu, 02 Jul 2026 13:00:23 +0000 / https://blogs.nvidia.com/blog/geforce-now-thursday-july-2026-games-list/"
+        },
+        {
+          "type": "rss_item",
+          "value": "NVIDIA Unlocks AI Compute at Scale, Inviting Partners to Power the AI Infrastructure Buildout",
+          "context": "Thu, 02 Jul 2026 03:34:48 +0000 / https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/"
+        },
+        {
+          "type": "rss_item",
+          "value": "NVIDIA and Partners Build in America, for America",
+          "context": "Wed, 01 Jul 2026 13:00:47 +0000 / https://blogs.nvidia.com/blog/nvidia-and-partners-build-in-america-for-america/"
+        }
+      ],
+      "extractionHints": [
+        {
+          "metricType": "rssNewsItemsForReview",
+          "confidence": 0.58,
+          "note": "Official RSS feed should be parsed into news items for review before deriving product, customer, infrastructure or ecosystem relationships."
+        }
+      ],
+      "jsonSummary": null,
+      "quality": {
+        "sourceParsed": true,
+        "hasText": true,
+        "textLength": 8000,
+        "sectionCount": 3,
+        "linkCount": 40,
+        "factCount": 6,
+        "financialFactCount": 0,
+        "hintCount": 1,
+        "rssItemCount": 3,
+        "tableRowCount": 0,
+        "requiresPdfParser": false,
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "parsed_raw_watch_aws_ml_blog_rss",
+      "rawDocumentId": "raw_watch_aws_ml_blog_rss",
+      "watchlistId": "watch_aws_ml_blog_rss",
+      "entityId": "aws",
+      "connector": "news_rss",
+      "parser": "built_in_structured_parser",
+      "parserStatus": "parsed",
+      "parsedAt": "2026-07-05T06:54:06.070Z",
+      "format": "rss",
+      "contentHash": "e87fcacf454c77a6298f0e8db27c0621db0b4501e7537aba054316ebcbdaf7d1",
+      "title": "AWS Machine Learning Blog RSS",
+      "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "publisher": "AWS",
+      "text": "AWS Machine Learning Blog RSS Artificial Intelligence https://aws.amazon.com/blogs/machine-learning/ Official Machine Learning Blog of Amazon Web Services Thu, 02 Jul 2026 17:55:41 +0000 en-US hourly 1 How Amazon Bedrock catches AI-generated phishing https://aws.amazon.com/blogs/machine-learning/how-amazon-bedrock-catches-ai-generated-phishing/ Thu, 02 Jul 2026 17:55:41 +0000 395d0b963ef226d44d24b8de1b8d6428970e860f Social engineering through phishing remains one of the most common tactics for launching cyberattacks. AI-generated phishing email messages now pose a new challenge for security teams managing email systems, significantly raising the risk because of their advanced sophistication. Modern social engineers use generative AI and open source intelligence (OSINT) to craft thousands of unique messages […] Social engineering through phishing remains one of the most common tactics for launching cyberattacks. AI-generated phishing email messages now pose a new challenge for security teams managing email systems, significantly raising the risk because of their advanced sophistication. Modern social engineers use generative AI and open source intelligence (OSINT) to craft thousands of unique messages with perfect grammar, appropriate context, and personalized details. Today, an indicator of a phishing email message might be a perfectly written, professionally formatted message. The evolution of phishing For someone like John, an IT security engineer at a mid-sized firm, the rules of phishing detection were once straightforward: flag the typos, catch the generic salutations, and quarantine anything with a mismatched sender domain. These were the defining characteristics of an earlier era of phishing, when attacks sent millions of generic, error-riddled email messages at scale, relying on volume rather than precision to find victims. Security filters were built exactly for these threats, and for years, they were effective. Poor grammar, generic greetings, and mismatched logos were indicators that gave attackers away. The threat landscape John monitors today looks nothing like the ones those filters were designed to catch. Generative AI changed how phishing works. Attacks are now grammatically correct, contextually accurate, and personalized to the target. These messages don’t trigger traditional filters because those filters weren’t designed to catch them. The threat is no longer identifiable by what it looks like, but what it knows. Modern AI systems run OSINT operations that pull data from professional networks, corporate websites, and publicly available digital footprints to map out organizational hierarchies and relationships. With that intelligence, social engineers can process massive datasets at scale to generate contextually accurate messages personalized to your organization. These communications can even adapt in real time based on your responses, shifting tone or adjusting details to stay consistent with the conversation. Amazon Bedrock is a fully managed service that makes high-performing foundation models (FMs) from leading AI companies available through a unified API, along with capabilities needed to build generative AI applications with security, privacy, and responsible AI. Amazon Bedrock adds an additional layer of analysis to your existing security infrastructure that goes beyond traditional surface-level filtering. It understands context and detects phishing attempts based on behavioral patterns, not grammar quality or formatting. To put that into practice, let’s break down how Amazon Bedrock analyzes an email from the moment it hits your inbox. Amazon Bedrock uses large-scale general-purpose AI models pre-trained on vast amounts of data. Foundation models can analyze behavioral patterns in email content, understand contextual relationships, and identify anomalies that signal a message might be a phishing attempt. In practice, these capabilities can be structured as a multi-stage analysis pipeline. Each email passes through authentication, behavior analysis, and risk scoring before reaching your users’ inboxes. Amazon Bedrock offers two integrated capabilities to power your AI-driven phishing defense. Pre-trained foundation models bring sophisticated natural language understanding that can detect nuanced manipulation, contextual anomalies, and impersonation patterns invisible to rule-based systems. The second capability, Amazon Bedrock Guardrails, provides configurable safeguards that help align foundation model interactions with your organization’s responsible AI policies and application requirements, without requiring custom detection logic. Together, these capabilities can be integrated into a multi-stage email analysis pipeline. Amazon Bedrock workflow for intelligent phishing defense In the workflow solution, each message first undergoes standard authentication checks (Sender Policy Framework (SPF), DomainKeys Identified Mail (DKIM), Domain-based Message Authentication, Reporting and Conformance (DMARC)). These protocols confirm that the sending server is authorized to send on behalf of the domain and that the message hasn’t been tampered with in transit. The phishing detection workflow, powered by the Amazon Bedrock foundation models, analyzes the message against three key factors: word choice, communication style deviations, and contextual appropriateness of requests. Detecting these subtle inconsistencies in writing style and misaligned requests adds a deeper layer of analysis on top of traditional security controls. AI analysis also requires careful governance to confirm it operates responsibly and within your defined boundaries. Amazon Bedrock Guardrails help filter both input prompts and model outputs. They prevent responses that could inadvertently leak confidential data, and they check that analysis results adhere to the policies you set. Keep in mind that guardrails need careful configuration and calibration to meet your application requirements. Implementing Amazon Bedrock Guardrails for analysis Amazon Bedrock Guardrails give you granular control over how foundation models process email content through content filters, denied topics, word filters, and sensitive information filters. For example, John the security engineer can configure guardrails to automatically redact sensitive personally identifiable information (PII) discovered during email analysis, helping to prevent the foundation model from generating responses that could inadvertently leak confidential data. However, guardrail configurations for security analysis require careful calibration. While content filters protect against inappropriate inputs and outputs, overly restrictive settings can prevent the model from analyzing suspicious content that legitimately needs to be evaluated. If a social engineer includes offensive language in an email message to bypass filters, your guardrails must allow the security system to analyze that content. At the same time, the guardrails must still protect against inappropriate inputs and outputs in other contexts. Guardrails also provide contextual grounding checks that keep model responses factually anchored to the email content being analyzed, reducing false positives caused by model hallucination. This allows the AI-powered analysis to operate within defined boundaries while still detecting intricate patterns. In this post, you will learn how to implement a multi-stage email analysis pipeline using Amazon Bedrock foundation models that evaluate sender behavior patterns, contextual appropriateness, and communication anomalies to identify AI-generated phishing attempts before they reach your users. Implementation framework The following framework shows how to put this into practice within your existing email security infrastructure, so that someone in John’s position can move from reactive filtering to proactive detection. After your standard authentication checks (SPF, DKIM, DMARC) confirm an email comes from a legiti",
+      "sections": [
+        {
+          "heading": "How Amazon Bedrock catches AI-generated phishing",
+          "text": "Thu, 02 Jul 2026 17:55:41 +0000 / Social engineering through phishing remains one of the most common tactics for launching cyberattacks. AI-generated phishing email messages now pose a new challenge for security teams managing email systems, significantly raising the risk because of their advanced sophistication. Modern social engineers use generative AI and open source intelligence (OSINT) to craft thousands of unique messages […] / https://aws.amazon.com/blogs/machine-learning/how-amazon-bedrock-catches-ai-generated-phishing/"
+        }
+      ],
+      "links": [],
+      "facts": [
+        {
+          "type": "fetched_date",
+          "value": "2026-07-05",
+          "context": "raw_document.fetchedAt"
+        },
+        {
+          "type": "rss_item",
+          "value": "How Amazon Bedrock catches AI-generated phishing",
+          "context": "Thu, 02 Jul 2026 17:55:41 +0000 / https://aws.amazon.com/blogs/machine-learning/how-amazon-bedrock-catches-ai-generated-phishing/"
+        }
+      ],
+      "extractionHints": [
+        {
+          "metricType": "rssNewsItemsForReview",
+          "confidence": 0.57,
+          "note": "Official AWS Machine Learning blog feed should be parsed into news items for review before deriving cloud, model hosting, customer or infrastructure relationships."
+        }
+      ],
+      "jsonSummary": null,
+      "quality": {
+        "sourceParsed": true,
+        "hasText": true,
+        "textLength": 8000,
+        "sectionCount": 1,
+        "linkCount": 0,
+        "factCount": 2,
+        "financialFactCount": 0,
+        "hintCount": 1,
+        "rssItemCount": 1,
+        "tableRowCount": 0,
+        "requiresPdfParser": false,
+        "requiresHumanReview": true
+      }
+    },
+    {
+      "id": "parsed_raw_watch_meta_engineering_rss",
+      "rawDocumentId": "raw_watch_meta_engineering_rss",
+      "watchlistId": "watch_meta_engineering_rss",
+      "entityId": "meta_ai",
+      "connector": "news_rss",
+      "parser": "built_in_structured_parser",
+      "parserStatus": "parsed",
+      "parsedAt": "2026-07-05T06:54:06.070Z",
+      "format": "rss",
+      "contentHash": "1eda7377294c4fe2cb348cd8187d73d821f4849247326fe06944ee7f3f067ffb",
+      "title": "Meta Engineering RSS",
+      "canonicalUrl": "https://engineering.fb.com/feed/",
+      "publisher": "Meta",
+      "text": "Meta Engineering RSS Engineering at Meta https://engineering.fb.com/ Engineering at Meta Blog Tue, 30 Jun 2026 23:47:42 +0000 en-US hourly 1 https://wordpress.org/?v=7.0 147945108 Meta&#8217;s AI Storage Blueprint at Scale https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale/ Wed, 01 Jul 2026 16:00:36 +0000 https://engineering.fb.com/?p=24150 Over the past several years, model capabilities and training dataset sizes have experienced exponential growth. During the past year or so, the time between new-frontier-model releases has gone down from months to weeks. Reliable and fast access to storage is important to both the speed and computational cost of this AI innovation. If AI is [...] Read More... The post Meta&#8217;s AI Storage Blueprint at Scale appeared first on Engineering at Meta . ]]> Over the past several years, model capabilities and training dataset sizes have experienced exponential growth. During the past year or so, the time between new-frontier-model releases has gone down from months to weeks. Reliable and fast access to storage is important to both the speed and computational cost of this AI innovation. If AI is the brain, storage is the memory: Capability and speed are highly dependent on the size of memory and speed of retrieval. Yet while AI compute performance has roughly tripled every two years, storage and interconnect performance growth have been more modest. As a result, storage bottlenecks continue to be one of the primary contributors to GPU stalls for AI workloads, directly impacting expenditures and time to market. Aside from GPU utilization, storage architecture also directly impacts the speed of iteration in AI research; with GPUs increasingly becoming geo-distributed and dataset sizes increasingly becoming massive, researchers spend a significant amount of time ingesting and moving data across regions, thus impacting research velocity. In this blog post, we discuss how Meta&#8217;s BLOB-storage architecture evolved to address two primary challenges: maximizing GPU utilization and maximizing research velocity. Storage Architecture Overview Meta operates hundreds of exabyte-scale storage clusters that serve all of Meta’s external and internal products, including Facebook, Instagram, Reality Labs, Meta AI, Ads, Data Warehouse, and internal Databases. Our storage service exposes object storage, file systems, and block-device APIs, and these API abstractions are built on top of a horizontally scalable foundational block layer called Tectonic. The Tectonic layer is a regional, multi-tenant storage fabric that provides high durability and availability leveraging erasure-coding techniques, supports tiering across media types (e.g., HDD and flash), and manages smart placement of hot, cold, and warm data for efficient utilization of I/O across tenants. The BLOB-storage layers that operate on top of Tectonic expose a global, infinitely scalable storage fabric, and expose policies that let users make tradeoffs between durability and availability. In a previous @Scale talk titled, “Training Llama: A Storage Perspective,” we discussed how Meta trained Llama directly over the Tectonic block layer by exposing an NFS-like FileSystem interface on top of it. While this architecture continues to be used widely within Meta, our modern training stack has been migrating slowly on top of the BLOB-storage interface, as is the case across the industry. This transition is motivated by the need for unified storage access to massive data lakes in the BLOB-storage layer as well as the need for high performance. Maximizing GPU Utilization Modern AI workloads are “data hungry” and have very different workload characteristics than traditional web applications: bursty and sustained high throughput, predictable and bounded pMax latencies, and variable I/O patterns. The focus for BLOB storage, in recent years, has largely shifted to maximizing GPU utilization. Why Latency Matters To see why bounded and low-pMax latencies are important, let’s consider model training. During that training, hundreds of thousands of GPUs iterate over vast amounts of data in storage multiple times (i.e., over multiple epochs), and the GPUs train datasets in batches. Periodically, after every certain number of steps or batches, the GPUs synchronize their state among themselves. If one GPU is slow, this step will slow down all GPUs as well as the entire training. Figure 1 shows a data-loading pipeline across two GPUs. The dataloader in every GPU host prefetches the next dataset batch, while the GPU is processing the current batch for maximum compute or I/O overlap. In the case of GPU1, the storage-fetch latency is well within bounds, so the GPU is never stalled waiting on I/O. In the case of GPU2, there are two instances where storage fetch exhibits high latency, stalling GPU. As a result of these stalls, the overall step-completion time is delayed. Figure 1: Dataloading across two GPUs. Legacy BLOB-Storage Architecture Wasn’t AI-Ready Over the years, BLOB storage evolved organically, adding layers on top of layers in a true service-oriented fashion. Many of these layers were stateful and maintained their own metadata stores. While these metadata-access latencies typically weren’t the bottleneck for the traditional use cases served by global HDDs, they were showstoppers for AI workloads with millisecond access to data in flash. Figure 2 shows the request flow for a typical getObject(“/bucket/path”) API. After the request arrives at the API server, the server does many metadata lookups across the namelayer, volumeslayer, and containerlayer before resolving the path to a set of (blockId, offset, size) tuples. Some of these lookups can cross regions, and it&#8217;s not uncommon for latencies to add up to hundreds of milliseconds; one slow response from any of the lookups was sufficient. After the lookups, the API server proxies the data from the Tectonic layer to the client. Figure 2: Old request flow for getObject API. While this architecture served conventional workloads well, the foundational assumptions that dictated design tradeoffs have since shifted. Some of these are: Performance and latency: As discussed, while latency needs for conventional workloads were modest, AI workloads demand predictable and bounded latencies all the way up to pMax. Reliability and durability: The legacy architecture was designed to be highly durable and available, even in the face of region outages; data and metadata were globally replicated by default. While AI workloads demand very high availability, the global-by-default design choice no longer holds. Cost efficiency: Legacy stack was built on top of HDDs and highly optimized for cost per byte. The IOPS demands for AI workloads necessitate flash, and in addition, the computational cost of storage becomes negligible relative to the computational cost of GPUs. Power efficiency: With GPUs, datacenters are increasingly power constrained rather than space constrained. Every kilowatt of power spent on storage is power not spent on GPUs. This is a new constraint with AI workloads. In short, the tradeoff space has shifted enough for us to rethink the entire architecture. Rebuilding the Foundation As we set out to build the new foundation, we made the following major design choices: Unified metadata schema: We rewrote the metadata subsystem and collapsed the metadata spread across different layers into one unified and flat schema backed by ZippyDB . This paves the way for O(1) lookup to resolve paths to storage addresses, which is a step-function improvement. No dataplane proxy: We eliminated the dataplane proxy and built a fat client SDK that is capable of streaming bytes directly from storage servers to the clients. This helps with power-efficiency goals and also helps achieve higher throughput/lower latency. Regional deployment: The BLOB-storage stack is now lean with flexibility to be deployed as a regional",
+      "sections": [
+        {
+          "heading": "Meta&#8217;s AI Storage Blueprint at Scale",
+          "text": "Wed, 01 Jul 2026 16:00:36 +0000 / Over the past several years, model capabilities and training dataset sizes have experienced exponential growth. During the past year or so, the time between new-frontier-model releases has gone down from months to weeks. Reliable and fast access to storage is important to both the speed and computational cost of this AI innovation. If AI is [...] Read More... The post Meta&#8217;s AI Storage Blueprint at Scale appeared first on Engineering at Meta . ]]> / https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale/"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale/",
+          "text": "Read More...",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://engineering.fb.com/",
+          "text": "Engineering at Meta",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://atscaleconference.com/videos/training-llama-a-storage-perspective/",
+          "text": "@Scale talk titled, “Training Llama: A Storage Perspective,”",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://engineering.fb.com/2021/08/06/core-infra/zippydb/",
+          "text": "ZippyDB",
+          "source": "html_anchor"
+        },
+        {
+          "url": "https://engineering.fb.com/2022/07/14/data-infrastructure/owl-distributing-content-at-meta-scale/",
+          "text": "Meta’s Owl subsystem",
+          "source": "html_anchor"
+        }
+      ],
+      "facts": [
+        {
+          "type": "date",
+          "value": "2026/07/01",
+          "context": ";s AI Storage Blueprint at Scale https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale/ We"
+        },
+        {
+          "type": "fetched_date",
+          "value": "2026-07-05",
+          "context": "raw_document.fetchedAt"
+        },
+        {
+          "type": "rss_item",
+          "value": "Meta&#8217;s AI Storage Blueprint at Scale",
+          "context": "Wed, 01 Jul 2026 16:00:36 +0000 / https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale/"
+        }
+      ],
+      "extractionHints": [
+        {
+          "metricType": "rssNewsItemsForReview",
+          "confidence": 0.55,
+          "note": "Official Meta Engineering feed should be parsed into news items for review before deriving AI infrastructure, open model, research or product relationships."
+        }
+      ],
+      "jsonSummary": null,
+      "quality": {
+        "sourceParsed": true,
+        "hasText": true,
+        "textLength": 8000,
+        "sectionCount": 1,
+        "linkCount": 5,
+        "factCount": 3,
+        "financialFactCount": 0,
+        "hintCount": 1,
+        "rssItemCount": 1,
+        "tableRowCount": 0,
+        "requiresPdfParser": false,
+        "requiresHumanReview": true
+      }
+    }
+  ],
+  "summary": {
+    "rawDocuments": 9,
+    "parsedDocuments": 6,
+    "emptyDocuments": 0,
+    "skippedDocuments": 3,
+    "totalTextLength": 49595,
+    "totalFacts": 64,
+    "totalLinks": 76,
+    "rssItems": 54,
+    "tableRows": 0
+  }
+}

@@ -1,0 +1,1660 @@
+{
+  "generatedAt": "2026-07-04T15:25:15.984Z",
+  "source": "openalex",
+  "plannedRequestCount": 3,
+  "results": [
+    {
+      "id": "openalex_works_openai",
+      "entityId": "openai",
+      "entityName": "OpenAI",
+      "query": "OpenAI large language model",
+      "requestedUrl": "https://api.openalex.org/works?search=OpenAI+large+language+model&per-page=5&sort=cited_by_count%3Adesc&mailto=research%40example.com",
+      "fetchedAt": "2026-07-04T15:25:15.984Z",
+      "worksCount": 124786,
+      "works": [
+        {
+          "id": "W2896457183",
+          "openAlexUrl": "https://openalex.org/W2896457183",
+          "doi": "https://doi.org/10.4230/lipics.cosit.2022.18",
+          "title": "AI-Assisted Pipeline for Dynamic Generation of Trustworthy Health Supplement Content at Scale",
+          "publicationYear": 2018,
+          "publicationDate": "2018-10-11",
+          "citedByCount": 45710,
+          "type": "preprint",
+          "landingPageUrl": "https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.LDK.2019.21",
+          "sourceName": "DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)",
+          "authorships": [
+            {
+              "authorId": null,
+              "authorName": "Devlin, Jacob",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I1291425158",
+                  "ror": "https://ror.org/00njsd438",
+                  "displayName": "Google (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                },
+                {
+                  "id": "https://openalex.org/I188760350",
+                  "ror": "https://ror.org/03bea9k73",
+                  "displayName": "Ollscoil na Gaillimhe – University of Galway",
+                  "countryCode": "IE",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Chang, Ming-Wei",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I1291425158",
+                  "ror": "https://ror.org/00njsd438",
+                  "displayName": "Google (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                },
+                {
+                  "id": "https://openalex.org/I188760350",
+                  "ror": "https://ror.org/03bea9k73",
+                  "displayName": "Ollscoil na Gaillimhe – University of Galway",
+                  "countryCode": "IE",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Lee, Kenton",
+              "institutions": []
+            },
+            {
+              "authorId": null,
+              "authorName": "Toutanova, Kristina",
+              "institutions": []
+            }
+          ],
+          "referencedWorks": [
+            "W131533222",
+            "W1486649854",
+            "W1599016936",
+            "W1840435438",
+            "W2025768430",
+            "W2108598243",
+            "W2117130368",
+            "W2121227244",
+            "W2130158090",
+            "W2130903752",
+            "W2131462252",
+            "W2131744502"
+          ]
+        },
+        {
+          "id": "W4323655724",
+          "openAlexUrl": "https://openalex.org/W4323655724",
+          "doi": "https://doi.org/10.1016/j.lindif.2023.102274",
+          "title": "ChatGPT for good? On opportunities and challenges of large language models for education",
+          "publicationYear": 2023,
+          "publicationDate": "2023-03-09",
+          "citedByCount": 5253,
+          "type": "article",
+          "landingPageUrl": "https://doi.org/10.1016/j.lindif.2023.102274",
+          "sourceName": "Learning and Individual Differences",
+          "authorships": [
+            {
+              "authorId": "https://openalex.org/A5008809634",
+              "authorName": "Enkelejda Kasneci",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I62916508",
+                  "ror": "https://ror.org/02kkvpp62",
+                  "displayName": "Technical University of Munich",
+                  "countryCode": "DE",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5013346660",
+              "authorName": "Kathrin Seßler",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I62916508",
+                  "ror": "https://ror.org/02kkvpp62",
+                  "displayName": "Technical University of Munich",
+                  "countryCode": "DE",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5050063899",
+              "authorName": "Stefan Küchemann",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I8204097",
+                  "ror": "https://ror.org/05591te55",
+                  "displayName": "Ludwig-Maximilians-Universität München",
+                  "countryCode": "DE",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5052257833",
+              "authorName": "Maria Bannert",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I62916508",
+                  "ror": "https://ror.org/02kkvpp62",
+                  "displayName": "Technical University of Munich",
+                  "countryCode": "DE",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5043273387",
+              "authorName": "Daryna Dementieva",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I62916508",
+                  "ror": "https://ror.org/02kkvpp62",
+                  "displayName": "Technical University of Munich",
+                  "countryCode": "DE",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5005995116",
+              "authorName": "Frank Fischer",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I8204097",
+                  "ror": "https://ror.org/05591te55",
+                  "displayName": "Ludwig-Maximilians-Universität München",
+                  "countryCode": "DE",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5052258450",
+              "authorName": "Urs Gasser",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I62916508",
+                  "ror": "https://ror.org/02kkvpp62",
+                  "displayName": "Technical University of Munich",
+                  "countryCode": "DE",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5004398345",
+              "authorName": "Georg Groh",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I62916508",
+                  "ror": "https://ror.org/02kkvpp62",
+                  "displayName": "Technical University of Munich",
+                  "countryCode": "DE",
+                  "type": "education"
+                }
+              ]
+            }
+          ],
+          "referencedWorks": [
+            "W1583837637",
+            "W2783539613",
+            "W2896457183",
+            "W2937444804",
+            "W2955088691",
+            "W2958068682",
+            "W2965373594",
+            "W2969717756",
+            "W2970597249",
+            "W3085139254",
+            "W3085332162",
+            "W3095319910"
+          ]
+        },
+        {
+          "id": "W4226278401",
+          "openAlexUrl": "https://openalex.org/W4226278401",
+          "doi": "https://doi.org/10.48550/arxiv.2203.02155",
+          "title": "Training language models to follow instructions with human feedback",
+          "publicationYear": 2022,
+          "publicationDate": "2022-03-04",
+          "citedByCount": 4296,
+          "type": "preprint",
+          "landingPageUrl": "http://arxiv.org/abs/2203.02155",
+          "sourceName": "arXiv (Cornell University)",
+          "authorships": [
+            {
+              "authorId": "https://openalex.org/A5068949174",
+              "authorName": "Long Ouyang",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5007570707",
+              "authorName": "Jeff Wu",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5103934038",
+              "authorName": "Xu Jiang",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5104285560",
+              "authorName": "Diogo Almeida",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5022076965",
+              "authorName": "Carroll L. Wainwright",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5028772381",
+              "authorName": "Pamela Mishkin",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5100393899",
+              "authorName": "Chong Zhang",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5057289323",
+              "authorName": "Sandhini Agarwal",
+              "institutions": []
+            }
+          ],
+          "referencedWorks": []
+        },
+        {
+          "id": "W4322718191",
+          "openAlexUrl": "https://openalex.org/W4322718191",
+          "doi": "https://doi.org/10.48550/arxiv.2302.13971",
+          "title": "LLaMA: Open and Efficient Foundation Language Models",
+          "publicationYear": 2023,
+          "publicationDate": "2023-02-27",
+          "citedByCount": 3913,
+          "type": "preprint",
+          "landingPageUrl": "http://arxiv.org/abs/2302.13971",
+          "sourceName": "arXiv (Cornell University)",
+          "authorships": [
+            {
+              "authorId": "https://openalex.org/A5032644449",
+              "authorName": "Hugo Touvron",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5090457109",
+              "authorName": "Thibaut Lavril",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5007815326",
+              "authorName": "Gautier Izacard",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5033356379",
+              "authorName": "Xavier Martinet",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5050998809",
+              "authorName": "Marie-Anne Lachaux",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5084553837",
+              "authorName": "Timothée Lacroix",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5048065823",
+              "authorName": "Baptiste Rozière",
+              "institutions": []
+            },
+            {
+              "authorId": "https://openalex.org/A5075834790",
+              "authorName": "Naman Goyal",
+              "institutions": []
+            }
+          ],
+          "referencedWorks": []
+        },
+        {
+          "id": "W4360620450",
+          "openAlexUrl": "https://openalex.org/W4360620450",
+          "doi": "https://doi.org/10.1016/j.ijinfomgt.2023.102642",
+          "title": "Opinion Paper: “So what if ChatGPT wrote it?” Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy",
+          "publicationYear": 2023,
+          "publicationDate": "2023-03-11",
+          "citedByCount": 3762,
+          "type": "article",
+          "landingPageUrl": "https://doi.org/10.1016/j.ijinfomgt.2023.102642",
+          "sourceName": "International Journal of Information Management",
+          "authorships": [
+            {
+              "authorId": "https://openalex.org/A5048622877",
+              "authorName": "Yogesh K. Dwivedi",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I244572783",
+                  "ror": "https://ror.org/005r2ww51",
+                  "displayName": "Symbiosis International University",
+                  "countryCode": "IN",
+                  "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I39586589",
+                  "ror": "https://ror.org/053fq8t95",
+                  "displayName": "Swansea University",
+                  "countryCode": "GB",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5025481201",
+              "authorName": "Nir Kshetri",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I169335092",
+                  "ror": "https://ror.org/04fnxsj42",
+                  "displayName": "University of North Carolina at Greensboro",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5072512285",
+              "authorName": "Laurie Hughes",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I39586589",
+                  "ror": "https://ror.org/053fq8t95",
+                  "displayName": "Swansea University",
+                  "countryCode": "GB",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5081524121",
+              "authorName": "Emma Slade",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I36234482",
+                  "ror": "https://ror.org/0524sp257",
+                  "displayName": "University of Bristol",
+                  "countryCode": "GB",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5057695278",
+              "authorName": "Anand Jeyaraj",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I19648265",
+                  "ror": "https://ror.org/04qk6pt94",
+                  "displayName": "Wright State University",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5061235109",
+              "authorName": "Arpan Kumar Kar",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I68891433",
+                  "ror": "https://ror.org/049tgcd06",
+                  "displayName": "Indian Institute of Technology Delhi",
+                  "countryCode": "IN",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5017453435",
+              "authorName": "Abdullah M. Baabdullah",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I185163786",
+                  "ror": "https://ror.org/02ma4wv74",
+                  "displayName": "King Abdulaziz University",
+                  "countryCode": "SA",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5008571658",
+              "authorName": "Alex Koohang",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I181565077",
+                  "ror": "https://ror.org/03qt6ba18",
+                  "displayName": "Georgia State University",
+                  "countryCode": "US",
+                  "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I931969281",
+                  "ror": "https://ror.org/01cwqb692",
+                  "displayName": "Middle Georgia State College",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            }
+          ],
+          "referencedWorks": [
+            "W1583059097",
+            "W1605074941",
+            "W1651200380",
+            "W1934033894",
+            "W1968305916",
+            "W1969507040",
+            "W1971115182",
+            "W1987953153",
+            "W2001771035",
+            "W2001829221",
+            "W2020073413",
+            "W2027398644"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openalex_works_deepmind",
+      "entityId": "deepmind",
+      "entityName": "Google DeepMind",
+      "query": "Google DeepMind artificial intelligence",
+      "requestedUrl": "https://api.openalex.org/works?search=Google+DeepMind+artificial+intelligence&per-page=5&sort=cited_by_count%3Adesc&mailto=research%40example.com",
+      "fetchedAt": "2026-07-04T15:25:15.984Z",
+      "worksCount": 10696,
+      "works": [
+        {
+          "id": "W2964121744",
+          "openAlexUrl": "https://openalex.org/W2964121744",
+          "doi": "https://doi.org/10.4230/lipics.cp.2021.42",
+          "title": "W2964121744",
+          "publicationYear": 2021,
+          "publicationDate": "2021-01-01",
+          "citedByCount": 50351,
+          "type": "preprint",
+          "landingPageUrl": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CP.2021.42",
+          "sourceName": "DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)",
+          "authorships": [
+            {
+              "authorId": null,
+              "authorName": "Mandi, Jayanta",
+              "institutions": []
+            },
+            {
+              "authorId": null,
+              "authorName": "Canoy, Rocsildes",
+              "institutions": []
+            },
+            {
+              "authorId": null,
+              "authorName": "Bucarey, Víctor",
+              "institutions": []
+            },
+            {
+              "authorId": null,
+              "authorName": "Guns, Tias",
+              "institutions": []
+            }
+          ],
+          "referencedWorks": []
+        },
+        {
+          "id": "W2257979135",
+          "openAlexUrl": "https://openalex.org/W2257979135",
+          "doi": "https://doi.org/10.1038/nature16961",
+          "title": "Mastering the game of Go with deep neural networks and tree search",
+          "publicationYear": 2016,
+          "publicationDate": "2016-01-26",
+          "citedByCount": 15849,
+          "type": "article",
+          "landingPageUrl": "https://doi.org/10.1038/nature16961",
+          "sourceName": "Nature",
+          "authorships": [
+            {
+              "authorId": "https://openalex.org/A5091771290",
+              "authorName": "David Silver",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I4210113297",
+                  "ror": "https://ror.org/024bc3e07",
+                  "displayName": "Google (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                },
+                {
+                  "id": "https://openalex.org/I4210090411",
+                  "ror": "https://ror.org/00971b260",
+                  "displayName": "DeepMind (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5006011042",
+              "authorName": "Aja Huang",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I4210113297",
+                  "ror": "https://ror.org/024bc3e07",
+                  "displayName": "Google (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                },
+                {
+                  "id": "https://openalex.org/I4210090411",
+                  "ror": "https://ror.org/00971b260",
+                  "displayName": "DeepMind (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5054711904",
+              "authorName": "Chris J. Maddison",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I4210090411",
+                  "ror": "https://ror.org/00971b260",
+                  "displayName": "DeepMind (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                },
+                {
+                  "id": "https://openalex.org/I4210113297",
+                  "ror": "https://ror.org/024bc3e07",
+                  "displayName": "Google (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5009305837",
+              "authorName": "Arthur Guez",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I4210090411",
+                  "ror": "https://ror.org/00971b260",
+                  "displayName": "DeepMind (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                },
+                {
+                  "id": "https://openalex.org/I4210113297",
+                  "ror": "https://ror.org/024bc3e07",
+                  "displayName": "Google (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5053301405",
+              "authorName": "Laurent Sifre",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I4210113297",
+                  "ror": "https://ror.org/024bc3e07",
+                  "displayName": "Google (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                },
+                {
+                  "id": "https://openalex.org/I4210090411",
+                  "ror": "https://ror.org/00971b260",
+                  "displayName": "DeepMind (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5025210358",
+              "authorName": "George van den Driessche",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I4210090411",
+                  "ror": "https://ror.org/00971b260",
+                  "displayName": "DeepMind (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                },
+                {
+                  "id": "https://openalex.org/I4210113297",
+                  "ror": "https://ror.org/024bc3e07",
+                  "displayName": "Google (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5080518618",
+              "authorName": "Julian Schrittwieser",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I4210090411",
+                  "ror": "https://ror.org/00971b260",
+                  "displayName": "DeepMind (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                },
+                {
+                  "id": "https://openalex.org/I4210113297",
+                  "ror": "https://ror.org/024bc3e07",
+                  "displayName": "Google (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5021217383",
+              "authorName": "Ioannis Antonoglou",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I4210113297",
+                  "ror": "https://ror.org/024bc3e07",
+                  "displayName": "Google (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                },
+                {
+                  "id": "https://openalex.org/I4210090411",
+                  "ror": "https://ror.org/00971b260",
+                  "displayName": "DeepMind (United Kingdom)",
+                  "countryCode": "GB",
+                  "type": "company"
+                }
+              ]
+            }
+          ],
+          "referencedWorks": [
+            "W50617830",
+            "W170811313",
+            "W182596629",
+            "W202421935",
+            "W580037270",
+            "W1492505991",
+            "W1497290640",
+            "W1500868819",
+            "W1501727541",
+            "W1509593372",
+            "W1510972507",
+            "W1512315140"
+          ]
+        },
+        {
+          "id": "W2606974598",
+          "openAlexUrl": "https://openalex.org/W2606974598",
+          "doi": "https://doi.org/10.18653/v1/p17-1099",
+          "title": "Get To The Point: Summarization with Pointer-Generator Networks",
+          "publicationYear": 2017,
+          "publicationDate": "2017-01-01",
+          "citedByCount": 3897,
+          "type": "article",
+          "landingPageUrl": "https://doi.org/10.18653/v1/p17-1099",
+          "sourceName": null,
+          "authorships": [
+            {
+              "authorId": "https://openalex.org/A5076818344",
+              "authorName": "Abigail See",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I97018004",
+                  "ror": "https://ror.org/00f54p054",
+                  "displayName": "Stanford University",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5076683869",
+              "authorName": "Peter J. Liu",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I1291425158",
+                  "ror": "https://ror.org/00njsd438",
+                  "displayName": "Google (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5046006076",
+              "authorName": "Christopher D. Manning",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I97018004",
+                  "ror": "https://ror.org/00f54p054",
+                  "displayName": "Stanford University",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            }
+          ],
+          "referencedWorks": [
+            "W1514535095",
+            "W1544827683",
+            "W1843891098",
+            "W1916559533",
+            "W1964326564",
+            "W2088802729",
+            "W2101390659",
+            "W2130942839",
+            "W2133459682",
+            "W2133564696",
+            "W2146502635",
+            "W2154652894"
+          ]
+        },
+        {
+          "id": "W4384071683",
+          "openAlexUrl": "https://openalex.org/W4384071683",
+          "doi": "https://doi.org/10.1038/s41586-023-06291-2",
+          "title": "Large language models encode clinical knowledge",
+          "publicationYear": 2023,
+          "publicationDate": "2023-07-12",
+          "citedByCount": 3240,
+          "type": "article",
+          "landingPageUrl": "https://doi.org/10.1038/s41586-023-06291-2",
+          "sourceName": "Nature",
+          "authorships": [
+            {
+              "authorId": "https://openalex.org/A5027454515",
+              "authorName": "Karan Singhal",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I1291425158",
+                  "ror": "https://ror.org/00njsd438",
+                  "displayName": "Google (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5047463591",
+              "authorName": "Shekoofeh Azizi",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I1291425158",
+                  "ror": "https://ror.org/00njsd438",
+                  "displayName": "Google (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5059213795",
+              "authorName": "Tao Tu",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I1291425158",
+                  "ror": "https://ror.org/00njsd438",
+                  "displayName": "Google (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5063201022",
+              "authorName": "S. Sara Mahdavi",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I1291425158",
+                  "ror": "https://ror.org/00njsd438",
+                  "displayName": "Google (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5100657725",
+              "authorName": "Jason Lee",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I1291425158",
+                  "ror": "https://ror.org/00njsd438",
+                  "displayName": "Google (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5051828575",
+              "authorName": "Hyung Won Chung",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I1291425158",
+                  "ror": "https://ror.org/00njsd438",
+                  "displayName": "Google (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5030765685",
+              "authorName": "Nathan Scales",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I1291425158",
+                  "ror": "https://ror.org/00njsd438",
+                  "displayName": "Google (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5088063475",
+              "authorName": "Ajay Kumar Tanwani",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I1291425158",
+                  "ror": "https://ror.org/00njsd438",
+                  "displayName": "Google (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                }
+              ]
+            }
+          ],
+          "referencedWorks": [
+            "W1981208470",
+            "W2042492924",
+            "W2086519542",
+            "W2101105183",
+            "W2101950949",
+            "W2558323601",
+            "W2593981654",
+            "W2801702920",
+            "W2897042519",
+            "W2911489562",
+            "W2953235477",
+            "W2962833164"
+          ]
+        },
+        {
+          "id": "W4205379795",
+          "openAlexUrl": "https://openalex.org/W4205379795",
+          "doi": "https://doi.org/10.1038/s41573-021-00371-6",
+          "title": "PROTAC targeted protein degraders: the past is prologue",
+          "publicationYear": 2022,
+          "publicationDate": "2022-01-18",
+          "citedByCount": 3072,
+          "type": "review",
+          "landingPageUrl": "https://doi.org/10.1038/s41573-021-00371-6",
+          "sourceName": "Nature Reviews Drug Discovery",
+          "authorships": [
+            {
+              "authorId": "https://openalex.org/A5004587101",
+              "authorName": "Miklós Békés",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I4210142342",
+                  "ror": "https://ror.org/045jkfr03",
+                  "displayName": "Arvinas (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5064462016",
+              "authorName": "David R. Langley",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I4210142342",
+                  "ror": "https://ror.org/045jkfr03",
+                  "displayName": "Arvinas (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5016866989",
+              "authorName": "Craig M. Crews",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I32971472",
+                  "ror": "https://ror.org/03v76x132",
+                  "displayName": "Yale University",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            }
+          ],
+          "referencedWorks": [
+            "W235316306",
+            "W1254044211",
+            "W1512690422",
+            "W1527383154",
+            "W1864634785",
+            "W1964985092",
+            "W1967199837",
+            "W1967347754",
+            "W1972633502",
+            "W1973202003",
+            "W1973999018",
+            "W1984754431"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openalex_works_nvidia",
+      "entityId": "nvidia",
+      "entityName": "NVIDIA",
+      "query": "NVIDIA GPU artificial intelligence",
+      "requestedUrl": "https://api.openalex.org/works?search=NVIDIA+GPU+artificial+intelligence&per-page=5&sort=cited_by_count%3Adesc&mailto=research%40example.com",
+      "fetchedAt": "2026-07-04T15:25:15.984Z",
+      "worksCount": 97598,
+      "works": [
+        {
+          "id": "W4385245566",
+          "openAlexUrl": "https://openalex.org/W4385245566",
+          "doi": "https://doi.org/10.4230/lipics.itp.2023.19",
+          "title": "MizAR 60 for Mizar 50",
+          "publicationYear": 2023,
+          "publicationDate": "2023-01-01",
+          "citedByCount": 76347,
+          "type": "preprint",
+          "landingPageUrl": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITP.2023.19",
+          "sourceName": "DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)",
+          "authorships": [
+            {
+              "authorId": null,
+              "authorName": "Jakubův, Jan",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I44504214",
+                  "ror": "https://ror.org/03kqpb082",
+                  "displayName": "Czech Technical University in Prague",
+                  "countryCode": "CZ",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Chvalovský, Karel",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I44504214",
+                  "ror": "https://ror.org/03kqpb082",
+                  "displayName": "Czech Technical University in Prague",
+                  "countryCode": "CZ",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Goertzel, Zarathustra",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I44504214",
+                  "ror": "https://ror.org/03kqpb082",
+                  "displayName": "Czech Technical University in Prague",
+                  "countryCode": "CZ",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Kaliszyk, Cezary",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I190249584",
+                  "ror": "https://ror.org/054pv6659",
+                  "displayName": "Universität Innsbruck",
+                  "countryCode": "AT",
+                  "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I4210119939",
+                  "ror": "https://ror.org/02jdepa55",
+                  "displayName": "Food Research Institute Prague",
+                  "countryCode": "CZ",
+                  "type": "facility"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Olšák, Mirek",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I84909340",
+                  "ror": "https://ror.org/05d5m2r55",
+                  "displayName": "Institut des Hautes Études Scientifiques",
+                  "countryCode": "FR",
+                  "type": "facility"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Piotrowski, Bartosz",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I44504214",
+                  "ror": "https://ror.org/03kqpb082",
+                  "displayName": "Czech Technical University in Prague",
+                  "countryCode": "CZ",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Schulz, Stephan",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I108806672",
+                  "ror": "https://ror.org/02xdzy536",
+                  "displayName": "Baden-Wuerttemberg Cooperative State University",
+                  "countryCode": "DE",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Suda, Martin",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I44504214",
+                  "ror": "https://ror.org/03kqpb082",
+                  "displayName": "Czech Technical University in Prague",
+                  "countryCode": "CZ",
+                  "type": "education"
+                }
+              ]
+            }
+          ],
+          "referencedWorks": []
+        },
+        {
+          "id": "W4281790889",
+          "openAlexUrl": "https://openalex.org/W4281790889",
+          "doi": "https://doi.org/10.1038/s41592-022-01488-1",
+          "title": "ColabFold: making protein folding accessible to all",
+          "publicationYear": 2022,
+          "publicationDate": "2022-05-30",
+          "citedByCount": 9725,
+          "type": "article",
+          "landingPageUrl": "https://doi.org/10.1038/s41592-022-01488-1",
+          "sourceName": "Nature Methods",
+          "authorships": [
+            {
+              "authorId": "https://openalex.org/A5016012053",
+              "authorName": "Milot Mirdita",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I4210095684",
+                  "ror": "https://ror.org/0080y7t67",
+                  "displayName": "Max Planck Institute for the Study of Religious and Ethnic Diversity",
+                  "countryCode": "DE",
+                  "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I4387154714",
+                  "ror": "https://ror.org/03av75f26",
+                  "displayName": "Max Planck Institute for Multidisciplinary Sciences",
+                  "countryCode": null,
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5062361890",
+              "authorName": "Konstantin Schütze",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I139264467",
+                  "ror": "https://ror.org/04h9pn542",
+                  "displayName": "Seoul National University",
+                  "countryCode": "KR",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5077947736",
+              "authorName": "Yoshitaka Moriwaki",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I74801974",
+                  "ror": "https://ror.org/057zh3y96",
+                  "displayName": "The University of Tokyo",
+                  "countryCode": "JP",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5087087224",
+              "authorName": "Lim Heo",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I87216513",
+                  "ror": "https://ror.org/05hs6h993",
+                  "displayName": "Michigan State University",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5084204507",
+              "authorName": "Sergey Ovchinnikov",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I2801851002",
+                  "ror": "https://ror.org/006v7bf86",
+                  "displayName": "Harvard University Press",
+                  "countryCode": "US",
+                  "type": "other"
+                },
+                {
+                  "id": "https://openalex.org/I4210155419",
+                  "ror": "https://ror.org/05r3dyn47",
+                  "displayName": "Center for Systems Biology",
+                  "countryCode": "US",
+                  "type": "facility"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5019985343",
+              "authorName": "Martin Steinegger",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I139264467",
+                  "ror": "https://ror.org/04h9pn542",
+                  "displayName": "Seoul National University",
+                  "countryCode": "KR",
+                  "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I4210123907",
+                  "ror": "https://ror.org/02hs8e066",
+                  "displayName": "National University College",
+                  "countryCode": "PR",
+                  "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I4210133976",
+                  "ror": "https://ror.org/03t8mqd25",
+                  "displayName": "Institute of Molecular Biology",
+                  "countryCode": "AM",
+                  "type": "facility"
+                }
+              ]
+            }
+          ],
+          "referencedWorks": [
+            "W2011301426",
+            "W2102245393",
+            "W2102461176",
+            "W2106648157",
+            "W2138122982",
+            "W2140047797",
+            "W2142678031",
+            "W2151581834",
+            "W2508425869",
+            "W2557595285",
+            "W2572080171",
+            "W2949223833"
+          ]
+        },
+        {
+          "id": "W3140854437",
+          "openAlexUrl": "https://openalex.org/W3140854437",
+          "doi": "https://doi.org/10.1186/s40537-021-00444-8",
+          "title": "Review of deep learning: concepts, CNN architectures, challenges, applications, future directions",
+          "publicationYear": 2021,
+          "publicationDate": "2021-03-31",
+          "citedByCount": 7583,
+          "type": "article",
+          "landingPageUrl": "https://doi.org/10.1186/s40537-021-00444-8",
+          "sourceName": "Journal Of Big Data",
+          "authorships": [
+            {
+              "authorId": "https://openalex.org/A5102889969",
+              "authorName": "Laith Alzubaidi",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I160993911",
+                  "ror": "https://ror.org/03pnv4752",
+                  "displayName": "Queensland University of Technology",
+                  "countryCode": "AU",
+                  "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I4210119257",
+                  "ror": "https://ror.org/028h0pd91",
+                  "displayName": "University of Information Technology and Communications",
+                  "countryCode": "IQ",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5101979224",
+              "authorName": "Jinglan Zhang",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I160993911",
+                  "ror": "https://ror.org/03pnv4752",
+                  "displayName": "Queensland University of Technology",
+                  "countryCode": "AU",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5016153721",
+              "authorName": "Amjad J. Humaidi",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I171256487",
+                  "ror": "https://ror.org/01w1ehb86",
+                  "displayName": "University of Technology - Iraq",
+                  "countryCode": "IQ",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5052471696",
+              "authorName": "Ayad Q. Al-Dujaili",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I4210115078",
+                  "ror": "https://ror.org/02fvkg758",
+                  "displayName": "Middle Technical University",
+                  "countryCode": "IQ",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5101430356",
+              "authorName": "Ye Duan",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I76835614",
+                  "ror": "https://ror.org/02ymw8z06",
+                  "displayName": "University of Missouri",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5008534489",
+              "authorName": "Omran Al-Shamma",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I4210119257",
+                  "ror": "https://ror.org/028h0pd91",
+                  "displayName": "University of Information Technology and Communications",
+                  "countryCode": "IQ",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5010765865",
+              "authorName": "José Santamaría",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I191420491",
+                  "ror": "https://ror.org/0122p5f64",
+                  "displayName": "Universidad de Jaén",
+                  "countryCode": "ES",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5090966997",
+              "authorName": "Mohammed A. Fadhel",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I202735123",
+                  "ror": "https://ror.org/02ypa8k59",
+                  "displayName": "Thi Qar University",
+                  "countryCode": "IQ",
+                  "type": "education"
+                }
+              ]
+            }
+          ],
+          "referencedWorks": [
+            "W22040386",
+            "W34239198",
+            "W66427752",
+            "W114517082",
+            "W158974721",
+            "W177847060",
+            "W603908379",
+            "W948663339",
+            "W1423339008",
+            "W1504543387",
+            "W1509515766",
+            "W1533861849"
+          ]
+        },
+        {
+          "id": "W3177318507",
+          "openAlexUrl": "https://openalex.org/W3177318507",
+          "doi": "https://doi.org/10.1609/aaai.v35i12.17325",
+          "title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting",
+          "publicationYear": 2021,
+          "publicationDate": "2021-05-18",
+          "citedByCount": 6135,
+          "type": "article",
+          "landingPageUrl": "https://doi.org/10.1609/aaai.v35i12.17325",
+          "sourceName": "Proceedings of the AAAI Conference on Artificial Intelligence",
+          "authorships": [
+            {
+              "authorId": "https://openalex.org/A5086419494",
+              "authorName": "Haoyi Zhou",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I82880672",
+                  "ror": "https://ror.org/00wk2mp56",
+                  "displayName": "Beihang University",
+                  "countryCode": "CN",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5013030532",
+              "authorName": "Shanghang Zhang",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I82880672",
+                  "ror": "https://ror.org/00wk2mp56",
+                  "displayName": "Beihang University",
+                  "countryCode": "CN",
+                  "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I95457486",
+                  "ror": "https://ror.org/01an7q238",
+                  "displayName": "University of California, Berkeley",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5004628099",
+              "authorName": "Jieqi Peng",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I82880672",
+                  "ror": "https://ror.org/00wk2mp56",
+                  "displayName": "Beihang University",
+                  "countryCode": "CN",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5100328838",
+              "authorName": "Shuai Zhang",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I82880672",
+                  "ror": "https://ror.org/00wk2mp56",
+                  "displayName": "Beihang University",
+                  "countryCode": "CN",
+                  "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I95457486",
+                  "ror": "https://ror.org/01an7q238",
+                  "displayName": "University of California, Berkeley",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5100380469",
+              "authorName": "Jianxin Li",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I82880672",
+                  "ror": "https://ror.org/00wk2mp56",
+                  "displayName": "Beihang University",
+                  "countryCode": "CN",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5101862104",
+              "authorName": "Hui Xiong",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I102322142",
+                  "ror": "https://ror.org/05vt9qd57",
+                  "displayName": "Rutgers, The State University of New Jersey",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5083360053",
+              "authorName": "Wancai Zhang",
+              "institutions": []
+            }
+          ],
+          "referencedWorks": [
+            "W1969852690",
+            "W2054685200",
+            "W2130942839",
+            "W2133564696",
+            "W2172140247",
+            "W2176412452",
+            "W2319170717",
+            "W2549483845",
+            "W2604847698",
+            "W2613328025",
+            "W2757354914",
+            "W2762309767"
+          ]
+        },
+        {
+          "id": "W2616247523",
+          "openAlexUrl": "https://openalex.org/W2616247523",
+          "doi": "https://doi.org/10.1007/s11263-019-01228-7",
+          "title": "Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization",
+          "publicationYear": 2019,
+          "publicationDate": "2019-10-11",
+          "citedByCount": 5609,
+          "type": "article",
+          "landingPageUrl": "https://doi.org/10.1007/s11263-019-01228-7",
+          "sourceName": "International Journal of Computer Vision",
+          "authorships": [
+            {
+              "authorId": null,
+              "authorName": "Ramprasaath R. Selvaraju",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I130701444",
+                  "ror": "https://ror.org/01zkghx44",
+                  "displayName": "Georgia Institute of Technology",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Michael Cogswell",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I130701444",
+                  "ror": "https://ror.org/01zkghx44",
+                  "displayName": "Georgia Institute of Technology",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Abhishek Das",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I130701444",
+                  "ror": "https://ror.org/01zkghx44",
+                  "displayName": "Georgia Institute of Technology",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Ramakrishna Vedantam",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I130701444",
+                  "ror": "https://ror.org/01zkghx44",
+                  "displayName": "Georgia Institute of Technology",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Devi Parikh",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I130701444",
+                  "ror": "https://ror.org/01zkghx44",
+                  "displayName": "Georgia Institute of Technology",
+                  "countryCode": "US",
+                  "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I4210099336",
+                  "ror": "https://ror.org/01240pn49",
+                  "displayName": "Menlo School",
+                  "countryCode": "US",
+                  "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I4210114444",
+                  "ror": "https://ror.org/01zbnvs85",
+                  "displayName": "Meta (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Dhruv Batra",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I130701444",
+                  "ror": "https://ror.org/01zkghx44",
+                  "displayName": "Georgia Institute of Technology",
+                  "countryCode": "US",
+                  "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I4210099336",
+                  "ror": "https://ror.org/01240pn49",
+                  "displayName": "Menlo School",
+                  "countryCode": "US",
+                  "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I4210114444",
+                  "ror": "https://ror.org/01zbnvs85",
+                  "displayName": "Meta (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                }
+              ]
+            }
+          ],
+          "referencedWorks": [
+            "W1586079445",
+            "W1686810756",
+            "W1732154880",
+            "W1832500336",
+            "W1849277567",
+            "W1861492603",
+            "W1895577753",
+            "W1900913856",
+            "W1903029394",
+            "W1905882502",
+            "W1931639407",
+            "W1933349210"
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "planned": 3,
+    "resultSets": 3,
+    "works": 15,
+    "errors": 0
+  }
+}
