@@ -1,0 +1,530 @@
+{
+  "generatedAt": "2026-07-04T09:00:00.000Z",
+  "overrides": [
+    {
+      "relationshipId": "p1_rel_748",
+      "confidence": 0.42,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Labelbox 与 Cohere 的直接供应关系尚未找到公开证据；仅按数据标注/评测平台可能服务模型开发的生态推断保留，不作为已验证供应关系。",
+      "reviewNote": "Classified as inferred ecosystem mapping after direct public evidence search found no Cohere/Labelbox customer case, announcement or credible report."
+    },
+    {
+      "relationshipId": "rel_10",
+      "confidence": 0.48,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Arista 与 CoreWeave 的直接供应关系尚未找到公开证据；仅按 AI 数据中心高速网络需求与供应商生态推断保留，不作为已验证供应关系。",
+      "reviewNote": "Classified as inferred ecosystem mapping after direct public evidence search found no Arista/CoreWeave customer case, announcement or credible report."
+    },
+    {
+      "relationshipId": "p1_rel_429",
+      "confidence": 0.44,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Hugging Face 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为模型分发/开发生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_430",
+      "confidence": 0.44,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Hugging Face 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为模型分发/开发生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_431",
+      "confidence": 0.44,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Hugging Face 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为模型分发/开发生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_432",
+      "confidence": 0.44,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Hugging Face 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为模型分发/开发生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_433",
+      "confidence": 0.44,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Hugging Face 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为模型分发/开发生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_434",
+      "confidence": 0.44,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Hugging Face 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为模型分发/开发生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_435",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "LangChain 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为应用开发生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_436",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "LangChain 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为应用开发生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_437",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "LangChain 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为应用开发生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_438",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "LangChain 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为应用开发生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_439",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "LangChain 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为应用开发生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_440",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "LangChain 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为应用开发生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic AI infra to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_441",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Databricks 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为数据/模型服务生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic data platform to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_442",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Databricks 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为数据/模型服务生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic data platform to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_443",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Databricks 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为数据/模型服务生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic data platform to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_444",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Databricks 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为数据/模型服务生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic data platform to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_445",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Databricks 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为数据/模型服务生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic data platform to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_446",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Databricks 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为数据/模型服务生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic data platform to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_447",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Pinecone 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_448",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Pinecone 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_449",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Pinecone 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_450",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Pinecone 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_451",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Pinecone 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_452",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Pinecone 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_453",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "LlamaIndex 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为检索增强/Agent 生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic RAG framework to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_454",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "LlamaIndex 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为检索增强/Agent 生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic RAG framework to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_455",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "LlamaIndex 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为检索增强/Agent 生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic RAG framework to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_456",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "LlamaIndex 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为检索增强/Agent 生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic RAG framework to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_457",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "LlamaIndex 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为检索增强/Agent 生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic RAG framework to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_458",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "LlamaIndex 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为检索增强/Agent 生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic RAG framework to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_459",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Weights & Biases 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为模型评测/MLOps 生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic MLOps supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_460",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Weights & Biases 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为模型评测/MLOps 生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic MLOps supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_461",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Weights & Biases 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为模型评测/MLOps 生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic MLOps supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_462",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Weights & Biases 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为模型评测/MLOps 生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic MLOps supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_463",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Weights & Biases 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为模型评测/MLOps 生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic MLOps supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_464",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Weights & Biases 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为模型评测/MLOps 生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic MLOps supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_465",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Snowflake 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为数据云/AI 平台生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic data cloud supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_466",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Snowflake 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为数据云/AI 平台生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic data cloud supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_467",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Snowflake 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为数据云/AI 平台生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic data cloud supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_468",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Snowflake 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为数据云/AI 平台生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic data cloud supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_469",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Snowflake 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为数据云/AI 平台生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic data cloud supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_470",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Snowflake 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为数据云/AI 平台生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic data cloud supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_471",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Weaviate 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_472",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Weaviate 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_473",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Weaviate 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_474",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Weaviate 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_475",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Weaviate 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_476",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Weaviate 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_477",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Chroma 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_478",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Chroma 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_479",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Chroma 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_480",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Chroma 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_481",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Chroma 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_482",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Chroma 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_483",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "MongoDB 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为应用数据平台生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic database/platform supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_484",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "MongoDB 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为应用数据平台生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic database/platform supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_485",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "MongoDB 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为应用数据平台生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic database/platform supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_486",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "MongoDB 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为应用数据平台生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic database/platform supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_487",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "MongoDB 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为应用数据平台生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic database/platform supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_488",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "MongoDB 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为应用数据平台生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic database/platform supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_489",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Elastic 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为搜索/检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic search/database supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_490",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Elastic 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为搜索/检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic search/database supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_491",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Elastic 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为搜索/检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic search/database supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_492",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Elastic 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为搜索/检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic search/database supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_493",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Elastic 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为搜索/检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic search/database supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_494",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Elastic 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为搜索/检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic search/database supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_495",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Redis 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为缓存/向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic cache/vector database supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_496",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Redis 到 Perplexity 的直接供应关系尚未找到公开证据；当前仅保留为缓存/向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic cache/vector database supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_497",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Redis 到 Midjourney 的直接供应关系尚未找到公开证据；当前仅保留为缓存/向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic cache/vector database supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_498",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Redis 到 ElevenLabs 的直接供应关系尚未找到公开证据；当前仅保留为缓存/向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic cache/vector database supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_499",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Redis 到 Harvey 的直接供应关系尚未找到公开证据；当前仅保留为缓存/向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic cache/vector database supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_500",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Redis 到 Glean 的直接供应关系尚未找到公开证据；当前仅保留为缓存/向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic cache/vector database supplier edge pending direct product documentation or customer evidence."
+    },
+    {
+      "relationshipId": "p1_rel_501",
+      "confidence": 0.46,
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "note": "Milvus/Zilliz 到 Cursor 的直接供应关系尚未找到公开证据；当前仅保留为向量检索生态可能依赖的推断边。",
+      "reviewNote": "Batch-downgraded generic vector database to application supplier edge pending direct product documentation or customer evidence."
+    }
+  ]
+}
