@@ -62,6 +62,18 @@ function extractFixtureResult(request) {
   };
 }
 
+function openAiFixtureRequest(request) {
+  const prompt = request?.messages?.find((message) => message.role === "user")?.content || "";
+  return {
+    task: "ai_capital_extract_candidates",
+    schemaVersion: 1,
+    entityId: "openai",
+    evidenceUrl: "https://example.com/openai-compatible-fixture",
+    prompt,
+    model: request.model
+  };
+}
+
 const server = http.createServer(async (request, response) => {
   try {
     if (request.method !== "POST") {
@@ -77,6 +89,18 @@ const server = http.createServer(async (request, response) => {
 
     const body = await readRequestBody(request);
     const parsed = JSON.parse(body || "{}");
+    const openAiCompatible = request.url?.replace(/\/+$/, "").endsWith("/v1/chat/completions");
+    if (openAiCompatible) {
+      const result = extractFixtureResult(openAiFixtureRequest(parsed));
+      response.writeHead(200, { "content-type": "application/json" });
+      response.end(
+        JSON.stringify({
+          model: parsed.model,
+          choices: [{ message: { role: "assistant", content: JSON.stringify(result) } }]
+        })
+      );
+      return;
+    }
     if (parsed.task !== "ai_capital_extract_candidates" || parsed.schemaVersion !== 1) {
       response.writeHead(400, { "content-type": "application/json" });
       response.end(JSON.stringify({ error: "invalid_request_schema" }));

@@ -1,4 +1,9 @@
 import { spawn } from "node:child_process";
+import {
+  buildOpenAiChatRequest,
+  isOpenAiChatEndpoint,
+  parseOpenAiChatResponse
+} from "./lib/openai-chat-adapter.mjs";
 
 const providerArg = process.argv.find((arg) => arg.startsWith("--provider="))?.split("=")[1];
 const requiredProvider = process.argv.find((arg) => arg.startsWith("--require-provider="))?.split("=")[1];
@@ -96,6 +101,7 @@ function commandProbe(command) {
 
 async function httpProbe(url, apiKey) {
   if (!url) return { ok: false, error: "LLM_EXTRACT_URL is not configured" };
+  const openAiCompatible = isOpenAiChatEndpoint(url);
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
@@ -105,13 +111,16 @@ async function httpProbe(url, apiKey) {
         "content-type": "application/json",
         ...(apiKey ? { authorization: `Bearer ${apiKey}` } : {})
       },
-      body: JSON.stringify(sampleRequest),
+      body: JSON.stringify(openAiCompatible ? buildOpenAiChatRequest(sampleRequest) : sampleRequest),
       signal: controller.signal
     });
     const text = await response.text();
     if (!response.ok) return { ok: false, error: `HTTP ${response.status}: ${text}` };
     try {
-      return validateResultShape(JSON.parse(text));
+      const parsed = JSON.parse(text);
+      return validateResultShape(
+        openAiCompatible ? parseOpenAiChatResponse(parsed, sampleRequest.model) : parsed
+      );
     } catch (error) {
       return { ok: false, error: `invalid JSON: ${error.message}` };
     }
