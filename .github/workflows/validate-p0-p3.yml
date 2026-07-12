@@ -1,0 +1,114 @@
+name: Validate P0-P3
+run-name: Validate P0-P3 (${{ github.event_name == 'workflow_dispatch' && inputs.dispatch_token || github.event_name }})
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      production_llm:
+        description: "Run production LLM gate with repository secrets"
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+      dispatch_token:
+        description: "Unique UUID used to bind the orchestrator to this workflow run"
+        required: true
+        type: string
+
+jobs:
+  local-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install PostgreSQL tools
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y postgresql
+          echo "/usr/lib/postgresql/$(ls /usr/lib/postgresql | sort -V | tail -1)/bin" >> "$GITHUB_PATH"
+
+      - run: npm ci
+
+      - name: Validate local P0-P3 gate
+        run: npm run validate:p0-p3:local
+
+      - name: Refresh production completion matrix and release checklist
+        run: |
+          set -euo pipefail
+          npm run audit:p0-p3:matrix
+          npm run production:p0-p3:checklist
+          npm run validate:production-release-checklist
+
+      - name: Validate production gate fixture
+        run: npm run validate:p0-p3:production-fixture
+
+  production-llm-gate:
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.production_llm == 'true' }}
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      ADMIN_REVIEW_TOKEN: ${{ secrets.ADMIN_REVIEW_TOKEN }}
+      ADMIN_REVIEW_ADMIN_TOKEN: ${{ secrets.ADMIN_REVIEW_ADMIN_TOKEN }}
+      ADMIN_REVIEW_REVIEWER_TOKEN: ${{ secrets.ADMIN_REVIEW_REVIEWER_TOKEN }}
+      ADMIN_REVIEW_SESSION_SECRET: ${{ secrets.ADMIN_REVIEW_SESSION_SECRET }}
+      ADMIN_REVIEW_ADMIN_PASSWORD: ${{ secrets.ADMIN_REVIEW_ADMIN_PASSWORD }}
+      ADMIN_REVIEW_REVIEWER_PASSWORD: ${{ secrets.ADMIN_REVIEW_REVIEWER_PASSWORD }}
+      LLM_EXTRACT_URL: ${{ secrets.LLM_EXTRACT_URL }}
+      LLM_EXTRACT_API_KEY: ${{ secrets.LLM_EXTRACT_API_KEY }}
+      LLM_EXTRACT_MODEL: ${{ vars.LLM_EXTRACT_MODEL }}
+      LLM_EXTRACT_RPM: ${{ vars.LLM_EXTRACT_RPM || '30' }}
+      LLM_EXTRACT_MAX_RETRIES: ${{ vars.LLM_EXTRACT_MAX_RETRIES || '2' }}
+      LLM_EXTRACT_RETRY_BASE_MS: ${{ vars.LLM_EXTRACT_RETRY_BASE_MS || '1000' }}
+      P0_P3_EXPECTED_SOURCE_COMMIT: ${{ github.sha }}
+      P0_P3_EXPECTED_GITHUB_REPOSITORY: ${{ github.repository }}
+      P0_P3_EXPECTED_GITHUB_REF: refs/heads/main
+      P0_P3_REQUIRE_GITHUB_EVIDENCE: "true"
+      P0_P3_GITHUB_RUN_ID: ${{ github.run_id }}
+      P0_P3_GITHUB_RUN_ATTEMPT: ${{ github.run_attempt }}
+      P0_P3_GITHUB_WORKFLOW: ${{ github.workflow }}
+      P0_P3_GITHUB_EVENT_NAME: ${{ github.event_name }}
+      P0_P3_PRODUCTION_LLM_INPUT: ${{ github.event.inputs.production_llm }}
+      P0_P3_PRODUCTION_ENVIRONMENT: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Validate production P0-P3 readiness
+        run: npm run validate:p0-p3:production -- --timeout-ms=30000 --limit=1 --write-evidence
+
+      - name: Package production release evidence
+        run: |
+          set -euo pipefail
+          npm run audit:p0-p3:matrix
+          npm run production:p0-p3:checklist
+          npm run validate:production-release-checklist
+
+      - name: Upload production readiness evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: p0-p3-production-readiness-report
+          path: |
+            data/research/p0-p3-production-readiness-report.json
+            data/research/p0-p3-completion-matrix.json
+            data/research/p0-p3-production-release-checklist.json
+          if-no-files-found: error
+          retention-days: 30

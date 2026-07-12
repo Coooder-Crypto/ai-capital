@@ -1,0 +1,103 @@
+{
+  "github": [
+    {
+      "entityId": "langchain",
+      "repo": "langchain-ai/langchain"
+    },
+    {
+      "entityId": "huggingface",
+      "repo": "huggingface/transformers"
+    },
+    {
+      "entityId": "pinecone",
+      "repo": "pinecone-io/pinecone-python-client"
+    }
+  ],
+  "huggingFace": [
+    {
+      "entityId": "meta_ai",
+      "model": "facebook/bart-large-cnn"
+    },
+    {
+      "entityId": "mistral",
+      "model": "mistralai/Mistral-7B-Instruct-v0.2"
+    }
+  ],
+  "sec": [
+    {
+      "entityId": "nvidia",
+      "cik": "0001045810"
+    },
+    {
+      "entityId": "amd",
+      "cik": "0000002488"
+    },
+    {
+      "entityId": "broadcom",
+      "cik": "0001730168"
+    },
+    {
+      "entityId": "supermicro",
+      "cik": "0001375365"
+    },
+    {
+      "entityId": "arista",
+      "cik": "0001596532"
+    }
+  ],
+  "openAlex": [
+    {
+      "entityId": "openai",
+      "query": "OpenAI large language model"
+    },
+    {
+      "entityId": "deepmind",
+      "query": "Google DeepMind artificial intelligence"
+    },
+    {
+      "entityId": "nvidia",
+      "query": "NVIDIA GPU artificial intelligence"
+    }
+  ],
+  "arxiv": [
+    {
+      "entityId": "openai",
+      "query": "all:OpenAI AND all:\"large language model\""
+    },
+    {
+      "entityId": "deepmind",
+      "query": "all:DeepMind AND all:\"artificial intelligence\""
+    },
+    {
+      "entityId": "nvidia",
+      "query": "all:NVIDIA AND all:GPU AND all:\"artificial intelligence\""
+    }
+  ],
+  "wikidata": [
+    {
+      "entityId": "openai",
+      "qid": "Q21708200",
+      "search": "OpenAI"
+    },
+    {
+      "entityId": "nvidia",
+      "qid": "Q182477",
+      "search": "NVIDIA"
+    },
+    {
+      "entityId": "huggingface",
+      "qid": "Q108943604",
+      "search": "Hugging Face"
+    },
+    {
+      "entityId": "amd",
+      "qid": "Q128896",
+      "search": "Advanced Micro Devices"
+    },
+    {
+      "entityId": "azure",
+      "qid": "Q725967",
+      "search": "Microsoft Azure"
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "status": "pass",
+  "generatedAt": "2026-07-11T18:00:17.592Z",
+  "requireProductionLlm": false,
+  "checks": [
+    {
+      "label": "seed data",
+      "status": "pass",
+      "entities": 112,
+      "relationships": 777,
+      "sources": 11
+    },
+    {
+      "label": "approved metrics",
+      "status": "pass",
+      "groups": 13
+    },
+    {
+      "label": "script validate:p0-p3:local",
+      "status": "pass",
+      "command": "node scripts/validate-p0-p3-local.mjs"
+    },
+    {
+      "label": "script validate:p0-p3:production",
+      "status": "pass",
+      "command": "node scripts/validate-production-readiness.mjs"
+    },
+    {
+      "label": "script validate:p0-p3:production-fixture",
+      "status": "pass",
+      "command": "node scripts/validate-production-readiness-fixture.mjs"
+    },
+    {
+      "label": "script validate:source-revision-fixture",
+      "status": "pass",
+      "command": "node scripts/validate-source-revision-fixture.mjs"
+    },
+    {
+      "label": "script validate:env-fixture",
+      "status": "pass",
+      "command": "node scripts/validate-env-config-fixture.mjs"
+    },
+    {
+      "label": "script validate:production-evidence",
+      "status": "pass",
+      "command": "node scripts/validate-production-evidence.mjs"
+    },
+    {
+      "label": "script validate:production-evidence-fixture",
+      "status": "pass",
+      "command": "node scripts/validate-production-evidence-fixture.mjs"
+    },
+    {
+      "label": "script validate:production-artifact",
+      "status": "pass",
+      "command": "node scripts/validate-production-artifact.mjs"
+    },
+    {
+      "label": "script validate:production-artifact-fixture",
+      "status": "pass",
+      "command": "node scripts/validate-production-artifact-fixture.mjs"
+    },
+    {
+      "label": "script validate:production-completion",
+      "status": "pass",
+      "command": "node scripts/validate-production-completion.mjs"
+    },
+    {
+      "label": "script validate:production-completion-fixture",
+      "status": "pass",
+      "command": "node scripts/validate-production-completion-fixture.mjs"
+    },
+    {
+      "label": "script validate:production-run-orchestrator-fixture",
+      "status": "pass",
+      "command": "node scripts/validate-production-run-orchestrator-fixture.mjs"
+    },
+    {
+      "label": "script validate:completion-matrix-artifact-fixture",
+      "status": "pass",
+      "command": "node scripts/validate-completion-matrix-artifact-fixture.mjs"
+    },
+    {
+      "label": "script validate:production-release-checklist",
+      "status": "pass",
+      "command": "node scripts/generate-production-release-checklist.mjs --check"
+    },
+    {
+      "label": "script validate:production-release-checklist-fixture",
+      "status": "pass",
+      "command": "node scripts/validate-production-release-checklist-fixture.mjs"
+    },
+    {
+      "label": "script validate:env",
+      "status": "pass",
+      "command": "node scripts/validate-env-config.mjs"
+    },
+    {
+      "label": "script validate:deployment-secrets",
+      "status": "pass",
+      "command": "node scripts/validate-deployment-secrets.mjs"
+    },
+    {
+      "label": "script validate:github-production-preflight",
+      "status": "pass",
+      "command": "node scripts/validate-github-production-preflight.mjs"
+    },
+    {
+      "label": "script validate:github-production-preflight-fixture",
+      "status": "pass",
+      "command": "node scripts/validate-github-production-preflight-fixture.mjs"
+    },
+    {
+      "label": "script audit:p0-p3:write",
+      "status": "pass",
+      "command": "node scripts/audit-p0-p3-readiness.mjs --write-report"
+    },
+    {
+      "label": "script audit:p0-p3:matrix",
+      "status": "pass",
+      "command": "node scripts/generate-p0-p3-completion-matrix.mjs"
+    },
+    {
+      "label": "script production:p0-p3:checklist",
+      "status": "pass",
+      "command": "node scripts/generate-production-release-checklist.mjs"
+    },
+    {
+      "label": "script production:p0-p3:run",
+      "status": "pass",
+      "command": "node scripts/run-production-p0-p3-completion.mjs"
+    },
+    {
+      "label": "script deploy:setup-guide",
+      "status": "pass",
+      "command": "node scripts/generate-production-setup-guide.mjs"
+    },
+    {
+      "label": "script validate:evidence",
+      "status": "pass",
+      "command": "node scripts/validate-evidence-review.mjs"
+    },
+    {
+      "label": "script validate:research",
+      "status": "pass",
+      "command": "node scripts/validate-research-artifacts.mjs"
+    },
+    {
+      "label": "script db:e2e",
+      "status": "pass",
+      "command": "node scripts/run-db-e2e.mjs"
+    },
+    {
+      "label": "script db:verify:p3-persistent",
+      "status": "pass",
+      "command": "node scripts/verify-persistent-p3-db.mjs"
+    },
+    {
+      "label": "script worker:import",
+      "status": "pass",
+      "command": "node scripts/plan-worker-import.mjs --apply"
+    },
+    {
+      "label": "script llm:status",
+      "status": "pass",
+      "command": "node scripts/check-llm-status.mjs"
+    },
+    {
+      "label": "script validate:llm-http",
+      "status": "pass",
+      "command": "node scripts/validate-llm-http-provider.mjs"
+    },
+    {
+      "label": "script llm:verify-production",
+      "status": "pass",
+      "command": "node scripts/verify-production-llm-gateway.mjs"
+    },
+    {
+      "label": "script research:weekly",
+      "status": "pass",
+      "command": "node scripts/run-weekly-research-cycle.mjs"
+    },
+    {
+      "label": "script build",
+      "status": "pass",
+      "command": "next build"
+    },
+    {
+      "label": "artifact src/generated/seed.json",
+      "status": "pass"
+    },
+    {
+      "label": "artifact src/generated/metrics.json",
+      "status": "pass"
+    },
+    {
+      "label": "artifact data/candidate-snapshot.json",
+      "status": "pass"
+    },
+    {
+      "label": "artifact data/evidence-backlog.json",
+      "status": "pass"
+    },
+    {
+      "label": "artifact data/raw-documents.json",
+      "status": "pass"
+    },
+    {
+      "label": "artifact data/parsed-documents.json",
+      "status": "pass"
+    },
+    {
+      "label": "artifact data/extraction-candidates.json",
+      "status": "pass"
+    },
+    {
+      "label": "artifact data/llm-extractions.json",
+      "status": "pass"
+    },
+    {
+      "label": "artifact data/deployment-secrets.manifest.json",
+      "status": "pass"
+    },
+    {
+      "label": "artifact data/research/production-setup-guide.md",
+      "status": "pass"
+    },
+    {
+      "label": "artifact data/research/p0-p3-production-release-checklist.json",
+      "status": "pass"
+    },
+    {
+      "label": "artifact data/research/graph-snapshot.json",
+      "status": "pass"
+    },
+    {
+      "label": "artifact data/research/timeline.json",
+      "status": "pass"
+    },
+    {
+      "label": "artifact data/research/candidate-snapshot-manifest.json",
+      "status": "pass"
+    },
+    {
+      "label": "artifact .github/workflows/validate-p0-p3.yml",
+      "status": "pass"
+    },
+    {
+      "label": "artifact .github/workflows/research-weekly.yml",
+      "status": "pass"
+    },
+    {
+      "label": "validation workflow local gate",
+      "status": "pass"
+    },
+    {
+      "label": "validation workflow production LLM gate",
+      "status": "pass"
+    },
+    {
+      "label": "validation workflow production locality guard",
+      "status": "pass"
+    },
+    {
+      "label": "weekly workflow refresh gate",
+      "status": "pass"
+    },
+    {
+      "label": "weekly workflow PR safety",
+      "status": "pass"
+    },
+    {
+      "label": "production gate database import verification",
+      "status": "pass"
+    },
+    {
+      "label": "production gate source revision binding",
+      "status": "pass"
+    },
+    {
+      "label": "production gate source revision evidence fields",
+      "status": "pass"
+    },
+    {
+      "label": "production completion dispatch freshness guard",
+      "status": "pass"
+    },
+    {
+      "label": "production evidence command chain",
+      "status": "pass"
+    },
+    {
+      "label": "production artifact rejects premature completion",
+      "status": "pass"
+    },
+    {
+      "label": "production release checklist shared rules",
+      "status": "pass"
+    },
+    {
+      "label": "production run passes dispatch timestamp",
+      "status": "pass"
+    },
+    {
+      "label": "production run pins release ref",
+      "status": "pass"
+    },
+    {
+      "label": "production run binds remote source commit",
+      "status": "pass"
+    },
+    {
+      "label": "production release checklist command mapping",
+      "status": "pass"
+    },
+    {
+      "label": "production evidence gitignore",
+      "status": "pass"
+    },
+    {
+      "label": "production setup guide database bootstrap",
+      "status": "pass"
+    },
+    {
+      "label": "production setup guide artifact validation",
+      "status": "pass"
+    },
+    {
+      "label": "README production completion freshness docs",
+      "status": "pass"
+    },
+    {
+      "label": "technical plan production completion freshness docs",
+      "status": "pass"
+    },
+    {
+      "label": "generated seed entity parity",
+      "status": "pass",
+      "entities": 112
+    },
+    {
+      "label": "candidate snapshot coverage",
+      "status": "pass",
+      "relationships": 401,
+      "entities": 398,
+      "metrics": 5
+    },
+    {
+      "label": "graph snapshot entities",
+      "status": "pass",
+      "count": 112
+    },
+    {
+      "label": "graph snapshot relationships",
+      "status": "pass",
+      "count": 777
+    },
+    {
+      "label": "graph snapshot candidateRelationships",
+      "status": "pass",
+      "count": 401
+    },
+    {
+      "label": "graph snapshot candidateEntities",
+      "status": "pass",
+      "count": 398
+    },
+    {
+      "label": "graph snapshot candidateMetrics",
+      "status": "pass",
+      "count": 5
+    },
+    {
+      "label": "timeline candidate_relationship",
+      "status": "pass",
+      "count": 401
+    },
+    {
+      "label": "timeline candidate_entity",
+      "status": "pass",
+      "count": 398
+    },
+    {
+      "label": "timeline candidate_metric",
+      "status": "pass",
+      "count": 5
+    },
+    {
+      "label": "timeline candidate statuses",
+      "status": "pass",
+      "events": 804
+    },
+    {
+      "label": "evidence backlog review state",
+      "status": "pass",
+      "relationships": 50,
+      "relationshipReviewCounts": {
+        "none": 682,
+        "reviewed_evidence_backed": 20,
+        "inferred_ecosystem_mapping": 75
+      }
+    },
+    {
+      "label": "production LLM provider configured",
+      "status": "warn",
+      "reason": "not configured in this environment; run with --require-production-llm for release gating"
+    }
+  ],
+  "warnings": [
+    {
+      "label": "production LLM provider configured",
+      "reason": "not configured in this environment; run with --require-production-llm for release gating"
+    }
+  ],
+  "failures": [],
+  "summary": {
+    "entities": 112,
+    "relationships": 777,
+    "approvedMetricGroups": 13,
+    "candidateCounts": {
+      "relationships": 401,
+      "entities": 398,
+      "metrics": 5
+    },
+    "timelineEvents": 879,
+    "evidenceBacklogRelationships": 50,
+    "relationshipReviewCounts": {
+      "none": 682,
+      "reviewed_evidence_backed": 20,
+      "inferred_ecosystem_mapping": 75
+    },
+    "productionProvider": "not_configured"
+  }
+}

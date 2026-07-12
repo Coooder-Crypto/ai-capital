@@ -1,0 +1,2435 @@
+{
+  "archivedAt": "2026-07-04T09:47:22.563Z",
+  "contentHash": "27a40554d8c03d18cc0e565f69134caac8d7c00f1bf80730943d40e56da9f7a2",
+  "snapshot": {
+    "generatedAt": "2026-07-04T09:47:08.016Z",
+    "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+    "plannedRequestCount": 16,
+    "candidateRelationships": [
+      {
+        "id": "worker_candidate_watch_anthropic_news_anthropic_aws_partners_with",
+        "sourceEntityId": "anthropic",
+        "targetEntityId": "aws",
+        "relationType": "partners_with",
+        "confidence": 0.62,
+        "evidenceUrl": "https://www.anthropic.com/news",
+        "extractionMethod": "llm_fixture",
+        "status": "candidate",
+        "payload": {
+          "note": "Company news should be reviewed for cloud, model availability and strategic partnership evidence.",
+          "watchlistId": "watch_anthropic_news",
+          "rawDocumentId": "raw_watch_anthropic_news",
+          "parsedDocumentId": "parsed_raw_watch_anthropic_news",
+          "extractionRecordId": "extract_raw_watch_anthropic_news",
+          "llmExtractionRecordId": "llm_extract_raw_watch_anthropic_news",
+          "model": "local-schema-fixture"
+        },
+        "createdAt": "2026-07-04T05:27:05.830Z"
+      },
+      {
+        "id": "worker_candidate_watch_huggingface_langchain_docs_huggingface_langchain_integrates_with",
+        "sourceEntityId": "huggingface",
+        "targetEntityId": "langchain",
+        "relationType": "integrates_with",
+        "confidence": 0.64,
+        "evidenceUrl": "https://huggingface.co/docs",
+        "extractionMethod": "llm_fixture",
+        "status": "candidate",
+        "payload": {
+          "note": "Documentation should be reviewed for Hugging Face integrations with LangChain ecosystem tools.",
+          "watchlistId": "watch_huggingface_langchain_docs",
+          "rawDocumentId": "raw_watch_huggingface_langchain_docs",
+          "parsedDocumentId": "parsed_raw_watch_huggingface_langchain_docs",
+          "extractionRecordId": "extract_raw_watch_huggingface_langchain_docs",
+          "llmExtractionRecordId": "llm_extract_raw_watch_huggingface_langchain_docs",
+          "model": "local-schema-fixture"
+        },
+        "createdAt": "2026-07-04T05:27:05.830Z"
+      },
+      {
+        "id": "worker_candidate_watch_microsoft_openai_partnership_azure_openai_partners_with",
+        "sourceEntityId": "azure",
+        "targetEntityId": "openai",
+        "relationType": "partners_with",
+        "confidence": 0.74,
+        "evidenceUrl": "https://news.microsoft.com/source/features/ai/microsoft-openai-partnership/",
+        "extractionMethod": "llm_fixture",
+        "status": "candidate",
+        "payload": {
+          "note": "Official company source should be reviewed for Microsoft Azure and OpenAI partnership evidence.",
+          "watchlistId": "watch_microsoft_openai_partnership",
+          "rawDocumentId": "raw_watch_microsoft_openai_partnership",
+          "parsedDocumentId": "parsed_raw_watch_microsoft_openai_partnership",
+          "extractionRecordId": "extract_raw_watch_microsoft_openai_partnership",
+          "llmExtractionRecordId": "llm_extract_raw_watch_microsoft_openai_partnership",
+          "model": "local-schema-fixture"
+        },
+        "createdAt": "2026-07-04T05:27:05.830Z"
+      },
+      {
+        "id": "worker_candidate_watch_nvidia_coreweave_cloud_nvidia_coreweave_supplies_to",
+        "sourceEntityId": "nvidia",
+        "targetEntityId": "coreweave",
+        "relationType": "supplies_to",
+        "confidence": 0.68,
+        "evidenceUrl": "https://www.nvidia.com/en-us/data-center/cloud-gaming/coreweave/",
+        "extractionMethod": "llm_fixture",
+        "status": "candidate",
+        "payload": {
+          "note": "Product or partner page should be reviewed for NVIDIA infrastructure supplied to CoreWeave.",
+          "watchlistId": "watch_nvidia_coreweave_cloud",
+          "rawDocumentId": "raw_watch_nvidia_coreweave_cloud",
+          "parsedDocumentId": "parsed_raw_watch_nvidia_coreweave_cloud",
+          "extractionRecordId": "extract_raw_watch_nvidia_coreweave_cloud",
+          "llmExtractionRecordId": "llm_extract_raw_watch_nvidia_coreweave_cloud",
+          "model": "local-schema-fixture"
+        },
+        "createdAt": "2026-07-04T05:27:05.830Z"
+      }
+    ],
+    "candidateEntities": [
+      {
+        "id": "candidate_entity_arxiv_paper_1612_03801",
+        "entityId": "paper_arxiv_1612_03801",
+        "type": "paper",
+        "name": "DeepMind Lab",
+        "layer": "ai_infra",
+        "description": "arXiv paper candidate related to Google DeepMind; published 2016-12-12T17:32:49Z.",
+        "websiteUrl": "http://arxiv.org/abs/1612.03801v2",
+        "country": "",
+        "statusText": "preprint",
+        "valuation": "N/A",
+        "aliases": [
+          "DeepMind Lab",
+          "1612.03801",
+          "cs.AI"
+        ],
+        "confidence": 0.6,
+        "evidenceUrl": "http://arxiv.org/abs/1612.03801v2",
+        "extractionMethod": "arxiv_paper_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "arXiv paper candidate; review relevance, title, authors and topic categories before approving as a paper/research artifact entity.",
+          "sourceId": "src_arxiv",
+          "associatedEntityId": "deepmind",
+          "associatedEntityName": "Google DeepMind",
+          "arxivPaperId": "1612.03801",
+          "arxivUrl": "http://arxiv.org/abs/1612.03801v2",
+          "pdfUrl": "https://arxiv.org/pdf/1612.03801v2",
+          "published": "2016-12-12T17:32:49Z",
+          "updated": "2016-12-13T12:19:48Z",
+          "authors": [
+            "Charles Beattie",
+            "Joel Z. Leibo",
+            "Denis Teplyashin",
+            "Tom Ward",
+            "Marcus Wainwright",
+            "Heinrich Küttler",
+            "Andrew Lefrancq",
+            "Simon Green",
+            "Víctor Valdés",
+            "Amir Sadik",
+            "Julian Schrittwieser",
+            "Keith Anderson"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "summary": "DeepMind Lab is a first-person 3D game platform designed for research and development of general artificial intelligence and machine learning systems. DeepMind Lab can be used to study how autonomous artificial agents may learn complex tasks in large, partially observed, and visually diverse worlds. DeepMind Lab has a simple and flexible API enabling creative task-designs and novel AI-designs to be explored and quickly iterated upon. It is powered by a fast and widely recognised game engine, and tailored for effective use by the research community.",
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:46:58.817Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.015Z"
+      },
+      {
+        "id": "candidate_entity_arxiv_paper_1801_00690",
+        "entityId": "paper_arxiv_1801_00690",
+        "type": "paper",
+        "name": "DeepMind Control Suite",
+        "layer": "ai_infra",
+        "description": "arXiv paper candidate related to Google DeepMind; published 2018-01-02T15:48:14Z.",
+        "websiteUrl": "http://arxiv.org/abs/1801.00690v1",
+        "country": "",
+        "statusText": "preprint",
+        "valuation": "N/A",
+        "aliases": [
+          "DeepMind Control Suite",
+          "1801.00690",
+          "cs.AI"
+        ],
+        "confidence": 0.6,
+        "evidenceUrl": "http://arxiv.org/abs/1801.00690v1",
+        "extractionMethod": "arxiv_paper_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "arXiv paper candidate; review relevance, title, authors and topic categories before approving as a paper/research artifact entity.",
+          "sourceId": "src_arxiv",
+          "associatedEntityId": "deepmind",
+          "associatedEntityName": "Google DeepMind",
+          "arxivPaperId": "1801.00690",
+          "arxivUrl": "http://arxiv.org/abs/1801.00690v1",
+          "pdfUrl": "https://arxiv.org/pdf/1801.00690v1",
+          "published": "2018-01-02T15:48:14Z",
+          "updated": "2018-01-02T15:48:14Z",
+          "authors": [
+            "Yuval Tassa",
+            "Yotam Doron",
+            "Alistair Muldal",
+            "Tom Erez",
+            "Yazhe Li",
+            "Diego de Las Casas",
+            "David Budden",
+            "Abbas Abdolmaleki",
+            "Josh Merel",
+            "Andrew Lefrancq",
+            "Timothy Lillicrap",
+            "Martin Riedmiller"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "summary": "The DeepMind Control Suite is a set of continuous control tasks with a standardised structure and interpretable rewards, intended to serve as performance benchmarks for reinforcement learning agents. The tasks are written in Python and powered by the MuJoCo physics engine, making them easy to use and modify. We include benchmarks for several learning algorithms. The Control Suite is publicly available at https://www.github.com/deepmind/dm_control . A video summary of all tasks is available at http://youtu.be/rAai4QzcYbs .",
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:46:58.817Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.015Z"
+      },
+      {
+        "id": "candidate_entity_arxiv_paper_2011_07027",
+        "entityId": "paper_arxiv_2011_07027",
+        "type": "paper",
+        "name": "DeepMind Lab2D",
+        "layer": "ai_infra",
+        "description": "arXiv paper candidate related to Google DeepMind; published 2020-11-13T17:29:26Z.",
+        "websiteUrl": "http://arxiv.org/abs/2011.07027v2",
+        "country": "",
+        "statusText": "preprint",
+        "valuation": "N/A",
+        "aliases": [
+          "DeepMind Lab2D",
+          "2011.07027",
+          "cs.AI"
+        ],
+        "confidence": 0.6,
+        "evidenceUrl": "http://arxiv.org/abs/2011.07027v2",
+        "extractionMethod": "arxiv_paper_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "arXiv paper candidate; review relevance, title, authors and topic categories before approving as a paper/research artifact entity.",
+          "sourceId": "src_arxiv",
+          "associatedEntityId": "deepmind",
+          "associatedEntityName": "Google DeepMind",
+          "arxivPaperId": "2011.07027",
+          "arxivUrl": "http://arxiv.org/abs/2011.07027v2",
+          "pdfUrl": "https://arxiv.org/pdf/2011.07027v2",
+          "published": "2020-11-13T17:29:26Z",
+          "updated": "2020-12-12T20:56:32Z",
+          "authors": [
+            "Charles Beattie",
+            "Thomas Köppe",
+            "Edgar A. Duéñez-Guzmán",
+            "Joel Z. Leibo"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "summary": "We present DeepMind Lab2D, a scalable environment simulator for artificial intelligence research that facilitates researcher-led experimentation with environment design. DeepMind Lab2D was built with the specific needs of multi-agent deep reinforcement learning researchers in mind, but it may also be useful beyond that particular subfield.",
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:46:58.817Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.015Z"
+      },
+      {
+        "id": "candidate_entity_arxiv_paper_2307_02288",
+        "entityId": "paper_arxiv_2307_02288",
+        "type": "paper",
+        "name": "Performance Comparison of Large Language Models on VNHSGE English Dataset: OpenAI ChatGPT, Microsoft Bing Chat, and Google Bard",
+        "layer": "ai_infra",
+        "description": "arXiv paper candidate related to OpenAI; published 2023-07-05T13:40:57Z.",
+        "websiteUrl": "http://arxiv.org/abs/2307.02288v3",
+        "country": "",
+        "statusText": "preprint",
+        "valuation": "N/A",
+        "aliases": [
+          "Performance Comparison of Large Language Models on VNHSGE English Dataset: OpenAI ChatGPT, Microsoft Bing Chat, and Google Bard",
+          "2307.02288",
+          "cs.CL",
+          "cs.HC"
+        ],
+        "confidence": 0.6,
+        "evidenceUrl": "http://arxiv.org/abs/2307.02288v3",
+        "extractionMethod": "arxiv_paper_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "arXiv paper candidate; review relevance, title, authors and topic categories before approving as a paper/research artifact entity.",
+          "sourceId": "src_arxiv",
+          "associatedEntityId": "openai",
+          "associatedEntityName": "OpenAI",
+          "arxivPaperId": "2307.02288",
+          "arxivUrl": "http://arxiv.org/abs/2307.02288v3",
+          "pdfUrl": "https://arxiv.org/pdf/2307.02288v3",
+          "published": "2023-07-05T13:40:57Z",
+          "updated": "2023-07-20T01:13:27Z",
+          "authors": [
+            "Xuan-Quy Dao"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.HC"
+          ],
+          "summary": "This paper presents a performance comparison of three large language models (LLMs), namely OpenAI ChatGPT, Microsoft Bing Chat (BingChat), and Google Bard, on the VNHSGE English dataset. The performance of BingChat, Bard, and ChatGPT (GPT-3.5) is 92.4\\%, 86\\%, and 79.2\\%, respectively. The results show that BingChat is better than ChatGPT and Bard. Therefore, BingChat and Bard can replace ChatGPT while ChatGPT is not yet officially available in Vietnam. The results also indicate that BingChat, Bard and ChatGPT outperform Vietnamese students in English language proficiency. The findings of this study contribute to the understanding of the potential of LLMs in English language education. The remarkable performance of ChatGPT, BingChat, and Bard demonstrates their potential as effective tools",
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:46:58.817Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.015Z"
+      },
+      {
+        "id": "candidate_entity_arxiv_paper_2411_10873",
+        "entityId": "paper_arxiv_2411_10873",
+        "type": "paper",
+        "name": "Developer Challenges on Large Language Models: A Study of Stack Overflow and OpenAI Developer Forum Posts",
+        "layer": "ai_infra",
+        "description": "arXiv paper candidate related to OpenAI; published 2024-11-16T19:38:27Z.",
+        "websiteUrl": "http://arxiv.org/abs/2411.10873v2",
+        "country": "",
+        "statusText": "preprint",
+        "valuation": "N/A",
+        "aliases": [
+          "Developer Challenges on Large Language Models: A Study of Stack Overflow and OpenAI Developer Forum Posts",
+          "2411.10873",
+          "cs.SE"
+        ],
+        "confidence": 0.6,
+        "evidenceUrl": "http://arxiv.org/abs/2411.10873v2",
+        "extractionMethod": "arxiv_paper_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "arXiv paper candidate; review relevance, title, authors and topic categories before approving as a paper/research artifact entity.",
+          "sourceId": "src_arxiv",
+          "associatedEntityId": "openai",
+          "associatedEntityName": "OpenAI",
+          "arxivPaperId": "2411.10873",
+          "arxivUrl": "http://arxiv.org/abs/2411.10873v2",
+          "pdfUrl": "https://arxiv.org/pdf/2411.10873v2",
+          "published": "2024-11-16T19:38:27Z",
+          "updated": "2024-11-22T22:24:58Z",
+          "authors": [
+            "Khairul Alam",
+            "Kartik Mittal",
+            "Banani Roy",
+            "Chanchal Roy"
+          ],
+          "categories": [
+            "cs.SE"
+          ],
+          "summary": "Large Language Models (LLMs) have gained widespread popularity due to their exceptional capabilities across various domains, including chatbots, healthcare, education, content generation, and automated support systems. However, developers encounter numerous challenges when implementing, fine-tuning, and integrating these models into real-world applications. This study investigates LLM developers' challenges by analyzing community interactions on Stack Overflow and OpenAI Developer Forum, employing BERTopic modeling to identify and categorize developer discussions. Our analysis yields nine challenges on Stack Overflow (e.g., LLM Ecosystem and Challenges, API Usage, LLM Training with Frameworks) and 17 on the OpenAI Developer Forum (e.g., API Usage and Error Handling, Fine-Tuning and Dataset",
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:46:58.817Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.015Z"
+      },
+      {
+        "id": "candidate_entity_arxiv_paper_2502_06807",
+        "entityId": "paper_arxiv_2502_06807",
+        "type": "paper",
+        "name": "Competitive Programming with Large Reasoning Models",
+        "layer": "ai_infra",
+        "description": "arXiv paper candidate related to OpenAI; published 2025-02-03T23:00:15Z.",
+        "websiteUrl": "http://arxiv.org/abs/2502.06807v2",
+        "country": "",
+        "statusText": "preprint",
+        "valuation": "N/A",
+        "aliases": [
+          "Competitive Programming with Large Reasoning Models",
+          "2502.06807",
+          "cs.LG",
+          "cs.AI",
+          "cs.CL"
+        ],
+        "confidence": 0.6,
+        "evidenceUrl": "http://arxiv.org/abs/2502.06807v2",
+        "extractionMethod": "arxiv_paper_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "arXiv paper candidate; review relevance, title, authors and topic categories before approving as a paper/research artifact entity.",
+          "sourceId": "src_arxiv",
+          "associatedEntityId": "openai",
+          "associatedEntityName": "OpenAI",
+          "arxivPaperId": "2502.06807",
+          "arxivUrl": "http://arxiv.org/abs/2502.06807v2",
+          "pdfUrl": "https://arxiv.org/pdf/2502.06807v2",
+          "published": "2025-02-03T23:00:15Z",
+          "updated": "2025-02-18T22:21:40Z",
+          "authors": [
+            "OpenAI",
+            ":",
+            "Ahmed El-Kishky",
+            "Alexander Wei",
+            "Andre Saraiva",
+            "Borys Minaiev",
+            "Daniel Selsam",
+            "David Dohan",
+            "Francis Song",
+            "Hunter Lightman",
+            "Ignasi Clavera",
+            "Jakub Pachocki"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.CL"
+          ],
+          "summary": "We show that reinforcement learning applied to large language models (LLMs) significantly boosts performance on complex coding and reasoning tasks. Additionally, we compare two general-purpose reasoning models - OpenAI o1 and an early checkpoint of o3 - with a domain-specific system, o1-ioi, which uses hand-engineered inference strategies designed for competing in the 2024 International Olympiad in Informatics (IOI). We competed live at IOI 2024 with o1-ioi and, using hand-crafted test-time strategies, placed in the 49th percentile. Under relaxed competition constraints, o1-ioi achieved a gold medal. However, when evaluating later models such as o3, we find that o3 achieves gold without hand-crafted domain-specific strategies or relaxed constraints. Our findings show that although speciali",
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:46:58.817Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.015Z"
+      },
+      {
+        "id": "candidate_entity_arxiv_paper_2503_11698",
+        "entityId": "paper_arxiv_2503_11698",
+        "type": "paper",
+        "name": "A Comparison of the Cerebras Wafer-Scale Integration Technology with Nvidia GPU-based Systems for Artificial Intelligence",
+        "layer": "ai_infra",
+        "description": "arXiv paper candidate related to NVIDIA; published 2025-03-11T22:57:42Z.",
+        "websiteUrl": "http://arxiv.org/abs/2503.11698v1",
+        "country": "",
+        "statusText": "preprint",
+        "valuation": "N/A",
+        "aliases": [
+          "A Comparison of the Cerebras Wafer-Scale Integration Technology with Nvidia GPU-based Systems for Artificial Intelligence",
+          "2503.11698",
+          "cs.AR"
+        ],
+        "confidence": 0.6,
+        "evidenceUrl": "http://arxiv.org/abs/2503.11698v1",
+        "extractionMethod": "arxiv_paper_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "arXiv paper candidate; review relevance, title, authors and topic categories before approving as a paper/research artifact entity.",
+          "sourceId": "src_arxiv",
+          "associatedEntityId": "nvidia",
+          "associatedEntityName": "NVIDIA",
+          "arxivPaperId": "2503.11698",
+          "arxivUrl": "http://arxiv.org/abs/2503.11698v1",
+          "pdfUrl": "https://arxiv.org/pdf/2503.11698v1",
+          "published": "2025-03-11T22:57:42Z",
+          "updated": "2025-03-11T22:57:42Z",
+          "authors": [
+            "Yudhishthira Kundu",
+            "Manroop Kaur",
+            "Tripty Wig",
+            "Kriti Kumar",
+            "Pushpanjali Kumari",
+            "Vivek Puri",
+            "Manish Arora"
+          ],
+          "categories": [
+            "cs.AR"
+          ],
+          "summary": "Cerebras' wafer-scale engine (WSE) technology merges multiple dies on a single wafer. It addresses the challenges of memory bandwidth, latency, and scalability, making it suitable for artificial intelligence. This work evaluates the WSE-3 architecture and compares it with leading GPU-based AI accelerators, notably Nvidia's H100 and B200. The work highlights the advantages of WSE-3 in performance per watt and memory scalability and provides insights into the challenges in manufacturing, thermal management, and reliability. The results suggest that wafer-scale integration can surpass conventional architectures in several metrics, though work is required to address cost-effectiveness and long-term viability.",
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:46:58.817Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.015Z"
+      },
+      {
+        "id": "candidate_entity_arxiv_paper_2503_20481",
+        "entityId": "paper_arxiv_2503_20481",
+        "type": "paper",
+        "name": "Analyzing Modern NVIDIA GPU cores",
+        "layer": "ai_infra",
+        "description": "arXiv paper candidate related to NVIDIA; published 2025-03-26T12:10:53Z.",
+        "websiteUrl": "http://arxiv.org/abs/2503.20481v1",
+        "country": "",
+        "statusText": "preprint",
+        "valuation": "N/A",
+        "aliases": [
+          "Analyzing Modern NVIDIA GPU cores",
+          "2503.20481",
+          "cs.AR"
+        ],
+        "confidence": 0.6,
+        "evidenceUrl": "http://arxiv.org/abs/2503.20481v1",
+        "extractionMethod": "arxiv_paper_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "arXiv paper candidate; review relevance, title, authors and topic categories before approving as a paper/research artifact entity.",
+          "sourceId": "src_arxiv",
+          "associatedEntityId": "nvidia",
+          "associatedEntityName": "NVIDIA",
+          "arxivPaperId": "2503.20481",
+          "arxivUrl": "http://arxiv.org/abs/2503.20481v1",
+          "pdfUrl": "https://arxiv.org/pdf/2503.20481v1",
+          "published": "2025-03-26T12:10:53Z",
+          "updated": "2025-03-26T12:10:53Z",
+          "authors": [
+            "Rodrigo Huerta",
+            "Mojtaba Abaie Shoushtary",
+            "José-Lorenzo Cruz",
+            "Antonio González"
+          ],
+          "categories": [
+            "cs.AR"
+          ],
+          "summary": "GPUs are the most popular platform for accelerating HPC workloads, such as artificial intelligence and science simulations. However, most microarchitectural research in academia relies on GPU core pipeline designs based on architectures that are more than 15 years old. This paper reverse engineers modern NVIDIA GPU cores, unveiling many key aspects of its design and explaining how GPUs leverage hardware-compiler techniques where the compiler guides hardware during execution. In particular, it reveals how the issue logic works including the policy of the issue scheduler, the structure of the register file and its associated cache, and multiple features of the memory pipeline. Moreover, it analyses how a simple instruction prefetcher based on a stream buffer fits well with modern NVIDIA GPUs",
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:46:58.817Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.015Z"
+      },
+      {
+        "id": "candidate_entity_arxiv_paper_2508_14444",
+        "entityId": "paper_arxiv_2508_14444",
+        "type": "paper",
+        "name": "NVIDIA Nemotron Nano 2: An Accurate and Efficient Hybrid Mamba-Transformer Reasoning Model",
+        "layer": "ai_infra",
+        "description": "arXiv paper candidate related to NVIDIA; published 2025-08-20T06:00:57Z.",
+        "websiteUrl": "http://arxiv.org/abs/2508.14444v4",
+        "country": "",
+        "statusText": "preprint",
+        "valuation": "N/A",
+        "aliases": [
+          "NVIDIA Nemotron Nano 2: An Accurate and Efficient Hybrid Mamba-Transformer Reasoning Model",
+          "2508.14444",
+          "cs.CL",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "confidence": 0.6,
+        "evidenceUrl": "http://arxiv.org/abs/2508.14444v4",
+        "extractionMethod": "arxiv_paper_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "arXiv paper candidate; review relevance, title, authors and topic categories before approving as a paper/research artifact entity.",
+          "sourceId": "src_arxiv",
+          "associatedEntityId": "nvidia",
+          "associatedEntityName": "NVIDIA",
+          "arxivPaperId": "2508.14444",
+          "arxivUrl": "http://arxiv.org/abs/2508.14444v4",
+          "pdfUrl": "https://arxiv.org/pdf/2508.14444v4",
+          "published": "2025-08-20T06:00:57Z",
+          "updated": "2025-09-02T16:12:36Z",
+          "authors": [
+            "NVIDIA",
+            ":",
+            "Aarti Basant",
+            "Abhijit Khairnar",
+            "Abhijit Paithankar",
+            "Abhinav Khattar",
+            "Adithya Renduchintala",
+            "Aditya Malte",
+            "Akhiad Bercovich",
+            "Akshay Hazare",
+            "Alejandra Rico",
+            "Aleksander Ficek"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "summary": "We introduce Nemotron-Nano-9B-v2, a hybrid Mamba-Transformer language model designed to increase throughput for reasoning workloads while achieving state-of-the-art accuracy compared to similarly-sized models. Nemotron-Nano-9B-v2 builds on the Nemotron-H architecture, in which the majority of the self-attention layers in the common Transformer architecture are replaced with Mamba-2 layers, to achieve improved inference speed when generating the long thinking traces needed for reasoning. We create Nemotron-Nano-9B-v2 by first pre-training a 12-billion-parameter model (Nemotron-Nano-12B-v2-Base) on 20 trillion tokens using an FP8 training recipe. After aligning Nemotron-Nano-12B-v2-Base, we employ the Minitron strategy to compress and distill the model with the goal of enabling inference on ",
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:46:58.817Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.015Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i108806672",
+        "entityId": "research_org_openalex_https_openalex_org_i108806672",
+        "type": "research_org",
+        "name": "Baden-Wuerttemberg Cooperative State University",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I108806672",
+        "country": "DE",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Baden-Wuerttemberg Cooperative State University"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I108806672",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4385245566"
+          ],
+          "ror": "https://ror.org/02xdzy536",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i1291425158",
+        "entityId": "research_org_openalex_https_openalex_org_i1291425158",
+        "type": "research_org",
+        "name": "Google (United States)",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to OpenAI.",
+        "websiteUrl": "https://openalex.org/I1291425158",
+        "country": "US",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Google (United States)"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I1291425158",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "openai",
+            "deepmind"
+          ],
+          "workIds": [
+            "W2896457183",
+            "W2606974598"
+          ],
+          "ror": "https://ror.org/00njsd438",
+          "institutionType": "company",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i139264467",
+        "entityId": "research_org_openalex_https_openalex_org_i139264467",
+        "type": "research_org",
+        "name": "Seoul National University",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I139264467",
+        "country": "KR",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Seoul National University"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I139264467",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4281790889"
+          ],
+          "ror": "https://ror.org/04h9pn542",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i160993911",
+        "entityId": "research_org_openalex_https_openalex_org_i160993911",
+        "type": "research_org",
+        "name": "Queensland University of Technology",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I160993911",
+        "country": "AU",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Queensland University of Technology"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I160993911",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W3140854437"
+          ],
+          "ror": "https://ror.org/03pnv4752",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i171256487",
+        "entityId": "research_org_openalex_https_openalex_org_i171256487",
+        "type": "research_org",
+        "name": "University of Technology - Iraq",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I171256487",
+        "country": "IQ",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "University of Technology - Iraq"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I171256487",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W3140854437"
+          ],
+          "ror": "https://ror.org/01w1ehb86",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i188760350",
+        "entityId": "research_org_openalex_https_openalex_org_i188760350",
+        "type": "research_org",
+        "name": "Ollscoil na Gaillimhe – University of Galway",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to OpenAI.",
+        "websiteUrl": "https://openalex.org/I188760350",
+        "country": "IE",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Ollscoil na Gaillimhe – University of Galway"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I188760350",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "openai"
+          ],
+          "workIds": [
+            "W2896457183"
+          ],
+          "ror": "https://ror.org/03bea9k73",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i190249584",
+        "entityId": "research_org_openalex_https_openalex_org_i190249584",
+        "type": "research_org",
+        "name": "Universität Innsbruck",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I190249584",
+        "country": "AT",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Universität Innsbruck"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I190249584",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4385245566"
+          ],
+          "ror": "https://ror.org/054pv6659",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i191420491",
+        "entityId": "research_org_openalex_https_openalex_org_i191420491",
+        "type": "research_org",
+        "name": "Universidad de Jaén",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I191420491",
+        "country": "ES",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Universidad de Jaén"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I191420491",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W3140854437"
+          ],
+          "ror": "https://ror.org/0122p5f64",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i202735123",
+        "entityId": "research_org_openalex_https_openalex_org_i202735123",
+        "type": "research_org",
+        "name": "Thi Qar University",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I202735123",
+        "country": "IQ",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Thi Qar University"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I202735123",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W3140854437"
+          ],
+          "ror": "https://ror.org/02ypa8k59",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i2801851002",
+        "entityId": "research_org_openalex_https_openalex_org_i2801851002",
+        "type": "research_org",
+        "name": "Harvard University Press",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I2801851002",
+        "country": "US",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Harvard University Press"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I2801851002",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4281790889"
+          ],
+          "ror": "https://ror.org/006v7bf86",
+          "institutionType": "other",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i4210090411",
+        "entityId": "research_org_openalex_https_openalex_org_i4210090411",
+        "type": "research_org",
+        "name": "DeepMind (United Kingdom)",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to Google DeepMind.",
+        "websiteUrl": "https://openalex.org/I4210090411",
+        "country": "GB",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "DeepMind (United Kingdom)"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I4210090411",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "deepmind"
+          ],
+          "workIds": [
+            "W2257979135"
+          ],
+          "ror": "https://ror.org/00971b260",
+          "institutionType": "company",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i4210095684",
+        "entityId": "research_org_openalex_https_openalex_org_i4210095684",
+        "type": "research_org",
+        "name": "Max Planck Institute for the Study of Religious and Ethnic Diversity",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I4210095684",
+        "country": "DE",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Max Planck Institute for the Study of Religious and Ethnic Diversity"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I4210095684",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4281790889"
+          ],
+          "ror": "https://ror.org/0080y7t67",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i4210113297",
+        "entityId": "research_org_openalex_https_openalex_org_i4210113297",
+        "type": "research_org",
+        "name": "Google (United Kingdom)",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to Google DeepMind.",
+        "websiteUrl": "https://openalex.org/I4210113297",
+        "country": "GB",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Google (United Kingdom)"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I4210113297",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "deepmind"
+          ],
+          "workIds": [
+            "W2257979135"
+          ],
+          "ror": "https://ror.org/024bc3e07",
+          "institutionType": "company",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i4210115078",
+        "entityId": "research_org_openalex_https_openalex_org_i4210115078",
+        "type": "research_org",
+        "name": "Middle Technical University",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I4210115078",
+        "country": "IQ",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Middle Technical University"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I4210115078",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W3140854437"
+          ],
+          "ror": "https://ror.org/02fvkg758",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i4210119257",
+        "entityId": "research_org_openalex_https_openalex_org_i4210119257",
+        "type": "research_org",
+        "name": "University of Information Technology and Communications",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I4210119257",
+        "country": "IQ",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "University of Information Technology and Communications"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I4210119257",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W3140854437"
+          ],
+          "ror": "https://ror.org/028h0pd91",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i4210119939",
+        "entityId": "research_org_openalex_https_openalex_org_i4210119939",
+        "type": "research_org",
+        "name": "Food Research Institute Prague",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I4210119939",
+        "country": "CZ",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Food Research Institute Prague"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I4210119939",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4385245566"
+          ],
+          "ror": "https://ror.org/02jdepa55",
+          "institutionType": "facility",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i4210123907",
+        "entityId": "research_org_openalex_https_openalex_org_i4210123907",
+        "type": "research_org",
+        "name": "National University College",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I4210123907",
+        "country": "PR",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "National University College"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I4210123907",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4281790889"
+          ],
+          "ror": "https://ror.org/02hs8e066",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i4210133976",
+        "entityId": "research_org_openalex_https_openalex_org_i4210133976",
+        "type": "research_org",
+        "name": "Institute of Molecular Biology",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I4210133976",
+        "country": "AM",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Institute of Molecular Biology"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I4210133976",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4281790889"
+          ],
+          "ror": "https://ror.org/03t8mqd25",
+          "institutionType": "facility",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i4210155419",
+        "entityId": "research_org_openalex_https_openalex_org_i4210155419",
+        "type": "research_org",
+        "name": "Center for Systems Biology",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I4210155419",
+        "country": "US",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Center for Systems Biology"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I4210155419",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4281790889"
+          ],
+          "ror": "https://ror.org/05r3dyn47",
+          "institutionType": "facility",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i4387154714",
+        "entityId": "research_org_openalex_https_openalex_org_i4387154714",
+        "type": "research_org",
+        "name": "Max Planck Institute for Multidisciplinary Sciences",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I4387154714",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Max Planck Institute for Multidisciplinary Sciences"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I4387154714",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4281790889"
+          ],
+          "ror": "https://ror.org/03av75f26",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i44504214",
+        "entityId": "research_org_openalex_https_openalex_org_i44504214",
+        "type": "research_org",
+        "name": "Czech Technical University in Prague",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I44504214",
+        "country": "CZ",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Czech Technical University in Prague"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I44504214",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4385245566"
+          ],
+          "ror": "https://ror.org/03kqpb082",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i62916508",
+        "entityId": "research_org_openalex_https_openalex_org_i62916508",
+        "type": "research_org",
+        "name": "Technical University of Munich",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to OpenAI.",
+        "websiteUrl": "https://openalex.org/I62916508",
+        "country": "DE",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Technical University of Munich"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I62916508",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "openai"
+          ],
+          "workIds": [
+            "W4323655724"
+          ],
+          "ror": "https://ror.org/02kkvpp62",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i74801974",
+        "entityId": "research_org_openalex_https_openalex_org_i74801974",
+        "type": "research_org",
+        "name": "The University of Tokyo",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I74801974",
+        "country": "JP",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "The University of Tokyo"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I74801974",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4281790889"
+          ],
+          "ror": "https://ror.org/057zh3y96",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i76835614",
+        "entityId": "research_org_openalex_https_openalex_org_i76835614",
+        "type": "research_org",
+        "name": "University of Missouri",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I76835614",
+        "country": "US",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "University of Missouri"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I76835614",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W3140854437"
+          ],
+          "ror": "https://ror.org/02ymw8z06",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i8204097",
+        "entityId": "research_org_openalex_https_openalex_org_i8204097",
+        "type": "research_org",
+        "name": "Ludwig-Maximilians-Universität München",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to OpenAI.",
+        "websiteUrl": "https://openalex.org/I8204097",
+        "country": "DE",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Ludwig-Maximilians-Universität München"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I8204097",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "openai"
+          ],
+          "workIds": [
+            "W4323655724"
+          ],
+          "ror": "https://ror.org/05591te55",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i84909340",
+        "entityId": "research_org_openalex_https_openalex_org_i84909340",
+        "type": "research_org",
+        "name": "Institut des Hautes Études Scientifiques",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I84909340",
+        "country": "FR",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Institut des Hautes Études Scientifiques"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I84909340",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4385245566"
+          ],
+          "ror": "https://ror.org/05d5m2r55",
+          "institutionType": "facility",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i87216513",
+        "entityId": "research_org_openalex_https_openalex_org_i87216513",
+        "type": "research_org",
+        "name": "Michigan State University",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to NVIDIA.",
+        "websiteUrl": "https://openalex.org/I87216513",
+        "country": "US",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Michigan State University"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I87216513",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "nvidia"
+          ],
+          "workIds": [
+            "W4281790889"
+          ],
+          "ror": "https://ror.org/05hs6h993",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_institution_research_org_openalex_https_openalex_org_i97018004",
+        "entityId": "research_org_openalex_https_openalex_org_i97018004",
+        "type": "research_org",
+        "name": "Stanford University",
+        "layer": "ai_infra",
+        "description": "Research organization candidate from OpenAlex authorship metadata related to Google DeepMind.",
+        "websiteUrl": "https://openalex.org/I97018004",
+        "country": "US",
+        "statusText": "research_org",
+        "valuation": "N/A",
+        "aliases": [
+          "Stanford University"
+        ],
+        "confidence": 0.62,
+        "evidenceUrl": "https://openalex.org/I97018004",
+        "extractionMethod": "openalex_institution_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex institution candidate from authorship metadata; review identity, country and whether it should enter the research_org layer.",
+          "sourceId": "src_openalex",
+          "associatedEntityIds": [
+            "deepmind"
+          ],
+          "workIds": [
+            "W2606974598"
+          ],
+          "ror": "https://ror.org/00f54p054",
+          "institutionType": "education",
+          "suggestedLayer": "research_org",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_work_w2257979135",
+        "entityId": "paper_openalex_w2257979135",
+        "type": "paper",
+        "name": "Mastering the game of Go with deep neural networks and tree search",
+        "layer": "ai_infra",
+        "description": "OpenAlex paper candidate related to Google DeepMind; 15844 citations, 2016.",
+        "websiteUrl": "https://openalex.org/W2257979135",
+        "country": "",
+        "statusText": "research_artifact",
+        "valuation": "N/A",
+        "aliases": [
+          "Mastering the game of Go with deep neural networks and tree search",
+          "https://doi.org/10.1038/nature16961",
+          "W2257979135"
+        ],
+        "confidence": 0.66,
+        "evidenceUrl": "https://openalex.org/W2257979135",
+        "extractionMethod": "openalex_work_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex paper candidate; review title, authorship, institution metadata and whether it should become a paper/research artifact entity.",
+          "sourceId": "src_openalex",
+          "associatedEntityId": "deepmind",
+          "associatedEntityName": "Google DeepMind",
+          "openAlexWorkId": "W2257979135",
+          "openAlexUrl": "https://openalex.org/W2257979135",
+          "doi": "https://doi.org/10.1038/nature16961",
+          "publicationYear": 2016,
+          "publicationDate": "2016-01-26",
+          "citedByCount": 15844,
+          "sourceName": "Nature",
+          "authors": [
+            "David Silver",
+            "Aja Huang",
+            "Chris J. Maddison",
+            "Arthur Guez",
+            "Laurent Sifre",
+            "George van den Driessche",
+            "Julian Schrittwieser",
+            "Ioannis Antonoglou"
+          ],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210113297",
+              "displayName": "Google (United Kingdom)",
+              "countryCode": "GB",
+              "ror": "https://ror.org/024bc3e07",
+              "type": "company"
+            },
+            {
+              "id": "https://openalex.org/I4210090411",
+              "displayName": "DeepMind (United Kingdom)",
+              "countryCode": "GB",
+              "ror": "https://ror.org/00971b260",
+              "type": "company"
+            },
+            {
+              "id": "https://openalex.org/I4210113297",
+              "displayName": "Google (United Kingdom)",
+              "countryCode": "GB",
+              "ror": "https://ror.org/024bc3e07",
+              "type": "company"
+            },
+            {
+              "id": "https://openalex.org/I4210090411",
+              "displayName": "DeepMind (United Kingdom)",
+              "countryCode": "GB",
+              "ror": "https://ror.org/00971b260",
+              "type": "company"
+            },
+            {
+              "id": "https://openalex.org/I4210090411",
+              "displayName": "DeepMind (United Kingdom)",
+              "countryCode": "GB",
+              "ror": "https://ror.org/00971b260",
+              "type": "company"
+            },
+            {
+              "id": "https://openalex.org/I4210113297",
+              "displayName": "Google (United Kingdom)",
+              "countryCode": "GB",
+              "ror": "https://ror.org/024bc3e07",
+              "type": "company"
+            },
+            {
+              "id": "https://openalex.org/I4210090411",
+              "displayName": "DeepMind (United Kingdom)",
+              "countryCode": "GB",
+              "ror": "https://ror.org/00971b260",
+              "type": "company"
+            },
+            {
+              "id": "https://openalex.org/I4210113297",
+              "displayName": "Google (United Kingdom)",
+              "countryCode": "GB",
+              "ror": "https://ror.org/024bc3e07",
+              "type": "company"
+            }
+          ],
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_work_w2606974598",
+        "entityId": "paper_openalex_w2606974598",
+        "type": "paper",
+        "name": "Get To The Point: Summarization with Pointer-Generator Networks",
+        "layer": "ai_infra",
+        "description": "OpenAlex paper candidate related to Google DeepMind; 3896 citations, 2017.",
+        "websiteUrl": "https://openalex.org/W2606974598",
+        "country": "",
+        "statusText": "research_artifact",
+        "valuation": "N/A",
+        "aliases": [
+          "Get To The Point: Summarization with Pointer-Generator Networks",
+          "https://doi.org/10.18653/v1/p17-1099",
+          "W2606974598"
+        ],
+        "confidence": 0.66,
+        "evidenceUrl": "https://openalex.org/W2606974598",
+        "extractionMethod": "openalex_work_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex paper candidate; review title, authorship, institution metadata and whether it should become a paper/research artifact entity.",
+          "sourceId": "src_openalex",
+          "associatedEntityId": "deepmind",
+          "associatedEntityName": "Google DeepMind",
+          "openAlexWorkId": "W2606974598",
+          "openAlexUrl": "https://openalex.org/W2606974598",
+          "doi": "https://doi.org/10.18653/v1/p17-1099",
+          "publicationYear": 2017,
+          "publicationDate": "2017-01-01",
+          "citedByCount": 3896,
+          "sourceName": null,
+          "authors": [
+            "Abigail See",
+            "Peter J. Liu",
+            "Christopher D. Manning"
+          ],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "displayName": "Stanford University",
+              "countryCode": "US",
+              "ror": "https://ror.org/00f54p054",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I1291425158",
+              "displayName": "Google (United States)",
+              "countryCode": "US",
+              "ror": "https://ror.org/00njsd438",
+              "type": "company"
+            },
+            {
+              "id": "https://openalex.org/I97018004",
+              "displayName": "Stanford University",
+              "countryCode": "US",
+              "ror": "https://ror.org/00f54p054",
+              "type": "education"
+            }
+          ],
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_work_w2896457183",
+        "entityId": "paper_openalex_w2896457183",
+        "type": "paper",
+        "name": "AI-Assisted Pipeline for Dynamic Generation of Trustworthy Health Supplement Content at Scale",
+        "layer": "ai_infra",
+        "description": "OpenAlex paper candidate related to OpenAI; 45710 citations, 2018.",
+        "websiteUrl": "https://openalex.org/W2896457183",
+        "country": "",
+        "statusText": "research_artifact",
+        "valuation": "N/A",
+        "aliases": [
+          "AI-Assisted Pipeline for Dynamic Generation of Trustworthy Health Supplement Content at Scale",
+          "https://doi.org/10.4230/lipics.cosit.2022.18",
+          "W2896457183"
+        ],
+        "confidence": 0.66,
+        "evidenceUrl": "https://openalex.org/W2896457183",
+        "extractionMethod": "openalex_work_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex paper candidate; review title, authorship, institution metadata and whether it should become a paper/research artifact entity.",
+          "sourceId": "src_openalex",
+          "associatedEntityId": "openai",
+          "associatedEntityName": "OpenAI",
+          "openAlexWorkId": "W2896457183",
+          "openAlexUrl": "https://openalex.org/W2896457183",
+          "doi": "https://doi.org/10.4230/lipics.cosit.2022.18",
+          "publicationYear": 2018,
+          "publicationDate": "2018-10-11",
+          "citedByCount": 45710,
+          "sourceName": "DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)",
+          "authors": [
+            "Devlin, Jacob",
+            "Chang, Ming-Wei",
+            "Lee, Kenton",
+            "Toutanova, Kristina"
+          ],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1291425158",
+              "displayName": "Google (United States)",
+              "countryCode": "US",
+              "ror": "https://ror.org/00njsd438",
+              "type": "company"
+            },
+            {
+              "id": "https://openalex.org/I188760350",
+              "displayName": "Ollscoil na Gaillimhe – University of Galway",
+              "countryCode": "IE",
+              "ror": "https://ror.org/03bea9k73",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I1291425158",
+              "displayName": "Google (United States)",
+              "countryCode": "US",
+              "ror": "https://ror.org/00njsd438",
+              "type": "company"
+            },
+            {
+              "id": "https://openalex.org/I188760350",
+              "displayName": "Ollscoil na Gaillimhe – University of Galway",
+              "countryCode": "IE",
+              "ror": "https://ror.org/03bea9k73",
+              "type": "education"
+            }
+          ],
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_work_w2964121744",
+        "entityId": "paper_openalex_w2964121744",
+        "type": "paper",
+        "name": "W2964121744",
+        "layer": "ai_infra",
+        "description": "OpenAlex paper candidate related to Google DeepMind; 50351 citations, 2021.",
+        "websiteUrl": "https://openalex.org/W2964121744",
+        "country": "",
+        "statusText": "research_artifact",
+        "valuation": "N/A",
+        "aliases": [
+          "W2964121744",
+          "https://doi.org/10.4230/lipics.cp.2021.42",
+          "W2964121744"
+        ],
+        "confidence": 0.66,
+        "evidenceUrl": "https://openalex.org/W2964121744",
+        "extractionMethod": "openalex_work_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex paper candidate; review title, authorship, institution metadata and whether it should become a paper/research artifact entity.",
+          "sourceId": "src_openalex",
+          "associatedEntityId": "deepmind",
+          "associatedEntityName": "Google DeepMind",
+          "openAlexWorkId": "W2964121744",
+          "openAlexUrl": "https://openalex.org/W2964121744",
+          "doi": "https://doi.org/10.4230/lipics.cp.2021.42",
+          "publicationYear": 2021,
+          "publicationDate": "2021-01-01",
+          "citedByCount": 50351,
+          "sourceName": "DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)",
+          "authors": [
+            "Mandi, Jayanta",
+            "Canoy, Rocsildes",
+            "Bucarey, Víctor",
+            "Guns, Tias"
+          ],
+          "institutions": [],
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_work_w3140854437",
+        "entityId": "paper_openalex_w3140854437",
+        "type": "paper",
+        "name": "Review of deep learning: concepts, CNN architectures, challenges, applications, future directions",
+        "layer": "ai_infra",
+        "description": "OpenAlex paper candidate related to NVIDIA; 7583 citations, 2021.",
+        "websiteUrl": "https://openalex.org/W3140854437",
+        "country": "",
+        "statusText": "research_artifact",
+        "valuation": "N/A",
+        "aliases": [
+          "Review of deep learning: concepts, CNN architectures, challenges, applications, future directions",
+          "https://doi.org/10.1186/s40537-021-00444-8",
+          "W3140854437"
+        ],
+        "confidence": 0.66,
+        "evidenceUrl": "https://openalex.org/W3140854437",
+        "extractionMethod": "openalex_work_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex paper candidate; review title, authorship, institution metadata and whether it should become a paper/research artifact entity.",
+          "sourceId": "src_openalex",
+          "associatedEntityId": "nvidia",
+          "associatedEntityName": "NVIDIA",
+          "openAlexWorkId": "W3140854437",
+          "openAlexUrl": "https://openalex.org/W3140854437",
+          "doi": "https://doi.org/10.1186/s40537-021-00444-8",
+          "publicationYear": 2021,
+          "publicationDate": "2021-03-31",
+          "citedByCount": 7583,
+          "sourceName": "Journal Of Big Data",
+          "authors": [
+            "Laith Alzubaidi",
+            "Jinglan Zhang",
+            "Amjad J. Humaidi",
+            "Ayad Q. Al-Dujaili",
+            "Ye Duan",
+            "Omran Al-Shamma",
+            "José Santamaría",
+            "Mohammed A. Fadhel"
+          ],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I160993911",
+              "displayName": "Queensland University of Technology",
+              "countryCode": "AU",
+              "ror": "https://ror.org/03pnv4752",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I4210119257",
+              "displayName": "University of Information Technology and Communications",
+              "countryCode": "IQ",
+              "ror": "https://ror.org/028h0pd91",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I160993911",
+              "displayName": "Queensland University of Technology",
+              "countryCode": "AU",
+              "ror": "https://ror.org/03pnv4752",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I171256487",
+              "displayName": "University of Technology - Iraq",
+              "countryCode": "IQ",
+              "ror": "https://ror.org/01w1ehb86",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I4210115078",
+              "displayName": "Middle Technical University",
+              "countryCode": "IQ",
+              "ror": "https://ror.org/02fvkg758",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I76835614",
+              "displayName": "University of Missouri",
+              "countryCode": "US",
+              "ror": "https://ror.org/02ymw8z06",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I4210119257",
+              "displayName": "University of Information Technology and Communications",
+              "countryCode": "IQ",
+              "ror": "https://ror.org/028h0pd91",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I191420491",
+              "displayName": "Universidad de Jaén",
+              "countryCode": "ES",
+              "ror": "https://ror.org/0122p5f64",
+              "type": "education"
+            }
+          ],
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_work_w4226278401",
+        "entityId": "paper_openalex_w4226278401",
+        "type": "paper",
+        "name": "Training language models to follow instructions with human feedback",
+        "layer": "ai_infra",
+        "description": "OpenAlex paper candidate related to OpenAI; 4296 citations, 2022.",
+        "websiteUrl": "https://openalex.org/W4226278401",
+        "country": "",
+        "statusText": "research_artifact",
+        "valuation": "N/A",
+        "aliases": [
+          "Training language models to follow instructions with human feedback",
+          "https://doi.org/10.48550/arxiv.2203.02155",
+          "W4226278401"
+        ],
+        "confidence": 0.66,
+        "evidenceUrl": "https://openalex.org/W4226278401",
+        "extractionMethod": "openalex_work_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex paper candidate; review title, authorship, institution metadata and whether it should become a paper/research artifact entity.",
+          "sourceId": "src_openalex",
+          "associatedEntityId": "openai",
+          "associatedEntityName": "OpenAI",
+          "openAlexWorkId": "W4226278401",
+          "openAlexUrl": "https://openalex.org/W4226278401",
+          "doi": "https://doi.org/10.48550/arxiv.2203.02155",
+          "publicationYear": 2022,
+          "publicationDate": "2022-03-04",
+          "citedByCount": 4296,
+          "sourceName": "arXiv (Cornell University)",
+          "authors": [
+            "Long Ouyang",
+            "Jeff Wu",
+            "Xu Jiang",
+            "Diogo Almeida",
+            "Carroll L. Wainwright",
+            "Pamela Mishkin",
+            "Chong Zhang",
+            "Sandhini Agarwal"
+          ],
+          "institutions": [],
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_work_w4281790889",
+        "entityId": "paper_openalex_w4281790889",
+        "type": "paper",
+        "name": "ColabFold: making protein folding accessible to all",
+        "layer": "ai_infra",
+        "description": "OpenAlex paper candidate related to NVIDIA; 9725 citations, 2022.",
+        "websiteUrl": "https://openalex.org/W4281790889",
+        "country": "",
+        "statusText": "research_artifact",
+        "valuation": "N/A",
+        "aliases": [
+          "ColabFold: making protein folding accessible to all",
+          "https://doi.org/10.1038/s41592-022-01488-1",
+          "W4281790889"
+        ],
+        "confidence": 0.66,
+        "evidenceUrl": "https://openalex.org/W4281790889",
+        "extractionMethod": "openalex_work_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex paper candidate; review title, authorship, institution metadata and whether it should become a paper/research artifact entity.",
+          "sourceId": "src_openalex",
+          "associatedEntityId": "nvidia",
+          "associatedEntityName": "NVIDIA",
+          "openAlexWorkId": "W4281790889",
+          "openAlexUrl": "https://openalex.org/W4281790889",
+          "doi": "https://doi.org/10.1038/s41592-022-01488-1",
+          "publicationYear": 2022,
+          "publicationDate": "2022-05-30",
+          "citedByCount": 9725,
+          "sourceName": "Nature Methods",
+          "authors": [
+            "Milot Mirdita",
+            "Konstantin Schütze",
+            "Yoshitaka Moriwaki",
+            "Lim Heo",
+            "Sergey Ovchinnikov",
+            "Martin Steinegger"
+          ],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210095684",
+              "displayName": "Max Planck Institute for the Study of Religious and Ethnic Diversity",
+              "countryCode": "DE",
+              "ror": "https://ror.org/0080y7t67",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I4387154714",
+              "displayName": "Max Planck Institute for Multidisciplinary Sciences",
+              "countryCode": null,
+              "ror": "https://ror.org/03av75f26",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I139264467",
+              "displayName": "Seoul National University",
+              "countryCode": "KR",
+              "ror": "https://ror.org/04h9pn542",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I74801974",
+              "displayName": "The University of Tokyo",
+              "countryCode": "JP",
+              "ror": "https://ror.org/057zh3y96",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I87216513",
+              "displayName": "Michigan State University",
+              "countryCode": "US",
+              "ror": "https://ror.org/05hs6h993",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I2801851002",
+              "displayName": "Harvard University Press",
+              "countryCode": "US",
+              "ror": "https://ror.org/006v7bf86",
+              "type": "other"
+            },
+            {
+              "id": "https://openalex.org/I4210155419",
+              "displayName": "Center for Systems Biology",
+              "countryCode": "US",
+              "ror": "https://ror.org/05r3dyn47",
+              "type": "facility"
+            },
+            {
+              "id": "https://openalex.org/I139264467",
+              "displayName": "Seoul National University",
+              "countryCode": "KR",
+              "ror": "https://ror.org/04h9pn542",
+              "type": "education"
+            }
+          ],
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_work_w4323655724",
+        "entityId": "paper_openalex_w4323655724",
+        "type": "paper",
+        "name": "ChatGPT for good? On opportunities and challenges of large language models for education",
+        "layer": "ai_infra",
+        "description": "OpenAlex paper candidate related to OpenAI; 5253 citations, 2023.",
+        "websiteUrl": "https://openalex.org/W4323655724",
+        "country": "",
+        "statusText": "research_artifact",
+        "valuation": "N/A",
+        "aliases": [
+          "ChatGPT for good? On opportunities and challenges of large language models for education",
+          "https://doi.org/10.1016/j.lindif.2023.102274",
+          "W4323655724"
+        ],
+        "confidence": 0.66,
+        "evidenceUrl": "https://openalex.org/W4323655724",
+        "extractionMethod": "openalex_work_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex paper candidate; review title, authorship, institution metadata and whether it should become a paper/research artifact entity.",
+          "sourceId": "src_openalex",
+          "associatedEntityId": "openai",
+          "associatedEntityName": "OpenAI",
+          "openAlexWorkId": "W4323655724",
+          "openAlexUrl": "https://openalex.org/W4323655724",
+          "doi": "https://doi.org/10.1016/j.lindif.2023.102274",
+          "publicationYear": 2023,
+          "publicationDate": "2023-03-09",
+          "citedByCount": 5253,
+          "sourceName": "Learning and Individual Differences",
+          "authors": [
+            "Enkelejda Kasneci",
+            "Kathrin Seßler",
+            "Stefan Küchemann",
+            "Maria Bannert",
+            "Daryna Dementieva",
+            "Frank Fischer",
+            "Urs Gasser",
+            "Georg Groh"
+          ],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I62916508",
+              "displayName": "Technical University of Munich",
+              "countryCode": "DE",
+              "ror": "https://ror.org/02kkvpp62",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I62916508",
+              "displayName": "Technical University of Munich",
+              "countryCode": "DE",
+              "ror": "https://ror.org/02kkvpp62",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I8204097",
+              "displayName": "Ludwig-Maximilians-Universität München",
+              "countryCode": "DE",
+              "ror": "https://ror.org/05591te55",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I62916508",
+              "displayName": "Technical University of Munich",
+              "countryCode": "DE",
+              "ror": "https://ror.org/02kkvpp62",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I62916508",
+              "displayName": "Technical University of Munich",
+              "countryCode": "DE",
+              "ror": "https://ror.org/02kkvpp62",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I8204097",
+              "displayName": "Ludwig-Maximilians-Universität München",
+              "countryCode": "DE",
+              "ror": "https://ror.org/05591te55",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I62916508",
+              "displayName": "Technical University of Munich",
+              "countryCode": "DE",
+              "ror": "https://ror.org/02kkvpp62",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I62916508",
+              "displayName": "Technical University of Munich",
+              "countryCode": "DE",
+              "ror": "https://ror.org/02kkvpp62",
+              "type": "education"
+            }
+          ],
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_openalex_work_w4385245566",
+        "entityId": "paper_openalex_w4385245566",
+        "type": "paper",
+        "name": "MizAR 60 for Mizar 50",
+        "layer": "ai_infra",
+        "description": "OpenAlex paper candidate related to NVIDIA; 76347 citations, 2023.",
+        "websiteUrl": "https://openalex.org/W4385245566",
+        "country": "",
+        "statusText": "research_artifact",
+        "valuation": "N/A",
+        "aliases": [
+          "MizAR 60 for Mizar 50",
+          "https://doi.org/10.4230/lipics.itp.2023.19",
+          "W4385245566"
+        ],
+        "confidence": 0.66,
+        "evidenceUrl": "https://openalex.org/W4385245566",
+        "extractionMethod": "openalex_work_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "OpenAlex paper candidate; review title, authorship, institution metadata and whether it should become a paper/research artifact entity.",
+          "sourceId": "src_openalex",
+          "associatedEntityId": "nvidia",
+          "associatedEntityName": "NVIDIA",
+          "openAlexWorkId": "W4385245566",
+          "openAlexUrl": "https://openalex.org/W4385245566",
+          "doi": "https://doi.org/10.4230/lipics.itp.2023.19",
+          "publicationYear": 2023,
+          "publicationDate": "2023-01-01",
+          "citedByCount": 76347,
+          "sourceName": "DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)",
+          "authors": [
+            "Jakubův, Jan",
+            "Chvalovský, Karel",
+            "Goertzel, Zarathustra",
+            "Kaliszyk, Cezary",
+            "Olšák, Mirek",
+            "Piotrowski, Bartosz",
+            "Schulz, Stephan",
+            "Suda, Martin"
+          ],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I44504214",
+              "displayName": "Czech Technical University in Prague",
+              "countryCode": "CZ",
+              "ror": "https://ror.org/03kqpb082",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I44504214",
+              "displayName": "Czech Technical University in Prague",
+              "countryCode": "CZ",
+              "ror": "https://ror.org/03kqpb082",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I44504214",
+              "displayName": "Czech Technical University in Prague",
+              "countryCode": "CZ",
+              "ror": "https://ror.org/03kqpb082",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I190249584",
+              "displayName": "Universität Innsbruck",
+              "countryCode": "AT",
+              "ror": "https://ror.org/054pv6659",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I4210119939",
+              "displayName": "Food Research Institute Prague",
+              "countryCode": "CZ",
+              "ror": "https://ror.org/02jdepa55",
+              "type": "facility"
+            },
+            {
+              "id": "https://openalex.org/I84909340",
+              "displayName": "Institut des Hautes Études Scientifiques",
+              "countryCode": "FR",
+              "ror": "https://ror.org/05d5m2r55",
+              "type": "facility"
+            },
+            {
+              "id": "https://openalex.org/I44504214",
+              "displayName": "Czech Technical University in Prague",
+              "countryCode": "CZ",
+              "ror": "https://ror.org/03kqpb082",
+              "type": "education"
+            },
+            {
+              "id": "https://openalex.org/I108806672",
+              "displayName": "Baden-Wuerttemberg Cooperative State University",
+              "countryCode": "DE",
+              "ror": "https://ror.org/02xdzy536",
+              "type": "education"
+            }
+          ],
+          "suggestedLayer": "paper",
+          "snapshotGeneratedAt": "2026-07-04T09:30:35.614Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_wikidata_amd",
+        "entityId": "amd",
+        "type": "company",
+        "name": "AMD",
+        "layer": "chip_design",
+        "description": "CPU 与 AI GPU 供应商，MI 系列加速器面向云和企业 AI 工作负载。",
+        "websiteUrl": "https://www.amd.com/",
+        "country": "United States",
+        "statusText": "public",
+        "valuation": "Market cap: public",
+        "aliases": [
+          "AMD",
+          "Advanced Micro Devices"
+        ],
+        "confidence": 0.84,
+        "evidenceUrl": "https://www.wikidata.org/wiki/Q128896",
+        "extractionMethod": "wikidata_profile_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "Wikidata profile enrichment candidate; review aliases, website, country and description before approving entity update.",
+          "qid": "Q128896",
+          "wikidataUrl": "https://www.wikidata.org/wiki/Q128896",
+          "sourceId": "src_wikidata",
+          "label": "AMD",
+          "description": "American multinational semiconductor company",
+          "inceptionYear": "1969",
+          "snapshotGeneratedAt": "2026-07-04T09:10:00.789Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.007Z"
+      },
+      {
+        "id": "candidate_entity_wikidata_azure",
+        "entityId": "azure",
+        "type": "cloud",
+        "name": "Microsoft Azure",
+        "layer": "cloud_compute",
+        "description": "微软云计算平台，也是多个基础模型公司训练和推理算力的重要承载方。",
+        "websiteUrl": "https://azure.microsoft.com/",
+        "country": "United States",
+        "statusText": "public",
+        "valuation": "Part of Microsoft",
+        "aliases": [
+          "Azure",
+          "Microsoft Azure",
+          "Windows Azure",
+          "Azure Services Plattform",
+          "Windows Azure Platform",
+          "Azul",
+          "Microsoft Cloud",
+          "MSFT Azure"
+        ],
+        "confidence": 0.84,
+        "evidenceUrl": "https://www.wikidata.org/wiki/Q725967",
+        "extractionMethod": "wikidata_profile_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "Wikidata profile enrichment candidate; review aliases, website, country and description before approving entity update.",
+          "qid": "Q725967",
+          "wikidataUrl": "https://www.wikidata.org/wiki/Q725967",
+          "sourceId": "src_wikidata",
+          "label": "Azure",
+          "description": "cloud computing platform operated by Microsoft",
+          "inceptionYear": "2010",
+          "snapshotGeneratedAt": "2026-07-04T09:10:00.789Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_wikidata_huggingface",
+        "entityId": "huggingface",
+        "type": "company",
+        "name": "Hugging Face",
+        "layer": "ai_infra",
+        "description": "模型、数据集和 Space 托管平台，是 AI 开源生态的重要分发层。",
+        "websiteUrl": "https://huggingface.co/",
+        "country": "United States",
+        "statusText": "private",
+        "valuation": "Reported valuation only",
+        "aliases": [
+          "Hugging Face",
+          "Hugging Face, Inc.",
+          "Hugging Face Inc.",
+          "🤗",
+          "HF"
+        ],
+        "confidence": 0.84,
+        "evidenceUrl": "https://www.wikidata.org/wiki/Q108943604",
+        "extractionMethod": "wikidata_profile_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "Wikidata profile enrichment candidate; review aliases, website, country and description before approving entity update.",
+          "qid": "Q108943604",
+          "wikidataUrl": "https://www.wikidata.org/wiki/Q108943604",
+          "sourceId": "src_wikidata",
+          "label": "Hugging Face",
+          "description": "American company",
+          "inceptionYear": "2016",
+          "snapshotGeneratedAt": "2026-07-04T09:10:00.789Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_wikidata_nvidia",
+        "entityId": "nvidia",
+        "type": "company",
+        "name": "NVIDIA",
+        "layer": "chip_design",
+        "description": "AI 训练和推理 GPU、网络、CUDA 软件生态的核心公司。",
+        "websiteUrl": "https://www.nvidia.com/",
+        "country": "United States",
+        "statusText": "public",
+        "valuation": "Market cap: public",
+        "aliases": [
+          "Nvidia",
+          "Nvidia Corporation",
+          "NVDA",
+          "英伟达"
+        ],
+        "confidence": 0.84,
+        "evidenceUrl": "https://www.wikidata.org/wiki/Q182477",
+        "extractionMethod": "wikidata_profile_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "Wikidata profile enrichment candidate; review aliases, website, country and description before approving entity update.",
+          "qid": "Q182477",
+          "wikidataUrl": "https://www.wikidata.org/wiki/Q182477",
+          "sourceId": "src_wikidata",
+          "label": "Nvidia",
+          "description": "American multinational technology company",
+          "inceptionYear": "1993",
+          "snapshotGeneratedAt": "2026-07-04T09:10:00.789Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      },
+      {
+        "id": "candidate_entity_wikidata_openai",
+        "entityId": "openai",
+        "type": "company",
+        "name": "OpenAI",
+        "layer": "foundation_model",
+        "description": "ChatGPT 和 GPT 系列模型开发者，处于 AI 应用、模型 API 和企业 AI 平台的中心位置。",
+        "websiteUrl": "https://openai.com/",
+        "country": "United States",
+        "statusText": "private",
+        "valuation": "Reported valuation only",
+        "aliases": [
+          "OpenAI",
+          "openai.com",
+          "OpenAI Global",
+          "ChatGPT"
+        ],
+        "confidence": 0.84,
+        "evidenceUrl": "https://www.wikidata.org/wiki/Q21708200",
+        "extractionMethod": "wikidata_profile_snapshot",
+        "status": "candidate",
+        "payload": {
+          "note": "Wikidata profile enrichment candidate; review aliases, website, country and description before approving entity update.",
+          "qid": "Q21708200",
+          "wikidataUrl": "https://www.wikidata.org/wiki/Q21708200",
+          "sourceId": "src_wikidata",
+          "label": "OpenAI",
+          "description": "American artificial intelligence research organization",
+          "inceptionYear": "2015",
+          "snapshotGeneratedAt": "2026-07-04T09:10:00.789Z"
+        },
+        "createdAt": "2026-07-04T09:47:08.008Z"
+      }
+    ],
+    "candidateMetrics": [],
+    "retryBacklog": [],
+    "summary": {
+      "candidateRelationships": 4,
+      "candidateEntities": 51,
+      "candidateMetrics": 0,
+      "retryBacklog": 0,
+      "evidenceBacklog": 50,
+      "workerRawDocuments": 5,
+      "workerConnectorRuns": 4,
+      "extractionRecords": 5,
+      "extractedDocuments": 5,
+      "llmExtractionRecords": 5,
+      "llmCompletedRecords": 5
+    },
+    "workerRunGeneratedAt": "2026-07-03T15:07:44.798Z",
+    "extractionGeneratedAt": "2026-07-04T05:26:57.296Z",
+    "llmExtractionGeneratedAt": "2026-07-04T05:27:05.830Z",
+    "wikidataSnapshotGeneratedAt": "2026-07-04T09:10:00.789Z",
+    "openAlexWorksSnapshotGeneratedAt": "2026-07-04T09:30:35.614Z",
+    "arxivPapersSnapshotGeneratedAt": "2026-07-04T09:46:58.817Z"
+  }
+}

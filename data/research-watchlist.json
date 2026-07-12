@@ -1,0 +1,168 @@
+[
+  {
+    "id": "watch_microsoft_openai_partnership",
+    "connector": "company_ir",
+    "entityId": "azure",
+    "url": "https://news.microsoft.com/source/features/ai/microsoft-openai-partnership/",
+    "title": "Microsoft and OpenAI partnership overview",
+    "publisher": "Microsoft",
+    "sourceType": "company_news",
+    "cadence": "weekly",
+    "contentType": "text/html",
+    "extractionHints": [
+      {
+        "targetEntityId": "openai",
+        "relationType": "partners_with",
+        "confidence": 0.72,
+        "note": "Official company source should be reviewed for Microsoft Azure and OpenAI partnership evidence."
+      }
+    ]
+  },
+  {
+    "id": "watch_nvidia_coreweave_cloud",
+    "connector": "company_ir",
+    "entityId": "nvidia",
+    "url": "https://www.nvidia.com/en-us/data-center/cloud-gaming/coreweave/",
+    "title": "NVIDIA and CoreWeave cloud infrastructure references",
+    "publisher": "NVIDIA",
+    "sourceType": "company_product",
+    "cadence": "monthly",
+    "contentType": "text/html",
+    "extractionHints": [
+      {
+        "targetEntityId": "coreweave",
+        "relationType": "supplies_to",
+        "confidence": 0.66,
+        "note": "Product or partner page should be reviewed for NVIDIA infrastructure supplied to CoreWeave."
+      }
+    ]
+  },
+  {
+    "id": "watch_huggingface_langchain_docs",
+    "connector": "company_docs",
+    "entityId": "huggingface",
+    "url": "https://huggingface.co/docs",
+    "title": "Hugging Face documentation",
+    "publisher": "Hugging Face",
+    "sourceType": "documentation",
+    "cadence": "monthly",
+    "contentType": "text/html",
+    "extractionHints": [
+      {
+        "targetEntityId": "langchain",
+        "relationType": "integrates_with",
+        "confidence": 0.62,
+        "note": "Documentation should be reviewed for Hugging Face integrations with LangChain ecosystem tools."
+      }
+    ]
+  },
+  {
+    "id": "watch_openalex_openai_research",
+    "connector": "openalex",
+    "entityId": "openai",
+    "url": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
+    "title": "OpenAlex works search for OpenAI large language models",
+    "publisher": "OpenAlex",
+    "sourceType": "scholarly_api",
+    "cadence": "weekly",
+    "contentType": "application/json",
+    "extractionHints": [
+      {
+        "metricType": "researchWorksMentioningEntity",
+        "confidence": 0.58,
+        "note": "OpenAlex response should be reviewed before turning work counts or top cited works into metrics."
+      }
+    ]
+  },
+  {
+    "id": "watch_anthropic_news",
+    "connector": "news_rss",
+    "entityId": "anthropic",
+    "url": "https://www.anthropic.com/news",
+    "title": "Anthropic news feed",
+    "publisher": "Anthropic",
+    "sourceType": "company_news",
+    "cadence": "weekly",
+    "contentType": "text/html",
+    "extractionHints": [
+      {
+        "targetEntityId": "aws",
+        "relationType": "partners_with",
+        "confidence": 0.6,
+        "note": "Company news should be reviewed for cloud, model availability and strategic partnership evidence."
+      }
+    ]
+  },
+  {
+    "id": "watch_openai_news_rss",
+    "connector": "news_rss",
+    "entityId": "openai",
+    "url": "https://openai.com/news/rss.xml",
+    "title": "OpenAI official news RSS",
+    "publisher": "OpenAI",
+    "sourceType": "company_news_rss",
+    "cadence": "daily",
+    "contentType": "application/rss+xml",
+    "extractionHints": [
+      {
+        "metricType": "rssNewsItemsForReview",
+        "confidence": 0.6,
+        "note": "Official RSS feed should be parsed into news items for review before deriving partnerships, releases, product launches or valuation events."
+      }
+    ]
+  },
+  {
+    "id": "watch_nvidia_blog_rss",
+    "connector": "news_rss",
+    "entityId": "nvidia",
+    "url": "https://blogs.nvidia.com/feed/",
+    "title": "NVIDIA official blog RSS",
+    "publisher": "NVIDIA",
+    "sourceType": "company_blog_rss",
+    "cadence": "daily",
+    "contentType": "application/rss+xml",
+    "extractionHints": [
+      {
+        "metricType": "rssNewsItemsForReview",
+        "confidence": 0.58,
+        "note": "Official RSS feed should be parsed into news items for review before deriving product, customer, infrastructure or ecosystem relationships."
+      }
+    ]
+  },
+  {
+    "id": "watch_aws_ml_blog_rss",
+    "connector": "news_rss",
+    "entityId": "aws",
+    "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "title": "AWS Machine Learning Blog RSS",
+    "publisher": "AWS",
+    "sourceType": "company_blog_rss",
+    "cadence": "daily",
+    "contentType": "application/rss+xml",
+    "extractionHints": [
+      {
+        "metricType": "rssNewsItemsForReview",
+        "confidence": 0.57,
+        "note": "Official AWS Machine Learning blog feed should be parsed into news items for review before deriving cloud, model hosting, customer or infrastructure relationships."
+      }
+    ]
+  },
+  {
+    "id": "watch_meta_engineering_rss",
+    "connector": "news_rss",
+    "entityId": "meta_ai",
+    "url": "https://engineering.fb.com/feed/",
+    "title": "Meta Engineering RSS",
+    "publisher": "Meta",
+    "sourceType": "company_engineering_rss",
+    "cadence": "daily",
+    "contentType": "application/rss+xml",
+    "extractionHints": [
+      {
+        "metricType": "rssNewsItemsForReview",
+        "confidence": 0.55,
+        "note": "Official Meta Engineering feed should be parsed into news items for review before deriving AI infrastructure, open model, research or product relationships."
+      }
+    ]
+  }
+]

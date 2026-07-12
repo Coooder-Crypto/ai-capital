@@ -1,0 +1,110 @@
+[
+  {
+    "id": "candidate_metric_huggingface_monthly_downloads",
+    "entityId": "huggingface",
+    "metricType": "monthlyModelDownloads",
+    "valueNumber": 1800000000,
+    "valueText": null,
+    "asOfDate": "2026-07-03",
+    "sourceId": "src_hf",
+    "sourceRef": "manual-candidate",
+    "confidence": 0.61,
+    "evidenceUrl": "https://example.com/research/huggingface-downloads",
+    "extractionMethod": "manual_candidate_seed",
+    "status": "candidate",
+    "payload": {
+      "note": "候选指标：模型下载量口径，需要 Hugging Face API 或官方博客复核。"
+    },
+    "createdAt": "2026-07-03T00:00:00.000Z"
+  },
+  {
+    "id": "candidate_metric_openai_arr",
+    "entityId": "openai",
+    "metricType": "reportedArr",
+    "valueNumber": 12000000000,
+    "valueText": null,
+    "asOfDate": "2026-07-03",
+    "sourceId": "src_public_portfolio",
+    "sourceRef": "manual-candidate",
+    "confidence": 0.52,
+    "evidenceUrl": "https://example.com/research/openai-reported-arr",
+    "extractionMethod": "manual_candidate_seed",
+    "status": "candidate",
+    "payload": {
+      "note": "候选指标：公开报道口径 ARR，不应直接进入正式指标，需来源和口径复核。"
+    },
+    "createdAt": "2026-07-03T00:00:00.000Z"
+  },
+  {
+    "id": "worker_metric_watch_nvidia_blog_rss_nvidia_rssnewsitemsforreview",
+    "entityId": "nvidia",
+    "metricType": "rssNewsItemsForReview",
+    "valueNumber": 0,
+    "valueText": "review_required",
+    "asOfDate": "2026-07-05",
+    "sourceId": "src_manual",
+    "sourceRef": "https://blogs.nvidia.com/feed/",
+    "confidence": 0.6,
+    "evidenceUrl": "https://blogs.nvidia.com/feed/",
+    "extractionMethod": "llm_fixture",
+    "status": "candidate",
+    "payload": {
+      "note": "Official RSS feed should be parsed into news items for review before deriving product, customer, infrastructure or ecosystem relationships.",
+      "watchlistId": "watch_nvidia_blog_rss",
+      "rawDocumentId": "raw_watch_nvidia_blog_rss",
+      "parsedDocumentId": "parsed_raw_watch_nvidia_blog_rss",
+      "extractionRecordId": "extract_raw_watch_nvidia_blog_rss",
+      "llmExtractionRecordId": "llm_extract_raw_watch_nvidia_blog_rss",
+      "model": "local-schema-fixture"
+    },
+    "createdAt": "2026-07-05T06:07:35.979Z"
+  },
+  {
+    "id": "worker_metric_watch_openai_news_rss_openai_rssnewsitemsforreview",
+    "entityId": "openai",
+    "metricType": "rssNewsItemsForReview",
+    "valueNumber": 0,
+    "valueText": "review_required",
+    "asOfDate": "2026-07-05",
+    "sourceId": "src_manual",
+    "sourceRef": "https://openai.com/news/rss.xml",
+    "confidence": 0.62,
+    "evidenceUrl": "https://openai.com/news/rss.xml",
+    "extractionMethod": "llm_fixture",
+    "status": "candidate",
+    "payload": {
+      "note": "Official RSS feed should be parsed into news items for review before deriving partnerships, releases, product launches or valuation events.",
+      "watchlistId": "watch_openai_news_rss",
+      "rawDocumentId": "raw_watch_openai_news_rss",
+      "parsedDocumentId": "parsed_raw_watch_openai_news_rss",
+      "extractionRecordId": "extract_raw_watch_openai_news_rss",
+      "llmExtractionRecordId": "llm_extract_raw_watch_openai_news_rss",
+      "model": "local-schema-fixture"
+    },
+    "createdAt": "2026-07-05T06:07:35.979Z"
+  },
+  {
+    "id": "worker_metric_watch_openalex_openai_research_openai_researchworksmentioningentity",
+    "entityId": "openai",
+    "metricType": "researchWorksMentioningEntity",
+    "valueNumber": 0,
+    "valueText": "review_required",
+    "asOfDate": "2026-07-05",
+    "sourceId": "src_openalex",
+    "sourceRef": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
+    "confidence": 0.6,
+    "evidenceUrl": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
+    "extractionMethod": "llm_fixture",
+    "status": "candidate",
+    "payload": {
+      "note": "OpenAlex response should be reviewed before turning work counts or top cited works into metrics.",
+      "watchlistId": "watch_openalex_openai_research",
+      "rawDocumentId": "raw_watch_openalex_openai_research",
+      "parsedDocumentId": "parsed_raw_watch_openalex_openai_research",
+      "extractionRecordId": "extract_raw_watch_openalex_openai_research",
+      "llmExtractionRecordId": "llm_extract_raw_watch_openalex_openai_research",
+      "model": "local-schema-fixture"
+    },
+    "createdAt": "2026-07-05T06:07:35.979Z"
+  }
+]

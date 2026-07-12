@@ -1,0 +1,113 @@
+id,name,type,layer,status,country,website_url,valuation
+asml,ASML,company,equipment,public,Netherlands,https://www.asml.com,Market cap: public
+nvidia,NVIDIA,company,chip_design,public,United States,https://www.nvidia.com,Market cap: public
+amd,AMD,company,chip_design,public,United States,https://www.amd.com,Market cap: public
+broadcom,Broadcom,company,chip_design,public,United States,https://www.broadcom.com,Market cap: public
+tsmc,TSMC,company,foundry_memory,public,Taiwan,https://www.tsmc.com,Market cap: public
+sk_hynix,SK Hynix,company,foundry_memory,public,South Korea,https://www.skhynix.com,Market cap: public
+supermicro,Supermicro,company,datacenter,public,United States,https://www.supermicro.com,Market cap: public
+arista,Arista Networks,company,datacenter,public,United States,https://www.arista.com,Market cap: public
+azure,Microsoft Azure,cloud,cloud_compute,public,United States,https://azure.microsoft.com,Part of Microsoft
+aws,AWS,cloud,cloud_compute,public,United States,https://aws.amazon.com,Part of Amazon
+coreweave,CoreWeave,company,cloud_compute,public,United States,https://www.coreweave.com,Market cap: public
+openai,OpenAI,company,foundation_model,private,United States,https://openai.com,Reported valuation only
+anthropic,Anthropic,company,foundation_model,private,United States,https://www.anthropic.com,Reported valuation only
+mistral,Mistral AI,company,foundation_model,private,France,https://mistral.ai,Reported valuation only
+meta_ai,Meta AI,company,foundation_model,public,United States,https://ai.meta.com,Part of Meta
+huggingface,Hugging Face,company,ai_infra,private,United States / France,https://huggingface.co,Reported valuation only
+langchain,LangChain,company,ai_infra,private,United States,https://www.langchain.com,Reported valuation only
+databricks,Databricks,company,ai_infra,private,United States,https://www.databricks.com,Reported valuation only
+pinecone,Pinecone,company,ai_infra,private,United States,https://www.pinecone.io,Reported valuation only
+cursor,Cursor,company,application,private,United States,https://www.cursor.com,Reported valuation only
+perplexity,Perplexity,company,application,private,United States,https://www.perplexity.ai,Reported valuation only
+midjourney,Midjourney,company,application,private,United States,https://www.midjourney.com,Unknown
+elevenlabs,ElevenLabs,company,application,private,United States / UK,https://elevenlabs.io,Reported valuation only
+sequoia,Sequoia Capital,investor,application,private,United States,https://www.sequoiacap.com,N/A
+a16z,a16z,investor,application,private,United States,https://a16z.com,N/A
+applied_materials,Applied Materials,company,equipment,public,United States,https://www.appliedmaterials.com,Market cap: public
+lam_research,Lam Research,company,equipment,public,United States,https://www.lamresearch.com,Market cap: public
+kla,KLA,company,equipment,public,United States,https://www.kla.com,Market cap: public
+tokyo_electron,Tokyo Electron,company,equipment,public,Japan,https://www.tel.com,Market cap: public
+screen_semiconductor,SCREEN Semiconductor Solutions,company,equipment,public,Japan,https://www.screen.co.jp/spe,Market cap: public
+asm_international,ASM International,company,equipment,public,Netherlands,https://www.asm.com,Market cap: public
+synopsys,Synopsys,company,chip_design,public,United States,https://www.synopsys.com,Market cap: public
+cadence,Cadence,company,chip_design,public,United States,https://www.cadence.com,Market cap: public
+arm,Arm,company,chip_design,public,United Kingdom,https://www.arm.com,Market cap: public
+marvell,Marvell,company,chip_design,public,United States,https://www.marvell.com,Market cap: public
+qualcomm,Qualcomm,company,chip_design,public,United States,https://www.qualcomm.com,Market cap: public
+intel,Intel,company,chip_design,public,United States,https://www.intel.com,Market cap: public
+cerebras,Cerebras,company,chip_design,private,United States,https://www.cerebras.net,Reported valuation only
+sambanova,SambaNova Systems,company,chip_design,private,United States,https://sambanova.ai,Reported valuation only
+groq,Groq,company,chip_design,private,United States,https://groq.com,Reported valuation only
+tenstorrent,Tenstorrent,company,chip_design,private,Canada,https://tenstorrent.com,Reported valuation only
+samsung,Samsung Electronics,company,foundry_memory,public,South Korea,https://www.samsung.com/semiconductor,Market cap: public
+micron,Micron,company,foundry_memory,public,United States,https://www.micron.com,Market cap: public
+ase,ASE Technology,company,foundry_memory,public,Taiwan,https://www.aseglobal.com,Market cap: public
+globalfoundries,GlobalFoundries,company,foundry_memory,public,United States,https://gf.com,Market cap: public
+umc,UMC,company,foundry_memory,public,Taiwan,https://www.umc.com,Market cap: public
+winbond,Winbond,company,foundry_memory,public,Taiwan,https://www.winbond.com,Market cap: public
+dell,Dell Technologies,company,datacenter,public,United States,https://www.dell.com,Market cap: public
+hpe,HPE,company,datacenter,public,United States,https://www.hpe.com,Market cap: public
+lenovo,Lenovo,company,datacenter,public,China,https://www.lenovo.com,Market cap: public
+quanta,Quanta Computer,company,datacenter,public,Taiwan,https://www.quantatw.com,Market cap: public
+wistron,Wistron,company,datacenter,public,Taiwan,https://www.wistron.com,Market cap: public
+wiwynn,Wiwynn,company,datacenter,public,Taiwan,https://www.wiwynn.com,Market cap: public
+vertiv,Vertiv,company,datacenter,public,United States,https://www.vertiv.com,Market cap: public
+eaton,Eaton,company,datacenter,public,Ireland,https://www.eaton.com,Market cap: public
+schneider,Schneider Electric,company,datacenter,public,France,https://www.se.com,Market cap: public
+digital_realty,Digital Realty,company,datacenter,public,United States,https://www.digitalrealty.com,Market cap: public
+equinix,Equinix,company,datacenter,public,United States,https://www.equinix.com,Market cap: public
+google_cloud,Google Cloud,cloud,cloud_compute,public,United States,https://cloud.google.com,Part of Alphabet
+oracle_cloud,Oracle Cloud,cloud,cloud_compute,public,United States,https://www.oracle.com/cloud,Part of Oracle
+lambda_labs,Lambda,company,cloud_compute,private,United States,https://lambda.ai,Reported valuation only
+crusoe,Crusoe,company,cloud_compute,private,United States,https://www.crusoe.ai,Reported valuation only
+nebius,Nebius,company,cloud_compute,public,Netherlands,https://nebius.com,Market cap: public
+together_ai,Together AI,company,cloud_compute,private,United States,https://www.together.ai,Reported valuation only
+replicate,Replicate,company,cloud_compute,private,United States,https://replicate.com,Reported valuation only
+modal,Modal,company,cloud_compute,private,United States,https://modal.com,Reported valuation only
+deepmind,Google DeepMind,company,foundation_model,public,United Kingdom,https://deepmind.google,Part of Alphabet
+cohere,Cohere,company,foundation_model,private,Canada,https://cohere.com,Reported valuation only
+xai,xAI,company,foundation_model,private,United States,https://x.ai,Reported valuation only
+stability_ai,Stability AI,company,foundation_model,private,United Kingdom,https://stability.ai,Reported valuation only
+ai21,AI21 Labs,company,foundation_model,private,Israel,https://www.ai21.com,Reported valuation only
+adept,Adept,company,foundation_model,private,United States,https://www.adept.ai,Reported valuation only
+inflection,Inflection AI,company,foundation_model,private,United States,https://inflection.ai,Reported valuation only
+deepseek,DeepSeek,company,foundation_model,private,China,https://www.deepseek.com,Unknown
+moonshot,Moonshot AI,company,foundation_model,private,China,https://www.moonshot.cn,Reported valuation only
+baidu_ai,Baidu AI Cloud / ERNIE,company,foundation_model,public,China,https://cloud.baidu.com,Part of Baidu
+alibaba_qwen,Alibaba Cloud / Qwen,company,foundation_model,public,China,https://www.alibabacloud.com,Part of Alibaba
+tencent_hunyuan,Tencent Hunyuan,company,foundation_model,public,China,https://hunyuan.tencent.com,Part of Tencent
+llamaindex,LlamaIndex,company,ai_infra,private,United States,https://www.llamaindex.ai,Reported valuation only
+wandb,Weights & Biases,company,ai_infra,private,United States,https://wandb.ai,Reported valuation only
+snowflake,Snowflake,company,ai_infra,public,United States,https://www.snowflake.com,Market cap: public
+weaviate,Weaviate,company,ai_infra,private,Netherlands,https://weaviate.io,Reported valuation only
+chroma,Chroma,company,ai_infra,private,United States,https://www.trychroma.com,Unknown
+mongodb,MongoDB,company,ai_infra,public,United States,https://www.mongodb.com,Market cap: public
+elastic,Elastic,company,ai_infra,public,United States,https://www.elastic.co,Market cap: public
+redis,Redis,company,ai_infra,private,United States,https://redis.io,Reported valuation only
+milvus_zilliz,Zilliz / Milvus,company,ai_infra,private,United States,https://zilliz.com,Reported valuation only
+qdrant,Qdrant,company,ai_infra,private,Germany,https://qdrant.tech,Reported valuation only
+scale_ai,Scale AI,company,ai_infra,private,United States,https://scale.com,Reported valuation only
+labelbox,Labelbox,company,ai_infra,private,United States,https://labelbox.com,Reported valuation only
+baseten,Baseten,company,ai_infra,private,United States,https://www.baseten.co,Reported valuation only
+modal_infra,Modal Labs,company,ai_infra,private,United States,https://modal.com,Reported valuation only
+harvey,Harvey,company,application,private,United States,https://www.harvey.ai,Reported valuation only
+glean,Glean,company,application,private,United States,https://www.glean.com,Reported valuation only
+runway,Runway,company,application,private,United States,https://runwayml.com,Reported valuation only
+synthesia,Synthesia,company,application,private,United Kingdom,https://www.synthesia.io,Reported valuation only
+character_ai,Character AI,company,application,private,United States,https://character.ai,Reported valuation only
+replit,Replit,company,application,private,United States,https://replit.com,Reported valuation only
+jasper,Jasper,company,application,private,United States,https://www.jasper.ai,Reported valuation only
+copy_ai,Copy.ai,company,application,private,United States,https://www.copy.ai,Reported valuation only
+notion_ai,Notion AI,product,application,private,United States,https://www.notion.com/product/ai,Part of Notion
+adobe_firefly,Adobe Firefly,product,application,public,United States,https://www.adobe.com/products/firefly.html,Part of Adobe
+github_copilot,GitHub Copilot,product,application,public,United States,https://github.com/features/copilot,Part of Microsoft
+microsoft_copilot,Microsoft Copilot,product,application,public,United States,https://www.microsoft.com/microsoft-copilot,Part of Microsoft
+canva_ai,Canva AI,product,application,private,Australia,https://www.canva.com/ai,Part of Canva
+descript,Descript,company,application,private,United States,https://www.descript.com,Reported valuation only
+founders_fund,Founders Fund,investor,application,private,United States,https://foundersfund.com,N/A
+lightspeed,Lightspeed Venture Partners,investor,application,private,United States,https://lsvp.com,N/A
+thrive,Thrive Capital,investor,application,private,United States,https://thrivecap.com,N/A
+khosla,Khosla Ventures,investor,application,private,United States,https://www.khoslaventures.com,N/A
+accel,Accel,investor,application,private,United States,https://www.accel.com,N/A
+benchmark,Benchmark,investor,application,private,United States,https://www.benchmark.com,N/A

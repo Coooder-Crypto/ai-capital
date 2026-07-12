@@ -1,0 +1,273 @@
+{
+  "generatedAt": "2026-07-05T07:10:49.980Z",
+  "latestArchiveId": "2026-07-05T07-10-39-616Z-cb63d678d51e",
+  "latestContentHash": "cb63d678d51e6d01d2970ced6dc78b0921e737d28c25dd2c34d02497089a46f6",
+  "archives": [
+    {
+      "id": "2026-07-04T07-55-27-802Z-3228681a3f07",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-04T07-55-27-802Z-3228681a3f07.json",
+      "contentHash": "3228681a3f0770cf9fbae7ec78980fb3c66fce60cb386cbb002115c36e60d36c",
+      "archivedAt": "2026-07-04T08:03:41.482Z",
+      "snapshotGeneratedAt": "2026-07-04T07:55:27.802Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 4,
+        "candidateEntities": 0,
+        "candidateMetrics": 0,
+        "retryBacklog": 2
+      }
+    },
+    {
+      "id": "2026-07-04T08-20-50-483Z-b36afe50c008",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-04T08-20-50-483Z-b36afe50c008.json",
+      "contentHash": "b36afe50c0085d325487a4b9f5c27fc3ceeb5fccaf5344cc7d80af30cc650d49",
+      "archivedAt": "2026-07-04T08:21:04.169Z",
+      "snapshotGeneratedAt": "2026-07-04T08:20:50.483Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 4,
+        "candidateEntities": 0,
+        "candidateMetrics": 0,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-04T09-10-10-713Z-ab53fb09768c",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-04T09-10-10-713Z-ab53fb09768c.json",
+      "contentHash": "ab53fb09768cf23c67f7424632429545394836541050435d896f8c07b7b38c8e",
+      "archivedAt": "2026-07-04T09:11:52.900Z",
+      "snapshotGeneratedAt": "2026-07-04T09:10:10.713Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 4,
+        "candidateEntities": 5,
+        "candidateMetrics": 0,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-04T09-30-50-033Z-915cf6e696ae",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-04T09-30-50-033Z-915cf6e696ae.json",
+      "contentHash": "915cf6e696aecc40cb74de7c2ad19cda87b45c6953975b0633e0aeaf5ff66c80",
+      "archivedAt": "2026-07-04T09:31:02.182Z",
+      "snapshotGeneratedAt": "2026-07-04T09:30:50.033Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 4,
+        "candidateEntities": 42,
+        "candidateMetrics": 0,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-04T09-47-08-016Z-27a40554d8c0",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-04T09-47-08-016Z-27a40554d8c0.json",
+      "contentHash": "27a40554d8c03d18cc0e565f69134caac8d7c00f1bf80730943d40e56da9f7a2",
+      "archivedAt": "2026-07-04T09:47:22.563Z",
+      "snapshotGeneratedAt": "2026-07-04T09:47:08.016Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 4,
+        "candidateEntities": 51,
+        "candidateMetrics": 0,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-04T09-52-45-334Z-4da1f5ac18e9",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-04T09-52-45-334Z-4da1f5ac18e9.json",
+      "contentHash": "4da1f5ac18e9333e2fb0bfef8b324d8aa7e679f717dd6493ed5f5d67a05926c5",
+      "archivedAt": "2026-07-04T09:52:51.713Z",
+      "snapshotGeneratedAt": "2026-07-04T09:52:45.334Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 4,
+        "candidateEntities": 51,
+        "candidateMetrics": 0,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-04T10-00-57-504Z-56beeab0868e",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-04T10-00-57-504Z-56beeab0868e.json",
+      "contentHash": "56beeab0868ee5d750e731f081629197bd9ce77b92c72fac5912ec57c2107ac8",
+      "archivedAt": "2026-07-04T10:01:34.848Z",
+      "snapshotGeneratedAt": "2026-07-04T10:00:57.504Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 51,
+        "candidateEntities": 51,
+        "candidateMetrics": 0,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-04T15-25-47-749Z-21bc0f490af6",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-04T15-25-47-749Z-21bc0f490af6.json",
+      "contentHash": "21bc0f490af6e533986f650e9fd37b1301a8a5aa49f67ef34e0acba549d9ce61",
+      "archivedAt": "2026-07-04T15:26:01.405Z",
+      "snapshotGeneratedAt": "2026-07-04T15:25:47.749Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 406,
+        "candidateEntities": 399,
+        "candidateMetrics": 0,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-04T17-48-01-814Z-46c32427b92a",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-04T17-48-01-814Z-46c32427b92a.json",
+      "contentHash": "46c32427b92a7d2f2cb1b8496a9551b68e5d11c5de3a09a51a783a374c46db0c",
+      "archivedAt": "2026-07-04T17:48:19.806Z",
+      "snapshotGeneratedAt": "2026-07-04T17:48:01.814Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 406,
+        "candidateEntities": 399,
+        "candidateMetrics": 1,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-05T05-05-41-112Z-0236100e382b",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-05T05-05-41-112Z-0236100e382b.json",
+      "contentHash": "0236100e382ba74603f8fc29a312dc3df7b75765024ce1c586aad49792d9653a",
+      "archivedAt": "2026-07-05T05:06:04.629Z",
+      "snapshotGeneratedAt": "2026-07-05T05:05:41.112Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 404,
+        "candidateEntities": 398,
+        "candidateMetrics": 0,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-05T05-14-15-134Z-613cc0970a9a",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-05T05-14-15-134Z-613cc0970a9a.json",
+      "contentHash": "613cc0970a9a669ef46045f0ca6e02b559264e634b843d80a49434f921171f69",
+      "archivedAt": "2026-07-05T05:14:26.774Z",
+      "snapshotGeneratedAt": "2026-07-05T05:14:15.134Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 404,
+        "candidateEntities": 398,
+        "candidateMetrics": 0,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-05T05-21-05-080Z-d8eb7ab284f0",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-05T05-21-05-080Z-d8eb7ab284f0.json",
+      "contentHash": "d8eb7ab284f01d00307164396f9d814fa8a9ff1024b8022df368981af0192c2a",
+      "archivedAt": "2026-07-05T05:21:17.433Z",
+      "snapshotGeneratedAt": "2026-07-05T05:21:05.080Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 404,
+        "candidateEntities": 398,
+        "candidateMetrics": 0,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-05T05-41-10-365Z-c5a6000aa12d",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-05T05-41-10-365Z-c5a6000aa12d.json",
+      "contentHash": "c5a6000aa12def35c96fc215c3a99abf74b7f8ef774a3c9f34507953ecdde581",
+      "archivedAt": "2026-07-05T05:41:44.629Z",
+      "snapshotGeneratedAt": "2026-07-05T05:41:10.365Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 404,
+        "candidateEntities": 398,
+        "candidateMetrics": 1,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-05T06-03-34-260Z-9d79dd52698b",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-05T06-03-34-260Z-9d79dd52698b.json",
+      "contentHash": "9d79dd52698be96fb68bc0b933e1eb8a81f3fdbbe2e9287c64b7cd91d38667f0",
+      "archivedAt": "2026-07-05T06:03:45.981Z",
+      "snapshotGeneratedAt": "2026-07-05T06:03:34.260Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 404,
+        "candidateEntities": 398,
+        "candidateMetrics": 3,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-05T06-07-35-979Z-554ab1d0b998",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-05T06-07-35-979Z-554ab1d0b998.json",
+      "contentHash": "554ab1d0b998ef97f1e23f34458d043143021cf27178b77d918ae782cde5ffda",
+      "archivedAt": "2026-07-05T06:07:46.790Z",
+      "snapshotGeneratedAt": "2026-07-05T06:07:35.979Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 401,
+        "candidateEntities": 398,
+        "candidateMetrics": 3,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-05T06-40-48-236Z-3beb6c891bd9",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-05T06-40-48-236Z-3beb6c891bd9.json",
+      "contentHash": "3beb6c891bd9436861e05dfdf6a3aa499cc370f0155ed1691a3b9c4f67c129b7",
+      "archivedAt": "2026-07-05T06:40:57.574Z",
+      "snapshotGeneratedAt": "2026-07-05T06:40:48.236Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 401,
+        "candidateEntities": 398,
+        "candidateMetrics": 3,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-05T06-45-51-757Z-e741b1bd4935",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-05T06-45-51-757Z-e741b1bd4935.json",
+      "contentHash": "e741b1bd493565c4a63658715cf1e3114f92f5014dc94288d781dbc46b870036",
+      "archivedAt": "2026-07-05T06:46:03.339Z",
+      "snapshotGeneratedAt": "2026-07-05T06:45:51.757Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 401,
+        "candidateEntities": 398,
+        "candidateMetrics": 3,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-05T06-54-28-103Z-5f62a4970cb2",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-05T06-54-28-103Z-5f62a4970cb2.json",
+      "contentHash": "5f62a4970cb26310ddae4f5a652d4415fe0a2a17e9a1c0c8dc9a7ad7abca20e4",
+      "archivedAt": "2026-07-05T06:54:34.651Z",
+      "snapshotGeneratedAt": "2026-07-05T06:54:28.103Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 401,
+        "candidateEntities": 398,
+        "candidateMetrics": 5,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-05T07-10-39-616Z-cb63d678d51e",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-05T07-10-39-616Z-cb63d678d51e.json",
+      "contentHash": "cb63d678d51e6d01d2970ced6dc78b0921e737d28c25dd2c34d02497089a46f6",
+      "archivedAt": "2026-07-05T07:10:49.980Z",
+      "snapshotGeneratedAt": "2026-07-05T07:10:39.616Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 401,
+        "candidateEntities": 398,
+        "candidateMetrics": 5,
+        "retryBacklog": 0
+      }
+    }
+  ]
+}

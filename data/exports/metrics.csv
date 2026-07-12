@@ -1,0 +1,67 @@
+entity_id,entity_name,source,source_ref,as_of,metric_type,value
+langchain,LangChain,github,langchain-ai/langchain,2026-07-04T07:35:44.111Z,stars,140884
+langchain,LangChain,github,langchain-ai/langchain,2026-07-04T07:35:44.111Z,forks,23392
+langchain,LangChain,github,langchain-ai/langchain,2026-07-04T07:35:44.111Z,openIssues,421
+langchain,LangChain,github,langchain-ai/langchain,2026-07-04T07:35:44.111Z,watchers,889
+langchain,LangChain,github,langchain-ai/langchain,2026-07-04T07:35:44.111Z,repoUpdatedAt,2026-07-04T07:24:04Z
+huggingface,Hugging Face,github,huggingface/transformers,2026-07-04T07:35:44.514Z,stars,162217
+huggingface,Hugging Face,github,huggingface/transformers,2026-07-04T07:35:44.514Z,forks,33745
+huggingface,Hugging Face,github,huggingface/transformers,2026-07-04T07:35:44.514Z,openIssues,2458
+huggingface,Hugging Face,github,huggingface/transformers,2026-07-04T07:35:44.514Z,watchers,1220
+huggingface,Hugging Face,github,huggingface/transformers,2026-07-04T07:35:44.514Z,repoUpdatedAt,2026-07-04T07:25:13Z
+pinecone,Pinecone,github,pinecone-io/pinecone-python-client,2026-07-04T07:35:45.342Z,stars,446
+pinecone,Pinecone,github,pinecone-io/pinecone-python-client,2026-07-04T07:35:45.342Z,forks,131
+pinecone,Pinecone,github,pinecone-io/pinecone-python-client,2026-07-04T07:35:45.342Z,openIssues,50
+pinecone,Pinecone,github,pinecone-io/pinecone-python-client,2026-07-04T07:35:45.342Z,watchers,25
+pinecone,Pinecone,github,pinecone-io/pinecone-python-client,2026-07-04T07:35:45.342Z,repoUpdatedAt,2026-06-30T16:40:52Z
+nvidia,NVIDIA,sec,0001045810,2026-07-04T07:35:48.437Z,revenue,81615000000
+nvidia,NVIDIA,sec,0001045810,2026-07-04T07:35:48.437Z,revenuePeriodEnd,2026-04-26
+nvidia,NVIDIA,sec,0001045810,2026-07-04T07:35:48.437Z,assets,259474000000
+nvidia,NVIDIA,sec,0001045810,2026-07-04T07:35:48.437Z,assetsPeriodEnd,2026-04-26
+nvidia,NVIDIA,sec,0001045810,2026-07-04T07:35:48.437Z,sharesOrEquity,
+nvidia,NVIDIA,sec,0001045810,2026-07-04T07:35:48.437Z,sharesOrEquityPeriodEnd,
+amd,AMD,sec,0000002488,2026-07-04T07:35:48.958Z,revenue,10253000000
+amd,AMD,sec,0000002488,2026-07-04T07:35:48.958Z,revenuePeriodEnd,2026-03-28
+amd,AMD,sec,0000002488,2026-07-04T07:35:48.958Z,assets,79642000000
+amd,AMD,sec,0000002488,2026-07-04T07:35:48.958Z,assetsPeriodEnd,2026-03-28
+amd,AMD,sec,0000002488,2026-07-04T07:35:48.958Z,sharesOrEquity,
+amd,AMD,sec,0000002488,2026-07-04T07:35:48.958Z,sharesOrEquityPeriodEnd,
+broadcom,Broadcom,sec,0001730168,2026-07-04T07:35:49.353Z,revenue,41498000000
+broadcom,Broadcom,sec,0001730168,2026-07-04T07:35:49.353Z,revenuePeriodEnd,2026-05-03
+broadcom,Broadcom,sec,0001730168,2026-07-04T07:35:49.353Z,assets,179158000000
+broadcom,Broadcom,sec,0001730168,2026-07-04T07:35:49.353Z,assetsPeriodEnd,2026-05-03
+broadcom,Broadcom,sec,0001730168,2026-07-04T07:35:49.353Z,sharesOrEquity,
+broadcom,Broadcom,sec,0001730168,2026-07-04T07:35:49.353Z,sharesOrEquityPeriodEnd,
+supermicro,Supermicro,sec,0001375365,2026-07-04T07:35:49.761Z,revenue,27943295000
+supermicro,Supermicro,sec,0001375365,2026-07-04T07:35:49.761Z,revenuePeriodEnd,2026-03-31
+supermicro,Supermicro,sec,0001375365,2026-07-04T07:35:49.761Z,assets,23452029000
+supermicro,Supermicro,sec,0001375365,2026-07-04T07:35:49.761Z,assetsPeriodEnd,2026-03-31
+supermicro,Supermicro,sec,0001375365,2026-07-04T07:35:49.761Z,sharesOrEquity,
+supermicro,Supermicro,sec,0001375365,2026-07-04T07:35:49.761Z,sharesOrEquityPeriodEnd,
+arista,Arista Networks,sec,0001596532,2026-07-04T07:35:50.153Z,revenue,2709000000
+arista,Arista Networks,sec,0001596532,2026-07-04T07:35:50.153Z,revenuePeriodEnd,2026-03-31
+arista,Arista Networks,sec,0001596532,2026-07-04T07:35:50.153Z,assets,21656500000
+arista,Arista Networks,sec,0001596532,2026-07-04T07:35:50.153Z,assetsPeriodEnd,2026-03-31
+arista,Arista Networks,sec,0001596532,2026-07-04T07:35:50.153Z,sharesOrEquity,
+arista,Arista Networks,sec,0001596532,2026-07-04T07:35:50.153Z,sharesOrEquityPeriodEnd,
+openai,OpenAI,openAlex,OpenAI large language model,2026-07-04T07:35:52.193Z,worksCount,124503
+openai,OpenAI,openAlex,OpenAI large language model,2026-07-04T07:35:52.193Z,topWorkTitle,ChatGPT for good? On opportunities and challenges of large language models for education
+openai,OpenAI,openAlex,OpenAI large language model,2026-07-04T07:35:52.193Z,topWorkCitations,5243
+openai,OpenAI,openAlex,OpenAI large language model,2026-07-04T07:35:52.193Z,topWorkYear,2023
+openai,OpenAI,openAlex,OpenAI large language model,2026-07-04T07:35:52.193Z,topWorkUrl,https://openalex.org/W4323655724
+deepmind,Google DeepMind,openAlex,Google DeepMind artificial intelligence,2026-07-04T07:35:53.788Z,worksCount,10669
+deepmind,Google DeepMind,openAlex,Google DeepMind artificial intelligence,2026-07-04T07:35:53.788Z,topWorkTitle,
+deepmind,Google DeepMind,openAlex,Google DeepMind artificial intelligence,2026-07-04T07:35:53.788Z,topWorkCitations,50348
+deepmind,Google DeepMind,openAlex,Google DeepMind artificial intelligence,2026-07-04T07:35:53.788Z,topWorkYear,2021
+deepmind,Google DeepMind,openAlex,Google DeepMind artificial intelligence,2026-07-04T07:35:53.788Z,topWorkUrl,https://openalex.org/W2964121744
+nvidia,NVIDIA,openAlex,NVIDIA GPU artificial intelligence,2026-07-04T07:35:55.120Z,worksCount,97444
+nvidia,NVIDIA,openAlex,NVIDIA GPU artificial intelligence,2026-07-04T07:35:55.120Z,topWorkTitle,MizAR 60 for Mizar 50
+nvidia,NVIDIA,openAlex,NVIDIA GPU artificial intelligence,2026-07-04T07:35:55.120Z,topWorkCitations,76341
+nvidia,NVIDIA,openAlex,NVIDIA GPU artificial intelligence,2026-07-04T07:35:55.120Z,topWorkYear,2023
+nvidia,NVIDIA,openAlex,NVIDIA GPU artificial intelligence,2026-07-04T07:35:55.120Z,topWorkUrl,https://openalex.org/W4385245566
+meta_ai,Meta AI,huggingFace,facebook/bart-large-cnn,2026-07-04T08:19:49Z,downloads,1524179
+meta_ai,Meta AI,huggingFace,facebook/bart-large-cnn,2026-07-04T08:19:49Z,likes,1600
+meta_ai,Meta AI,huggingFace,facebook/bart-large-cnn,2026-07-04T08:19:49Z,pipelineTag,summarization
+mistral,Mistral AI,huggingFace,mistralai/Mistral-7B-Instruct-v0.2,2026-07-04T08:19:49Z,downloads,987873
+mistral,Mistral AI,huggingFace,mistralai/Mistral-7B-Instruct-v0.2,2026-07-04T08:19:49Z,likes,3180
+mistral,Mistral AI,huggingFace,mistralai/Mistral-7B-Instruct-v0.2,2026-07-04T08:19:49Z,pipelineTag,text-generation

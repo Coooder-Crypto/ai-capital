@@ -1,0 +1,10 @@
+id,raw_document_id,entity_id,entity_name,connector,format,parser_status,text_length,fact_count,hint_count,canonical_url,parsed_at
+parsed_raw_watch_microsoft_openai_partnership,raw_watch_microsoft_openai_partnership,azure,Microsoft Azure,company_ir,html,skipped,208,0,0,https://news.microsoft.com/source/features/ai/microsoft-openai-partnership/,2026-07-05T06:54:06.070Z
+parsed_raw_watch_nvidia_coreweave_cloud,raw_watch_nvidia_coreweave_cloud,nvidia,NVIDIA,company_ir,html,skipped,8000,0,0,https://www.nvidia.com/en-us/data-center/cloud-gaming/coreweave/,2026-07-05T06:54:06.070Z
+parsed_raw_watch_huggingface_langchain_docs,raw_watch_huggingface_langchain_docs,huggingface,Hugging Face,company_docs,html,skipped,256,0,0,https://huggingface.co/docs,2026-07-05T06:54:06.070Z
+parsed_raw_watch_openalex_openai_research,raw_watch_openalex_openai_research,openai,OpenAI,openalex,json,parsed,8000,2,1,https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5,2026-07-05T06:54:06.070Z
+parsed_raw_watch_anthropic_news,raw_watch_anthropic_news,anthropic,Anthropic,news_rss,html,parsed,2148,1,1,https://www.anthropic.com/news,2026-07-05T06:54:06.070Z
+parsed_raw_watch_openai_news_rss,raw_watch_openai_news_rss,openai,OpenAI,news_rss,rss,parsed,6983,50,1,https://openai.com/news/rss.xml,2026-07-05T06:54:06.070Z
+parsed_raw_watch_nvidia_blog_rss,raw_watch_nvidia_blog_rss,nvidia,NVIDIA,news_rss,rss,parsed,8000,6,1,https://blogs.nvidia.com/feed/,2026-07-05T06:54:06.070Z
+parsed_raw_watch_aws_ml_blog_rss,raw_watch_aws_ml_blog_rss,aws,AWS,news_rss,rss,parsed,8000,2,1,https://aws.amazon.com/blogs/machine-learning/feed/,2026-07-05T06:54:06.070Z
+parsed_raw_watch_meta_engineering_rss,raw_watch_meta_engineering_rss,meta_ai,Meta AI,news_rss,rss,parsed,8000,3,1,https://engineering.fb.com/feed/,2026-07-05T06:54:06.070Z

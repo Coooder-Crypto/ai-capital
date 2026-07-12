@@ -1,0 +1,131 @@
+{
+  "archivedAt": "2026-07-04T08:03:41.482Z",
+  "contentHash": "3228681a3f0770cf9fbae7ec78980fb3c66fce60cb386cbb002115c36e60d36c",
+  "snapshot": {
+    "generatedAt": "2026-07-04T07:55:27.802Z",
+    "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+    "plannedRequestCount": 13,
+    "candidateRelationships": [
+      {
+        "id": "worker_candidate_watch_anthropic_news_anthropic_aws_partners_with",
+        "sourceEntityId": "anthropic",
+        "targetEntityId": "aws",
+        "relationType": "partners_with",
+        "confidence": 0.62,
+        "evidenceUrl": "https://www.anthropic.com/news",
+        "extractionMethod": "llm_fixture",
+        "status": "candidate",
+        "payload": {
+          "note": "Company news should be reviewed for cloud, model availability and strategic partnership evidence.",
+          "watchlistId": "watch_anthropic_news",
+          "rawDocumentId": "raw_watch_anthropic_news",
+          "parsedDocumentId": "parsed_raw_watch_anthropic_news",
+          "extractionRecordId": "extract_raw_watch_anthropic_news",
+          "llmExtractionRecordId": "llm_extract_raw_watch_anthropic_news",
+          "model": "local-schema-fixture"
+        },
+        "createdAt": "2026-07-04T05:27:05.830Z"
+      },
+      {
+        "id": "worker_candidate_watch_huggingface_langchain_docs_huggingface_langchain_integrates_with",
+        "sourceEntityId": "huggingface",
+        "targetEntityId": "langchain",
+        "relationType": "integrates_with",
+        "confidence": 0.64,
+        "evidenceUrl": "https://huggingface.co/docs",
+        "extractionMethod": "llm_fixture",
+        "status": "candidate",
+        "payload": {
+          "note": "Documentation should be reviewed for Hugging Face integrations with LangChain ecosystem tools.",
+          "watchlistId": "watch_huggingface_langchain_docs",
+          "rawDocumentId": "raw_watch_huggingface_langchain_docs",
+          "parsedDocumentId": "parsed_raw_watch_huggingface_langchain_docs",
+          "extractionRecordId": "extract_raw_watch_huggingface_langchain_docs",
+          "llmExtractionRecordId": "llm_extract_raw_watch_huggingface_langchain_docs",
+          "model": "local-schema-fixture"
+        },
+        "createdAt": "2026-07-04T05:27:05.830Z"
+      },
+      {
+        "id": "worker_candidate_watch_microsoft_openai_partnership_azure_openai_partners_with",
+        "sourceEntityId": "azure",
+        "targetEntityId": "openai",
+        "relationType": "partners_with",
+        "confidence": 0.74,
+        "evidenceUrl": "https://news.microsoft.com/source/features/ai/microsoft-openai-partnership/",
+        "extractionMethod": "llm_fixture",
+        "status": "candidate",
+        "payload": {
+          "note": "Official company source should be reviewed for Microsoft Azure and OpenAI partnership evidence.",
+          "watchlistId": "watch_microsoft_openai_partnership",
+          "rawDocumentId": "raw_watch_microsoft_openai_partnership",
+          "parsedDocumentId": "parsed_raw_watch_microsoft_openai_partnership",
+          "extractionRecordId": "extract_raw_watch_microsoft_openai_partnership",
+          "llmExtractionRecordId": "llm_extract_raw_watch_microsoft_openai_partnership",
+          "model": "local-schema-fixture"
+        },
+        "createdAt": "2026-07-04T05:27:05.830Z"
+      },
+      {
+        "id": "worker_candidate_watch_nvidia_coreweave_cloud_nvidia_coreweave_supplies_to",
+        "sourceEntityId": "nvidia",
+        "targetEntityId": "coreweave",
+        "relationType": "supplies_to",
+        "confidence": 0.68,
+        "evidenceUrl": "https://www.nvidia.com/en-us/data-center/cloud-gaming/coreweave/",
+        "extractionMethod": "llm_fixture",
+        "status": "candidate",
+        "payload": {
+          "note": "Product or partner page should be reviewed for NVIDIA infrastructure supplied to CoreWeave.",
+          "watchlistId": "watch_nvidia_coreweave_cloud",
+          "rawDocumentId": "raw_watch_nvidia_coreweave_cloud",
+          "parsedDocumentId": "parsed_raw_watch_nvidia_coreweave_cloud",
+          "extractionRecordId": "extract_raw_watch_nvidia_coreweave_cloud",
+          "llmExtractionRecordId": "llm_extract_raw_watch_nvidia_coreweave_cloud",
+          "model": "local-schema-fixture"
+        },
+        "createdAt": "2026-07-04T05:27:05.830Z"
+      }
+    ],
+    "candidateEntities": [],
+    "candidateMetrics": [],
+    "retryBacklog": [
+      {
+        "id": "retry_huggingface_meta_ai",
+        "source": "huggingFace",
+        "entityId": "meta_ai",
+        "entityName": "Meta AI",
+        "endpoint": "https://huggingface.co/api/models/facebook/bart-large-cnn",
+        "message": "Connection reset while fetching huggingface.co",
+        "nextAction": "retry_fetch_then_review_snapshot",
+        "createdAt": "2026-07-04T07:55:27.793Z"
+      },
+      {
+        "id": "retry_huggingface_mistral",
+        "source": "huggingFace",
+        "entityId": "mistral",
+        "entityName": "Mistral AI",
+        "endpoint": "https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.2",
+        "message": "Connection reset while fetching huggingface.co",
+        "nextAction": "retry_fetch_then_review_snapshot",
+        "createdAt": "2026-07-04T07:55:27.794Z"
+      }
+    ],
+    "summary": {
+      "candidateRelationships": 4,
+      "candidateEntities": 0,
+      "candidateMetrics": 0,
+      "retryBacklog": 2,
+      "evidenceBacklog": 50,
+      "workerRawDocuments": 5,
+      "workerConnectorRuns": 4,
+      "extractionRecords": 5,
+      "extractedDocuments": 5,
+      "llmExtractionRecords": 5,
+      "llmCompletedRecords": 5
+    },
+    "workerRunGeneratedAt": "2026-07-03T15:07:44.798Z",
+    "extractionGeneratedAt": "2026-07-04T05:26:57.296Z",
+    "llmExtractionGeneratedAt": "2026-07-04T05:27:05.830Z"
+  }
+}
