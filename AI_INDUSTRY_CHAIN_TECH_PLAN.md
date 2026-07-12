@@ -1475,7 +1475,7 @@ export LLM_EXTRACT_API_KEY=...
 export LLM_EXTRACT_RPM=30
 export LLM_EXTRACT_MAX_RETRIES=2
 npm run validate:env -- --require-production
-npm run validate:p0-p3:production -- --provider=http --timeout-ms=30000 --limit=1 --write-evidence
+npm run validate:p0-p3:production -- --provider=http --timeout-ms=120000 --limit=1 --write-evidence
 ```
 
 当前已通过本地总验收和常驻 PostgreSQL 分支；真实云端 LLM URL/API key 和线上定时刷新凭证仍属于部署闭环项。真实生产门禁会拒绝 localhost/127.0.0.1/::1 的 DB/LLM 服务，并要求 `ADMIN_REVIEW_SESSION_SECRET`、`ADMIN_REVIEW_ADMIN_PASSWORD` 和 `ADMIN_REVIEW_REVIEWER_PASSWORD` 三项 session 登录配置齐备；legacy token/角色 token 只作为本地或兼容 fallback，不能单独通过生产发布门禁。只有 `validate:p0-p3:production-fixture` 会用 `--allow-local-services` 放行本地 fixture。真实生产门禁通过后必须用 `--write-evidence` 写入 `data/research/p0-p3-production-readiness-report.json`；GitHub 生产 workflow 在 `production` environment 中运行。生产仓库需要先创建名为 `production` 的 GitHub environment，并把真实 `DATABASE_URL`、审核 session secrets、`LLM_EXTRACT_URL` 和 `LLM_EXTRACT_API_KEY` 放到 environment-scoped secrets（如仓库策略允许），同时启用 required reviewers 或等价 environment protection rule，让生产 secrets 必须经过发布审核才释放。

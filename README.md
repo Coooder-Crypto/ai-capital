@@ -247,7 +247,7 @@ npm run validate:env -- --require-production
 
 ```bash
 npm run validate:p0-p3:production-fixture
-npm run validate:p0-p3:production -- --timeout-ms=30000 --limit=1 --write-evidence
+npm run validate:p0-p3:production -- --timeout-ms=120000 --limit=1 --write-evidence
 ```
 
 `validate:p0-p3:production-fixture` 会用临时 PostgreSQL、本地 HTTP LLM fixture 和审核密钥跑一遍统一生产门禁，用来证明生产门禁端到端可执行。真实生产环境使用 `validate:p0-p3:production`，它会串联 `validate:env -- --require-production`、`db:status -- --require-ready`、`db:verify`、`worker:verify`、`db:verify:p3-persistent`、`audit:p0-p3 -- --require-production-llm` 和 `llm:verify-production`，并要求 DB/LLM URL 指向非 localhost 服务。`db:status` 输出会脱敏 `DATABASE_URL` 密码，避免 CI 日志泄露生产连接串。
@@ -581,7 +581,7 @@ export LLM_EXTRACT_API_KEY=...
 export LLM_EXTRACT_MODEL=your-model
 export LLM_EXTRACT_RPM=30
 export LLM_EXTRACT_MAX_RETRIES=2
-npm run validate:p0-p3:production -- --provider=http --timeout-ms=30000 --limit=1
+npm run validate:p0-p3:production -- --provider=http --timeout-ms=120000 --limit=1
 ```
 
 `LLM_EXTRACT_RPM` 会自动换算请求间隔；如果需要固定间隔，可设置 `LLM_EXTRACT_MIN_INTERVAL_MS` 覆盖。`LLM_EXTRACT_MAX_RETRIES` 和 `LLM_EXTRACT_RETRY_BASE_MS` 控制指数退避重试。`npm run worker:llm` 也支持 `--limit=N` 和 `--only-extracted`，便于低成本验证真实网关。
