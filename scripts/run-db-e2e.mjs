@@ -38,10 +38,30 @@ function stopServer() {
   }
 }
 
+function startServer() {
+  try {
+    run("pg_ctl", [
+      "-D",
+      dataDir,
+      "-o",
+      `-p ${port} -h 127.0.0.1 -k ${tempDir}`,
+      "-l",
+      logPath,
+      "start"
+    ]);
+  } catch (error) {
+    if (fs.existsSync(logPath)) {
+      process.stderr.write(`\nPostgreSQL startup log (${logPath}):\n`);
+      process.stderr.write(fs.readFileSync(logPath, "utf8"));
+    }
+    throw error;
+  }
+}
+
 try {
   console.log(`Creating temporary PostgreSQL cluster in ${tempDir}`);
   run("initdb", ["-D", dataDir, "--no-locale", "--encoding=UTF8"]);
-  run("pg_ctl", ["-D", dataDir, "-o", `-p ${port} -h 127.0.0.1`, "-l", logPath, "start"]);
+  startServer();
 
   console.log(`Running database E2E against ${databaseUrl}`);
   run("npm", ["run", "db:import"], { databaseUrl: true });
