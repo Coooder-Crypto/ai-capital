@@ -98,6 +98,21 @@ try {
     ["run", "llm:verify-production", "--", "--provider=http", "--timeout-ms=5000", "--limit=1"],
     env
   );
+  const openAiEnv = {
+    ...env,
+    LLM_EXTRACT_URL: `http://127.0.0.1:${port}/v1/chat/completions`,
+    LLM_EXTRACT_MODEL: "fixture/openai-compatible"
+  };
+  run(
+    "openai-compatible http status",
+    ["run", "llm:status", "--", "--provider=http", "--require-provider=http", "--timeout-ms=5000"],
+    openAiEnv
+  );
+  run(
+    "openai-compatible extraction dry-run",
+    ["run", "worker:llm", "--", "--provider=http", "--dry-run", "--only-extracted", "--limit=1", "--timeout-ms=5000"],
+    openAiEnv
+  );
   console.log(`LLM HTTP provider fixture verified on port ${port}.`);
 } finally {
   await stopFixture(fixture);

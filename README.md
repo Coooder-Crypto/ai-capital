@@ -560,7 +560,7 @@ npm run worker:llm -- --provider=fixture
 当前输出：
 
 - `data/llm-extractions.json`：每个 extraction record 的 LLM 输出记录、provider/model、schema 校验后的候选关系/指标
-- `data/candidate-snapshot.json`：按同一稳定候选 ID 合并 LLM 输出；默认 fixture 用于本地协议验证，`LLM_EXTRACT_COMMAND='your-command' npm run worker:llm -- --provider=command` 可接外部模型命令，`LLM_EXTRACT_URL=https://your-llm-gateway/extract LLM_EXTRACT_API_KEY=... npm run worker:llm -- --provider=http --timeout-ms=30000` 可接 HTTP 模型网关
+- `data/candidate-snapshot.json`：按同一稳定候选 ID 合并 LLM 输出；默认 fixture 用于本地协议验证，`LLM_EXTRACT_COMMAND='your-command' npm run worker:llm -- --provider=command` 可接外部模型命令，`LLM_EXTRACT_URL=https://your-llm-gateway/extract LLM_EXTRACT_API_KEY=... npm run worker:llm -- --provider=http --timeout-ms=30000` 可接原生 HTTP 模型网关；以 `/chat/completions` 结尾的 OpenAI-compatible endpoint 会自动启用 JSON mode，并解析 `choices[0].message.content`
 
 `llm:status` 是只读诊断：默认显示当前会使用的 provider，并用一个最小 extraction request 校验 provider 响应 schema。生产验收可强制要求 command 或 HTTP provider：
 

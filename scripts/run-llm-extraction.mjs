@@ -1,4 +1,9 @@
 import { spawn } from "node:child_process";
+import {
+  buildOpenAiChatRequest,
+  isOpenAiChatEndpoint,
+  parseOpenAiChatResponse
+} from "./lib/openai-chat-adapter.mjs";
 import fs from "node:fs/promises";
 
 globalThis.window = {};
@@ -264,6 +269,7 @@ async function httpResult(record) {
     rawDocumentId: record.rawDocumentId,
     model: httpModel
   };
+  const openAiCompatible = isOpenAiChatEndpoint(httpUrl);
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
 
@@ -274,7 +280,7 @@ async function httpResult(record) {
         "content-type": "application/json",
         ...(httpApiKey ? { authorization: `Bearer ${httpApiKey}` } : {})
       },
-      body: JSON.stringify(request),
+      body: JSON.stringify(openAiCompatible ? buildOpenAiChatRequest(request) : request),
       signal: controller.signal
     });
     const responseText = await response.text();
@@ -289,6 +295,7 @@ async function httpResult(record) {
       throw new Error(`HTTP LLM provider returned invalid JSON: ${error.message}`);
     }
 
+    if (openAiCompatible) return parseOpenAiChatResponse(parsed, httpModel);
     return parsed && typeof parsed === "object" && parsed.data ? parsed.data : parsed;
   } catch (error) {
     if (error.name === "AbortError") {
