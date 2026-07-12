@@ -19,7 +19,7 @@ const sampleRequest = {
   entityId: "openai",
   evidenceUrl: "https://example.com/status-probe",
   prompt:
-    "Probe prompt for ai_capital_extract_candidates. partners_with aws. metric researchWorksMentioningEntity. Return candidate JSON.",
+    'Connectivity and schema probe only. Return exactly {"provider":"status_probe","model":"status-probe-model","relationships":[],"metrics":[],"entities":[]}. Do not extract candidates.',
   parsedDocumentId: "parsed_status_probe",
   rawDocumentId: "raw_status_probe",
   model: process.env.LLM_EXTRACT_MODEL || "status-probe-model"
