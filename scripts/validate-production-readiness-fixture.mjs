@@ -33,8 +33,7 @@ function run(label, command, args, env) {
   if (result.stdout) process.stdout.write(result.stdout);
   if (result.stderr) process.stderr.write(result.stderr);
   if (result.status !== 0) {
-    console.error(`${label} failed with status ${result.status}`);
-    process.exit(result.status || 1);
+    throw new Error(`${label} failed with status ${result.status}`);
   }
 }
 
@@ -83,6 +82,23 @@ function stopPostgres(env) {
   if (result.stderr) process.stderr.write(result.stderr);
 }
 
+function startPostgres(env, port) {
+  try {
+    run(
+      "start temporary PostgreSQL",
+      "pg_ctl",
+      ["-D", dataDir, "-o", `-p ${port} -h 127.0.0.1 -k ${tempDir}`, "-l", logPath, "start"],
+      env
+    );
+  } catch (error) {
+    if (fs.existsSync(logPath)) {
+      process.stderr.write(`\nPostgreSQL startup log (${logPath}):\n`);
+      process.stderr.write(fs.readFileSync(logPath, "utf8"));
+    }
+    throw error;
+  }
+}
+
 const pgPort = await availablePort();
 let llmPort = await availablePort();
 while (llmPort === pgPort) {
@@ -106,7 +122,7 @@ const env = {
 try {
   console.log(`Creating production readiness fixture PostgreSQL cluster in ${tempDir}`);
   run("init temporary PostgreSQL", "initdb", ["-D", dataDir, "--no-locale", "--encoding=UTF8"], env);
-  run("start temporary PostgreSQL", "pg_ctl", ["-D", dataDir, "-o", `-p ${pgPort} -h 127.0.0.1`, "-l", logPath, "start"], env);
+  startPostgres(env, pgPort);
   run("import seed data", "npm", ["run", "db:import"], env);
   run("import worker artifacts", "npm", ["run", "worker:import"], env);
 
