@@ -176,7 +176,7 @@ if (exists(".github/workflows/validate-p0-p3.yml")) {
     "P0_P3_GITHUB_EVENT_NAME: ${{ github.event_name }}",
     "P0_P3_PRODUCTION_LLM_INPUT: ${{ github.event.inputs.production_llm }}",
     "P0_P3_PRODUCTION_ENVIRONMENT: production",
-    "npm run validate:p0-p3:production -- --timeout-ms=30000 --limit=1 --write-evidence",
+    "npm run validate:p0-p3:production -- --timeout-ms=120000 --limit=1 --write-evidence",
     "npm run audit:p0-p3:matrix",
     "npm run production:p0-p3:checklist",
     "npm run validate:production-release-checklist",

@@ -135,7 +135,7 @@ for (const fragment of [
   "P0_P3_REQUIRE_GITHUB_EVIDENCE: \"true\"",
   "P0_P3_PRODUCTION_LLM_INPUT: ${{ github.event.inputs.production_llm }}",
   "P0_P3_PRODUCTION_ENVIRONMENT: production",
-  "npm run validate:p0-p3:production -- --timeout-ms=30000 --limit=1 --write-evidence",
+  "npm run validate:p0-p3:production -- --timeout-ms=120000 --limit=1 --write-evidence",
   "actions/upload-artifact@v4",
   "p0-p3-production-readiness-report",
   "if-no-files-found: error"

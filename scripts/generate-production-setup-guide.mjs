@@ -98,7 +98,7 @@ const lines = [
   "For a local shell connected to the same production services, run:",
   "",
   "```bash",
-  "npm run validate:p0-p3:production -- --provider=http --timeout-ms=30000 --limit=1 --write-evidence",
+  "npm run validate:p0-p3:production -- --provider=http --timeout-ms=120000 --limit=1 --write-evidence",
   "```",
   "",
   "The production evidence file and downloaded production artifact directory are ignored by git. The `Validate P0-P3` workflow uploads `data/research/p0-p3-production-readiness-report.json`, `data/research/p0-p3-completion-matrix.json`, and `data/research/p0-p3-production-release-checklist.json` together as the `p0-p3-production-readiness-report` artifact. Use a fresh or empty artifact directory for each production artifact download so stale evidence cannot mix with the verified run; artifact validation allows only those three JSON files plus optional `run-metadata.json`, which must contain valid JSON.",

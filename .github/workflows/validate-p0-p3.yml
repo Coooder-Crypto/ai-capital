@@ -93,7 +93,7 @@ jobs:
       - run: npm ci
 
       - name: Validate production P0-P3 readiness
-        run: npm run validate:p0-p3:production -- --timeout-ms=30000 --limit=1 --write-evidence
+        run: npm run validate:p0-p3:production -- --timeout-ms=120000 --limit=1 --write-evidence
 
       - name: Package production release evidence
         run: |

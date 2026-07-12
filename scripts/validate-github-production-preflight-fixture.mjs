@@ -127,10 +127,10 @@ try {
     "workflow-missing-production-command",
     validFixture,
     fs.readFileSync(path.join(rootDir, ".github/workflows/validate-p0-p3.yml"), "utf8").replace(
-      "npm run validate:p0-p3:production -- --timeout-ms=30000 --limit=1 --write-evidence",
+      "npm run validate:p0-p3:production -- --timeout-ms=120000 --limit=1 --write-evidence",
       "npm run validate:p0-p3:local"
     ),
-    "validate-p0-p3 workflow missing npm run validate:p0-p3:production -- --timeout-ms=30000 --limit=1 --write-evidence"
+    "validate-p0-p3 workflow missing npm run validate:p0-p3:production -- --timeout-ms=120000 --limit=1 --write-evidence"
   );
 
   console.log("GitHub production preflight fixture validation passed.");
