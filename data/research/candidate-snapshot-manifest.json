@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-05T07:10:49.980Z",
-  "latestArchiveId": "2026-07-05T07-10-39-616Z-cb63d678d51e",
-  "latestContentHash": "cb63d678d51e6d01d2970ced6dc78b0921e737d28c25dd2c34d02497089a46f6",
+  "generatedAt": "2026-07-27T06:44:58.205Z",
+  "latestArchiveId": "2026-07-27T06-44-58-015Z-e7f0044dbae1",
+  "latestContentHash": "e7f0044dbae15ce9dc5c07525d3371fed699cf02254630f200f3898a6b460cb3",
   "archives": [
     {
       "id": "2026-07-04T07-55-27-802Z-3228681a3f07",
@@ -265,6 +265,20 @@
       "counts": {
         "candidateRelationships": 401,
         "candidateEntities": 398,
+        "candidateMetrics": 5,
+        "retryBacklog": 0
+      }
+    },
+    {
+      "id": "2026-07-27T06-44-58-015Z-e7f0044dbae1",
+      "file": "candidate-snapshots/candidate-snapshot-2026-07-27T06-44-58-015Z-e7f0044dbae1.json",
+      "contentHash": "e7f0044dbae15ce9dc5c07525d3371fed699cf02254630f200f3898a6b460cb3",
+      "archivedAt": "2026-07-27T06:44:58.205Z",
+      "snapshotGeneratedAt": "2026-07-27T06:44:58.015Z",
+      "sourceSnapshotGeneratedAt": "2026-07-04T07:35:55.120Z",
+      "counts": {
+        "candidateRelationships": 315,
+        "candidateEntities": 313,
         "candidateMetrics": 5,
         "retryBacklog": 0
       }

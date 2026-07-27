@@ -1,2 +1,2 @@
 generated_at,entities,relationships,sources,approved_metric_groups,retry_backlog,evidence_backlog,candidate_snapshot_archives,connector_runs,raw_documents,parsed_documents,structured_parsed_documents,parsed_facts,extraction_records,extracted_documents,llm_extraction_records,llm_completed_records,wikidata_profiles,openalex_work_sets,openalex_works,arxiv_paper_sets,arxiv_papers,candidate_relationships,candidate_entities,candidate_metrics
-2026-07-05T13:02:55.468Z,112,777,11,13,0,50,19,4,9,9,6,64,9,6,9,6,5,3,15,3,15,401,398,5
+2026-07-27T06:44:58.377Z,112,777,11,13,0,50,20,4,9,9,7,64,9,7,9,7,5,3,15,0,0,315,313,5

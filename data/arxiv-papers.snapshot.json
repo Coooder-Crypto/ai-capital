@@ -1,363 +1,38 @@
 {
-  "generatedAt": "2026-07-04T15:25:15.984Z",
+  "generatedAt": "2026-07-27T06:43:25.250Z",
   "source": "arxiv",
   "plannedRequestCount": 3,
-  "results": [
+  "results": [],
+  "errors": [
     {
-      "id": "arxiv_papers_openai",
+      "id": "arxiv_error_openai",
       "entityId": "openai",
-      "entityName": "OpenAI",
       "query": "all:OpenAI AND all:\"large language model\"",
       "requestedUrl": "https://export.arxiv.org/api/query?search_query=all%3AOpenAI+AND+all%3A%22large+language+model%22&start=0&max_results=5&sortBy=relevance&sortOrder=descending",
-      "fetchedAt": "2026-07-04T15:25:15.984Z",
-      "papersCount": 5,
-      "papers": [
-        {
-          "id": "2502.06807",
-          "arxivUrl": "https://arxiv.org/abs/2502.06807v2",
-          "pdfUrl": "https://arxiv.org/pdf/2502.06807v2",
-          "title": "Competitive Programming with Large Reasoning Models",
-          "summary": "We show that reinforcement learning applied to large language models (LLMs) significantly boosts performance on complex coding and reasoning tasks. Additionally, we compare two general-purpose reasoning models - OpenAI o1 and an early checkpoint of o3 - with a domain-specific system, o1-ioi, which uses hand-engineered inference strategies designed for competing in the 2024 International Olympiad in Informatics (IOI). We competed live at IOI 2024 with o1-ioi and, using hand-crafted test-time strategies, placed in the 49th percentile. Under relaxed competition constraints, o1-ioi achieved a gold medal. However, when evaluating later models such as o3, we find that o3 achieves gold without hand-crafted domain-specific strategies or relaxed constraints. Our findings show that although speciali",
-          "published": "2025-02-03T23:00:15Z",
-          "updated": "2025-02-18T22:21:40Z",
-          "authors": [
-            "OpenAI",
-            ":",
-            "Ahmed El-Kishky",
-            "Alexander Wei",
-            "Andre Saraiva",
-            "Borys Minaiev",
-            "Daniel Selsam",
-            "David Dohan",
-            "Francis Song",
-            "Hunter Lightman",
-            "Ignasi Clavera",
-            "Jakub Pachocki"
-          ],
-          "categories": [
-            "cs.LG",
-            "cs.AI",
-            "cs.CL"
-          ]
-        },
-        {
-          "id": "2307.02288",
-          "arxivUrl": "https://arxiv.org/abs/2307.02288v3",
-          "pdfUrl": "https://arxiv.org/pdf/2307.02288v3",
-          "title": "Performance Comparison of Large Language Models on VNHSGE English Dataset: OpenAI ChatGPT, Microsoft Bing Chat, and Google Bard",
-          "summary": "This paper presents a performance comparison of three large language models (LLMs), namely OpenAI ChatGPT, Microsoft Bing Chat (BingChat), and Google Bard, on the VNHSGE English dataset. The performance of BingChat, Bard, and ChatGPT (GPT-3.5) is 92.4\\%, 86\\%, and 79.2\\%, respectively. The results show that BingChat is better than ChatGPT and Bard. Therefore, BingChat and Bard can replace ChatGPT while ChatGPT is not yet officially available in Vietnam. The results also indicate that BingChat, Bard and ChatGPT outperform Vietnamese students in English language proficiency. The findings of this study contribute to the understanding of the potential of LLMs in English language education. The remarkable performance of ChatGPT, BingChat, and Bard demonstrates their potential as effective tools",
-          "published": "2023-07-05T13:40:57Z",
-          "updated": "2023-07-20T01:13:27Z",
-          "authors": [
-            "Xuan-Quy Dao"
-          ],
-          "categories": [
-            "cs.CL",
-            "cs.HC"
-          ]
-        },
-        {
-          "id": "2411.10873",
-          "arxivUrl": "https://arxiv.org/abs/2411.10873v2",
-          "pdfUrl": "https://arxiv.org/pdf/2411.10873v2",
-          "title": "Developer Challenges on Large Language Models: A Study of Stack Overflow and OpenAI Developer Forum Posts",
-          "summary": "Large Language Models (LLMs) have gained widespread popularity due to their exceptional capabilities across various domains, including chatbots, healthcare, education, content generation, and automated support systems. However, developers encounter numerous challenges when implementing, fine-tuning, and integrating these models into real-world applications. This study investigates LLM developers' challenges by analyzing community interactions on Stack Overflow and OpenAI Developer Forum, employing BERTopic modeling to identify and categorize developer discussions. Our analysis yields nine challenges on Stack Overflow (e.g., LLM Ecosystem and Challenges, API Usage, LLM Training with Frameworks) and 17 on the OpenAI Developer Forum (e.g., API Usage and Error Handling, Fine-Tuning and Dataset",
-          "published": "2024-11-16T19:38:27Z",
-          "updated": "2024-11-22T22:24:58Z",
-          "authors": [
-            "Khairul Alam",
-            "Kartik Mittal",
-            "Banani Roy",
-            "Chanchal Roy"
-          ],
-          "categories": [
-            "cs.SE"
-          ]
-        },
-        {
-          "id": "2310.10449",
-          "arxivUrl": "https://arxiv.org/abs/2310.10449v2",
-          "pdfUrl": "https://arxiv.org/pdf/2310.10449v2",
-          "title": "Text Summarization Using Large Language Models: A Comparative Study of MPT-7b-instruct, Falcon-7b-instruct, and OpenAI Chat-GPT Models",
-          "summary": "Text summarization is a critical Natural Language Processing (NLP) task with applications ranging from information retrieval to content generation. Leveraging Large Language Models (LLMs) has shown remarkable promise in enhancing summarization techniques. This paper embarks on an exploration of text summarization with a diverse set of LLMs, including MPT-7b-instruct, falcon-7b-instruct, and OpenAI ChatGPT text-davinci-003 models. The experiment was performed with different hyperparameters and evaluated the generated summaries using widely accepted metrics such as the Bilingual Evaluation Understudy (BLEU) Score, Recall-Oriented Understudy for Gisting Evaluation (ROUGE) Score, and Bidirectional Encoder Representations from Transformers (BERT) Score. According to the experiment, text-davinci",
-          "published": "2023-10-16T14:33:02Z",
-          "updated": "2023-10-17T19:54:16Z",
-          "authors": [
-            "Lochan Basyal",
-            "Mihir Sanghvi"
-          ],
-          "categories": [
-            "cs.CL",
-            "cs.AI",
-            "cs.LG"
-          ]
-        },
-        {
-          "id": "2304.12244",
-          "arxivUrl": "https://arxiv.org/abs/2304.12244v3",
-          "pdfUrl": "https://arxiv.org/pdf/2304.12244v3",
-          "title": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
-          "summary": "Training large language models (LLMs) with open-domain instruction following data brings colossal success. However, manually creating such instruction data is very time-consuming and labor-intensive. Moreover, humans may struggle to produce high-complexity instructions. In this paper, we show an avenue for creating large amounts of instruction data with varying levels of complexity using LLM instead of humans. Starting with an initial set of instructions, we use our proposed Evol-Instruct to rewrite them step by step into more complex instructions. Then, we mix all generated instruction data to fine-tune LLaMA. We call the resulting model WizardLM. Human evaluations on a complexity-balanced test bed and Vicuna's testset show that instructions from Evol-Instruct are superior to human-create",
-          "published": "2023-04-24T16:31:06Z",
-          "updated": "2025-05-27T06:49:09Z",
-          "authors": [
-            "Can Xu",
-            "Qingfeng Sun",
-            "Kai Zheng",
-            "Xiubo Geng",
-            "Pu Zhao",
-            "Jiazhan Feng",
-            "Chongyang Tao",
-            "Qingwei Lin",
-            "Daxin Jiang"
-          ],
-          "categories": [
-            "cs.CL",
-            "cs.AI"
-          ]
-        }
-      ]
+      "message": "Command failed: curl -sS -L --max-time 15 -H Accept: application/atom+xml, application/xml, text/xml -H User-Agent: AI Capital Map arXiv connector contact@example.com https://export.arxiv.org/api/query?search_query=all%3AOpenAI+AND+all%3A%22large+language+model%22&start=0&max_results=5&sortBy=relevance&sortOrder=descending\ncurl: (28) Operation timed out after 15002 milliseconds with 0 bytes received\n",
+      "createdAt": "2026-07-27T06:43:25.250Z"
     },
     {
-      "id": "arxiv_papers_deepmind",
+      "id": "arxiv_error_deepmind",
       "entityId": "deepmind",
-      "entityName": "Google DeepMind",
       "query": "all:DeepMind AND all:\"artificial intelligence\"",
       "requestedUrl": "https://export.arxiv.org/api/query?search_query=all%3ADeepMind+AND+all%3A%22artificial+intelligence%22&start=0&max_results=5&sortBy=relevance&sortOrder=descending",
-      "fetchedAt": "2026-07-04T15:25:15.984Z",
-      "papersCount": 5,
-      "papers": [
-        {
-          "id": "2011.07027",
-          "arxivUrl": "https://arxiv.org/abs/2011.07027v2",
-          "pdfUrl": "https://arxiv.org/pdf/2011.07027v2",
-          "title": "DeepMind Lab2D",
-          "summary": "We present DeepMind Lab2D, a scalable environment simulator for artificial intelligence research that facilitates researcher-led experimentation with environment design. DeepMind Lab2D was built with the specific needs of multi-agent deep reinforcement learning researchers in mind, but it may also be useful beyond that particular subfield.",
-          "published": "2020-11-13T17:29:26Z",
-          "updated": "2020-12-12T20:56:32Z",
-          "authors": [
-            "Charles Beattie",
-            "Thomas Köppe",
-            "Edgar A. Duéñez-Guzmán",
-            "Joel Z. Leibo"
-          ],
-          "categories": [
-            "cs.AI"
-          ]
-        },
-        {
-          "id": "1612.03801",
-          "arxivUrl": "https://arxiv.org/abs/1612.03801v2",
-          "pdfUrl": "https://arxiv.org/pdf/1612.03801v2",
-          "title": "DeepMind Lab",
-          "summary": "DeepMind Lab is a first-person 3D game platform designed for research and development of general artificial intelligence and machine learning systems. DeepMind Lab can be used to study how autonomous artificial agents may learn complex tasks in large, partially observed, and visually diverse worlds. DeepMind Lab has a simple and flexible API enabling creative task-designs and novel AI-designs to be explored and quickly iterated upon. It is powered by a fast and widely recognised game engine, and tailored for effective use by the research community.",
-          "published": "2016-12-12T17:32:49Z",
-          "updated": "2016-12-13T12:19:48Z",
-          "authors": [
-            "Charles Beattie",
-            "Joel Z. Leibo",
-            "Denis Teplyashin",
-            "Tom Ward",
-            "Marcus Wainwright",
-            "Heinrich Küttler",
-            "Andrew Lefrancq",
-            "Simon Green",
-            "Víctor Valdés",
-            "Amir Sadik",
-            "Julian Schrittwieser",
-            "Keith Anderson"
-          ],
-          "categories": [
-            "cs.AI"
-          ]
-        },
-        {
-          "id": "1801.00690",
-          "arxivUrl": "https://arxiv.org/abs/1801.00690v1",
-          "pdfUrl": "https://arxiv.org/pdf/1801.00690v1",
-          "title": "DeepMind Control Suite",
-          "summary": "The DeepMind Control Suite is a set of continuous control tasks with a standardised structure and interpretable rewards, intended to serve as performance benchmarks for reinforcement learning agents. The tasks are written in Python and powered by the MuJoCo physics engine, making them easy to use and modify. We include benchmarks for several learning algorithms. The Control Suite is publicly available at https://www.github.com/deepmind/dm_control . A video summary of all tasks is available at http://youtu.be/rAai4QzcYbs .",
-          "published": "2018-01-02T15:48:14Z",
-          "updated": "2018-01-02T15:48:14Z",
-          "authors": [
-            "Yuval Tassa",
-            "Yotam Doron",
-            "Alistair Muldal",
-            "Tom Erez",
-            "Yazhe Li",
-            "Diego de Las Casas",
-            "David Budden",
-            "Abbas Abdolmaleki",
-            "Josh Merel",
-            "Andrew Lefrancq",
-            "Timothy Lillicrap",
-            "Martin Riedmiller"
-          ],
-          "categories": [
-            "cs.AI"
-          ]
-        },
-        {
-          "id": "2502.10303",
-          "arxivUrl": "https://arxiv.org/abs/2502.10303v2",
-          "pdfUrl": "https://arxiv.org/pdf/2502.10303v2",
-          "title": "Reinforcement Learning in Strategy-Based and Atari Games: A Review of Google DeepMinds Innovations",
-          "summary": "Reinforcement Learning (RL) has been widely used in many applications, particularly in gaming, which serves as an excellent training ground for AI models. Google DeepMind has pioneered innovations in this field, employing reinforcement learning algorithms, including model-based, model-free, and deep Q-network approaches, to create advanced AI models such as AlphaGo, AlphaGo Zero, and MuZero. AlphaGo, the initial model, integrates supervised learning and reinforcement learning to master the game of Go, surpassing professional human players. AlphaGo Zero refines this approach by eliminating reliance on human gameplay data, instead utilizing self-play for enhanced learning efficiency. MuZero further extends these advancements by learning the underlying dynamics of game environments without ex",
-          "published": "2025-02-14T17:06:34Z",
-          "updated": "2026-02-11T09:17:09Z",
-          "authors": [
-            "Abdelrhman Shaheen",
-            "Anas Badr",
-            "Ali Abohendy",
-            "Hatem Alsaadawy",
-            "Nadine Alsayad",
-            "Ehab H. El-Shazly"
-          ],
-          "categories": [
-            "cs.AI",
-            "cs.GT"
-          ]
-        },
-        {
-          "id": "1605.04232",
-          "arxivUrl": "https://arxiv.org/abs/1605.04232v2",
-          "pdfUrl": "https://arxiv.org/pdf/1605.04232v2",
-          "title": "Review of state-of-the-arts in artificial intelligence with application to AI safety problem",
-          "summary": "Here, I review current state-of-the-arts in many areas of AI to estimate when it's reasonable to expect human level AI development. Predictions of prominent AI researchers vary broadly from very pessimistic predictions of Andrew Ng to much more moderate predictions of Geoffrey Hinton and optimistic predictions of Shane Legg, DeepMind cofounder. Given huge rate of progress in recent years and this broad range of predictions of AI experts, AI safety questions are also discussed.",
-          "published": "2016-05-11T17:49:24Z",
-          "updated": "2016-12-06T09:29:12Z",
-          "authors": [
-            "Vladimir Shakirov"
-          ],
-          "categories": [
-            "cs.AI"
-          ]
-        }
-      ]
+      "message": "Command failed: curl -sS -L --max-time 15 -H Accept: application/atom+xml, application/xml, text/xml -H User-Agent: AI Capital Map arXiv connector contact@example.com https://export.arxiv.org/api/query?search_query=all%3ADeepMind+AND+all%3A%22artificial+intelligence%22&start=0&max_results=5&sortBy=relevance&sortOrder=descending\ncurl: (28) Operation timed out after 15002 milliseconds with 0 bytes received\n",
+      "createdAt": "2026-07-27T06:43:25.250Z"
     },
     {
-      "id": "arxiv_papers_nvidia",
+      "id": "arxiv_error_nvidia",
       "entityId": "nvidia",
-      "entityName": "NVIDIA",
       "query": "all:NVIDIA AND all:GPU AND all:\"artificial intelligence\"",
       "requestedUrl": "https://export.arxiv.org/api/query?search_query=all%3ANVIDIA+AND+all%3AGPU+AND+all%3A%22artificial+intelligence%22&start=0&max_results=5&sortBy=relevance&sortOrder=descending",
-      "fetchedAt": "2026-07-04T15:25:15.984Z",
-      "papersCount": 5,
-      "papers": [
-        {
-          "id": "2503.11698",
-          "arxivUrl": "https://arxiv.org/abs/2503.11698v1",
-          "pdfUrl": "https://arxiv.org/pdf/2503.11698v1",
-          "title": "A Comparison of the Cerebras Wafer-Scale Integration Technology with Nvidia GPU-based Systems for Artificial Intelligence",
-          "summary": "Cerebras' wafer-scale engine (WSE) technology merges multiple dies on a single wafer. It addresses the challenges of memory bandwidth, latency, and scalability, making it suitable for artificial intelligence. This work evaluates the WSE-3 architecture and compares it with leading GPU-based AI accelerators, notably Nvidia's H100 and B200. The work highlights the advantages of WSE-3 in performance per watt and memory scalability and provides insights into the challenges in manufacturing, thermal management, and reliability. The results suggest that wafer-scale integration can surpass conventional architectures in several metrics, though work is required to address cost-effectiveness and long-term viability.",
-          "published": "2025-03-11T22:57:42Z",
-          "updated": "2025-03-11T22:57:42Z",
-          "authors": [
-            "Yudhishthira Kundu",
-            "Manroop Kaur",
-            "Tripty Wig",
-            "Kriti Kumar",
-            "Pushpanjali Kumari",
-            "Vivek Puri",
-            "Manish Arora"
-          ],
-          "categories": [
-            "cs.AR"
-          ]
-        },
-        {
-          "id": "2503.20481",
-          "arxivUrl": "https://arxiv.org/abs/2503.20481v1",
-          "pdfUrl": "https://arxiv.org/pdf/2503.20481v1",
-          "title": "Analyzing Modern NVIDIA GPU cores",
-          "summary": "GPUs are the most popular platform for accelerating HPC workloads, such as artificial intelligence and science simulations. However, most microarchitectural research in academia relies on GPU core pipeline designs based on architectures that are more than 15 years old. This paper reverse engineers modern NVIDIA GPU cores, unveiling many key aspects of its design and explaining how GPUs leverage hardware-compiler techniques where the compiler guides hardware during execution. In particular, it reveals how the issue logic works including the policy of the issue scheduler, the structure of the register file and its associated cache, and multiple features of the memory pipeline. Moreover, it analyses how a simple instruction prefetcher based on a stream buffer fits well with modern NVIDIA GPUs",
-          "published": "2025-03-26T12:10:53Z",
-          "updated": "2025-03-26T12:10:53Z",
-          "authors": [
-            "Rodrigo Huerta",
-            "Mojtaba Abaie Shoushtary",
-            "José-Lorenzo Cruz",
-            "Antonio González"
-          ],
-          "categories": [
-            "cs.AR"
-          ]
-        },
-        {
-          "id": "2508.14444",
-          "arxivUrl": "https://arxiv.org/abs/2508.14444v4",
-          "pdfUrl": "https://arxiv.org/pdf/2508.14444v4",
-          "title": "NVIDIA Nemotron Nano 2: An Accurate and Efficient Hybrid Mamba-Transformer Reasoning Model",
-          "summary": "We introduce Nemotron-Nano-9B-v2, a hybrid Mamba-Transformer language model designed to increase throughput for reasoning workloads while achieving state-of-the-art accuracy compared to similarly-sized models. Nemotron-Nano-9B-v2 builds on the Nemotron-H architecture, in which the majority of the self-attention layers in the common Transformer architecture are replaced with Mamba-2 layers, to achieve improved inference speed when generating the long thinking traces needed for reasoning. We create Nemotron-Nano-9B-v2 by first pre-training a 12-billion-parameter model (Nemotron-Nano-12B-v2-Base) on 20 trillion tokens using an FP8 training recipe. After aligning Nemotron-Nano-12B-v2-Base, we employ the Minitron strategy to compress and distill the model with the goal of enabling inference on ",
-          "published": "2025-08-20T06:00:57Z",
-          "updated": "2025-09-02T16:12:36Z",
-          "authors": [
-            "NVIDIA",
-            ":",
-            "Aarti Basant",
-            "Abhijit Khairnar",
-            "Abhijit Paithankar",
-            "Abhinav Khattar",
-            "Adithya Renduchintala",
-            "Aditya Malte",
-            "Akhiad Bercovich",
-            "Akshay Hazare",
-            "Alejandra Rico",
-            "Aleksander Ficek"
-          ],
-          "categories": [
-            "cs.CL",
-            "cs.AI",
-            "cs.LG"
-          ]
-        },
-        {
-          "id": "2402.13499",
-          "arxivUrl": "https://arxiv.org/abs/2402.13499v1",
-          "pdfUrl": "https://arxiv.org/pdf/2402.13499v1",
-          "title": "Benchmarking and Dissecting the Nvidia Hopper GPU Architecture",
-          "summary": "Graphics processing units (GPUs) are continually evolving to cater to the computational demands of contemporary general-purpose workloads, particularly those driven by artificial intelligence (AI) utilizing deep learning techniques. A substantial body of studies have been dedicated to dissecting the microarchitectural metrics characterizing diverse GPU generations, which helps researchers understand the hardware details and leverage them to optimize the GPU programs. However, the latest Hopper GPUs present a set of novel attributes, including new tensor cores supporting FP8, DPX, and distributed shared memory. Their details still remain mysterious in terms of performance and operational characteristics. In this research, we propose an extensive benchmarking study focused on the Hopper GPU.",
-          "published": "2024-02-21T03:21:29Z",
-          "updated": "2024-02-21T03:21:29Z",
-          "authors": [
-            "Weile Luo",
-            "Ruibo Fan",
-            "Zeyu Li",
-            "Dayou Du",
-            "Qiang Wang",
-            "Xiaowen Chu"
-          ],
-          "categories": [
-            "cs.AR"
-          ]
-        },
-        {
-          "id": "2601.20115",
-          "arxivUrl": "https://arxiv.org/abs/2601.20115v3",
-          "pdfUrl": "https://arxiv.org/pdf/2601.20115v3",
-          "title": "How Much Progress Has There Been in NVIDIA Datacenter GPUs?",
-          "summary": "As the role of modern Graphics Processing Units (GPUs) becomes increasingly essential for several computing tasks, analyzing their past and current progress is paramount for determining future constraints on scientific research. This is particularly compelling in the Artificial Intelligence (AI) domain, where rapid technological advancements and fierce global competition have led the United States to recently implement export control regulations limiting international access to advanced AI chips. Consequently, this paper examines technical progress in NVIDIA datacenter GPUs from the mid-2000s through 2025. Our main results identify doubling times of 1.43 and 1.67 years for FP16 and FP32 dense operations, while FP64 doubling times range from 2.05 to 3.79 years. Off-chip memory size and band",
-          "published": "2026-01-27T23:11:40Z",
-          "updated": "2026-05-29T18:27:35Z",
-          "authors": [
-            "Emanuele Del Sozzo",
-            "Martin Fleming",
-            "Kenneth Flamm",
-            "Neil Thompson"
-          ],
-          "categories": [
-            "cs.AR",
-            "cs.AI"
-          ]
-        }
-      ]
+      "message": "Command failed: curl -sS -L --max-time 15 -H Accept: application/atom+xml, application/xml, text/xml -H User-Agent: AI Capital Map arXiv connector contact@example.com https://export.arxiv.org/api/query?search_query=all%3ANVIDIA+AND+all%3AGPU+AND+all%3A%22artificial+intelligence%22&start=0&max_results=5&sortBy=relevance&sortOrder=descending\ncurl: (28) Operation timed out after 15002 milliseconds with 0 bytes received\n",
+      "createdAt": "2026-07-27T06:43:25.250Z"
     }
   ],
-  "errors": [],
   "summary": {
     "planned": 3,
-    "resultSets": 3,
-    "papers": 15,
-    "errors": 0
+    "resultSets": 0,
+    "papers": 0,
+    "errors": 3
   }
 }

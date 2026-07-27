@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T07:10:14.449Z",
+  "generatedAt": "2026-07-27T06:44:55.478Z",
   "relationships": [
     {
       "id": "evidence_p1_rel_748",
@@ -13,8 +13,8 @@
       "currentSourceId": "src_ecosystem_mapping",
       "currentSourceTitle": "Manual AI ecosystem mapping",
       "reason": "low_confidence_or_generic_source",
-      "reviewStatus": "needs_direct_evidence",
-      "reviewNote": "Downgraded from ecosystem-mapping supplier edge because no direct public evidence was found during P1.3 evidence review.",
+      "reviewStatus": "inferred_ecosystem_mapping",
+      "reviewNote": "Classified as inferred ecosystem mapping after direct public evidence search found no Cohere/Labelbox customer case, announcement or credible report.",
       "suggestedEvidence": "official announcement, investor relations page, product documentation, model card, filing, or credible report",
       "priority": 1.33
     },

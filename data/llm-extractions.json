@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-05T07:10:39.616Z",
-  "sourceExtractionGeneratedAt": "2026-07-05T07:10:31.392Z",
+  "generatedAt": "2026-07-27T06:44:58.015Z",
+  "sourceExtractionGeneratedAt": "2026-07-27T06:44:57.842Z",
   "provider": "fixture",
   "records": [
     {
@@ -13,9 +13,9 @@
       "provider": "fixture",
       "model": "skipped",
       "status": "skipped",
-      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "requestedAt": "2026-07-27T06:44:58.015Z",
       "evidenceUrl": "https://news.microsoft.com/source/features/ai/microsoft-openai-partnership/",
-      "promptHash": "prompt_extract_raw_watch_microsoft_openai_partnership_4767a20f25e6e13358cbd8a260badad3df3d17b99fb7b54ca7633915fab14918",
+      "promptHash": "prompt_extract_raw_watch_microsoft_openai_partnership_d8531a1ac331414d357ac014ac8813b93c2c0ea1756542ad8bacb6d352ed4891",
       "relationships": [],
       "metrics": [],
       "entities": [],
@@ -39,9 +39,9 @@
       "provider": "fixture",
       "model": "skipped",
       "status": "skipped",
-      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "requestedAt": "2026-07-27T06:44:58.015Z",
       "evidenceUrl": "https://www.nvidia.com/en-us/data-center/cloud-gaming/coreweave/",
-      "promptHash": "prompt_extract_raw_watch_nvidia_coreweave_cloud_42aa0895b0c225242eec6a111c455c4ce63cb013c506a25536b372245b6462fa",
+      "promptHash": "prompt_extract_raw_watch_nvidia_coreweave_cloud_a14c3813224c07f97c3fe49b14034c12edc81966d41e837e1a83943993103faf",
       "relationships": [],
       "metrics": [],
       "entities": [],
@@ -63,22 +63,44 @@
       "watchlistId": "watch_huggingface_langchain_docs",
       "entityId": "huggingface",
       "provider": "fixture",
-      "model": "skipped",
-      "status": "skipped",
-      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "model": "local-schema-fixture",
+      "status": "completed",
+      "requestedAt": "2026-07-27T06:44:58.015Z",
       "evidenceUrl": "https://huggingface.co/docs",
-      "promptHash": "prompt_extract_raw_watch_huggingface_langchain_docs_0320f78e48f13107ef836a56100d8ca32f62492c71ddaaf87cd42492fe6453a4",
-      "relationships": [],
+      "promptHash": "prompt_extract_raw_watch_huggingface_langchain_docs_594110020015120ac122e3619c7287259ee7bd2aaf2d545d8d2a1ce333af83bd",
+      "relationships": [
+        {
+          "sourceEntityId": "huggingface",
+          "targetEntityId": "langchain",
+          "relationType": "integrates_with",
+          "confidence": 0.64,
+          "evidenceUrl": "https://huggingface.co/docs",
+          "note": "Documentation should be reviewed for Hugging Face integrations with LangChain ecosystem tools."
+        }
+      ],
       "metrics": [],
       "entities": [],
       "rawResponse": {
-        "skippedReason": "skipped"
+        "provider": "fixture",
+        "model": "local-schema-fixture",
+        "relationships": [
+          {
+            "sourceEntityId": "huggingface",
+            "targetEntityId": "langchain",
+            "relationType": "integrates_with",
+            "confidence": 0.64,
+            "evidenceUrl": "https://huggingface.co/docs",
+            "note": "Documentation should be reviewed for Hugging Face integrations with LangChain ecosystem tools."
+          }
+        ],
+        "metrics": [],
+        "entities": []
       },
       "quality": {
-        "relationshipCount": 0,
+        "relationshipCount": 1,
         "metricCount": 0,
         "entityCount": 0,
-        "requiresHumanReview": false
+        "requiresHumanReview": true
       }
     },
     {
@@ -91,9 +113,9 @@
       "provider": "fixture",
       "model": "local-schema-fixture",
       "status": "completed",
-      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "requestedAt": "2026-07-27T06:44:58.015Z",
       "evidenceUrl": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
-      "promptHash": "prompt_extract_raw_watch_openalex_openai_research_bb9232b95066b450de8f2b4eed579692fcac8386cac11d5f40e7d0338d077172",
+      "promptHash": "prompt_extract_raw_watch_openalex_openai_research_358183ea149b80f9341da4d9c6281f905d4404b8e0f52c6f44efdb1e6b8a07d0",
       "relationships": [],
       "metrics": [
         {
@@ -101,7 +123,7 @@
           "metricType": "researchWorksMentioningEntity",
           "valueNumber": 0,
           "valueText": "review_required",
-          "asOfDate": "2026-07-05",
+          "asOfDate": "2026-07-27",
           "sourceId": "src_openalex",
           "sourceRef": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
           "confidence": 0.6,
@@ -120,7 +142,7 @@
             "metricType": "researchWorksMentioningEntity",
             "valueNumber": null,
             "valueText": "review_required",
-            "asOfDate": "2026-07-05",
+            "asOfDate": "2026-07-27",
             "sourceId": "src_openalex",
             "sourceRef": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
             "confidence": 0.6,
@@ -147,9 +169,9 @@
       "provider": "fixture",
       "model": "local-schema-fixture",
       "status": "completed",
-      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "requestedAt": "2026-07-27T06:44:58.015Z",
       "evidenceUrl": "https://www.anthropic.com/news",
-      "promptHash": "prompt_extract_raw_watch_anthropic_news_7b9983b183c8b425d2294b6e989259b2682938a02cbad60fc51f2299d59aa621",
+      "promptHash": "prompt_extract_raw_watch_anthropic_news_65fd3599ea0abdb28a71272542271aff012781a8f569192d05ff9383750067b1",
       "relationships": [
         {
           "sourceEntityId": "anthropic",
@@ -195,9 +217,9 @@
       "provider": "fixture",
       "model": "local-schema-fixture",
       "status": "completed",
-      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "requestedAt": "2026-07-27T06:44:58.015Z",
       "evidenceUrl": "https://openai.com/news/rss.xml",
-      "promptHash": "prompt_extract_raw_watch_openai_news_rss_5e649979e1ae5de8dca0610ada16339649308fc39bed51f7460c31350ae2b93f",
+      "promptHash": "prompt_extract_raw_watch_openai_news_rss_bcbac2394b463676c9424049b8debdc7d74822f56ac9f2baab5a1b8223ffafeb",
       "relationships": [],
       "metrics": [
         {
@@ -205,7 +227,7 @@
           "metricType": "rssNewsItemsForReview",
           "valueNumber": 0,
           "valueText": "review_required",
-          "asOfDate": "2026-07-05",
+          "asOfDate": "2026-07-27",
           "sourceId": "src_manual",
           "sourceRef": "https://openai.com/news/rss.xml",
           "confidence": 0.62,
@@ -224,7 +246,7 @@
             "metricType": "rssNewsItemsForReview",
             "valueNumber": null,
             "valueText": "review_required",
-            "asOfDate": "2026-07-05",
+            "asOfDate": "2026-07-27",
             "sourceId": "src_manual",
             "sourceRef": "https://openai.com/news/rss.xml",
             "confidence": 0.62,
@@ -251,9 +273,9 @@
       "provider": "fixture",
       "model": "local-schema-fixture",
       "status": "completed",
-      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "requestedAt": "2026-07-27T06:44:58.015Z",
       "evidenceUrl": "https://blogs.nvidia.com/feed/",
-      "promptHash": "prompt_extract_raw_watch_nvidia_blog_rss_d07079d85cf38529f0908294d6b1ae76c44ae2874d805f320ae1fa013042b27b",
+      "promptHash": "prompt_extract_raw_watch_nvidia_blog_rss_677b87016ae6ef5c07c0729171422c036f9692966110c02ad479e2babf867602",
       "relationships": [],
       "metrics": [
         {
@@ -261,7 +283,7 @@
           "metricType": "rssNewsItemsForReview",
           "valueNumber": 0,
           "valueText": "review_required",
-          "asOfDate": "2026-07-05",
+          "asOfDate": "2026-07-27",
           "sourceId": "src_manual",
           "sourceRef": "https://blogs.nvidia.com/feed/",
           "confidence": 0.6,
@@ -280,7 +302,7 @@
             "metricType": "rssNewsItemsForReview",
             "valueNumber": null,
             "valueText": "review_required",
-            "asOfDate": "2026-07-05",
+            "asOfDate": "2026-07-27",
             "sourceId": "src_manual",
             "sourceRef": "https://blogs.nvidia.com/feed/",
             "confidence": 0.6,
@@ -307,9 +329,9 @@
       "provider": "fixture",
       "model": "local-schema-fixture",
       "status": "completed",
-      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "requestedAt": "2026-07-27T06:44:58.015Z",
       "evidenceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "promptHash": "prompt_extract_raw_watch_aws_ml_blog_rss_e87fcacf454c77a6298f0e8db27c0621db0b4501e7537aba054316ebcbdaf7d1",
+      "promptHash": "prompt_extract_raw_watch_aws_ml_blog_rss_ce9a803474833e0e2e244104e378f2ce25f2f592e22e4cdc8df7d9f6a9b2677c",
       "relationships": [],
       "metrics": [
         {
@@ -317,7 +339,7 @@
           "metricType": "rssNewsItemsForReview",
           "valueNumber": 0,
           "valueText": "review_required",
-          "asOfDate": "2026-07-05",
+          "asOfDate": "2026-07-27",
           "sourceId": "src_manual",
           "sourceRef": "https://aws.amazon.com/blogs/machine-learning/feed/",
           "confidence": 0.59,
@@ -336,7 +358,7 @@
             "metricType": "rssNewsItemsForReview",
             "valueNumber": null,
             "valueText": "review_required",
-            "asOfDate": "2026-07-05",
+            "asOfDate": "2026-07-27",
             "sourceId": "src_manual",
             "sourceRef": "https://aws.amazon.com/blogs/machine-learning/feed/",
             "confidence": 0.59,
@@ -363,9 +385,9 @@
       "provider": "fixture",
       "model": "local-schema-fixture",
       "status": "completed",
-      "requestedAt": "2026-07-05T07:10:39.616Z",
+      "requestedAt": "2026-07-27T06:44:58.015Z",
       "evidenceUrl": "https://engineering.fb.com/feed/",
-      "promptHash": "prompt_extract_raw_watch_meta_engineering_rss_1eda7377294c4fe2cb348cd8187d73d821f4849247326fe06944ee7f3f067ffb",
+      "promptHash": "prompt_extract_raw_watch_meta_engineering_rss_c65fa56d318d31d097289fa32629dc6a274997ffd00f7e4220bdb31d190885fa",
       "relationships": [],
       "metrics": [
         {
@@ -373,7 +395,7 @@
           "metricType": "rssNewsItemsForReview",
           "valueNumber": 0,
           "valueText": "review_required",
-          "asOfDate": "2026-07-05",
+          "asOfDate": "2026-07-27",
           "sourceId": "src_manual",
           "sourceRef": "https://engineering.fb.com/feed/",
           "confidence": 0.57,
@@ -392,7 +414,7 @@
             "metricType": "rssNewsItemsForReview",
             "valueNumber": null,
             "valueText": "review_required",
-            "asOfDate": "2026-07-05",
+            "asOfDate": "2026-07-27",
             "sourceId": "src_manual",
             "sourceRef": "https://engineering.fb.com/feed/",
             "confidence": 0.57,
@@ -412,6 +434,26 @@
   ],
   "candidateRelationships": [
     {
+      "id": "worker_candidate_watch_huggingface_langchain_docs_huggingface_langchain_integrates_with",
+      "sourceEntityId": "huggingface",
+      "targetEntityId": "langchain",
+      "relationType": "integrates_with",
+      "confidence": 0.64,
+      "evidenceUrl": "https://huggingface.co/docs",
+      "extractionMethod": "llm_fixture",
+      "status": "candidate",
+      "payload": {
+        "note": "Documentation should be reviewed for Hugging Face integrations with LangChain ecosystem tools.",
+        "watchlistId": "watch_huggingface_langchain_docs",
+        "rawDocumentId": "raw_watch_huggingface_langchain_docs",
+        "parsedDocumentId": "parsed_raw_watch_huggingface_langchain_docs",
+        "extractionRecordId": "extract_raw_watch_huggingface_langchain_docs",
+        "llmExtractionRecordId": "llm_extract_raw_watch_huggingface_langchain_docs",
+        "model": "local-schema-fixture"
+      },
+      "createdAt": "2026-07-27T06:44:58.015Z"
+    },
+    {
       "id": "worker_candidate_watch_anthropic_news_anthropic_aws_partners_with",
       "sourceEntityId": "anthropic",
       "targetEntityId": "aws",
@@ -429,7 +471,7 @@
         "llmExtractionRecordId": "llm_extract_raw_watch_anthropic_news",
         "model": "local-schema-fixture"
       },
-      "createdAt": "2026-07-05T07:10:39.616Z"
+      "createdAt": "2026-07-27T06:44:58.015Z"
     }
   ],
   "candidateEntities": [],
@@ -440,7 +482,7 @@
       "metricType": "researchWorksMentioningEntity",
       "valueNumber": 0,
       "valueText": "review_required",
-      "asOfDate": "2026-07-05",
+      "asOfDate": "2026-07-27",
       "sourceId": "src_openalex",
       "sourceRef": "https://api.openalex.org/works?search=OpenAI%20large%20language%20model&per-page=5",
       "confidence": 0.6,
@@ -456,7 +498,7 @@
         "llmExtractionRecordId": "llm_extract_raw_watch_openalex_openai_research",
         "model": "local-schema-fixture"
       },
-      "createdAt": "2026-07-05T07:10:39.616Z"
+      "createdAt": "2026-07-27T06:44:58.015Z"
     },
     {
       "id": "worker_metric_watch_openai_news_rss_openai_rssnewsitemsforreview",
@@ -464,7 +506,7 @@
       "metricType": "rssNewsItemsForReview",
       "valueNumber": 0,
       "valueText": "review_required",
-      "asOfDate": "2026-07-05",
+      "asOfDate": "2026-07-27",
       "sourceId": "src_manual",
       "sourceRef": "https://openai.com/news/rss.xml",
       "confidence": 0.62,
@@ -480,7 +522,7 @@
         "llmExtractionRecordId": "llm_extract_raw_watch_openai_news_rss",
         "model": "local-schema-fixture"
       },
-      "createdAt": "2026-07-05T07:10:39.616Z"
+      "createdAt": "2026-07-27T06:44:58.015Z"
     },
     {
       "id": "worker_metric_watch_nvidia_blog_rss_nvidia_rssnewsitemsforreview",
@@ -488,7 +530,7 @@
       "metricType": "rssNewsItemsForReview",
       "valueNumber": 0,
       "valueText": "review_required",
-      "asOfDate": "2026-07-05",
+      "asOfDate": "2026-07-27",
       "sourceId": "src_manual",
       "sourceRef": "https://blogs.nvidia.com/feed/",
       "confidence": 0.6,
@@ -504,7 +546,7 @@
         "llmExtractionRecordId": "llm_extract_raw_watch_nvidia_blog_rss",
         "model": "local-schema-fixture"
       },
-      "createdAt": "2026-07-05T07:10:39.616Z"
+      "createdAt": "2026-07-27T06:44:58.015Z"
     },
     {
       "id": "worker_metric_watch_aws_ml_blog_rss_aws_rssnewsitemsforreview",
@@ -512,7 +554,7 @@
       "metricType": "rssNewsItemsForReview",
       "valueNumber": 0,
       "valueText": "review_required",
-      "asOfDate": "2026-07-05",
+      "asOfDate": "2026-07-27",
       "sourceId": "src_manual",
       "sourceRef": "https://aws.amazon.com/blogs/machine-learning/feed/",
       "confidence": 0.59,
@@ -528,7 +570,7 @@
         "llmExtractionRecordId": "llm_extract_raw_watch_aws_ml_blog_rss",
         "model": "local-schema-fixture"
       },
-      "createdAt": "2026-07-05T07:10:39.616Z"
+      "createdAt": "2026-07-27T06:44:58.015Z"
     },
     {
       "id": "worker_metric_watch_meta_engineering_rss_meta_ai_rssnewsitemsforreview",
@@ -536,7 +578,7 @@
       "metricType": "rssNewsItemsForReview",
       "valueNumber": 0,
       "valueText": "review_required",
-      "asOfDate": "2026-07-05",
+      "asOfDate": "2026-07-27",
       "sourceId": "src_manual",
       "sourceRef": "https://engineering.fb.com/feed/",
       "confidence": 0.57,
@@ -552,15 +594,15 @@
         "llmExtractionRecordId": "llm_extract_raw_watch_meta_engineering_rss",
         "model": "local-schema-fixture"
       },
-      "createdAt": "2026-07-05T07:10:39.616Z"
+      "createdAt": "2026-07-27T06:44:58.015Z"
     }
   ],
   "summary": {
     "sourceExtractionRecords": 9,
     "llmExtractionRecords": 9,
-    "completedRecords": 6,
-    "skippedRecords": 3,
-    "candidateRelationships": 1,
+    "completedRecords": 7,
+    "skippedRecords": 2,
+    "candidateRelationships": 2,
     "candidateEntities": 0,
     "candidateMetrics": 5
   }

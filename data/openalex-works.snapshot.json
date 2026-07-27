@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T15:25:15.984Z",
+  "generatedAt": "2026-07-27T06:43:23.306Z",
   "source": "openalex",
   "plannedRequestCount": 3,
   "results": [
@@ -9,8 +9,8 @@
       "entityName": "OpenAI",
       "query": "OpenAI large language model",
       "requestedUrl": "https://api.openalex.org/works?search=OpenAI+large+language+model&per-page=5&sort=cited_by_count%3Adesc&mailto=research%40example.com",
-      "fetchedAt": "2026-07-04T15:25:15.984Z",
-      "worksCount": 124786,
+      "fetchedAt": "2026-07-27T06:43:23.306Z",
+      "worksCount": 129559,
       "works": [
         {
           "id": "W2896457183",
@@ -19,14 +19,14 @@
           "title": "AI-Assisted Pipeline for Dynamic Generation of Trustworthy Health Supplement Content at Scale",
           "publicationYear": 2018,
           "publicationDate": "2018-10-11",
-          "citedByCount": 45710,
-          "type": "preprint",
+          "citedByCount": 45756,
+          "type": "article",
           "landingPageUrl": "https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.LDK.2019.21",
           "sourceName": "DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)",
           "authorships": [
             {
               "authorId": null,
-              "authorName": "Devlin, Jacob",
+              "authorName": "Kefallinos, Dionysios",
               "institutions": [
                 {
                   "id": "https://openalex.org/I1291425158",
@@ -36,17 +36,17 @@
                   "type": "company"
                 },
                 {
-                  "id": "https://openalex.org/I188760350",
-                  "ror": "https://ror.org/03bea9k73",
-                  "displayName": "Ollscoil na Gaillimhe – University of Galway",
-                  "countryCode": "IE",
+                  "id": "https://openalex.org/I174458059",
+                  "ror": "https://ror.org/03cx6bg69",
+                  "displayName": "National Technical University of Athens",
+                  "countryCode": "GR",
                   "type": "education"
                 }
               ]
             },
             {
               "authorId": null,
-              "authorName": "Chang, Ming-Wei",
+              "authorName": "Alexandris, Georgios",
               "institutions": [
                 {
                   "id": "https://openalex.org/I1291425158",
@@ -56,23 +56,105 @@
                   "type": "company"
                 },
                 {
-                  "id": "https://openalex.org/I188760350",
-                  "ror": "https://ror.org/03bea9k73",
-                  "displayName": "Ollscoil na Gaillimhe – University of Galway",
-                  "countryCode": "IE",
+                  "id": "https://openalex.org/I174458059",
+                  "ror": "https://ror.org/03cx6bg69",
+                  "displayName": "National Technical University of Athens",
+                  "countryCode": "GR",
                   "type": "education"
                 }
               ]
             },
             {
               "authorId": null,
-              "authorName": "Lee, Kenton",
-              "institutions": []
+              "authorName": "Maras, Alexis",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I1291425158",
+                  "ror": "https://ror.org/00njsd438",
+                  "displayName": "Google (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                },
+                {
+                  "id": "https://openalex.org/I174458059",
+                  "ror": "https://ror.org/03cx6bg69",
+                  "displayName": "National Technical University of Athens",
+                  "countryCode": "GR",
+                  "type": "education"
+                }
+              ]
             },
             {
               "authorId": null,
-              "authorName": "Toutanova, Kristina",
-              "institutions": []
+              "authorName": "Chaidos, Panagiotis",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I1291425158",
+                  "ror": "https://ror.org/00njsd438",
+                  "displayName": "Google (United States)",
+                  "countryCode": "US",
+                  "type": "company"
+                },
+                {
+                  "id": "https://openalex.org/I174458059",
+                  "ror": "https://ror.org/03cx6bg69",
+                  "displayName": "National Technical University of Athens",
+                  "countryCode": "GR",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Gomony, Manil Dev",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I83019370",
+                  "ror": "https://ror.org/02c2kyt77",
+                  "displayName": "Eindhoven University of Technology",
+                  "countryCode": "NL",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Corporaal, Henk",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I83019370",
+                  "ror": "https://ror.org/02c2kyt77",
+                  "displayName": "Eindhoven University of Technology",
+                  "countryCode": "NL",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Soudris, Dimitrios",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I174458059",
+                  "ror": "https://ror.org/03cx6bg69",
+                  "displayName": "National Technical University of Athens",
+                  "countryCode": "GR",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": null,
+              "authorName": "Xydis, Sotirios",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I174458059",
+                  "ror": "https://ror.org/03cx6bg69",
+                  "displayName": "National Technical University of Athens",
+                  "countryCode": "GR",
+                  "type": "education"
+                }
+              ]
             }
           ],
           "referencedWorks": [
@@ -97,7 +179,7 @@
           "title": "ChatGPT for good? On opportunities and challenges of large language models for education",
           "publicationYear": 2023,
           "publicationDate": "2023-03-09",
-          "citedByCount": 5253,
+          "citedByCount": 5567,
           "type": "article",
           "landingPageUrl": "https://doi.org/10.1016/j.lindif.2023.102274",
           "sourceName": "Learning and Individual Differences",
@@ -229,7 +311,7 @@
           "title": "Training language models to follow instructions with human feedback",
           "publicationYear": 2022,
           "publicationDate": "2022-03-04",
-          "citedByCount": 4296,
+          "citedByCount": 4309,
           "type": "preprint",
           "landingPageUrl": "http://arxiv.org/abs/2203.02155",
           "sourceName": "arXiv (Cornell University)",
@@ -284,7 +366,7 @@
           "title": "LLaMA: Open and Efficient Foundation Language Models",
           "publicationYear": 2023,
           "publicationDate": "2023-02-27",
-          "citedByCount": 3913,
+          "citedByCount": 3932,
           "type": "preprint",
           "landingPageUrl": "http://arxiv.org/abs/2302.13971",
           "sourceName": "arXiv (Cornell University)",
@@ -339,7 +421,7 @@
           "title": "Opinion Paper: “So what if ChatGPT wrote it?” Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy",
           "publicationYear": 2023,
           "publicationDate": "2023-03-11",
-          "citedByCount": 3762,
+          "citedByCount": 3869,
           "type": "article",
           "landingPageUrl": "https://doi.org/10.1016/j.ijinfomgt.2023.102642",
           "sourceName": "International Journal of Information Management",
@@ -486,44 +568,9 @@
       "entityName": "Google DeepMind",
       "query": "Google DeepMind artificial intelligence",
       "requestedUrl": "https://api.openalex.org/works?search=Google+DeepMind+artificial+intelligence&per-page=5&sort=cited_by_count%3Adesc&mailto=research%40example.com",
-      "fetchedAt": "2026-07-04T15:25:15.984Z",
-      "worksCount": 10696,
+      "fetchedAt": "2026-07-27T06:43:23.306Z",
+      "worksCount": 11095,
       "works": [
-        {
-          "id": "W2964121744",
-          "openAlexUrl": "https://openalex.org/W2964121744",
-          "doi": "https://doi.org/10.4230/lipics.cp.2021.42",
-          "title": "W2964121744",
-          "publicationYear": 2021,
-          "publicationDate": "2021-01-01",
-          "citedByCount": 50351,
-          "type": "preprint",
-          "landingPageUrl": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CP.2021.42",
-          "sourceName": "DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)",
-          "authorships": [
-            {
-              "authorId": null,
-              "authorName": "Mandi, Jayanta",
-              "institutions": []
-            },
-            {
-              "authorId": null,
-              "authorName": "Canoy, Rocsildes",
-              "institutions": []
-            },
-            {
-              "authorId": null,
-              "authorName": "Bucarey, Víctor",
-              "institutions": []
-            },
-            {
-              "authorId": null,
-              "authorName": "Guns, Tias",
-              "institutions": []
-            }
-          ],
-          "referencedWorks": []
-        },
         {
           "id": "W2257979135",
           "openAlexUrl": "https://openalex.org/W2257979135",
@@ -531,7 +578,7 @@
           "title": "Mastering the game of Go with deep neural networks and tree search",
           "publicationYear": 2016,
           "publicationDate": "2016-01-26",
-          "citedByCount": 15849,
+          "citedByCount": 15909,
           "type": "article",
           "landingPageUrl": "https://doi.org/10.1038/nature16961",
           "sourceName": "Nature",
@@ -541,16 +588,16 @@
               "authorName": "David Silver",
               "institutions": [
                 {
-                  "id": "https://openalex.org/I4210113297",
-                  "ror": "https://ror.org/024bc3e07",
-                  "displayName": "Google (United Kingdom)",
+                  "id": "https://openalex.org/I4210090411",
+                  "ror": "https://ror.org/00971b260",
+                  "displayName": "Google DeepMind (United Kingdom)",
                   "countryCode": "GB",
                   "type": "company"
                 },
                 {
-                  "id": "https://openalex.org/I4210090411",
-                  "ror": "https://ror.org/00971b260",
-                  "displayName": "DeepMind (United Kingdom)",
+                  "id": "https://openalex.org/I4210113297",
+                  "ror": "https://ror.org/024bc3e07",
+                  "displayName": "Google (United Kingdom)",
                   "countryCode": "GB",
                   "type": "company"
                 }
@@ -561,16 +608,16 @@
               "authorName": "Aja Huang",
               "institutions": [
                 {
-                  "id": "https://openalex.org/I4210113297",
-                  "ror": "https://ror.org/024bc3e07",
-                  "displayName": "Google (United Kingdom)",
+                  "id": "https://openalex.org/I4210090411",
+                  "ror": "https://ror.org/00971b260",
+                  "displayName": "Google DeepMind (United Kingdom)",
                   "countryCode": "GB",
                   "type": "company"
                 },
                 {
-                  "id": "https://openalex.org/I4210090411",
-                  "ror": "https://ror.org/00971b260",
-                  "displayName": "DeepMind (United Kingdom)",
+                  "id": "https://openalex.org/I4210113297",
+                  "ror": "https://ror.org/024bc3e07",
+                  "displayName": "Google (United Kingdom)",
                   "countryCode": "GB",
                   "type": "company"
                 }
@@ -583,7 +630,7 @@
                 {
                   "id": "https://openalex.org/I4210090411",
                   "ror": "https://ror.org/00971b260",
-                  "displayName": "DeepMind (United Kingdom)",
+                  "displayName": "Google DeepMind (United Kingdom)",
                   "countryCode": "GB",
                   "type": "company"
                 },
@@ -603,7 +650,7 @@
                 {
                   "id": "https://openalex.org/I4210090411",
                   "ror": "https://ror.org/00971b260",
-                  "displayName": "DeepMind (United Kingdom)",
+                  "displayName": "Google DeepMind (United Kingdom)",
                   "countryCode": "GB",
                   "type": "company"
                 },
@@ -621,16 +668,16 @@
               "authorName": "Laurent Sifre",
               "institutions": [
                 {
-                  "id": "https://openalex.org/I4210113297",
-                  "ror": "https://ror.org/024bc3e07",
-                  "displayName": "Google (United Kingdom)",
+                  "id": "https://openalex.org/I4210090411",
+                  "ror": "https://ror.org/00971b260",
+                  "displayName": "Google DeepMind (United Kingdom)",
                   "countryCode": "GB",
                   "type": "company"
                 },
                 {
-                  "id": "https://openalex.org/I4210090411",
-                  "ror": "https://ror.org/00971b260",
-                  "displayName": "DeepMind (United Kingdom)",
+                  "id": "https://openalex.org/I4210113297",
+                  "ror": "https://ror.org/024bc3e07",
+                  "displayName": "Google (United Kingdom)",
                   "countryCode": "GB",
                   "type": "company"
                 }
@@ -643,7 +690,7 @@
                 {
                   "id": "https://openalex.org/I4210090411",
                   "ror": "https://ror.org/00971b260",
-                  "displayName": "DeepMind (United Kingdom)",
+                  "displayName": "Google DeepMind (United Kingdom)",
                   "countryCode": "GB",
                   "type": "company"
                 },
@@ -663,7 +710,7 @@
                 {
                   "id": "https://openalex.org/I4210090411",
                   "ror": "https://ror.org/00971b260",
-                  "displayName": "DeepMind (United Kingdom)",
+                  "displayName": "Google DeepMind (United Kingdom)",
                   "countryCode": "GB",
                   "type": "company"
                 },
@@ -681,16 +728,16 @@
               "authorName": "Ioannis Antonoglou",
               "institutions": [
                 {
-                  "id": "https://openalex.org/I4210113297",
-                  "ror": "https://ror.org/024bc3e07",
-                  "displayName": "Google (United Kingdom)",
+                  "id": "https://openalex.org/I4210090411",
+                  "ror": "https://ror.org/00971b260",
+                  "displayName": "Google DeepMind (United Kingdom)",
                   "countryCode": "GB",
                   "type": "company"
                 },
                 {
-                  "id": "https://openalex.org/I4210090411",
-                  "ror": "https://ror.org/00971b260",
-                  "displayName": "DeepMind (United Kingdom)",
+                  "id": "https://openalex.org/I4210113297",
+                  "ror": "https://ror.org/024bc3e07",
+                  "displayName": "Google (United Kingdom)",
                   "countryCode": "GB",
                   "type": "company"
                 }
@@ -719,8 +766,8 @@
           "title": "Get To The Point: Summarization with Pointer-Generator Networks",
           "publicationYear": 2017,
           "publicationDate": "2017-01-01",
-          "citedByCount": 3897,
-          "type": "article",
+          "citedByCount": 3909,
+          "type": "conference-paper",
           "landingPageUrl": "https://doi.org/10.18653/v1/p17-1099",
           "sourceName": null,
           "authorships": [
@@ -786,7 +833,7 @@
           "title": "Large language models encode clinical knowledge",
           "publicationYear": 2023,
           "publicationDate": "2023-07-12",
-          "citedByCount": 3240,
+          "citedByCount": 3380,
           "type": "article",
           "landingPageUrl": "https://doi.org/10.1038/s41586-023-06291-2",
           "sourceName": "Nature",
@@ -918,8 +965,8 @@
           "title": "PROTAC targeted protein degraders: the past is prologue",
           "publicationYear": 2022,
           "publicationDate": "2022-01-18",
-          "citedByCount": 3072,
-          "type": "review",
+          "citedByCount": 3126,
+          "type": "article",
           "landingPageUrl": "https://doi.org/10.1038/s41573-021-00371-6",
           "sourceName": "Nature Reviews Drug Discovery",
           "authorships": [
@@ -977,6 +1024,99 @@
             "W1973999018",
             "W1984754431"
           ]
+        },
+        {
+          "id": "W2610332124",
+          "openAlexUrl": "https://openalex.org/W2610332124",
+          "doi": "https://doi.org/10.1093/bib/bbx044",
+          "title": "Deep learning for healthcare: review, opportunities and challenges",
+          "publicationYear": 2017,
+          "publicationDate": "2017-04-05",
+          "citedByCount": 3049,
+          "type": "article",
+          "landingPageUrl": "https://doi.org/10.1093/bib/bbx044",
+          "sourceName": "Briefings in Bioinformatics",
+          "authorships": [
+            {
+              "authorId": "https://openalex.org/A5001694059",
+              "authorName": "Riccardo Miotto",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I98704320",
+                  "ror": "https://ror.org/04a9tmd77",
+                  "displayName": "Icahn School of Medicine at Mount Sinai",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5100455768",
+              "authorName": "Fei Wang",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I205783295",
+                  "ror": "https://ror.org/05bnh6r87",
+                  "displayName": "Cornell University",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5101633336",
+              "authorName": "Shuang Wang",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I36258959",
+                  "ror": "https://ror.org/0168r3w48",
+                  "displayName": "University of California San Diego",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5055458864",
+              "authorName": "Xiaoqian Jiang",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I36258959",
+                  "ror": "https://ror.org/0168r3w48",
+                  "displayName": "University of California San Diego",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            },
+            {
+              "authorId": "https://openalex.org/A5043599202",
+              "authorName": "Joel T. Dudley",
+              "institutions": [
+                {
+                  "id": "https://openalex.org/I98704320",
+                  "ror": "https://ror.org/04a9tmd77",
+                  "displayName": "Icahn School of Medicine at Mount Sinai",
+                  "countryCode": "US",
+                  "type": "education"
+                }
+              ]
+            }
+          ],
+          "referencedWorks": [
+            "W98693656",
+            "W1019830208",
+            "W1123205372",
+            "W1498436455",
+            "W1503398984",
+            "W1505191356",
+            "W1532325895",
+            "W1544827683",
+            "W1806891645",
+            "W1813659000",
+            "W1839682376",
+            "W1901616594"
+          ]
         }
       ]
     },
@@ -986,18 +1126,18 @@
       "entityName": "NVIDIA",
       "query": "NVIDIA GPU artificial intelligence",
       "requestedUrl": "https://api.openalex.org/works?search=NVIDIA+GPU+artificial+intelligence&per-page=5&sort=cited_by_count%3Adesc&mailto=research%40example.com",
-      "fetchedAt": "2026-07-04T15:25:15.984Z",
-      "worksCount": 97598,
+      "fetchedAt": "2026-07-27T06:43:23.306Z",
+      "worksCount": 100125,
       "works": [
         {
           "id": "W4385245566",
           "openAlexUrl": "https://openalex.org/W4385245566",
           "doi": "https://doi.org/10.4230/lipics.itp.2023.19",
-          "title": "MizAR 60 for Mizar 50",
+          "title": "Exploiting Generative AI to Scale up Intelligent Tutoring Systems",
           "publicationYear": 2023,
           "publicationDate": "2023-01-01",
-          "citedByCount": 76347,
-          "type": "preprint",
+          "citedByCount": 77051,
+          "type": "article",
           "landingPageUrl": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITP.2023.19",
           "sourceName": "DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)",
           "authorships": [
@@ -1122,7 +1262,7 @@
           "title": "ColabFold: making protein folding accessible to all",
           "publicationYear": 2022,
           "publicationDate": "2022-05-30",
-          "citedByCount": 9725,
+          "citedByCount": 9835,
           "type": "article",
           "landingPageUrl": "https://doi.org/10.1038/s41592-022-01488-1",
           "sourceName": "Nature Methods",
@@ -1134,7 +1274,7 @@
                 {
                   "id": "https://openalex.org/I4210095684",
                   "ror": "https://ror.org/0080y7t67",
-                  "displayName": "Max Planck Institute for the Study of Religious and Ethnic Diversity",
+                  "displayName": "Max Planck Institute for Political and Social Science",
                   "countryCode": "DE",
                   "type": "education"
                 },
@@ -1256,7 +1396,7 @@
           "title": "Review of deep learning: concepts, CNN architectures, challenges, applications, future directions",
           "publicationYear": 2021,
           "publicationDate": "2021-03-31",
-          "citedByCount": 7583,
+          "citedByCount": 7685,
           "type": "article",
           "landingPageUrl": "https://doi.org/10.1186/s40537-021-00444-8",
           "sourceName": "Journal Of Big Data",
@@ -1369,6 +1509,13 @@
                   "displayName": "Thi Qar University",
                   "countryCode": "IQ",
                   "type": "education"
+                },
+                {
+                  "id": "https://openalex.org/I4405266776",
+                  "ror": "https://ror.org/05fsahm30",
+                  "displayName": "University of Sumer",
+                  "countryCode": "IQ",
+                  "type": "education"
                 }
               ]
             }
@@ -1395,8 +1542,8 @@
           "title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting",
           "publicationYear": 2021,
           "publicationDate": "2021-05-18",
-          "citedByCount": 6135,
-          "type": "article",
+          "citedByCount": 6333,
+          "type": "conference-paper",
           "landingPageUrl": "https://doi.org/10.1609/aaai.v35i12.17325",
           "sourceName": "Proceedings of the AAAI Conference on Artificial Intelligence",
           "authorships": [
@@ -1520,7 +1667,7 @@
           "title": "Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization",
           "publicationYear": 2019,
           "publicationDate": "2019-10-11",
-          "citedByCount": 5609,
+          "citedByCount": 5701,
           "type": "article",
           "landingPageUrl": "https://doi.org/10.1007/s11263-019-01228-7",
           "sourceName": "International Journal of Computer Vision",

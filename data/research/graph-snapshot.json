@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T13:02:55.468Z",
+  "generatedAt": "2026-07-27T06:44:58.377Z",
   "counts": {
     "layers": 8,
     "entities": 112,
@@ -7,26 +7,26 @@
     "sources": 11,
     "approvedMetricGroups": 13,
     "metricFailures": 0,
-    "candidateRelationships": 401,
-    "candidateEntities": 398,
+    "candidateRelationships": 315,
+    "candidateEntities": 313,
     "candidateMetrics": 5,
     "retryBacklog": 0,
-    "candidateSnapshotArchives": 19,
+    "candidateSnapshotArchives": 20,
     "evidenceBacklog": 50,
     "connectorRuns": 4,
     "rawDocuments": 9,
     "parsedDocuments": 9,
-    "structuredParsedDocuments": 6,
+    "structuredParsedDocuments": 7,
     "parsedFacts": 64,
     "extractionRecords": 9,
-    "extractedDocuments": 6,
+    "extractedDocuments": 7,
     "llmExtractionRecords": 9,
-    "llmCompletedRecords": 6,
+    "llmCompletedRecords": 7,
     "wikidataProfiles": 5,
     "openAlexWorkSets": 3,
     "openAlexWorks": 15,
-    "arxivPaperSets": 3,
-    "arxivPapers": 15
+    "arxivPaperSets": 0,
+    "arxivPapers": 0
   },
   "layerCounts": [
     {

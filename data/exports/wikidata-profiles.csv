@@ -1,6 +1,6 @@
 id,entity_id,entity_name,qid,label,country,official_website,alias_count,inception_year,confidence,wikidata_url,fetched_at
-wikidata_profile_amd_q128896,amd,AMD,Q128896,AMD,United States,https://www.amd.com/,2,1969,0.84,https://www.wikidata.org/wiki/Q128896,2026-07-04T09:10:00.789Z
-wikidata_profile_azure_q725967,azure,Microsoft Azure,Q725967,Azure,United States,https://azure.microsoft.com/,8,2010,0.84,https://www.wikidata.org/wiki/Q725967,2026-07-04T09:10:00.789Z
-wikidata_profile_huggingface_q108943604,huggingface,Hugging Face,Q108943604,Hugging Face,United States,https://huggingface.co/,5,2016,0.84,https://www.wikidata.org/wiki/Q108943604,2026-07-04T09:10:00.789Z
-wikidata_profile_nvidia_q182477,nvidia,NVIDIA,Q182477,Nvidia,United States,https://www.nvidia.com/,4,1993,0.84,https://www.wikidata.org/wiki/Q182477,2026-07-04T09:10:00.789Z
-wikidata_profile_openai_q21708200,openai,OpenAI,Q21708200,OpenAI,United States,https://openai.com/,4,2015,0.84,https://www.wikidata.org/wiki/Q21708200,2026-07-04T09:10:00.789Z
+wikidata_profile_amd_q128896,amd,AMD,Q128896,AMD,United States,https://www.amd.com/,2,1969,0.84,https://www.wikidata.org/wiki/Q128896,2026-07-27T06:43:21.975Z
+wikidata_profile_azure_q725967,azure,Microsoft Azure,Q725967,Azure,United States,https://azure.microsoft.com/,8,2010,0.84,https://www.wikidata.org/wiki/Q725967,2026-07-27T06:43:21.975Z
+wikidata_profile_huggingface_q108943604,huggingface,Hugging Face,Q108943604,Hugging Face,United States,https://huggingface.co/,2,2016,0.84,https://www.wikidata.org/wiki/Q108943604,2026-07-27T06:43:21.975Z
+wikidata_profile_nvidia_q182477,nvidia,NVIDIA,Q182477,Nvidia,United States,https://www.nvidia.com/,4,1993,0.84,https://www.wikidata.org/wiki/Q182477,2026-07-27T06:43:21.975Z
+wikidata_profile_openai_q21708200,openai,OpenAI,Q21708200,OpenAI,United States,https://openai.com/,4,2015,0.84,https://www.wikidata.org/wiki/Q21708200,2026-07-27T06:43:21.975Z
